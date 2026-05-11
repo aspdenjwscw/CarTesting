@@ -1,0 +1,2 @@
+*.unity filter=lfs diff=lfs merge=lfs -text
+C:/Users/finla/OneDrive/Documents/GitHub/CarTesting/CarTesting/Library/PackageCache/com.unity.burst@6bb9aca3ef38/.Runtime/libburst-llvm-19.dylib filter=lfs diff=lfs merge=lfs -text
