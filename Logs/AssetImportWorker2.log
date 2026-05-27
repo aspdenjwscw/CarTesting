@@ -245,3 +245,40 @@ Received Import Request.
 Start importing Assets/Scenes/JamesScene.unity using Guid(00e1800cb3b0e8e4095a544ff6b57f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '98f18916e9447790eec49261fe3f5204') in 0.000317708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=53ed2709581796ae4bf16b16018ebed2 DependenciesID=b9aeca2eaa03133aef80e9268b47693a StaticDependenciesID=db3f653ddfd2053de48bcbc648ef84b2 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 2.73 ms, found 2 plugins.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (2.7 MB). Loaded Objects now: 7358.
+Memory consumption went from 163.4 MB to 160.7 MB.
+Total: 8.335125 ms (FindLiveObjects: 0.209292 ms CreateObjectMapping: 0.063625 ms MarkObjects: 7.770000 ms  DeleteObjects: 0.291792 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1919.256011 seconds.
+  path: Assets/Assets/NewLayer.terrainlayer
+  importAddress: Guid(cf30b7c36640d482c9de7f1499b3638a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/NewLayer.terrainlayer using Guid(cf30b7c36640d482c9de7f1499b3638a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'de43abc7fc5e64044e12adb0186eca20') in 0.019132209 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=026bd66e27fd2c78caa6a13f64ab3a14 DependenciesID=2d1c44052bcec6274da1955aeb4a9b17 StaticDependenciesID=6b580fd5fa3df37e31ef8ebe37dcea34 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 96.511787 seconds.
+  path: Assets/Assets/NewLayer 2.terrainlayer
+  importAddress: Guid(8fd5774add3ef4118a1c892a806f32a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/NewLayer 2.terrainlayer using Guid(8fd5774add3ef4118a1c892a806f32a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '15f0e925ac34dba741ab52b2fbfecd4a') in 0.011647167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9c5e39a36eed9ce52cdef6e0ae860aef DependenciesID=03b6d88a6f8fe5f014c280f7730ba06e StaticDependenciesID=fe0a57aadc56b00af0fb472d15e9c573 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.926778 seconds.
+  path: Assets/Assets/NewLayer 1.terrainlayer
+  importAddress: Guid(aa1597dfc677740669c972d4028f727a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/NewLayer 1.terrainlayer using Guid(aa1597dfc677740669c972d4028f727a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '63df6cce15a65aef2a20f6aa0ae5974c') in 0.008782792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a60b5007b56ddc160294389233bde6e4 DependenciesID=e8de694ac2f8a68f14350da7efa9c076 StaticDependenciesID=7d4bca4c4d3ff5482a40a065f9ea666d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+

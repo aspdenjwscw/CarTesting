@@ -285,3 +285,16 @@ Received Import Request.
 Start importing Assets/TerrainData_e4c177ec-dd29-4e4e-9062-ecd802a3df62.asset using Guid(5f53bd78ba7c14e7ab93fb5628b4aafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f73f619541fb6ca128d645456f6aed4a') in 0.008002709 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9beb10b566594c4d9b6965079020dd7f DependenciesID=965322efd8ed0f5642a56d12fae2e582 StaticDependenciesID=d7d4099fd5ff30d8399683123d3f8df5 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Refreshing native plugins compatible for Editor in 2.39 ms, found 2 plugins.
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (2.7 MB). Loaded Objects now: 7360.
+Memory consumption went from 164.8 MB to 162.2 MB.
+Total: 8.693875 ms (FindLiveObjects: 0.312375 ms CreateObjectMapping: 0.102708 ms MarkObjects: 7.607125 ms  DeleteObjects: 0.671125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
