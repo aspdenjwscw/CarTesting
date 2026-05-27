@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-05-22T02:13:50.4804764Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-05-27T00:25:05.4920823Z"
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15681 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-05-22T02:13:50Z
+Date: 2026-05-27T00:25:05Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.4f1\Editor\Unity.exe
@@ -15,11 +15,11 @@ C:\Program Files\Unity\Hub\Editor\6000.4.4f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/GitHub/CarTesting/CarTesting
+C:/GitHub/CarTesting
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49886
+50549
 -licensingIpc
 LicenseClient-finla
 -force-d3d12
@@ -31,8 +31,8 @@ LicenseClient-finla
 1
 -name
 AssetImport
-Successfully changed project path to: C:/GitHub/CarTesting/CarTesting
-C:/GitHub/CarTesting/CarTesting
+Successfully changed project path to: C:/GitHub/CarTesting
+C:/GitHub/CarTesting
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -68,12 +68,12 @@ C:/GitHub/CarTesting/CarTesting
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [1584]  Target information:
+Player connection [14784]  Target information:
 
-Player connection [1584]  * "[IP] 10.10.2.13 [Port] 0 [Flags] 2 [Guid] 4036442595 [EditorId] 4036442595 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [14784]  * "[IP] 10.10.2.13 [Port] 0 [Flags] 2 [Guid] 3435708023 [EditorId] 3435708023 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [1584] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [1584] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [14784] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [14784] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,10 +85,10 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 7.59 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 7.62 ms, found 4 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/GitHub/CarTesting/CarTesting/Assets
+[Subsystems] Discovering subsystems at path C:/GitHub/CarTesting/Assets
 Forcing GfxDevice: Direct3D 12
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 d3d12: failed to query info queue interface (0x80004002).
@@ -104,13 +104,13 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56252
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009059 seconds.
+Registered in 0.003693 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -119,44 +119,44 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.964 seconds
-Domain Reload Profiling: 2172ms
-	BeginReloadAssembly (317ms)
-	RebuildCommonClasses (112ms)
-	RebuildNativeTypeToScriptingClass (42ms)
-	initialDomainReloadingComplete (189ms)
-	LoadAllAssembliesAndSetupDomain (543ms)
-		LoadAssemblies (315ms)
-		AnalyzeDomain (520ms)
-			TypeCache.Refresh (516ms)
-				TypeCache.ScanAssembly (486ms)
-	FinalizeReload (968ms)
+- Finished resetting the current domain, in  1.007 seconds
+Domain Reload Profiling: 2182ms
+	BeginReloadAssembly (429ms)
+	RebuildCommonClasses (89ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (155ms)
+	LoadAllAssembliesAndSetupDomain (467ms)
+		LoadAssemblies (420ms)
+		AnalyzeDomain (443ms)
+			TypeCache.Refresh (440ms)
+				TypeCache.ScanAssembly (413ms)
+	FinalizeReload (1010ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (134ms)
-			BeforeProcessingInitializeOnLoad (198ms)
-			ProcessInitializeOnLoadAttributes (256ms)
-			ProcessInitializeOnLoadMethodAttributes (213ms)
+			InitializePlatformSupportModulesInManaged (111ms)
+			BeforeProcessingInitializeOnLoad (237ms)
+			ProcessInitializeOnLoadAttributes (251ms)
+			ProcessInitializeOnLoadMethodAttributes (189ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.18.1'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
 [Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-05-22T02:13:55.597252Z"
-Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-05-27T00:25:10.2502448Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              96353ab95c6d463092ab0269a586f180
-  Correlation Id:          074d2b13fdefe5948facc4f4d7223c34
-  External correlation Id: 4464071031984127196
+  Session Id:              c02bcacf022c4ed8af80b776f7cdf765
+  Correlation Id:          9b59741c45a23fc4c556ef38d786ae80
+  External correlation Id: 2035999879829975276
   Machine Id:              kS2MSEUP+PhHajfq4lupfhYLziU=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 4.74s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-05-22T02:14:00.3366981Z"
-[Licensing::Module] Licensing Background thread has ended after 9.86s
-[Licensing::Module] Licensing is initialized (took 4.69s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 4.00s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-05-27T00:25:14.2525024Z"
+[Licensing::Module] Licensing Background thread has ended after 8.76s
+[Licensing::Module] Licensing is initialized (took 4.27s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 17867501111429-UnityPersXXXX
@@ -192,133 +192,61 @@ Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Un
 Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
 Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
 Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Refreshing native plugins compatible for Editor in 3.80 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.38 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 4.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.55 ms, found 4 plugins.
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.844 seconds
-Domain Reload Profiling: 8409ms
-	BeginReloadAssembly (5125ms)
-		DisableScriptedObjects (18ms)
-		CreateAndSetChildDomain (56ms)
-	RebuildCommonClasses (82ms)
-	RebuildNativeTypeToScriptingClass (33ms)
-	initialDomainReloadingComplete (164ms)
-	LoadAllAssembliesAndSetupDomain (1160ms)
-		LoadAssemblies (847ms)
-		AnalyzeDomain (532ms)
-			TypeCache.Refresh (354ms)
-				TypeCache.ScanAssembly (328ms)
-			BuildScriptInfoCaches (150ms)
-			ResolveRequiredComponents (24ms)
-	FinalizeReload (1845ms)
+- Finished resetting the current domain, in  2.108 seconds
+Domain Reload Profiling: 8292ms
+	BeginReloadAssembly (4652ms)
+		DisableScriptedObjects (20ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (115ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (182ms)
+	LoadAllAssembliesAndSetupDomain (1199ms)
+		LoadAssemblies (760ms)
+		AnalyzeDomain (631ms)
+			TypeCache.Refresh (460ms)
+				TypeCache.ScanAssembly (428ms)
+			BuildScriptInfoCaches (133ms)
+			ResolveRequiredComponents (35ms)
+	FinalizeReload (2108ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (305ms)
-			ProcessInitializeOnLoadAttributes (944ms)
-			ProcessInitializeOnLoadMethodAttributes (154ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			BeforeProcessingInitializeOnLoad (343ms)
+			ProcessInitializeOnLoadAttributes (978ms)
+			ProcessInitializeOnLoadMethodAttributes (182ms)
 			AfterProcessingInitializeOnLoad (10ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 5.19 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 5.07 ms, found 4 plugins.
 Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6535 unused Assets / (5.7 MB). Loaded Objects now: 7342.
-Memory consumption went from 152.0 MB to 146.3 MB.
-Total: 15.844800 ms (FindLiveObjects: 0.915900 ms CreateObjectMapping: 1.195600 ms MarkObjects: 9.758400 ms  DeleteObjects: 3.970400 ms)
+Unloading 6535 unused Assets / (6.0 MB). Loaded Objects now: 7342.
+Memory consumption went from 154.2 MB to 148.2 MB.
+Total: 16.691300 ms (FindLiveObjects: 1.480600 ms CreateObjectMapping: 1.794000 ms MarkObjects: 9.054300 ms  DeleteObjects: 4.357000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 278242.815664 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)
-  importAddress: Guid(722fe7206204b9f46a7e297304408ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Low Poly Cars (Free) using Guid(722fe7206204b9f46a7e297304408ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'dca27692ab5b5e8be8f6b31a66324e9f') in 0.0147372 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b03fdfd791691518c2a9e6205f7f5be0 DependenciesID=8823c68c33f1970b1611eead3ae960b2 StaticDependenciesID=db96c7e8a8491d6040c19eef484c98ed 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Scenes
-  importAddress: Guid(99b3c5086050fd3478c4895bb1c6878b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(99b3c5086050fd3478c4895bb1c6878b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'dc07ba75cccc7e1288ecdca0a3b113b1') in 0.0050721 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=37220863cc1d59b753ba4b2f701188f3 DependenciesID=9b6eb776bafb433aa4e2ea3e852b82ac StaticDependenciesID=0794ef276cea643e01b6ed054b8ece76 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.311461 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Prefabs
-  importAddress: Guid(63224c3f1dce02e47b7bd6683ec2ff3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Low Poly Cars (Free)/Prefabs using Guid(63224c3f1dce02e47b7bd6683ec2ff3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6174016313451ec84af24b3dbe9dbd2b') in 0.001561 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=61a1a0b49532f9f63f387adb31b62dc9 DependenciesID=ba6468ca8620525fb53b2a249a3808cc StaticDependenciesID=ca94101c5c717aae1083de1ddcd396a2 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.166267 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Prefabs/car_1.prefab
-  importAddress: Guid(5ae5e8fa3b7dad04f9e6786adc26c13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Low Poly Cars (Free)/Prefabs/car_1.prefab using Guid(5ae5e8fa3b7dad04f9e6786adc26c13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '21c2c8981fbc8d264cefb9f7eb616861') in 1.4053065 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=902a89ef154850fd39f691348866bc46 DependenciesID=e8f480179e8dac9e91244532558947d8 StaticDependenciesID=31706dafa3e569c7dcd9ab103656757b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.174874 seconds.
-  path: Assets/Assets/33-low-poly-cars-free
-  importAddress: Guid(8e0c8f9f89dd9e44d9993ff9fbef24c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/33-low-poly-cars-free using Guid(8e0c8f9f89dd9e44d9993ff9fbef24c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd407cc3264db4c1aab73829fcf62f6d9') in 0.0015952 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b37471c834c964150537f0c046ae85c4 DependenciesID=e71acfae46cae034a6d1bc7489a456b9 StaticDependenciesID=ccd6012750de2e653cab8ebd3cf31de7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.677262 seconds.
-  path: Assets/Assets/33-low-poly-cars-free.zip
-  importAddress: Guid(e0ef5470a6d247743ae1937600464537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/33-low-poly-cars-free.zip using Guid(e0ef5470a6d247743ae1937600464537) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1635ec77b1d3a3ee7194586043805c50') in 0.0044253 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f3c7441f12b555387e0d1093cbfab8e1 DependenciesID=36211c489f5eaeed612d36d3991a7179 StaticDependenciesID=9aeeb9485564215a0a8acbc9429fed6e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.082755 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Models
-  importAddress: Guid(112eed812522af54c8d690e0a69bb447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Low Poly Cars (Free)/Models using Guid(112eed812522af54c8d690e0a69bb447) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ae5331f020d9306b2765993b42188ef2') in 0.0016409 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3669b741f4f5ee97d1c52a0180ebe21a DependenciesID=74c79a241ac45a17473458030815edc1 StaticDependenciesID=4c2a55722cb3add3b85a18f191793009 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029120 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Models/car_1.fbx
-  importAddress: Guid(35c6246c59f16b440aaa2c34bfbbcc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Low Poly Cars (Free)/Models/car_1.fbx using Guid(35c6246c59f16b440aaa2c34bfbbcc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '40bec51073fdac9eea7fbfb6c0f24e15') in 8.4865991 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ba1d0fdd7b5650b7584805a626dab0ae DependenciesID=26fa6ac8ff16b64e67b2c7372a21b52b StaticDependenciesID=b6b5c75ce112de615785e143746d3204 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
-
-========================================================================
-Received Import Request.
-  Time since last request: 412.242185 seconds.
-  path: Assets/Scenes/JamesScene.unity
-  importAddress: Guid(00e1800cb3b0e8e4095a544ff6b57f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/JamesScene.unity using Guid(00e1800cb3b0e8e4095a544ff6b57f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7c199f0b115fd0431f27d0525e253a52') in 0.0014104 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=53ed2709581796ae4bf16b16018ebed2 DependenciesID=d37ccccd1348b90c5d9e4991ecce5d30 StaticDependenciesID=0d939b54569ec1c95a940a8b41fcf2db 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.890655 seconds.
-  path: Assets/Scenes/JamesScene.unity
-  importAddress: Guid(00e1800cb3b0e8e4095a544ff6b57f88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/JamesScene.unity using Guid(00e1800cb3b0e8e4095a544ff6b57f88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '83f9097cd48a6fa70f04aa76cf2d5e5f') in 0.1591184 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8e6d41b927579e664f32bf569a96e6b1 DependenciesID=1c27561551b60bfac9e64a49ffdae409 StaticDependenciesID=90a7ac82089c7fd2d837174e00278b97 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.395003 seconds.
+  Time since last request: 703728.412040 seconds.
   path: Assets/Scenes/SampleScene.unity
   importAddress: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4dca7651c5039b28e87813ed4876ce70') in 0.0243148 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d9bf41af577884684a1e3d2ec820628f DependenciesID=0377bc168d1e9189479329ccbb0902e0 StaticDependenciesID=e8338a909680ab80911270fce77dbce0 
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a8d5517818f2366e3e95cd6591d10494') in 0.212588 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2841c3c97d8d4d5e498135bf738f42c0 DependenciesID=cdfc29440feefd0cb7e01e1a9ce059e9 StaticDependenciesID=06d3e52811c944c5c75627a90371b2ca 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1607.133318 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  importAddress: Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f1a10e0684e9f410f20e92aee218a36f') in 0.0385308 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7c05bf0507657ce0e754a0286c1cd4fb DependenciesID=6a796d0fa10eb35e5256e6410965defe StaticDependenciesID=00aec84ad9f045f89e246b615e303c92 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
