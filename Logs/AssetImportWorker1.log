@@ -7,9 +7,9 @@ Darwin version:          24.6.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
-Date:                    2026-05-27T00:03:35Z
+Date:                    2026-05-29T01:40:45Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-05-27T00:03:35.748926Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-05-29T01:40:45.169432Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-54648
+61943
 -licensingIpc
 LicenseClient-jamesaspden
 -force-metal
@@ -73,7 +73,7 @@ Successfully changed project path to: /Users/jamesaspden/Documents/GitHub/CarTes
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Player connection [8496259264]  Target information:
 
-Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 3317455401 [EditorId] 3317455401 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 1199451412 [EditorId] 1199451412 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8496259264] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8496259264] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -88,6 +88,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 2.90 ms, found 2 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jamesaspden/Documents/GitHub/CarTesting/Assets
@@ -108,21 +109,21 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56315
 CodeReloadManager initialized
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              24edc2ea12f248c49cf2c4ffb7850e98
-  Correlation Id:          cb755203d89f2eee7d6e8d13c7a1acb8
-  External correlation Id: 554881436946917399
-  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.00s, handshake: 0.43s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-05-27T00:03:36.182914Z"
-[Licensing::Module] Licensing Background thread has ended after 0.43s
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000358 seconds.
+Registered in 0.000236 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              844b1b3b26244fc2bb9824bf67aed7a1
+  Correlation Id:          0315d000e98b454b8f82cfbf726c28a4
+  External correlation Id: 4921189453348525316
+  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.00s, handshake: 0.65s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-05-29T01:40:45.819185Z"
+[Licensing::Module] Licensing Background thread has ended after 0.65s
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -130,23 +131,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.263 seconds
-Domain Reload Profiling: 529ms
-	BeginReloadAssembly (59ms)
-	RebuildCommonClasses (26ms)
+- Finished resetting the current domain, in  0.239 seconds
+Domain Reload Profiling: 494ms
+	BeginReloadAssembly (50ms)
+	RebuildCommonClasses (28ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (136ms)
-		LoadAssemblies (58ms)
-		AnalyzeDomain (129ms)
-			TypeCache.Refresh (128ms)
-				TypeCache.ScanAssembly (118ms)
-	FinalizeReload (264ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (134ms)
+		LoadAssemblies (50ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (126ms)
+				TypeCache.ScanAssembly (116ms)
+	FinalizeReload (240ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			BeforeProcessingInitializeOnLoad (63ms)
-			ProcessInitializeOnLoadAttributes (73ms)
-			ProcessInitializeOnLoadMethodAttributes (56ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (61ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
 [CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
@@ -196,26 +197,26 @@ Native extension for OSXStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.462 seconds
-Domain Reload Profiling: 942ms
-	BeginReloadAssembly (89ms)
+- Finished resetting the current domain, in  0.418 seconds
+Domain Reload Profiling: 886ms
+	BeginReloadAssembly (82ms)
 		DisableScriptedObjects (3ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (35ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (36ms)
 	LoadAllAssembliesAndSetupDomain (316ms)
-		LoadAssemblies (183ms)
-		AnalyzeDomain (166ms)
-			TypeCache.Refresh (127ms)
-				TypeCache.ScanAssembly (115ms)
-			BuildScriptInfoCaches (30ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (463ms)
+		LoadAssemblies (191ms)
+		AnalyzeDomain (154ms)
+			TypeCache.Refresh (118ms)
+				TypeCache.ScanAssembly (106ms)
+			BuildScriptInfoCaches (29ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (419ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (85ms)
-			ProcessInitializeOnLoadAttributes (180ms)
-			ProcessInitializeOnLoadMethodAttributes (45ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -224,73 +225,17 @@ Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support con
 Launching external process: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Helpers/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
 Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6540 unused Assets / (4.6 MB). Loaded Objects now: 7353.
-Memory consumption went from 169.0 MB to 164.4 MB.
-Total: 5.631333 ms (FindLiveObjects: 0.318791 ms CreateObjectMapping: 0.144375 ms MarkObjects: 4.006000 ms  DeleteObjects: 1.161833 ms)
+Unloading 6540 unused Assets / (4.1 MB). Loaded Objects now: 7353.
+Memory consumption went from 168.4 MB to 164.3 MB.
+Total: 6.145625 ms (FindLiveObjects: 0.371708 ms CreateObjectMapping: 0.131209 ms MarkObjects: 4.245916 ms  DeleteObjects: 1.396584 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 769248.395884 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Textures/NewLayer.terrainlayer
-  importAddress: Guid(91fe85ac52fc5421981b6cc18dac8af2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Textures/NewLayer.terrainlayer using Guid(91fe85ac52fc5421981b6cc18dac8af2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b0a1471ff3053511c97e929f26552bc1') in 0.047670916 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=884ae96bc3f4fea9a567805aa7bcabca DependenciesID=483ab515f365b81e99e6e30bc9fae15f StaticDependenciesID=e2ee5f234a7d2e55762f0b04df0ac0e8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/Scenes/JamesScene.unity
-  importAddress: Guid(00e1800cb3b0e8e4095a544ff6b57f88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/JamesScene.unity using Guid(00e1800cb3b0e8e4095a544ff6b57f88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '854ce252a2944a21abc1406155ff44e7') in 0.003427041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4d22660343407342b39272d4611ee986 DependenciesID=5bb03d264360d57a8200b6d41713ff2c StaticDependenciesID=31f0497cf5e214e2d658cdc4b0495236 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Assets/NewLayer 2.terrainlayer
-  importAddress: Guid(8fd5774add3ef4118a1c892a806f32a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assets/NewLayer 2.terrainlayer using Guid(8fd5774add3ef4118a1c892a806f32a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9de13b6f2ab06d601a9bb2b3762c3a38') in 0.003929666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f4f99a824c7e0b888cecbf230700049d DependenciesID=8d185494379ea75f59fba6618cd34dd6 StaticDependenciesID=31fbb5848f178bd83d45e765bab1b515 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
+  Time since last request: 814999.803816 seconds.
   path: Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset
   importAddress: Guid(8954343439202416595048955cb937e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset using Guid(8954343439202416595048955cb937e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4fdc8f99f23f4bb904ab04478c4ad2ca') in 0.010976375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b9ae647ed5961c5400202ac8da7b92f3 DependenciesID=3633a4bc0e42c0e4699f7c0a6dbee03b StaticDependenciesID=04d5820e6ee8b8aafd1c75f79d911319 
+Start importing Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset using Guid(8954343439202416595048955cb937e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fc0ecfa9f7e16a64e98e98c0b96adf82') in 0.050855375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ff6f625323193fb54c58adb54533e7b DependenciesID=f99eef455b07b8584b3ba7aa2b9cd59b StaticDependenciesID=736acd479389f80150d0e2f0d081dc4f 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Assets/NewLayer.terrainlayer
-  importAddress: Guid(cf30b7c36640d482c9de7f1499b3638a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assets/NewLayer.terrainlayer using Guid(cf30b7c36640d482c9de7f1499b3638a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '759c9c0f243fc970e5ff47247d60bc7d') in 0.003581666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0583d6d8494080fe40f225291949bee6 DependenciesID=d81314eceed7657494706b123289f4d8 StaticDependenciesID=eef125058b71d231bb71aa2540197abc 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/New Terrain.asset
-  importAddress: Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/New Terrain.asset using Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5468f4e48ca5a3626ade888ad341d25e') in 0.005280167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fa0dac9c268fd7825d21eabd3764abdb DependenciesID=a796ddec0ad40769fa97c433df1d6193 StaticDependenciesID=72b19699454c84f3721df2dbe9e86544 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Textures/NewLayer.terrainlayer
-  importAddress: Guid(91fe85ac52fc5421981b6cc18dac8af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Textures/NewLayer.terrainlayer using Guid(91fe85ac52fc5421981b6cc18dac8af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ed4b32f741fd07c5d8ddaad930229016') in 0.03529875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4a0e2d902215e8958043f0d474ef668a DependenciesID=d91a2b38892a08b1c4f2496c4b11b220 StaticDependenciesID=e234b355bf8c318e806e4f75c3f74144 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.594201 seconds.
-  path: Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset
-  importAddress: Guid(8954343439202416595048955cb937e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset using Guid(8954343439202416595048955cb937e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8a03e72a7400231d31d7e04267b6a825') in 0.020452 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=498bc826df810d680af99dbf41978a52 DependenciesID=ed4b73cff94d3594efb175d63fd0a4cd StaticDependenciesID=15710db1840c44d157ba36fc0a09f00a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

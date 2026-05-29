@@ -7,9 +7,9 @@ Darwin version:          24.6.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
-Date:                    2026-05-25T20:51:47Z
+Date:                    2026-05-27T00:03:35Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-05-25T20:51:47.339411Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-05-27T00:03:35.748926Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-56433
+54648
 -licensingIpc
 LicenseClient-jamesaspden
 -force-metal
@@ -73,7 +73,7 @@ Successfully changed project path to: /Users/jamesaspden/Documents/GitHub/CarTes
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Player connection [8496259264]  Target information:
 
-Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 3029756122 [EditorId] 3029756122 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 3317455401 [EditorId] 3317455401 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8496259264] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8496259264] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -88,7 +88,6 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.59 ms, found 2 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jamesaspden/Documents/GitHub/CarTesting/Assets
@@ -109,21 +108,21 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56092
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
 CodeReloadManager initialized
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              5a9c0f7fccf140d68c83b32e9caa6394
-  Correlation Id:          3f5878726081fbcd263dd278e4d5b5a7
-  External correlation Id: 8981056573200158566
+  Session Id:              24edc2ea12f248c49cf2c4ffb7850e98
+  Correlation Id:          cb755203d89f2eee7d6e8d13c7a1acb8
+  External correlation Id: 554881436946917399
   Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.01s, handshake: 0.38s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-05-25T20:51:47.727963Z"
-[Licensing::Module] Licensing Background thread has ended after 0.39s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.00s, handshake: 0.43s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-05-27T00:03:36.182914Z"
+[Licensing::Module] Licensing Background thread has ended after 0.43s
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000752 seconds.
+Registered in 0.000358 seconds.
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -131,23 +130,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.285 seconds
-Domain Reload Profiling: 560ms
-	BeginReloadAssembly (66ms)
-	RebuildCommonClasses (25ms)
+- Finished resetting the current domain, in  0.263 seconds
+Domain Reload Profiling: 529ms
+	BeginReloadAssembly (59ms)
+	RebuildCommonClasses (26ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (142ms)
-		LoadAssemblies (65ms)
-		AnalyzeDomain (136ms)
-			TypeCache.Refresh (135ms)
-				TypeCache.ScanAssembly (124ms)
-	FinalizeReload (286ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (58ms)
+		AnalyzeDomain (129ms)
+			TypeCache.Refresh (128ms)
+				TypeCache.ScanAssembly (118ms)
+	FinalizeReload (264ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
+			InitializePlatformSupportModulesInManaged (23ms)
 			BeforeProcessingInitializeOnLoad (63ms)
 			ProcessInitializeOnLoadAttributes (73ms)
-			ProcessInitializeOnLoadMethodAttributes (75ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
 [CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
@@ -197,214 +196,101 @@ Native extension for OSXStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.492 seconds
-Domain Reload Profiling: 1089ms
-	BeginReloadAssembly (123ms)
-		DisableScriptedObjects (4ms)
-		CreateAndSetChildDomain (47ms)
-	RebuildCommonClasses (30ms)
+- Finished resetting the current domain, in  0.462 seconds
+Domain Reload Profiling: 942ms
+	BeginReloadAssembly (89ms)
+		DisableScriptedObjects (3ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (28ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (366ms)
-		LoadAssemblies (222ms)
-		AnalyzeDomain (178ms)
-			TypeCache.Refresh (137ms)
-				TypeCache.ScanAssembly (124ms)
-			BuildScriptInfoCaches (31ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (493ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (316ms)
+		LoadAssemblies (183ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (127ms)
+				TypeCache.ScanAssembly (115ms)
+			BuildScriptInfoCaches (30ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (463ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (92ms)
-			ProcessInitializeOnLoadAttributes (201ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (180ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Launching external process: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Helpers/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
 Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6537 unused Assets / (3.8 MB). Loaded Objects now: 7336.
-Memory consumption went from 151.3 MB to 147.5 MB.
-Total: 7.089083 ms (FindLiveObjects: 0.439709 ms CreateObjectMapping: 0.142375 ms MarkObjects: 5.236667 ms  DeleteObjects: 1.269583 ms)
+Unloading 6540 unused Assets / (4.6 MB). Loaded Objects now: 7353.
+Memory consumption went from 169.0 MB to 164.4 MB.
+Total: 5.631333 ms (FindLiveObjects: 0.318791 ms CreateObjectMapping: 0.144375 ms MarkObjects: 4.006000 ms  DeleteObjects: 1.161833 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 720101.419530 seconds.
-  path: Assets/Readme.asset
-  importAddress: Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8f35344b8ffee1c9c97b8244754a980a') in 0.011844084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f239c3b2c5f5524d591ac6c531473032 DependenciesID=d82bb6c7e3604c6aead65e649addaa72 StaticDependenciesID=0c7a104953a90fbb8020448b0a5f929f 
+  Time since last request: 769248.395884 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Textures/NewLayer.terrainlayer
+  importAddress: Guid(91fe85ac52fc5421981b6cc18dac8af2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Textures/NewLayer.terrainlayer using Guid(91fe85ac52fc5421981b6cc18dac8af2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b0a1471ff3053511c97e929f26552bc1') in 0.047670916 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=884ae96bc3f4fea9a567805aa7bcabca DependenciesID=483ab515f365b81e99e6e30bc9fae15f StaticDependenciesID=e2ee5f234a7d2e55762f0b04df0ac0e8 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.098912 seconds.
-  path: Assets/Assets/33-low-poly-cars-free.zip
-  importAddress: Guid(e0ef5470a6d247743ae1937600464537) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assets/33-low-poly-cars-free.zip using Guid(e0ef5470a6d247743ae1937600464537) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '915d048fb9542e9f703ea19044c6dcf4') in 0.030792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=40f518cc3af64d10ab19dcb796d0a43a DependenciesID=5352d706d4f68308ba2b0680a2e8d351 StaticDependenciesID=f0b6e38d32b61cd06d834b992a9c32bf 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Settings/DefaultVolumeProfile.asset
-  importAddress: Guid(ab09877e2e707104187f6f83e2f62510) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Settings/DefaultVolumeProfile.asset using Guid(ab09877e2e707104187f6f83e2f62510) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6ae3bb22bbc9daf058248358123e8b89') in 0.01005225 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d120205ee2c1eabfbcb2d4e263a85bcc DependenciesID=b0e1e9e18211bee1b4de4063f4801bd2 StaticDependenciesID=9892a9d247dd693c6d165680497ab331 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Textures/Car Texture 1.png
-  importAddress: Guid(fab40526332a73a4cbe13413bb8bf816) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assets/Low Poly Cars (Free)/Textures/Car Texture 1.png using Guid(fab40526332a73a4cbe13413bb8bf816) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4beba4f70dd194b31d53ea7a2626c852') in 0.0293445 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fb671c2b22f17c445beb25b93487ea58 DependenciesID=dce7dd3bcbce3ab0fede0a09515a3674 StaticDependenciesID=6335d1166c6a677c7f7ff5924ce6b6b7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
+  Time since last request: 0.000258 seconds.
   path: Assets/Scenes/JamesScene.unity
   importAddress: Guid(00e1800cb3b0e8e4095a544ff6b57f88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/JamesScene.unity using Guid(00e1800cb3b0e8e4095a544ff6b57f88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4add26f3561792455f3bf37811a39887') in 0.001902334 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b29c92ada141400d32784fbf940ac1b1 DependenciesID=1c27561551b60bfac9e64a49ffdae409 StaticDependenciesID=90a7ac82089c7fd2d837174e00278b97 
+Start importing Assets/Scenes/JamesScene.unity using Guid(00e1800cb3b0e8e4095a544ff6b57f88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '854ce252a2944a21abc1406155ff44e7') in 0.003427041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4d22660343407342b39272d4611ee986 DependenciesID=5bb03d264360d57a8200b6d41713ff2c StaticDependenciesID=31f0497cf5e214e2d658cdc4b0495236 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
-  importAddress: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Settings/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f4d6d2c20e117ff180a7c6b4104ae569') in 0.055511709 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f59abbebbe86927b256a59886b98962d DependenciesID=42c1de3f5e3c6c976d8be06c836bbfd1 StaticDependenciesID=93897e858e4be9aae0e934c3ca8ea78f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/TutorialInfo/Scripts/Readme.cs
-  importAddress: Guid(fcf7219bab7fe46a1ad266029b2fee19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TutorialInfo/Scripts/Readme.cs using Guid(fcf7219bab7fe46a1ad266029b2fee19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e37cf1f57bc260c0cd74d78c959c46b8') in 0.004024 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=10272431af696ad415820fc5fe1ab7ed DependenciesID=1be96266d6c807d733fecfc41fdfd28d StaticDependenciesID=f6dbec3aa09e81849b2531790082ea27 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Materials/Floor Material.mat
-  importAddress: Guid(e6a25ebefd3c36d4caf68270bad19412) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assets/Low Poly Cars (Free)/Materials/Floor Material.mat using Guid(e6a25ebefd3c36d4caf68270bad19412) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4863de06fbc07dd8992539d4df674fbe') in 0.010271916 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4a99c201e4f45b097788baae29955cd6 DependenciesID=b3b203b643035c427f5ee4851cfcc35e StaticDependenciesID=12ab4ada30a6eba718142097454b9d68 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/TutorialInfo/Icons/URP.png
-  importAddress: Guid(727a75301c3d24613a3ebcec4a24c2c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TutorialInfo/Icons/URP.png using Guid(727a75301c3d24613a3ebcec4a24c2c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0cbb6aac730e72184be7a7cd41029344') in 0.003433917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a39176cc963df3201e747422a2738729 DependenciesID=c855c426c5ec9797f39c92cf81e254a3 StaticDependenciesID=87857bce5b5d2f59bec3089eac1f2769 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Settings/Mobile_Renderer.asset
-  importAddress: Guid(65bc7dbf4170f435aa868c779acfb082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Settings/Mobile_Renderer.asset using Guid(65bc7dbf4170f435aa868c779acfb082) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'eb47032f184d612b74fcdc0b277b5fca') in 0.017541334 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6162ed8fb318f6c37e9b148b16426dc5 DependenciesID=31931decc1c3de68010f5ab98b4b74c9 StaticDependenciesID=479ec06a013f88c318b3be9f7d7efee1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Prefabs/car_1.prefab
-  importAddress: Guid(5ae5e8fa3b7dad04f9e6786adc26c13f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assets/Low Poly Cars (Free)/Prefabs/car_1.prefab using Guid(5ae5e8fa3b7dad04f9e6786adc26c13f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e6a97986b8173e944109d268d7bbe471') in 0.007349875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0a5b5ea4eb3c08a027b25e7d603e5b1f DependenciesID=d3642f9a76a5d38b6a3b92a8a30f9875 StaticDependenciesID=77805c4a024cf961960648cb2e5fe6ac 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
-
-========================================================================
-Received Import Request.
-  Time since last request: 182.668004 seconds.
-  path: Assets/TerrainData_2a497da1-4b3c-4bd5-bd10-20c956c27af6.asset
-  importAddress: Guid(852af644559ad4d48a2199c8c2532aae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TerrainData_2a497da1-4b3c-4bd5-bd10-20c956c27af6.asset using Guid(852af644559ad4d48a2199c8c2532aae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e9dc4b73e30036c157951d3cdce28235') in 0.009089792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c007461dc321f8bacc3693b8b9fc28a5 DependenciesID=8097c836e4dcc5435f807d2054ba2fbe StaticDependenciesID=0a8bbe5500b94c7ac44a6098a92bf703 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 75.272650 seconds.
-  path: Assets/TerrainData_2a497da1-4b3c-4bd5-bd10-20c956c27af6.asset
-  importAddress: Guid(852af644559ad4d48a2199c8c2532aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_2a497da1-4b3c-4bd5-bd10-20c956c27af6.asset using Guid(852af644559ad4d48a2199c8c2532aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '925d827fa697554f2892589d9b36412d') in 0.003595375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d97caca1a7b2e7c87b6045c217dbf395 DependenciesID=e499ff9afa60525fa19b538b25cbd117 StaticDependenciesID=65451b75df4ce9d488f70db94514e9c9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/TerrainData_6ebb3c24-604d-4820-a998-f37f3068b14c.asset
-  importAddress: Guid(f9ab8ec8446da4848a38eead227dd952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_6ebb3c24-604d-4820-a998-f37f3068b14c.asset using Guid(f9ab8ec8446da4848a38eead227dd952) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b62910f8d06e6d7f1348f9e8369e2e9e') in 0.002416875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b3015393e060b4fb82194cf029148c15 DependenciesID=c8c75878a04df980dab52d8d9716164e StaticDependenciesID=4a59dcd6fa08c49b7495b677968b752d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.094098 seconds.
-  path: Assets/TerrainData_52e9e9ae-98c3-4e72-bdd0-ed9dc92f29ad.asset
-  importAddress: Guid(2576a039dc839439dbf2cb0d6759871b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TerrainData_52e9e9ae-98c3-4e72-bdd0-ed9dc92f29ad.asset using Guid(2576a039dc839439dbf2cb0d6759871b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9bce06325be80ac4b15ae63f974a67a6') in 0.004566583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=674c8ba38fa81c56663a1ed52f35a00f DependenciesID=a0cfb8c2ddaea72254bd952507161d5c StaticDependenciesID=7758e7cee15eb8ff8bd8e942749aedd9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.422733 seconds.
-  path: Assets/TerrainData_e4c177ec-dd29-4e4e-9062-ecd802a3df62.asset
-  importAddress: Guid(5f53bd78ba7c14e7ab93fb5628b4aafe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TerrainData_e4c177ec-dd29-4e4e-9062-ecd802a3df62.asset using Guid(5f53bd78ba7c14e7ab93fb5628b4aafe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8c4f77bfcc8dd07b3123fd3071a6f2a8') in 0.003205959 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5636ff2fb4818d2c40e5f72a9cd78396 DependenciesID=54bd1ab358c884bb5008f707b58f9a0f StaticDependenciesID=672f6e2af4d3c4681b9f31252fe641e5 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 855.560590 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Textures/Car Texture 2.png
-  importAddress: Guid(bcbb379dff0a1714fa099dc2e5682fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Low Poly Cars (Free)/Textures/Car Texture 2.png using Guid(bcbb379dff0a1714fa099dc2e5682fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '740059331f60d9b89c19cad2b182c103') in 0.032314708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6d92d4ffb58e4a5687b6d515defa7544 DependenciesID=251e80383d2932aa2d1458012df626a3 StaticDependenciesID=829229ba8761e8166c3c4b177678860e 
+  Time since last request: 0.000191 seconds.
+  path: Assets/Assets/NewLayer 2.terrainlayer
+  importAddress: Guid(8fd5774add3ef4118a1c892a806f32a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/NewLayer 2.terrainlayer using Guid(8fd5774add3ef4118a1c892a806f32a1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9de13b6f2ab06d601a9bb2b3762c3a38') in 0.003929666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f4f99a824c7e0b888cecbf230700049d DependenciesID=8d185494379ea75f59fba6618cd34dd6 StaticDependenciesID=31fbb5848f178bd83d45e765bab1b515 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/TutorialInfo/Icons/URP.png
-  importAddress: Guid(727a75301c3d24613a3ebcec4a24c2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TutorialInfo/Icons/URP.png using Guid(727a75301c3d24613a3ebcec4a24c2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '433069def0f0e4f046b7f8029c853b8f') in 0.00359975 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=39482b9a04a46a3596fb3783562c53cd DependenciesID=84802c64009517178704963b78dec16b StaticDependenciesID=6f1c4066f650bd84f910fcb916d773cf 
+  Time since last request: 0.000033 seconds.
+  path: Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset
+  importAddress: Guid(8954343439202416595048955cb937e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset using Guid(8954343439202416595048955cb937e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4fdc8f99f23f4bb904ab04478c4ad2ca') in 0.010976375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b9ae647ed5961c5400202ac8da7b92f3 DependenciesID=3633a4bc0e42c0e4699f7c0a6dbee03b StaticDependenciesID=04d5820e6ee8b8aafd1c75f79d911319 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Assets/NewLayer.terrainlayer
+  importAddress: Guid(cf30b7c36640d482c9de7f1499b3638a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/NewLayer.terrainlayer using Guid(cf30b7c36640d482c9de7f1499b3638a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '759c9c0f243fc970e5ff47247d60bc7d') in 0.003581666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0583d6d8494080fe40f225291949bee6 DependenciesID=d81314eceed7657494706b123289f4d8 StaticDependenciesID=eef125058b71d231bb71aa2540197abc 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.219152 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Materials/Car Material 2.mat
-  importAddress: Guid(089910b14991488489cf4be65a35ddec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Low Poly Cars (Free)/Materials/Car Material 2.mat using Guid(089910b14991488489cf4be65a35ddec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'efd085127a3fddd8612822429ccac291') in 0.471323208 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b7dd9d580ee8aa5b0006c82e874f8d88 DependenciesID=41690cbaeb4146357e77e80ef5232e26 StaticDependenciesID=b8cdef428efc05d5cac521a9aa18e0aa 
+  Time since last request: 0.000138 seconds.
+  path: Assets/New Terrain.asset
+  importAddress: Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/New Terrain.asset using Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5468f4e48ca5a3626ade888ad341d25e') in 0.005280167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fa0dac9c268fd7825d21eabd3764abdb DependenciesID=a796ddec0ad40769fa97c433df1d6193 StaticDependenciesID=72b19699454c84f3721df2dbe9e86544 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 316.631286 seconds.
-  path: Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset
-  importAddress: Guid(9932f38fdb78c4933b6184b35200000b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset using Guid(9932f38fdb78c4933b6184b35200000b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '100676ae6cd1e010e8fcea97b6db8b59') in 0.009939542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2710bac2bfd6522a5473a1e7e72df208 DependenciesID=989276baa3c599a49e6ce24842d9992c StaticDependenciesID=53428c074e85643892117de2665f07a2 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000172 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Textures/NewLayer.terrainlayer
+  importAddress: Guid(91fe85ac52fc5421981b6cc18dac8af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Textures/NewLayer.terrainlayer using Guid(91fe85ac52fc5421981b6cc18dac8af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ed4b32f741fd07c5d8ddaad930229016') in 0.03529875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4a0e2d902215e8958043f0d474ef668a DependenciesID=d91a2b38892a08b1c4f2496c4b11b220 StaticDependenciesID=e234b355bf8c318e806e4f75c3f74144 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/TerrainData_a19bf9bb-7780-4988-a87b-a8878d10e1bc.asset
-  importAddress: Guid(9a44b1af8c68c454e8cfdf72c0021691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_a19bf9bb-7780-4988-a87b-a8878d10e1bc.asset using Guid(9a44b1af8c68c454e8cfdf72c0021691) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4c585804f0807719914d555aa5804650') in 0.002518708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d8eafb385adf7b1811f67f7886bbc33d DependenciesID=323d46c44c56c8e0770bd1ecb00b41c6 StaticDependenciesID=9253444f2e2dd9316ac136895d622a93 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/TerrainData_d682a570-6414-4eef-a693-481389ce1aee.asset
-  importAddress: Guid(82999a3da892c4074a92f1660dd5a72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_d682a570-6414-4eef-a693-481389ce1aee.asset using Guid(82999a3da892c4074a92f1660dd5a72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '17504db1bc603cef7ebdb850de46d970') in 0.00232025 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e7e6221cbb7b6acbc8fc46b276f8a2d3 DependenciesID=eb24f0c9ebb69bbc3b085d5d50d48d2a StaticDependenciesID=bad6c1250d3403b3205969e2c4149d8f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 45.594201 seconds.
+  path: Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset
+  importAddress: Guid(8954343439202416595048955cb937e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset using Guid(8954343439202416595048955cb937e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8a03e72a7400231d31d7e04267b6a825') in 0.020452 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=498bc826df810d680af99dbf41978a52 DependenciesID=ed4b73cff94d3594efb175d63fd0a4cd StaticDependenciesID=15710db1840c44d157ba36fc0a09f00a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
