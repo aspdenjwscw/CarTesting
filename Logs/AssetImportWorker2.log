@@ -245,3 +245,23 @@ Received Import Request.
 Start importing Assets/New Terrain.asset using Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '754a5c43c9859cd7f6e768ec822ca51f') in 0.023543083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=58170b2d5e9e6f17d7b7cea077da2b6d DependenciesID=a4bf140b9dcf4f8fdc1ec3aea6b3ebe4 StaticDependenciesID=dabf9a8a8e7f5b2aa8b4b710fa6a20c0 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (2.7 MB). Loaded Objects now: 7355.
+Memory consumption went from 163.9 MB to 161.2 MB.
+Total: 4.788125 ms (FindLiveObjects: 0.196625 ms CreateObjectMapping: 0.062875 ms MarkObjects: 4.268417 ms  DeleteObjects: 0.259625 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2838.029325 seconds.
+  path: Assets/Settings/SampleSceneProfile.asset
+  importAddress: Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/SampleSceneProfile.asset using Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f47d0715ef79d4ccc83319353051cdce') in 0.022030666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7b5649dedb228395fc13f2785d509642 DependenciesID=9c8de4e4a89c981455cd652ff95eae62 StaticDependenciesID=9055a2ea636e40d10f1fcb885fbe15de 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+

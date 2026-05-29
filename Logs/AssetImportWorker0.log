@@ -245,3 +245,23 @@ Received Import Request.
 Start importing Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset using Guid(9932f38fdb78c4933b6184b35200000b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a62d055475ec4b6bb139539e3e31f20c') in 0.005866667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5d3b0f9a202e990b4fe8e743db51a405 DependenciesID=0a52c57318676dc0b1c02a0e2f75f343 StaticDependenciesID=881daab97e81cb99bbc13dd805c854b4 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (2.7 MB). Loaded Objects now: 7355.
+Memory consumption went from 163.8 MB to 161.1 MB.
+Total: 4.874250 ms (FindLiveObjects: 0.197625 ms CreateObjectMapping: 0.062916 ms MarkObjects: 4.355625 ms  DeleteObjects: 0.257833 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2838.031215 seconds.
+  path: Assets/Settings/DefaultVolumeProfile.asset
+  importAddress: Guid(ab09877e2e707104187f6f83e2f62510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/DefaultVolumeProfile.asset using Guid(ab09877e2e707104187f6f83e2f62510) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '96c56f31cc87df5f3c214537a12d4735') in 0.020130167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8e124825f5b2e8a59c63b9aafa24511d DependenciesID=b25d6f3ea9b216473dfb5f761027709f StaticDependenciesID=68b31a52ef98057c8b7274a4409dc056 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
