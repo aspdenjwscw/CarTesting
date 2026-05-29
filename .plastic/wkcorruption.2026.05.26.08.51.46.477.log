@@ -1,0 +1,7 @@
+Process name: Unity
+Process image: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
+Process started: 2026.05.26.08.50.35.375
+Error: Reading would overrun buffer
+StackTrace:   at System.IO.FileStream.Read (System.Byte[] array, System.Int32 offset, System.Int32 count) [0x0007a] in <67e9686a86934ae8b0ef7cc81c6b4608>:0 
+  at Codice.CM.WorkspaceServer.WorkspaceTreeDataStore.ReadWorkspaceContentFromFile (Codice.CM.Common.WorkspaceInfo wkInfo, System.String filePath, Codice.CM.WorkspaceServer.IWorkspaceRevisionInfoCache revisionCache, Codice.Utils.Buffers.FlexibleBufferPool bufferPool) [0x0005e] in <feec3139f4c04de6871f4a301f2c1526>:0 
+  at Codice.CM.WorkspaceServer.WorkspaceTreeDataStore.ReadWorkspaceTreeContent (Codice.CM.Common.WorkspaceInfo wkInfo, System.String wkTreeFile, Codice.CM.WorkspaceServer.IWorkspaceRevisionInfoCache revisionCache, Codice.Utils.Buffers.FlexibleBufferPool bufferPool) [0x00008] in <feec3139f4c04de6871f4a301f2c1526>:0 
