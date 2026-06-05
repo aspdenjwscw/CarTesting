@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\Polytope Studio\Welcome_Screen\Editor\PT_Welcome_Screen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
