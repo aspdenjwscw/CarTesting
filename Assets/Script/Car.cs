@@ -6,35 +6,44 @@ public class Car : MonoBehaviour{
     public Rigidbody rigid;
     public WheelCollider wheel1, wheel2, wheel3, wheel4;
     public float drivespeed, steerspeed;
-    float horizontalInput, verticalInput, verticalForward, verticalBackwards;
-    private KeyCode forward, backwards;
+    float horizontalInput, verticalInput, verticalForward, verticalBackwards, brakingForce, brakesActive;
+    private KeyCode forwardKey, backwardsKey, brakingKey;
     
     void Start(){
-        forward = KeyCode.W; //change forward to equal a different variable that we import from the settings menu later on.
+        forwardKey = KeyCode.W; //change forward to equal a different variable that we import from the settings menu later on.
                              //This is just temporary until we make a settings menu, but will make it easier to change to when we do.
-        backwards = KeyCode.S;
+        backwardsKey = KeyCode.S;
+        brakingKey = KeyCode.Space;
+        brakingForce = 100f;
     }
 
 
     void Update(){
 
-        if(Input.GetKey(forward))
+        if(Input.GetKey(forwardKey) && !Input.GetKey(brakingKey))
         {
-            verticalForward = 1f;
+            verticalForward = -1f;
         }
-        else if(!Input.GetKey(forward))
+        else
         {
             verticalForward = 0f;
         }
-        if (Input.GetKey(backwards))
+        if (Input.GetKey(backwardsKey) && !Input.GetKey(brakingKey))
         {
-            verticalBackwards = -1f;
+            verticalBackwards = 1f;
         }
-        else if (!Input.GetKey(backwards))
+        else
         {
             verticalBackwards = 0f;
         }
-
+        if(Input.GetKey(brakingKey))
+        {
+            brakesActive = brakingForce;
+        }
+        else
+        {
+            brakesActive= 0f;
+        }
         //There are ways to change what the Input.GetAxis("Vertical"); need to be pressed to give change them
         verticalInput = verticalBackwards + verticalForward;
 
@@ -49,7 +58,21 @@ public class Car : MonoBehaviour{
         wheel2.motorTorque = motor;
         wheel3.motorTorque = motor;
         wheel4.motorTorque = motor;
+        wheel3.brakeTorque = brakesActive;
+        wheel4.brakeTorque = brakesActive;
+
         wheel1.steerAngle = steerspeed * horizontalInput;
         wheel2.steerAngle = steerspeed * horizontalInput;
+
+        if(wheel1.steerAngle > 20f)
+        {
+            wheel1.steerAngle = 20f;
+            wheel2.steerAngle = 20f;
+        }
+        if(wheel1.steerAngle < -20f)
+        {
+            wheel1.steerAngle = -20f;
+            wheel2.steerAngle = -20f;
+        }
     }
 }
