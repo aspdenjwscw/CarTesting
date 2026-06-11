@@ -5,28 +5,41 @@ using UnityEngine;
 public class Car : MonoBehaviour{
     public Rigidbody rigid;
     public WheelCollider wheel1, wheel2, wheel3, wheel4;
-    public float drivespeed, steerspeed, verticleForward, verticleBackwards;
-    float horizontalInput, verticalInput;
-    public KeyCode forward, backwards;
+    public float drivespeed, steerspeed;
+    float horizontalInput, verticalInput, verticalForward, verticalBackwards;
+    private KeyCode forward, backwards;
     
-    forward = KeyCode.W
+    void Start(){
+        forward = KeyCode.W; //change forward to equal a different variable that we import from the settings menu later on.
+                             //This is just temporary until we make a settings menu, but will make it easier to change to when we do.
+        backwards = KeyCode.S;
+    }
+
 
     void Update(){
 
-        if(Input.GetKey(KeyCode.forward))
+        if(Input.GetKey(forward))
         {
-            verticleForward = 1
-            return
+            verticalForward = 1f;
         }
-        if (Input.GetKey(KeyCode.W))
+        else if(!Input.GetKey(forward))
         {
-            verticleBackwards = -1
-            return
+            verticalForward = 0f;
         }
-        verticleInput = 
+        if (Input.GetKey(backwards))
+        {
+            verticalBackwards = -1f;
+        }
+        else if (!Input.GetKey(backwards))
+        {
+            verticalBackwards = 0f;
+        }
 
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
+        //There are ways to change what the Input.GetAxis("Vertical"); need to be pressed to give change them
+        verticalInput = verticalBackwards + verticalForward;
+
+        horizontalInput = Input.GetAxis("Horizontal"); //Can also do the same for Horizontal at some point with the same as vertical
+                                                       //also could try to put it in a loop to reduce code length
     }
 
     void FixedUpdate()
