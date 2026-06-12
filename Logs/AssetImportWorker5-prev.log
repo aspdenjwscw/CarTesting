@@ -7,9 +7,9 @@ Darwin version:          24.6.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
-Date:                    2026-06-01T22:00:06Z
+Date:                    2026-06-10T00:49:10Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-01T22:00:06.779155Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-10T00:49:10.503973Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
@@ -17,13 +17,13 @@ COMMAND LINE ARGUMENTS:
 -batchMode
 -noUpm
 -name
-AssetImportWorker5
+AssetImportWorker7
 -projectPath
 /Users/jamesaspden/Documents/GitHub/CarTesting
 -logFile
-Logs/AssetImportWorker5.log
+Logs/AssetImportWorker7.log
 -srvPort
-61209
+57475
 -licensingIpc
 LicenseClient-jamesaspden
 -force-metal
@@ -73,7 +73,7 @@ Successfully changed project path to: /Users/jamesaspden/Documents/GitHub/CarTes
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Player connection [8496259264]  Target information:
 
-Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 2938062286 [EditorId] 2938062286 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 3819589001 [EditorId] 3819589001 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8496259264] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8496259264] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -88,7 +88,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 6.91 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 10.55 ms, found 2 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jamesaspden/Documents/GitHub/CarTesting/Assets
@@ -105,16 +105,25 @@ MSL Version: 3.0
 Has Float MSAA: 1
 Has Float Filtering: 1
 ReadWrite Texture Tier: 2
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              d5b60128ea464b3eb945c8ed98ac80bf
+  Correlation Id:          e20f4ab19905bc7565f1d8dac9c2d2a8
+  External correlation Id: 8483489829652995327
+  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.00s, handshake: 0.48s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-06-10T00:49:10.98949Z"
+[Licensing::Module] Licensing Background thread has ended after 0.49s
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56034
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56897
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001159 seconds.
+Registered in 0.001343 seconds.
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -122,45 +131,28 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-jamesaspden"
-[Licensing::IpcConnector] LicenseClient-jamesaspden channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4" at "2026-06-01T22:00:07.910776Z"
-- Finished resetting the current domain, in  0.267 seconds
-Domain Reload Profiling: 576ms
-	BeginReloadAssembly (78ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (35ms)
-	LoadAllAssembliesAndSetupDomain (155ms)
-		LoadAssemblies (77ms)
-		AnalyzeDomain (147ms)
-			TypeCache.Refresh (146ms)
-				TypeCache.ScanAssembly (134ms)
-	FinalizeReload (268ms)
+- Finished resetting the current domain, in  0.277 seconds
+Domain Reload Profiling: 641ms
+	BeginReloadAssembly (99ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (175ms)
+		LoadAssemblies (100ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (151ms)
+	FinalizeReload (278ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			BeforeProcessingInitializeOnLoad (57ms)
-			ProcessInitializeOnLoadAttributes (67ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (73ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
 [CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              6ff85ef3b8714593b7ad2f8895d47d05
-  Correlation Id:          106d3c64c448fbdf1fd19051c5f06dbf
-  External correlation Id: 1456751001765077859
-  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 0.21s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4-notifications" at "2026-06-01T22:00:08.123384Z"
-[Licensing::Module] Licensing Background thread has ended after 1.34s
-[Licensing::Module] Licensing is initialized (took 0.03s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 17867501090831-UnityPersXXXX
@@ -169,6 +161,8 @@ Begin MonoManager ReloadAssembly
   Expiration: Unlimited
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Cinemachine.Editor.Tests.dll at Library/ScriptAssemblies/Cinemachine.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Cinemachine.Runtime.Tests.dll at Library/ScriptAssemblies/Cinemachine.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
 Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
 Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
@@ -183,6 +177,8 @@ Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Mu
 Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
 Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
@@ -205,38 +201,117 @@ Native extension for OSXStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.448 seconds
-Domain Reload Profiling: 989ms
-	BeginReloadAssembly (118ms)
+- Finished resetting the current domain, in  0.506 seconds
+Domain Reload Profiling: 1045ms
+	BeginReloadAssembly (102ms)
 		DisableScriptedObjects (3ms)
-		CreateAndSetChildDomain (26ms)
+		CreateAndSetChildDomain (37ms)
 	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (333ms)
-		LoadAssemblies (188ms)
-		AnalyzeDomain (175ms)
-			TypeCache.Refresh (134ms)
-				TypeCache.ScanAssembly (121ms)
-			BuildScriptInfoCaches (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (348ms)
+		LoadAssemblies (195ms)
+		AnalyzeDomain (183ms)
+			TypeCache.Refresh (140ms)
+				TypeCache.ScanAssembly (126ms)
+			BuildScriptInfoCaches (34ms)
 			ResolveRequiredComponents (7ms)
-	FinalizeReload (449ms)
+	FinalizeReload (506ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (184ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (213ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Launching external process: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Helpers/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6540 unused Assets / (5.2 MB). Loaded Objects now: 7359.
-Memory consumption went from 162.6 MB to 157.4 MB.
-Total: 5.271667 ms (FindLiveObjects: 0.322666 ms CreateObjectMapping: 0.174459 ms MarkObjects: 3.764625 ms  DeleteObjects: 1.009250 ms)
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Unloading 39 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6815 unused Assets / (7.3 MB). Loaded Objects now: 7662.
+Memory consumption went from 186.7 MB to 179.4 MB.
+Total: 7.549583 ms (FindLiveObjects: 0.340000 ms CreateObjectMapping: 0.349125 ms MarkObjects: 4.965375 ms  DeleteObjects: 1.894541 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1082273.225732 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Tree_04.prefab
+  importAddress: Guid(f0c16f0ea935ea64297ca1d4d55d9746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Tree_04.prefab using Guid(f0c16f0ea935ea64297ca1d4d55d9746) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '05c8619f80cfae76ec261d590763da30') in 0.279177875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3db43ae81025c48d83ed3c4da3d2f063 DependenciesID=a9553e1337503412b2519e1a73c1d645 StaticDependenciesID=957cfdbda902cfc8a4a868baacfeed66 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.010.prefab
+  importAddress: Guid(0ec2020c046d34bf1b0018a75c788c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.010.prefab using Guid(0ec2020c046d34bf1b0018a75c788c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b06bd486d3c341aca1bb3d56f80bbbf1') in 4.659447916 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36d63387a3e7af04b7af84ce82b2b2e3 DependenciesID=2848344b93118d534b9bdd37eda27ee9 StaticDependenciesID=4e84f1a490dff7d18852a7821888d9c1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.016.prefab
+  importAddress: Guid(1e31e30fdcb484252b88699f4c4c1a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.016.prefab using Guid(1e31e30fdcb484252b88699f4c4c1a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1068930fac7dc5426d3d800eeb0e5be1') in 0.015563792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6106bc236d24c0b36a522bb31abdfd4e DependenciesID=8102ae1d4af576cb3897330685050898 StaticDependenciesID=c0fd08152d9038275c5707c3e6f187b6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.012.prefab
+  importAddress: Guid(127db51d4c34446db8838220f99d6408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.012.prefab using Guid(127db51d4c34446db8838220f99d6408) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b847315e837519de2f81d95e29719453') in 0.010567583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cad4c73112d84da791a9b0adcd767aff DependenciesID=98fa6ca9af006b32066d5f519eaf6ef4 StaticDependenciesID=06e7beaeda54f1051af94ee8839b1cda 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.009.prefab
+  importAddress: Guid(5b8a8a7ff136a407a954fe563ab7c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.009.prefab using Guid(5b8a8a7ff136a407a954fe563ab7c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '982623b01b23e00f6edbba7b422644b4') in 0.010572625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=809b5a5c31925107339a682e9bfdf040 DependenciesID=3edd0ac51a860dd3956a31f7405df842 StaticDependenciesID=ce4d5db1f10f2802cf47a6b1421aa6df 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.003.prefab
+  importAddress: Guid(0737421d54009431ab5ff19ff2721435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.003.prefab using Guid(0737421d54009431ab5ff19ff2721435) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2a8918421183a53eb1a87f9ef91e1e24') in 0.0100935 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3ba18edc2894d3dea5782f7c33833cd6 DependenciesID=1f72667b6565b25b97b02404a41b493a StaticDependenciesID=c2261a2e851222ea6a9f7e81090bb222 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Ground_02.prefab
+  importAddress: Guid(e2e682b966e3f644392ffbfab511e0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Ground_02.prefab using Guid(e2e682b966e3f644392ffbfab511e0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3568d9290657f588b3ed2beb5471a98f') in 0.006706625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a1d663ff37a708f8a3cfc5f2b58c5f60 DependenciesID=a84cc525a0ac078690adbfb495524613 StaticDependenciesID=7057c5370d9b7b3aef3482ebeb6e952c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Flowers_02.prefab
+  importAddress: Guid(299e7a1cb6456cf4fa6079cf5978df9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Flowers_02.prefab using Guid(299e7a1cb6456cf4fa6079cf5978df9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'dcf3ba8e2ff00a9e1d2f19a939394c9a') in 0.006873708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=47701f39cc9cd70ebaa02030b037cf94 DependenciesID=2bb57be8440db9582d85e455a23e942e StaticDependenciesID=ddbadf5cfbc4241755b726f634565117 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.028.prefab
+  importAddress: Guid(b2ff36358dd6e4160906bcfb57d7e8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.028.prefab using Guid(b2ff36358dd6e4160906bcfb57d7e8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b86c6fc1d8e6d67991ac29b2eafe390f') in 0.009716834 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=87458a4bef6ee97dcf5997beac7c5dda DependenciesID=44a45517995c580acd07d7d9555a867b StaticDependenciesID=b1eaa19e66b2838c21b254a059186cce 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_04.prefab
+  importAddress: Guid(46e177bc864be4450b3c1640c3e67a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_04.prefab using Guid(46e177bc864be4450b3c1640c3e67a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b79fb1e4d1d02e41ce5421c65ff06a9b') in 0.013155666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dcbb39ef75bad260593e15a57185e4bd DependenciesID=c678590cb548d5fe10146f3677eb7326 StaticDependenciesID=cd405ae5a637923565701744ed928ed7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

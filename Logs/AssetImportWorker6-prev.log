@@ -7,9 +7,9 @@ Darwin version:          24.6.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
-Date:                    2026-06-01T22:01:09Z
+Date:                    2026-06-10T00:22:58Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-01T22:01:09.943259Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-10T00:22:58.404695Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
@@ -17,13 +17,13 @@ COMMAND LINE ARGUMENTS:
 -batchMode
 -noUpm
 -name
-AssetImportWorker6
+AssetImportWorker2
 -projectPath
 /Users/jamesaspden/Documents/GitHub/CarTesting
 -logFile
-Logs/AssetImportWorker6.log
+Logs/AssetImportWorker2.log
 -srvPort
-61209
+57475
 -licensingIpc
 LicenseClient-jamesaspden
 -force-metal
@@ -73,7 +73,7 @@ Successfully changed project path to: /Users/jamesaspden/Documents/GitHub/CarTes
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Player connection [8496259264]  Target information:
 
-Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 2003464203 [EditorId] 2003464203 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 119516302 [EditorId] 119516302 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8496259264] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8496259264] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -88,7 +88,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 8.29 ms, found 2 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jamesaspden/Documents/GitHub/CarTesting/Assets
@@ -105,22 +105,25 @@ MSL Version: 3.0
 Has Float MSAA: 1
 Has Float Filtering: 1
 ReadWrite Texture Tier: 2
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              466cbc90e62c47cf891f45e516d6177b
+  Correlation Id:          e20f4ab19905bc7565f1d8dac9c2d2a8
+  External correlation Id: 4360088860908937665
+  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.00s, handshake: 0.54s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-06-10T00:22:58.949874Z"
+[Licensing::Module] Licensing Background thread has ended after 0.55s
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56111
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56966
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000943 seconds.
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-jamesaspden"
-[Licensing::IpcConnector] LicenseClient-jamesaspden channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4" at "2026-06-01T22:01:10.703213Z"
+Registered in 0.001159 seconds.
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -128,32 +131,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.232 seconds
-Domain Reload Profiling: 504ms
-	BeginReloadAssembly (62ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (140ms)
-		LoadAssemblies (62ms)
-		AnalyzeDomain (133ms)
-			TypeCache.Refresh (132ms)
-				TypeCache.ScanAssembly (122ms)
-	FinalizeReload (233ms)
+- Finished resetting the current domain, in  0.333 seconds
+Domain Reload Profiling: 677ms
+	BeginReloadAssembly (89ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (171ms)
+		LoadAssemblies (88ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (162ms)
+				TypeCache.ScanAssembly (148ms)
+	FinalizeReload (334ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (61ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              76e90817947d45b4a6516be5c084e35f
-  Correlation Id:          106d3c64c448fbdf1fd19051c5f06dbf
-  External correlation Id: 2697553966412257201
-  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 0.19s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4-notifications" at "2026-06-01T22:01:10.898461Z"
-[Licensing::Module] Licensing Background thread has ended after 0.96s
+			InitializePlatformSupportModulesInManaged (29ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (90ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
 [CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
@@ -203,25 +197,25 @@ Native extension for OSXStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.400 seconds
-Domain Reload Profiling: 876ms
-	BeginReloadAssembly (95ms)
-		DisableScriptedObjects (3ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (296ms)
-		LoadAssemblies (171ms)
+- Finished resetting the current domain, in  0.405 seconds
+Domain Reload Profiling: 925ms
+	BeginReloadAssembly (128ms)
+		DisableScriptedObjects (4ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (294ms)
+		LoadAssemblies (176ms)
 		AnalyzeDomain (157ms)
-			TypeCache.Refresh (120ms)
-				TypeCache.ScanAssembly (109ms)
+			TypeCache.Refresh (119ms)
+				TypeCache.ScanAssembly (107ms)
 			BuildScriptInfoCaches (30ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (400ms)
+	FinalizeReload (405ms)
 		SetupLoadedEditorAssemblies (0ms)
 			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (166ms)
+			ProcessInitializeOnLoadAttributes (168ms)
 			ProcessInitializeOnLoadMethodAttributes (36ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
@@ -231,11 +225,10 @@ Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support con
 Launching external process: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Helpers/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
 Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6540 unused Assets / (5.1 MB). Loaded Objects now: 7359.
-Memory consumption went from 162.6 MB to 157.4 MB.
-Total: 5.192459 ms (FindLiveObjects: 0.284500 ms CreateObjectMapping: 0.163583 ms MarkObjects: 3.804208 ms  DeleteObjects: 0.939875 ms)
+Unloading 6540 unused Assets / (5.2 MB). Loaded Objects now: 7359.
+Memory consumption went from 168.2 MB to 163.0 MB.
+Total: 5.273000 ms (FindLiveObjects: 0.282167 ms CreateObjectMapping: 0.180166 ms MarkObjects: 3.870500 ms  DeleteObjects: 0.939833 ms)
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting

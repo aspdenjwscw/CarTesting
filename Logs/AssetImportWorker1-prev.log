@@ -7,9 +7,9 @@ Darwin version:          24.6.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
-Date:                    2026-06-01T21:28:42Z
+Date:                    2026-06-10T00:02:43Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-01T21:28:42.917164Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-10T00:02:43.516031Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,7 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-61209
+57475
 -licensingIpc
 LicenseClient-jamesaspden
 -force-metal
@@ -73,7 +73,7 @@ Successfully changed project path to: /Users/jamesaspden/Documents/GitHub/CarTes
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Player connection [8496259264]  Target information:
 
-Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 3964301547 [EditorId] 3964301547 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 1383017176 [EditorId] 1383017176 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8496259264] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8496259264] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -88,7 +88,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.42 ms, found 2 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jamesaspden/Documents/GitHub/CarTesting/Assets
@@ -109,12 +109,21 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56710
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56797
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              e032c3a496d0490fb6a24f6ee2a28dc1
+  Correlation Id:          e20f4ab19905bc7565f1d8dac9c2d2a8
+  External correlation Id: 8117082126746749649
+  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.00s, handshake: 0.40s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-06-10T00:02:43.92038Z"
+[Licensing::Module] Licensing Background thread has ended after 0.40s
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.001302 seconds.
+Registered in 0.000445 seconds.
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -122,45 +131,28 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.277 seconds
-Domain Reload Profiling: 586ms
-	BeginReloadAssembly (82ms)
-	RebuildCommonClasses (27ms)
+- Finished resetting the current domain, in  0.248 seconds
+Domain Reload Profiling: 538ms
+	BeginReloadAssembly (75ms)
+	RebuildCommonClasses (26ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (150ms)
-		LoadAssemblies (81ms)
-		AnalyzeDomain (141ms)
-			TypeCache.Refresh (140ms)
-				TypeCache.ScanAssembly (129ms)
-	FinalizeReload (278ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (75ms)
+		AnalyzeDomain (136ms)
+			TypeCache.Refresh (135ms)
+				TypeCache.ScanAssembly (125ms)
+	FinalizeReload (249ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
-			BeforeProcessingInitializeOnLoad (70ms)
-			ProcessInitializeOnLoadAttributes (75ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-jamesaspden"
-[Licensing::IpcConnector] LicenseClient-jamesaspden channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4" at "2026-06-01T21:28:44.056122Z"
+			InitializePlatformSupportModulesInManaged (27ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (65ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
 [CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              731a613133e9473fa137b837d79927ff
-  Correlation Id:          106d3c64c448fbdf1fd19051c5f06dbf
-  External correlation Id: 5135089597482934997
-  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 0.52s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4-notifications" at "2026-06-01T21:28:44.579154Z"
-[Licensing::Module] Licensing Background thread has ended after 1.66s
-[Licensing::Module] Licensing is initialized (took 0.37s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 17867501090831-UnityPersXXXX
@@ -205,26 +197,26 @@ Native extension for OSXStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.484 seconds
-Domain Reload Profiling: 1389ms
-	BeginReloadAssembly (461ms)
+- Finished resetting the current domain, in  0.448 seconds
+Domain Reload Profiling: 945ms
+	BeginReloadAssembly (88ms)
 		DisableScriptedObjects (3ms)
-		CreateAndSetChildDomain (27ms)
-	RebuildCommonClasses (27ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (26ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (362ms)
-		LoadAssemblies (222ms)
-		AnalyzeDomain (175ms)
-			TypeCache.Refresh (134ms)
-				TypeCache.ScanAssembly (121ms)
-			BuildScriptInfoCaches (33ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (485ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (324ms)
+		LoadAssemblies (193ms)
+		AnalyzeDomain (164ms)
+			TypeCache.Refresh (125ms)
+				TypeCache.ScanAssembly (112ms)
+			BuildScriptInfoCaches (30ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (448ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (91ms)
-			ProcessInitializeOnLoadAttributes (197ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (176ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -233,218 +225,492 @@ Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support con
 Launching external process: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Helpers/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
 Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6538 unused Assets / (3.6 MB). Loaded Objects now: 7354.
-Memory consumption went from 162.1 MB to 158.5 MB.
-Total: 5.839167 ms (FindLiveObjects: 0.381000 ms CreateObjectMapping: 0.134041 ms MarkObjects: 4.115250 ms  DeleteObjects: 1.208083 ms)
+Unloading 6540 unused Assets / (4.4 MB). Loaded Objects now: 7359.
+Memory consumption went from 168.0 MB to 163.6 MB.
+Total: 5.771375 ms (FindLiveObjects: 0.370125 ms CreateObjectMapping: 0.136625 ms MarkObjects: 4.066583 ms  DeleteObjects: 1.197667 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 880406.419084 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_Grass_02_v2.prefab
-  importAddress: Guid(3ade7fcf53c8246418eb3c493d6d2178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_Grass_02_v2.prefab using Guid(3ade7fcf53c8246418eb3c493d6d2178) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6148ffc21f9ddab5b36fd06ad3ac68e9') in 0.350754833 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c84e02d23a697f30cf0fc3686c720665 DependenciesID=1e6254b482175c3565c8ad3bee226273 StaticDependenciesID=37a85a588f4401cda734d056e5d51c6b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_Poppy_02_v1.prefab
-  importAddress: Guid(7917e70f5baa68944aad80732cb08b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_Poppy_02_v1.prefab using Guid(7917e70f5baa68944aad80732cb08b3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '327d0bbcf8fc33874e6c5223b7b08989') in 0.01029475 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=128557b035591c76f975c00fecba3805 DependenciesID=8bbe7591806778862dbcd6761d46e30b StaticDependenciesID=9604fa48ad16322ca337ec7bea855cd4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_Grass_Mat 1.mat
-  importAddress: Guid(8ce8268a24bfebc4ca972ae10f12aece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_Grass_Mat 1.mat using Guid(8ce8268a24bfebc4ca972ae10f12aece) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e2bc7f5e8169f2ef06e77124117ee6a3') in 0.016145375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a66d04750add9840569572878754b6fe DependenciesID=9fa5d2d39f52641eed5d57562de535cd StaticDependenciesID=48778b1eb8958b22f321ad36f2fb9054 
+  Time since last request: 1079483.775844 seconds.
+  path: Assets/TerrainData_e4c177ec-dd29-4e4e-9062-ecd802a3df62.asset
+  importAddress: Guid(5f53bd78ba7c14e7ab93fb5628b4aafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_e4c177ec-dd29-4e4e-9062-ecd802a3df62.asset using Guid(5f53bd78ba7c14e7ab93fb5628b4aafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b0081b2a0401d7707ed87220c3844ea4') in 0.062070792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=64219e42779a1ec5769b260fed3fe663 DependenciesID=dfe216c12efca2ed0e266e4c106f8b7c StaticDependenciesID=ee3a07f67b1e5e39c2edcee73fed4f59 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (2.7 MB). Loaded Objects now: 7364.
+Memory consumption went from 163.0 MB to 160.3 MB.
+Total: 5.529792 ms (FindLiveObjects: 0.192375 ms CreateObjectMapping: 0.060666 ms MarkObjects: 4.693250 ms  DeleteObjects: 0.583083 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
 Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_High_Grass_Mat.mat
-  importAddress: Guid(33e92b212d568b844ae30511d6c23987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_High_Grass_Mat.mat using Guid(33e92b212d568b844ae30511d6c23987) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '584c8aaf1b99debb7c8ca6d08b9eb1d5') in 0.007497625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=da15e637906bf44fd30270fe13642a98 DependenciesID=fa30f2805d74ce473ded0fb2a571702a StaticDependenciesID=2f983967760a93d15e72254555ab5790 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 1212.169468 seconds.
+  path: Assets/SimpleNaturePack/Models/Branch_01.fbx
+  importAddress: Guid(5528351815fd4c04abf537f22c7e18f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Branch_01.fbx using Guid(5528351815fd4c04abf537f22c7e18f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4a0d410563d75bcdc5809d711504d09e') in 0.403542416 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d309ca551023ba4a23b639634f68c077 DependenciesID=ccc3765324e4ddce867faa367e3d4740 StaticDependenciesID=c1a3da08117d2e23e8d57ff6455415d8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_Grass_02_v1.prefab
-  importAddress: Guid(53083e9d6ba91ba4cad309a95b8c8f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PT_Grass_02_v1.prefab using Guid(53083e9d6ba91ba4cad309a95b8c8f20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5ea30da1400c58ac0b4ad0bafccbbbcf') in 0.005715875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6661bae3659e3dffa82c2dfb6b29ab00 DependenciesID=57d0fb13b44267c6af97d4f9b4561ddf StaticDependenciesID=157a2cd96fd52f5eb40d0ea720369b03 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+  Time since last request: 0.000091 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_River_Rock_Pile_02.prefab
+  importAddress: Guid(bee651b89d6b3ef48b19cfe8a4c9fa42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_River_Rock_Pile_02.prefab using Guid(bee651b89d6b3ef48b19cfe8a4c9fa42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1645528bc289c31b3061229fcc03f429') in 0.02434325 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=22e57da8bae684a5ebb913b7574638dd DependenciesID=9d93802f9e91e09619d1d82de9668f23 StaticDependenciesID=7c2eafce378221cd672bb3cc6cc7b591 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
 
 ========================================================================
 Received Import Request.
-  Time since last request: 599.675261 seconds.
-  path: Assets/New Terrain.asset
-  importAddress: Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/New Terrain.asset using Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b65858823969e55d8a9992cede3caf13') in 0.089155125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bac77be068e6425b9f068b2ae396843c DependenciesID=e0b36faf7d050fd0096d1e16ecf3679a StaticDependenciesID=c45fad130bca3e331c0b6df30f0bf429 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000129 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Tree_04.prefab
+  importAddress: Guid(f0c16f0ea935ea64297ca1d4d55d9746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Tree_04.prefab using Guid(f0c16f0ea935ea64297ca1d4d55d9746) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1162c18cdf06e022c3916cef6e7ac24d') in 0.008737458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ba8f190d4c6c39603e401414e0f09dd8 DependenciesID=0fca63c9c5aca742fd40f7c128a9ce8d StaticDependenciesID=957cfdbda902cfc8a4a868baacfeed66 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Assets/NewLayer 1.terrainlayer
-  importAddress: Guid(a0356cab2ac964a7892da20f856290e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assets/NewLayer 1.terrainlayer using Guid(a0356cab2ac964a7892da20f856290e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '51e23f53af5699c51fe673b79493cd48') in 0.006545375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=16d65ca14dbabbb65146275f5d6c0883 DependenciesID=d5fec1d56fa360220faa8b83f9a16b2f StaticDependenciesID=6c9df51e03d863e42ae88ac4308a5e67 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset
-  importAddress: Guid(9932f38fdb78c4933b6184b35200000b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset using Guid(9932f38fdb78c4933b6184b35200000b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd09ef6842d9dc89c7280e3b2f9dcc3b5') in 0.008183583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6c10304ebd71d7574ffd98719f926729 DependenciesID=3baed6bf60e31e1566be45cc85ecbe51 StaticDependenciesID=e352507270ec8c4e9d550ed28be30797 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.783753 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_3_nmp.tga
-  importAddress: Guid(018ff50f226802b41ba1fe4e14f9d831) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_3_nmp.tga using Guid(018ff50f226802b41ba1fe4e14f9d831) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '322e4380f63637d982d7bd53f9d82717') in 0.020673084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=21afee14534127fa3779e600907f0022 DependenciesID=cba44cfee3d1962415f4306a10bb869a StaticDependenciesID=848ee75c6f8112cd884b5c511c86766e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_1_ao.tga
-  importAddress: Guid(7862c6a7adea56e44949c5039b1a8f5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_1_ao.tga using Guid(7862c6a7adea56e44949c5039b1a8f5e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a75f981b1e36c07c00abbd84badce7f6') in 0.008506125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2907cd70eab47ad5623227c2e9015bce DependenciesID=ad1d72b2f4e29f89d1baca38c61a28b8 StaticDependenciesID=51c3e9e9be746953577656335769a14a 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_4_ao.tga
-  importAddress: Guid(aca0e40c1888e2c488118d2ed82b8ad5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_4_ao.tga using Guid(aca0e40c1888e2c488118d2ed82b8ad5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fec38ac68820279175529f85bc411b98') in 0.005312166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=499dc82d346978041fbf47847e8891b1 DependenciesID=d6e5d5844d03e9dd46cb2f3837444bb7 StaticDependenciesID=29efcc5400585bda2e0437d5d6f35d24 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_4_he.tga
-  importAddress: Guid(d6072d06a68dea94782a93f402bc11ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_4_he.tga using Guid(d6072d06a68dea94782a93f402bc11ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'da5e6a84ee9a251e84a29b1c0b71c38a') in 0.005517208 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0fa662af4ab5395fdbb9bfed2730de76 DependenciesID=deb55788965bedd705f1fca203995a63 StaticDependenciesID=844f4d2b4c5c6aee4c1944c0f0409a19 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Materials/snow_3_tga.mat
-  importAddress: Guid(1a37d212766c4e444bd183225d3816c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Materials/snow_3_tga.mat using Guid(1a37d212766c4e444bd183225d3816c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '247d645a5132074c4b6665a7cd36869a') in 0.033718708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=06412c8f1f7d2a0a8aaa81ea9fbc7d03 DependenciesID=41a55f9e836fe70d0155b59fa292b923 StaticDependenciesID=36df5a91bb41d1c97dfe208782d14eaf 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Materials Collection
-  importAddress: Guid(206245b96f290af4e97daa411845663e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection using Guid(206245b96f290af4e97daa411845663e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c29497261c303ccd8fc4df73f4eadd93') in 0.00212125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4dc6442a83cef1cceade841d29da9d2b DependenciesID=91e9b0c0b77a77f15f8413df5c3ea822 StaticDependenciesID=dba575aff4ff6662d5553370f4dfd471 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/snow_1_png_min.png
-  importAddress: Guid(ef08e9ae06d30604ab31d2b76b127664) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/snow_1_png_min.png using Guid(ef08e9ae06d30604ab31d2b76b127664) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '39b50eb10c8d7bdfac2a75d646a9be94') in 0.003791375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e40589a4316ac94bc8b49676ddcb3114 DependenciesID=a5eb0c6c9b55c8c7922e37e257abe5ad StaticDependenciesID=b37a2e60930dd460a0f2b45e2a2389b5 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Textures
-  importAddress: Guid(159af93990f03744cabf248289249e8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Textures using Guid(159af93990f03744cabf248289249e8d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '469dbb7a90ebcf9bbae508ada0ed62a6') in 0.001579708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=165204431f976173b349a0b814ef90aa DependenciesID=380a5eacc415992a3b33ea65a74b5439 StaticDependenciesID=1a24929aa3a8abb559afbeb4da229a90 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/All materials (snow)
-  importAddress: Guid(d69c0d507f7e5f64a89c9d684768c771) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/All materials (snow) using Guid(d69c0d507f7e5f64a89c9d684768c771) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd395fd25964e75d52d917e15ea8c7edc') in 0.001869542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8d5baa0fda8b9a46b3389336d39180ed DependenciesID=3180b350a3f0e772a349a739ca646574 StaticDependenciesID=52372b22189fa0b33e75fa06560923e3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/Materials/snow_3_png_min.mat
-  importAddress: Guid(1acfa0f4ac8118f45aa7d0aaf4b28de2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/Materials/snow_3_png_min.mat using Guid(1acfa0f4ac8118f45aa7d0aaf4b28de2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '31468bd5b933fc955b6224abdd8a7c8c') in 0.005073917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=628e9d50e90ddc347c7b0d7b929e68d6 DependenciesID=06c09fd9516dde7e3b845cf3d2e5a251 StaticDependenciesID=ae52a8c09f106d569447b968758e18d9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/snow_4_png_min.png
-  importAddress: Guid(d38133395ecc3c04ca18e1cf85e03d61) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/snow_4_png_min.png using Guid(d38133395ecc3c04ca18e1cf85e03d61) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7584503309f48b9a8970a80fc6f50e99') in 0.004952875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2ba14fd2c6092f4cfa3e923b2c443b8d DependenciesID=f57cb380e9390e1d2da8092f454f38e9 StaticDependenciesID=43876f3e5878f69254df65b670e05c56 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Materials Collection/4 Snow Materials
-  importAddress: Guid(1f005bd0b73318847a061cac4ad62ba3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials using Guid(1f005bd0b73318847a061cac4ad62ba3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'be9b4721ef4b4b027659090bfa69da8d') in 0.001343875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2a432ba3c01365a7245b21046010bdec DependenciesID=59cd027a7ab1d7be98dafe7354cb9457 StaticDependenciesID=b86e45bc05462c8a63c4fefbe1eb920f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/Materials/snow_1_png_min.mat
-  importAddress: Guid(43794d1edb9a68c429f14d5f55e32c04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/Materials/snow_1_png_min.mat using Guid(43794d1edb9a68c429f14d5f55e32c04) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '099a1157c47cc094dbcd19e4e7635d76') in 0.004631125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1f054c06fdbeaf5ff3d750d5e2339188 DependenciesID=d0f1ea0aec0896e665f5cce4c7b99ac1 StaticDependenciesID=348d3ab935479569ee038704803069ee 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+  Time since last request: 0.000052 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Rock_02.prefab
+  importAddress: Guid(cebfacc247a640945a2c30b442202fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Rock_02.prefab using Guid(cebfacc247a640945a2c30b442202fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd861bde0ecf94cf7585c9045f14dd7ed') in 0.008279083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=478de397ddff3520dfa48e9be7ee1b46 DependenciesID=55f8b4bb783bf7d51c62f4edcf15e857 StaticDependenciesID=97b883a1e01099b45fa2608778a9e507 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000045 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Materials/archive
-  importAddress: Guid(41718c1b3833bb549844f61e9cec57bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Materials/archive using Guid(41718c1b3833bb549844f61e9cec57bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9f6ff435897fbaf345374530dd700c27') in 0.001354583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=20ddf848439b999b45f121a593ce75c5 DependenciesID=662c872f82768cc03336650345ef34c5 StaticDependenciesID=078d948e2b05be89a1788e0e394244bd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  path: Assets/SimpleNaturePack/Prefabs/Tree_01.prefab
+  importAddress: Guid(88f2fd29f58b9734683512546acec310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Tree_01.prefab using Guid(88f2fd29f58b9734683512546acec310) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8fb2c46582d3ff6119d62d7561701c1e') in 0.008018041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=92887d942e494044cdff82771cd018db DependenciesID=72722c6a904b9c48b6eff4733d13f0ad StaticDependenciesID=18176988748c2463d994cdc544e3a3cf 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Materials/archive/plane.mat
-  importAddress: Guid(5c015272d7772694996fbab8771b9c4f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Materials Collection/4 Snow Materials/Materials/archive/plane.mat using Guid(5c015272d7772694996fbab8771b9c4f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ed640df249bb40920a38140afbdbd155') in 0.002588417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9c07e6f8c11f5c375ce8a11f05200c5a DependenciesID=40e1af2800f913c34375d32974b56de6 StaticDependenciesID=1aa623036148773b866b5743aefbdca4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000047 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Mushrooms/PT_Caesars_Mushroom_01.prefab
+  importAddress: Guid(5228c984e5be7284d8d83c18096254dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Mushrooms/PT_Caesars_Mushroom_01.prefab using Guid(5228c984e5be7284d8d83c18096254dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'bd93f082b3436339b15f77bf37444c28') in 0.013078 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=77144af74aa869293f741ce75bf42ab2 DependenciesID=554cd5a5a6fb9d2cc4ebe98daca8d3ce StaticDependenciesID=b77a51887685a591cee31dd71b5d7af9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.826327 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_1_he.tga
-  importAddress: Guid(690a12b77a6c8684fa83eba813b1d433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_1_he.tga using Guid(690a12b77a6c8684fa83eba813b1d433) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e0aea61f94c516f54e222b5f92d3d8a1') in 0.017726084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=80b3b1811d1ffae43f60eeb1d767c544 DependenciesID=098029a96dc2568a9a63c7557379e73a StaticDependenciesID=8f6e18376217bc1e2691ebce83bbb38c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000076 seconds.
+  path: Assets/SimpleNaturePack/Models/Bush_03.fbx
+  importAddress: Guid(7b5a098d913a3c74692a2a9963dbd3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Bush_03.fbx using Guid(7b5a098d913a3c74692a2a9963dbd3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6f746356cd7f3261785d45dc3baac808') in 0.02683425 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=016fdabfbc63b7b2d69f81defa66c937 DependenciesID=576fbec612fe8c3f0411d44392d8c129 StaticDependenciesID=e2d6611c1caca177f2b944d15ed30422 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000074 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_2_nmp.tga
-  importAddress: Guid(c85451086709c8f44b6f4609f1377f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_2_nmp.tga using Guid(c85451086709c8f44b6f4609f1377f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6e903c7751ff6586994ee7941f9c5274') in 0.025076791 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5cb0c2e12d1ef9a02ab10fe78c9c4579 DependenciesID=cdd284f8f3c00b9b34a6f7b8305511fa StaticDependenciesID=c7f098d1f1d30909bc3c602e27d7af94 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000043 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Mushroom_01.prefab
+  importAddress: Guid(ff62b58c5a9ea164fa8ddf8038e10cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Mushroom_01.prefab using Guid(ff62b58c5a9ea164fa8ddf8038e10cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '91ef28f0af88b9fcb6711f3653789d75') in 0.010553625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6e2ffc9b7d6bc2059a6a8b30376fa813 DependenciesID=a62f9e7794923bd0ce884e1c3a6ea31f StaticDependenciesID=c999e81639a63664c2d1610d6787d1b5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_2_ao.tga
-  importAddress: Guid(b09011637698d8941a5f74d22fd32663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_2_ao.tga using Guid(b09011637698d8941a5f74d22fd32663) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a876ce1e0b99040071d83ae944cf155b') in 0.004323 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7ed08276f42e2b2de67470668eb3f09f DependenciesID=5a3e30d007d75faf51c618ef4a8163ec StaticDependenciesID=da18b67d242b8946ae6154d7128a1c5e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000039 seconds.
+  path: Assets/SimpleNaturePack/Models/Tree_05.fbx
+  importAddress: Guid(603970f97e50c56488ec3c5a6febd940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Tree_05.fbx using Guid(603970f97e50c56488ec3c5a6febd940) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '77472f08f9e92cf852de507c59d01095') in 0.031235458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=71a532f7db77b1f1bb7c65182ed2fedc DependenciesID=2f06334820549942b79bc869d8653f95 StaticDependenciesID=2efcc01ec4f433abc441f63d719fa52c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Bush_03.prefab
+  importAddress: Guid(34d3f526198dae440bb2ce6005d86055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Bush_03.prefab using Guid(34d3f526198dae440bb2ce6005d86055) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b9edc769a849213253cc3b6a3b1b916f') in 0.006658041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9e5a0a5a8fe877b7acc8077de9c5ff08 DependenciesID=b384b3da8adcc179396ac4ef3b951828 StaticDependenciesID=779cbfcd52ac949dda55d1a2591be816 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Village/Prefabs/Modular/Bridge/PT_Wooden_Bridge_02.prefab
+  importAddress: Guid(46f8d17b9eeef754ebc1008196f84bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Village/Prefabs/Modular/Bridge/PT_Wooden_Bridge_02.prefab using Guid(46f8d17b9eeef754ebc1008196f84bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f6df4ce3461d5d02b3e2668279b9dc5b') in 0.009657792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2e5516687b509df6f174d392960575ae DependenciesID=f6a5bdc13fa6a74eea274e75b315834f StaticDependenciesID=a8c669d6c878184e7b66eeb1370cf229 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/SimpleNaturePack/Models/Stump_01.fbx
+  importAddress: Guid(768be665aba8b4e4aae7a973ae9616cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Stump_01.fbx using Guid(768be665aba8b4e4aae7a973ae9616cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '56e867486749ef9b030c6aa6edce6615') in 0.030335708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fa22cb45a8dbb972263d6d027a0d27f9 DependenciesID=004425c97aa4e5b90b68c942ae845fbb StaticDependenciesID=ebbeeebea7f65927d6b4a41c11fd2ea2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Mushroom_02.prefab
+  importAddress: Guid(494f6d43e170e9145bc7865d243ee00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Mushroom_02.prefab using Guid(494f6d43e170e9145bc7865d243ee00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '525609b621aaee53cd8b5a9b74c49eef') in 0.007053917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=87bddea1c2a6e72a57fa33b81e54f161 DependenciesID=e29c6a089d891f2597278f6fc42a7809 StaticDependenciesID=2a310d43b4ad11fc46165dc649e49fc4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/SimpleNaturePack/Models/Rock_01.fbx
+  importAddress: Guid(e9089b1db16b58f4282a94e020b9c0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Rock_01.fbx using Guid(e9089b1db16b58f4282a94e020b9c0e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1b8e6df5ed6a3c49d0cdf3e91a2971e4') in 0.011539417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4dcbc65a03846ec58562f3998c6e2efb DependenciesID=0186079656a6b703d45dc7679b7dab12 StaticDependenciesID=4c38482eea408dbe2ed29aff1d14d0b9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Ore_Rock_01_split.prefab
+  importAddress: Guid(4202bcf0261b7184381139880446dfd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Ore_Rock_01_split.prefab using Guid(4202bcf0261b7184381139880446dfd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ed922e9046c073eff3953375a7cac2cf') in 0.009950125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ae16014bd1f4210dca200896f0ca2e69 DependenciesID=77e93922280dc21a07bf92f51084f8ab StaticDependenciesID=f967a01af28212b0bf91ea5d6a57de58 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/SimpleNaturePack/Models/Bush_02.fbx
+  importAddress: Guid(ba52853a69186a841a52a9cc2e9b77fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Bush_02.fbx using Guid(ba52853a69186a841a52a9cc2e9b77fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8defa269b76c5286f9df10e5afb61543') in 0.02862875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3d20c805350ac40278fd1bcdc6be5361 DependenciesID=dd36aa3ee0b65d94a0858c657c86ff80 StaticDependenciesID=239179c3b8add6ab99e9f7e54cfb5a8f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Grass_02.prefab
+  importAddress: Guid(ffbddc4ef9676cc419e81e06aaa836d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Grass_02.prefab using Guid(ffbddc4ef9676cc419e81e06aaa836d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7f86a2add3c2de5e966d9a64b607d03e') in 0.008178 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e8d48a945b22161901b5f7c8d6cb47db DependenciesID=00a66a21afaa976c08f1bd15c350ea1d StaticDependenciesID=0d7b22f377b8c47729204429cefe1591 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Rock_03.prefab
+  importAddress: Guid(0fde05fa0f3321942a21896ff4f0856f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Rock_03.prefab using Guid(0fde05fa0f3321942a21896ff4f0856f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'bb7ab18280203c8fe0e24e9d7311ff8f') in 0.006909917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36f88c2d635faafcabedebc1337d5a5c DependenciesID=0a3d6a958110ae5c587d411d8a12b377 StaticDependenciesID=c367aed73788c76f00fa449e5ec9c9a6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Rock_01.prefab
+  importAddress: Guid(c6308cb7062fac34e8e50600086b12a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Rock_01.prefab using Guid(c6308cb7062fac34e8e50600086b12a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'afc269af40e95166b95bb9121bb7121d') in 0.006463167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e8d706f84f27f73375110b498ecab0d7 DependenciesID=621ba9b20291c8bf72785780d0394301 StaticDependenciesID=b787f5ca1464c742252d2d830d2d590c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/SimpleNaturePack/Models/Flowers_01.fbx
+  importAddress: Guid(b5a80b3e2a089b841b155d7c7f461e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Flowers_01.fbx using Guid(b5a80b3e2a089b841b155d7c7f461e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '70a456aefefbb796e1260629699b6221') in 0.026961125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=752dd08fd4526f8780a12e21091ef7f5 DependenciesID=573b4556eb90da9c4b3f12dd6045990f StaticDependenciesID=2cde252110e2b7e0cd4a8516f3eb6306 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/SimpleNaturePack/Models/Grass_01.fbx
+  importAddress: Guid(ad3119cbd6dce024e8460ef32dec49df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Grass_01.fbx using Guid(ad3119cbd6dce024e8460ef32dec49df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9ac894537c9da4620b26874cacaf7d7c') in 0.025087959 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8ad75c1be73de0dbf6093456eff1348f DependenciesID=65c4f4c047f1b36c0f0b73a7a9250b5a StaticDependenciesID=e1e202c0c09f489ae3549e1cf3b412af 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Grass_01.prefab
+  importAddress: Guid(f1fc5bb90ac285e4486771552d63bcb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Grass_01.prefab using Guid(f1fc5bb90ac285e4486771552d63bcb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6579e739b3db44e14ea8b9c7c7d48546') in 0.007028708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=211edefca1b0863d7f000ed718749a7a DependenciesID=4ccf52dd3b8c8f45724e89c8ff35e5db StaticDependenciesID=27f554795bb27fe1cd05f59aded9f8db 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/SimpleNaturePack/Models/Mushroom_01.fbx
+  importAddress: Guid(d062f5c56ffb55c4f832432ada269abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Mushroom_01.fbx using Guid(d062f5c56ffb55c4f832432ada269abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f534780434d12e72cfae6b9664948740') in 0.025114917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=68736d2c56a406f5ddcd10e9cc0e4493 DependenciesID=8149ba53f931665946e82e8f18311da6 StaticDependenciesID=6896365cf3b02930c849cb6bfe77496f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_dead.prefab
+  importAddress: Guid(c6a512d95615f534cbe31aba1aaa354c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_dead.prefab using Guid(c6a512d95615f534cbe31aba1aaa354c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8fe920e3817dfa25c66043c10190bf2c') in 0.01073125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e0b50cd5eb512f231df096c7f95d9a05 DependenciesID=acaa70db8735f3949118ba3a83100a68 StaticDependenciesID=94d3a419657d181a389acc626915fe40 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Menhir_Rock_02.prefab
+  importAddress: Guid(0f3d14a9a6b2ceb469c15d151552a614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Menhir_Rock_02.prefab using Guid(0f3d14a9a6b2ceb469c15d151552a614) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'df7950fe05e20b83893ea14164972c54') in 0.010520584 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c66118b86f3031f5f24732f2536acc9a DependenciesID=537acbab8a71aaaaa74d112cc014f666 StaticDependenciesID=c6399dc5b4bddba589f60d51054e8260 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_stump.prefab
+  importAddress: Guid(fb070a2d31206d9499ecc8a77be0ebf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_stump.prefab using Guid(fb070a2d31206d9499ecc8a77be0ebf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '416045f7b6f9e2a0e129d64db7a1f81e') in 0.005972041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3f6e82473ae18e385a4fd7085423a7da DependenciesID=0264522af2febf1a7680ba1d85fda307 StaticDependenciesID=368712b0b31fb4b9d4d4e729eac1a488 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_dead.prefab
+  importAddress: Guid(c7827efbbf7212f42803476ce3f9d082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_dead.prefab using Guid(c7827efbbf7212f42803476ce3f9d082) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fea8027214b0f84242b8c21ec03a5876') in 0.007611167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3997fa929f327003c79edad1a10b853d DependenciesID=e5ba767e79336f0cf7100d8f52ac0558 StaticDependenciesID=05c9603a6ecf6a44991229f0a8ff4282 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_stump.prefab
+  importAddress: Guid(c8b350551fbedc84c8025d7d29f3a018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_stump.prefab using Guid(c8b350551fbedc84c8025d7d29f3a018) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6674c6ef38a88cab066a2006c45c8d4d') in 0.008541125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3c08ca998cc06502cc7da0dd6f00f6f6 DependenciesID=d0792020838502c731b68dccdd01f40c StaticDependenciesID=45f77b92d45f1c04c7b1f6f42b70d848 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Flowers/PT_Poppy_02.prefab
+  importAddress: Guid(f593bc20677ebf14abd27a4853408c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Flowers/PT_Poppy_02.prefab using Guid(f593bc20677ebf14abd27a4853408c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6d998e8e82c93590f3559435022f4e4f') in 0.009756917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9ac55a9aee8b7735de7f51a11b8bc7a7 DependenciesID=96c2085db20d3d83e345687b1c221220 StaticDependenciesID=36a0cb37e3e3d2473bf32e2ab5726c24 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Assets/Low Poly Cars (Free)/Prefabs/car_2.prefab
+  importAddress: Guid(48e086f9b0acfbd4e9fa16b9eeeca71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low Poly Cars (Free)/Prefabs/car_2.prefab using Guid(48e086f9b0acfbd4e9fa16b9eeeca71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a4c7ccb413e92a5b87668b3d6b480b63') in 0.009122542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9f7989c1bb1665f91159b1828b224787 DependenciesID=d35126e64d98a9048e12c9309aad1dbc StaticDependenciesID=29c8b715d05c43d0df5b4cc443125edd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_green.prefab
+  importAddress: Guid(c31bf8ec8e29cd74f9fb9a970fde7a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_green.prefab using Guid(c31bf8ec8e29cd74f9fb9a970fde7a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '30fa69f52e70dd433adc7d8e14b0f1a4') in 0.011427542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9e556657958d34387e55ba60f1d81491 DependenciesID=1246f72154237dbc03caeeef77c9332c StaticDependenciesID=149233d47b8fe865094cd85546d43225 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Ground_03.prefab
+  importAddress: Guid(3f9b178ccd3b86f4ebbfc1f5a2815e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Ground_03.prefab using Guid(3f9b178ccd3b86f4ebbfc1f5a2815e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3684b989264503767de0fd55823fbc6b') in 0.006585667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=247056214b645a8d9d941fb8d0012991 DependenciesID=83445953e14548a93123818d28099770 StaticDependenciesID=7b74bfdbf954f5d4d6c6e07ce00d89ef 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Rock_04.prefab
+  importAddress: Guid(f02116c209ecd9e488fc4d2cd8996133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Rock_04.prefab using Guid(f02116c209ecd9e488fc4d2cd8996133) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3da5d4e4aea11ab4d5865449a0993c7b') in 0.007388625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a5846ddafb2541323cc331b7c9237377 DependenciesID=3a7cbb8fe8bf3a3cf87aa3942bba801b StaticDependenciesID=4b29c598e8949f708e8ec1bc5f9a37f5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_pears.prefab
+  importAddress: Guid(b62637568d07eb141b948ab45ea8c3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_pears.prefab using Guid(b62637568d07eb141b948ab45ea8c3d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd352759a47a4a407b87cec19b051c202') in 0.010666166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c8a4d15bfa954adc008bcd720dc76920 DependenciesID=95700155e93556b4ae6f5365f40ad4f0 StaticDependenciesID=6afcd5d185d3c80f019d698816642c27 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Shrubs/PT_Generic_Shrub_01_dead.prefab
+  importAddress: Guid(8cf2966042f7c2f44ac97cda7cc59eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Shrubs/PT_Generic_Shrub_01_dead.prefab using Guid(8cf2966042f7c2f44ac97cda7cc59eff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'efdef24806c40f5e9206ff445f4d4f63') in 0.006781458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b304b27dc94dd5b032b5376e3e395e1f DependenciesID=8b611d0203132b4ef1df7d76e97ed097 StaticDependenciesID=b91794c880dfd5977e9a0e7911086415 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Village/Prefabs/Modular/Fence/PT_Modular_Fence_Wood_01.prefab
+  importAddress: Guid(21a364ddeffc797439f2a5721660b0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Village/Prefabs/Modular/Fence/PT_Modular_Fence_Wood_01.prefab using Guid(21a364ddeffc797439f2a5721660b0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c1bd26b3808da3e56af7f38ac8c0eeeb') in 0.007252666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c5ab4548bcb178e6c93b740b1fb237ed DependenciesID=47f3eb99b645d45e06b68da04f48eedc StaticDependenciesID=609dd0aef0b77014338f37cf751c443b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/SimpleNaturePack/Models/Mushroom_02.fbx
+  importAddress: Guid(6c890c97a154a474082af84a379dffce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Mushroom_02.fbx using Guid(6c890c97a154a474082af84a379dffce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b241a82ce7583b497dab702a27b2aa58') in 0.02401375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e87bca816f97c0e302fc4c471ea9e3f2 DependenciesID=c813fa6d33c85aa164d54efb0eddaf7c StaticDependenciesID=976145e82d58969387118510c8f33dde 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/SimpleNaturePack/Models/Flowers_02.fbx
+  importAddress: Guid(8ea980fdc4aa5e749b000c1a0d4b9bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Flowers_02.fbx using Guid(8ea980fdc4aa5e749b000c1a0d4b9bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4cadfb3f4983616e8c0dbc40a6c3cd58') in 0.0273335 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2828cf99420240c5d0892b8c24691491 DependenciesID=56f695f7b75bb97544b57bcce5ad7428 StaticDependenciesID=5e0da35e5bffcc0c4e2d8b69559cc50c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Ore_Rock_01.prefab
+  importAddress: Guid(3dd97330b2ebd884e9f796894e026064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Rocks/PT_Ore_Rock_01.prefab using Guid(3dd97330b2ebd884e9f796894e026064) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '526f5f44f5379ac493e16a486ef194c8') in 0.009469083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5d79adc80eb4cd9ba33bab2c07b10b5a DependenciesID=d264586d10e06012ab3c1304578041c8 StaticDependenciesID=199b63fd7b5b50379ab330b8f58afccb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/SimpleNaturePack/Models/Rock_05.fbx
+  importAddress: Guid(fa2e670bb3648a84b9df8d16da25b85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Models/Rock_05.fbx using Guid(fa2e670bb3648a84b9df8d16da25b85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '49a8df7f8d513596378cd4cc398f8eb2') in 0.0097415 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=af3b0fd79e29a4cad30fa5c6b46cda97 DependenciesID=ce084d9936b5b73635914878bf24020c StaticDependenciesID=12f6dbd00d0da448e7cc353223297769 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Stump_01.prefab
+  importAddress: Guid(eebb56c82efbd8d4bb0eb6bd925a0e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Stump_01.prefab using Guid(eebb56c82efbd8d4bb0eb6bd925a0e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '24baa7077b80df86e202674ef2588dfd') in 0.007552708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7d3eb3aec3dd0c24d07d399cd200e2be DependenciesID=5c442d596c2134bfdfed1bc395002db8 StaticDependenciesID=726a291025dfba3b1fd4e5a3b3ed1ea4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_dead_cut.prefab
+  importAddress: Guid(66d0615cc71cd48408b75ff3f99c97af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_dead_cut.prefab using Guid(66d0615cc71cd48408b75ff3f99c97af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1068a1be24f940c5f0ed0a4bd2e8d5ac') in 0.00795225 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=542ef4ac38f042d81ec029632ddad06b DependenciesID=cdb8edac57130f73ed46507c6f0c3e8a StaticDependenciesID=4c091d9c35bc038be3ca4a2e1d6efbd0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Flowers_02.prefab
+  importAddress: Guid(299e7a1cb6456cf4fa6079cf5978df9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Flowers_02.prefab using Guid(299e7a1cb6456cf4fa6079cf5978df9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'feaa78a63ccf26e118644fbff2fcbbc6') in 0.007332459 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cd49bcfedeaecabd86fac1732eff8dba DependenciesID=dddddbc8517280fe6dcdb370094175ac StaticDependenciesID=ddbadf5cfbc4241755b726f634565117 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_apples.prefab
+  importAddress: Guid(e05ae677c7b3bc546bd36b488586fb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_apples.prefab using Guid(e05ae677c7b3bc546bd36b488586fb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7f482ee9b1a044172cb655945affc667') in 0.009812083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=21205453ae2be4400cae34cffb8db04f DependenciesID=ae667a95d84b6837a8810d9ff3a48e62 StaticDependenciesID=3dcebdadb9793e1ab8fdb124e1893a1b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 346.777242 seconds.
+  path: Assets/TerrainData_e4c177ec-dd29-4e4e-9062-ecd802a3df62.asset
+  importAddress: Guid(5f53bd78ba7c14e7ab93fb5628b4aafe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TerrainData_e4c177ec-dd29-4e4e-9062-ecd802a3df62.asset using Guid(5f53bd78ba7c14e7ab93fb5628b4aafe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '551192fd546b709b3ad987612f5d33c4') in 0.138641042 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f6bc49c7f9c6ac4db6f560f88ab7c513 DependenciesID=ddde5d3a7b5ef8b0468fad6fbda83d5d StaticDependenciesID=de9bdd6da12adedc5affabad5cb3fd35 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset
+  importAddress: Guid(9932f38fdb78c4933b6184b35200000b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset using Guid(9932f38fdb78c4933b6184b35200000b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9eb117b917687da572f643f813f0ea19') in 0.026352583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=79b81eeeea625330c84a4055ee5117db DependenciesID=a23ceb59bd9236978db24a66d776192a StaticDependenciesID=f5fe967df50d0321a2428b8462056a00 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset
+  importAddress: Guid(8954343439202416595048955cb937e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset using Guid(8954343439202416595048955cb937e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '69d763b13ca8b5d8aa3a5ea832a9f2ea') in 0.007189541 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4cc0588b605096801caca1be6cb2b1ba DependenciesID=be22ac482f912152273834ff110f2d8d StaticDependenciesID=0297bbfe301cf58aa8112839ccbe5bcc 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/New Terrain.asset
+  importAddress: Guid(583973b4ee3f5407bbac586ebb58db95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(583973b4ee3f5407bbac586ebb58db95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1a123fadb4319a16e5c59016f31cbd3c') in 0.007349541 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3de54abe05ec627e1731b4d23b2f3047 DependenciesID=7ce095bfe1a8823156455cae105e2577 StaticDependenciesID=ed73253412debe90a7b7dc95413d7644 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x33aac7000 may have been prematurely finalized
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Cinemachine.Editor.Tests.dll at Library/ScriptAssemblies/Cinemachine.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Cinemachine.Runtime.Tests.dll at Library/ScriptAssemblies/Cinemachine.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Native extension for OSXStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.577 seconds
+Domain Reload Profiling: 1410ms
+	BeginReloadAssembly (327ms)
+		DisableScriptedObjects (38ms)
+		CreateAndSetChildDomain (166ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (420ms)
+		LoadAssemblies (244ms)
+		AnalyzeDomain (217ms)
+			TypeCache.Refresh (142ms)
+				TypeCache.ScanAssembly (123ms)
+			BuildScriptInfoCaches (66ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (577ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (239ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 67 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6840 unused Assets / (6.4 MB). Loaded Objects now: 7672.
+Memory consumption went from 197.7 MB to 191.3 MB.
+Total: 14.144666 ms (FindLiveObjects: 1.456458 ms CreateObjectMapping: 1.304458 ms MarkObjects: 7.484209 ms  DeleteObjects: 3.898667 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
