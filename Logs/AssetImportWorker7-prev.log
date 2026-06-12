@@ -7,9 +7,9 @@ Darwin version:          24.6.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
-Date:                    2026-06-01T22:08:53Z
+Date:                    2026-06-10T00:49:10Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-01T22:08:53.140074Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-10T00:49:10.503973Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,7 @@ AssetImportWorker7
 -logFile
 Logs/AssetImportWorker7.log
 -srvPort
-61209
+57475
 -licensingIpc
 LicenseClient-jamesaspden
 -force-metal
@@ -73,7 +73,7 @@ Successfully changed project path to: /Users/jamesaspden/Documents/GitHub/CarTes
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Player connection [8496259264]  Target information:
 
-Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 2686269171 [EditorId] 2686269171 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 3819589001 [EditorId] 3819589001 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8496259264] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8496259264] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -88,7 +88,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.69 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 10.55 ms, found 2 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jamesaspden/Documents/GitHub/CarTesting/Assets
@@ -105,55 +105,49 @@ MSL Version: 3.0
 Has Float MSAA: 1
 Has Float Filtering: 1
 ReadWrite Texture Tier: 2
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              d5b60128ea464b3eb945c8ed98ac80bf
+  Correlation Id:          e20f4ab19905bc7565f1d8dac9c2d2a8
+  External correlation Id: 8483489829652995327
+  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.00s, handshake: 0.48s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-06-10T00:49:10.98949Z"
+[Licensing::Module] Licensing Background thread has ended after 0.49s
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56173
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56897
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000915 seconds.
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-jamesaspden"
-[Licensing::IpcConnector] LicenseClient-jamesaspden channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4" at "2026-06-01T22:08:53.822477Z"
+Registered in 0.001343 seconds.
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              4e2e6b6b2eb24ddc991ed2aa66fc550d
-  Correlation Id:          106d3c64c448fbdf1fd19051c5f06dbf
-  External correlation Id: 5270639653277982439
-  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 0.23s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4-notifications" at "2026-06-01T22:08:54.054682Z"
-[Licensing::Module] Licensing Background thread has ended after 0.91s
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.255 seconds
-Domain Reload Profiling: 534ms
-	BeginReloadAssembly (71ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (140ms)
-		LoadAssemblies (70ms)
-		AnalyzeDomain (133ms)
-			TypeCache.Refresh (132ms)
-				TypeCache.ScanAssembly (122ms)
-	FinalizeReload (256ms)
+- Finished resetting the current domain, in  0.277 seconds
+Domain Reload Profiling: 641ms
+	BeginReloadAssembly (99ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (175ms)
+		LoadAssemblies (100ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (151ms)
+	FinalizeReload (278ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			BeforeProcessingInitializeOnLoad (54ms)
-			ProcessInitializeOnLoadAttributes (71ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (73ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
 [CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
@@ -167,6 +161,8 @@ Begin MonoManager ReloadAssembly
   Expiration: Unlimited
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Cinemachine.Editor.Tests.dll at Library/ScriptAssemblies/Cinemachine.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Cinemachine.Runtime.Tests.dll at Library/ScriptAssemblies/Cinemachine.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
 Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
 Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
@@ -181,6 +177,8 @@ Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Mu
 Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
 Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
@@ -203,173 +201,117 @@ Native extension for OSXStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.409 seconds
-Domain Reload Profiling: 885ms
-	BeginReloadAssembly (79ms)
+- Finished resetting the current domain, in  0.506 seconds
+Domain Reload Profiling: 1045ms
+	BeginReloadAssembly (102ms)
 		DisableScriptedObjects (3ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (25ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (27ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (316ms)
-		LoadAssemblies (181ms)
-		AnalyzeDomain (161ms)
-			TypeCache.Refresh (123ms)
-				TypeCache.ScanAssembly (110ms)
-			BuildScriptInfoCaches (30ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (348ms)
+		LoadAssemblies (195ms)
+		AnalyzeDomain (183ms)
+			TypeCache.Refresh (140ms)
+				TypeCache.ScanAssembly (126ms)
+			BuildScriptInfoCaches (34ms)
 			ResolveRequiredComponents (7ms)
-	FinalizeReload (409ms)
+	FinalizeReload (506ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (167ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (213ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Launching external process: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Helpers/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6540 unused Assets / (5.2 MB). Loaded Objects now: 7359.
-Memory consumption went from 162.4 MB to 157.2 MB.
-Total: 5.155042 ms (FindLiveObjects: 0.293375 ms CreateObjectMapping: 0.171417 ms MarkObjects: 3.766542 ms  DeleteObjects: 0.923500 ms)
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Unloading 39 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6815 unused Assets / (7.3 MB). Loaded Objects now: 7662.
+Memory consumption went from 186.7 MB to 179.4 MB.
+Total: 7.549583 ms (FindLiveObjects: 0.340000 ms CreateObjectMapping: 0.349125 ms MarkObjects: 4.965375 ms  DeleteObjects: 1.894541 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 883123.799400 seconds.
-  path: Assets/LowPolyWater_Pack/LowPoly Island/Credits.txt
-  importAddress: Guid(1825698004ad0174c9627f15bc4e38b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/LowPoly Island/Credits.txt using Guid(1825698004ad0174c9627f15bc4e38b4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '881d05c6ef9f62b269d7e1bf2159ba41') in 0.0595545 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=90fa275ed7e7a31c7c85939f85dff604 DependenciesID=d81b8f6561ff5b8e6905b63c8295f1c0 StaticDependenciesID=9c4072b4771f702e22036d821d5ca7db 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 1082273.225732 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Tree_04.prefab
+  importAddress: Guid(f0c16f0ea935ea64297ca1d4d55d9746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Tree_04.prefab using Guid(f0c16f0ea935ea64297ca1d4d55d9746) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '05c8619f80cfae76ec261d590763da30') in 0.279177875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3db43ae81025c48d83ed3c4da3d2f063 DependenciesID=a9553e1337503412b2519e1a73c1d645 StaticDependenciesID=957cfdbda902cfc8a4a868baacfeed66 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.010.prefab
+  importAddress: Guid(0ec2020c046d34bf1b0018a75c788c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.010.prefab using Guid(0ec2020c046d34bf1b0018a75c788c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b06bd486d3c341aca1bb3d56f80bbbf1') in 4.659447916 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36d63387a3e7af04b7af84ce82b2b2e3 DependenciesID=2848344b93118d534b9bdd37eda27ee9 StaticDependenciesID=4e84f1a490dff7d18852a7821888d9c1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.016.prefab
+  importAddress: Guid(1e31e30fdcb484252b88699f4c4c1a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.016.prefab using Guid(1e31e30fdcb484252b88699f4c4c1a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1068930fac7dc5426d3d800eeb0e5be1') in 0.015563792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6106bc236d24c0b36a522bb31abdfd4e DependenciesID=8102ae1d4af576cb3897330685050898 StaticDependenciesID=c0fd08152d9038275c5707c3e6f187b6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.012.prefab
+  importAddress: Guid(127db51d4c34446db8838220f99d6408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.012.prefab using Guid(127db51d4c34446db8838220f99d6408) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b847315e837519de2f81d95e29719453') in 0.010567583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cad4c73112d84da791a9b0adcd767aff DependenciesID=98fa6ca9af006b32066d5f519eaf6ef4 StaticDependenciesID=06e7beaeda54f1051af94ee8839b1cda 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.009.prefab
+  importAddress: Guid(5b8a8a7ff136a407a954fe563ab7c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.009.prefab using Guid(5b8a8a7ff136a407a954fe563ab7c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '982623b01b23e00f6edbba7b422644b4') in 0.010572625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=809b5a5c31925107339a682e9bfdf040 DependenciesID=3edd0ac51a860dd3956a31f7405df842 StaticDependenciesID=ce4d5db1f10f2802cf47a6b1421aa6df 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.003.prefab
+  importAddress: Guid(0737421d54009431ab5ff19ff2721435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.003.prefab using Guid(0737421d54009431ab5ff19ff2721435) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2a8918421183a53eb1a87f9ef91e1e24') in 0.0100935 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3ba18edc2894d3dea5782f7c33833cd6 DependenciesID=1f72667b6565b25b97b02404a41b493a StaticDependenciesID=c2261a2e851222ea6a9f7e81090bb222 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Ground_02.prefab
+  importAddress: Guid(e2e682b966e3f644392ffbfab511e0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Ground_02.prefab using Guid(e2e682b966e3f644392ffbfab511e0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3568d9290657f588b3ed2beb5471a98f') in 0.006706625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a1d663ff37a708f8a3cfc5f2b58c5f60 DependenciesID=a84cc525a0ac078690adbfb495524613 StaticDependenciesID=7057c5370d9b7b3aef3482ebeb6e952c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000047 seconds.
-  path: Assets/LowPolyWater_Pack/Textures
-  importAddress: Guid(4b28456b986a9d349b1308694aab876a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Textures using Guid(4b28456b986a9d349b1308694aab876a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '20344c1d664a1b244559c181fdeaf9b3') in 0.010136083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c085abd4f5ac5fed6bd6c1ca8b1a39dc DependenciesID=cfe80a84f4057d604c1aee66ea1585b0 StaticDependenciesID=bfaf3fb287c82844c22b922d531ce2e1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  path: Assets/SimpleNaturePack/Prefabs/Flowers_02.prefab
+  importAddress: Guid(299e7a1cb6456cf4fa6079cf5978df9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Flowers_02.prefab using Guid(299e7a1cb6456cf4fa6079cf5978df9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'dcf3ba8e2ff00a9e1d2f19a939394c9a') in 0.006873708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=47701f39cc9cd70ebaa02030b037cf94 DependenciesID=2bb57be8440db9582d85e455a23e942e StaticDependenciesID=ddbadf5cfbc4241755b726f634565117 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset
-  importAddress: Guid(ebfb4988eb16add4784122504f75fe2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset using Guid(ebfb4988eb16add4784122504f75fe2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '989296337cc42aee7428fd5945168168') in 0.023108625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=de3423df94599d0060de56a2a62b5c95 DependenciesID=44ef7ddea13463fb766e48ee132830b6 StaticDependenciesID=cf1e6c814dfac1dc063e0c4ec4db2c89 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Low Poly Water/Plane Meshes/Plane1x1W1H1.asset
-  importAddress: Guid(375a888aa0c5d4e409da9a8aee952742) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Low Poly Water/Plane Meshes/Plane1x1W1H1.asset using Guid(375a888aa0c5d4e409da9a8aee952742) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a4db4944f2b42fd3affd805a41e172f0') in 0.0034 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d7d98fd5da410cdf5c6a6262e7acdfc3 DependenciesID=235a46572dd94dd85c5467291c5fb60a StaticDependenciesID=4e1ff1fd20c752279c59e27c223f7534 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/LowPolyWater_Pack/LowPoly Island/Materials/IslandMat.mat
-  importAddress: Guid(45d08f8aef3838d45806cd4442223977) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/LowPoly Island/Materials/IslandMat.mat using Guid(45d08f8aef3838d45806cd4442223977) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8f95a6e8b156cb62f2d16715b2bd9337') in 0.017892166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a44ca2137bfb823028df7aa06f4f9501 DependenciesID=040be29f5992134356b9ae46914ea442 StaticDependenciesID=923416edb05b149031aec29d6decae8e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/LowPolyWater_Pack/LowPoly Island/textures/textureSurface_Color_2.jpg
-  importAddress: Guid(c4b4ad6529883dc43874119c9045638a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/LowPoly Island/textures/textureSurface_Color_2.jpg using Guid(c4b4ad6529883dc43874119c9045638a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b99cdaa0f5ee46ac03936c43de6adae7') in 0.02752875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c34fbff1a7a573475ccd33ca2694a09e DependenciesID=83a71d91aa13d3d7bd95748c072c1a8a StaticDependenciesID=f438b9db6eb96400c7e05ea8db09e77c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/LowPolyWater_Pack/LowPoly Island/Materials
-  importAddress: Guid(ff03683a26939b2418b9d1ed51da72da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/LowPoly Island/Materials using Guid(ff03683a26939b2418b9d1ed51da72da) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5d3e34ed59574e508648b8e11410dfea') in 0.004580333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1c3bbc9dfc2b25ae7648fe74ed645f0c DependenciesID=f50a2b4d53d9d265f753cb3d6d78a948 StaticDependenciesID=a978f5cbae53101403f4c05c67c9fbe1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/LowPolyWater_Pack/Documentation/LowPolyWater.pdf
-  importAddress: Guid(1e736811e92ce314fa59acbfa904053d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Documentation/LowPolyWater.pdf using Guid(1e736811e92ce314fa59acbfa904053d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0fad23008d0e6f8b060cd83ec4442407') in 0.001849833 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9113052432f0aa6995a9c66dbc4e1aff DependenciesID=6cf475694ded1fcd42738df6789bc577 StaticDependenciesID=7ab631009513ea7e261dbddca8fb4c51 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000112 seconds.
-  path: Assets/LowPolyWater_Pack/Shaders
-  importAddress: Guid(17d9944b3f283fa46965598df2c50009) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Shaders using Guid(17d9944b3f283fa46965598df2c50009) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f198ba2ee2282e11fa22bf5c75fd519e') in 0.003461791 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=541d9ab919de63027cdf526a45ce1147 DependenciesID=30300d20e7d5184b191930a1294b2051 StaticDependenciesID=2d9da68cc7f2be499580bc297b9bd0af 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/LowPolyWater_Pack/Shaders/WaterShaded.shader
-  importAddress: Guid(16516895e8a79bf49a6562c3c3b84cbf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Shaders/WaterShaded.shader using Guid(16516895e8a79bf49a6562c3c3b84cbf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '52e3243cd5e53ac9d0b5aa7ca91d543f') in 0.005498875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dba3217c0df96513721eccb54fb1f179 DependenciesID=b3f618d651022cf3ffc3ff97ad9a7249 StaticDependenciesID=0fdd105ecbeec1876b2f01bf6df12ecd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/LowPolyWater_Pack/_Demo/DemoSceneSettings.lighting
-  importAddress: Guid(0266f35ce13c545feaa736e5e140d9cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/_Demo/DemoSceneSettings.lighting using Guid(0266f35ce13c545feaa736e5e140d9cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'af61fa1ffd4e7bf40f1f45f62a6af8ea') in 0.008289792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=feabedfbd9be0549c1add6a04fa3928b DependenciesID=51f84d99b8b8a60c317a09dbbead3a57 StaticDependenciesID=ce39bbfd89ec0a4d5287d80782e0d1e7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/LowPolyWater_Pack/Plane Meshes
-  importAddress: Guid(3cf44bedfd04535428eb215dfe3cbe2d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Plane Meshes using Guid(3cf44bedfd04535428eb215dfe3cbe2d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '88cdd16614c47f27b8fb711cf94f2877') in 0.001694875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=670c6a9efdef4c83f0825f959b76c500 DependenciesID=e413d4cd83153b806a3f2edb2a6cf073 StaticDependenciesID=80c9c487783e30c4de185790cab4d1b3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000070 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.028.prefab
+  importAddress: Guid(b2ff36358dd6e4160906bcfb57d7e8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.028.prefab using Guid(b2ff36358dd6e4160906bcfb57d7e8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b86c6fc1d8e6d67991ac29b2eafe390f') in 0.009716834 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=87458a4bef6ee97dcf5997beac7c5dda DependenciesID=44a45517995c580acd07d7d9555a867b StaticDependenciesID=b1eaa19e66b2838c21b254a059186cce 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000065 seconds.
-  path: Assets/LowPolyWater_Pack/_Demo
-  importAddress: Guid(b5f8a0e7878d0e3478bda48d5ffc421c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/_Demo using Guid(b5f8a0e7878d0e3478bda48d5ffc421c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c11afb5d40b30d44a36e46304e2b18ec') in 0.002096542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=358c2674f3b394ce13937d61ee149c84 DependenciesID=8cc908578594324026aedb217702ade1 StaticDependenciesID=fdc91bcd10da3133198f53eb7b04d942 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/LowPolyWater_Pack/Scripts/Editor/GeneratePlane.cs
-  importAddress: Guid(6fe99e92f179e48498503818d15ac6aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Scripts/Editor/GeneratePlane.cs using Guid(6fe99e92f179e48498503818d15ac6aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '680a20d155be4002fbe5ef034bfb071a') in 0.012451542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f52947e8816656721c3b751d0fea1153 DependenciesID=7192130e6bbbcb8a4e907bc0d297502c StaticDependenciesID=193e4865316be6a0c11333c97fd7ee19 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/LowPolyWater_Pack/Scripts/Editor
-  importAddress: Guid(34df541ef38b1c0498aec787c3861a90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Scripts/Editor using Guid(34df541ef38b1c0498aec787c3861a90) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b564f77f5df1c9bc9bfa7f99bec52450') in 0.00176225 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9ff78944ab507c3dc56f75c622683041 DependenciesID=fa9f9571a32489958017dc23cc502ae4 StaticDependenciesID=251fae48bf258a02e3b5433f73f28027 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/LowPolyWater_Pack/LowPoly Island
-  importAddress: Guid(9320976cad9e2104e931f008e44e5103) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/LowPoly Island using Guid(9320976cad9e2104e931f008e44e5103) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '675e1f44a2fb9bcddffe5bafcac41b78') in 0.002124875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=608c258896a828e346f4bf950d986dc2 DependenciesID=f24bc51e0da474a91a0db6c7ecf00aa2 StaticDependenciesID=747b9ccc6b8e4c83b5f2b0aa959d7c9e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/LowPolyWater_Pack/LowPoly Island/textures
-  importAddress: Guid(b231ef30130d1734c8f632ca8f5f54bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/LowPoly Island/textures using Guid(b231ef30130d1734c8f632ca8f5f54bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a2fd2ff1ca69d6ded461cd59138aebec') in 0.001401917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d69c75105083542d259eae2f7dbd6147 DependenciesID=fdee412aebc9a1a70ab6fa5179ceded1 StaticDependenciesID=70543c44301888a1b4559e53e96ba115 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_04.prefab
+  importAddress: Guid(46e177bc864be4450b3c1640c3e67a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_04.prefab using Guid(46e177bc864be4450b3c1640c3e67a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b79fb1e4d1d02e41ce5421c65ff06a9b') in 0.013155666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dcbb39ef75bad260593e15a57185e4bd DependenciesID=c678590cb548d5fe10146f3677eb7326 StaticDependenciesID=cd405ae5a637923565701744ed928ed7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

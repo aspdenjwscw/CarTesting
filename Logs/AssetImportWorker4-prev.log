@@ -7,9 +7,9 @@ Darwin version:          24.6.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
-Date:                    2026-06-01T21:53:19Z
+Date:                    2026-06-10T00:30:16Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-01T21:53:19.133932Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-10T00:30:16.285893Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,7 @@ AssetImportWorker4
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-61209
+57475
 -licensingIpc
 LicenseClient-jamesaspden
 -force-metal
@@ -73,7 +73,7 @@ Successfully changed project path to: /Users/jamesaspden/Documents/GitHub/CarTes
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Player connection [8496259264]  Target information:
 
-Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 1050396489 [EditorId] 1050396489 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 1653933659 [EditorId] 1653933659 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8496259264] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8496259264] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -88,7 +88,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 6.69 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 9.10 ms, found 2 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jamesaspden/Documents/GitHub/CarTesting/Assets
@@ -105,16 +105,25 @@ MSL Version: 3.0
 Has Float MSAA: 1
 Has Float Filtering: 1
 ReadWrite Texture Tier: 2
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              21d533ddc70a4153b2d8b6ddeec5904c
+  Correlation Id:          e20f4ab19905bc7565f1d8dac9c2d2a8
+  External correlation Id: 1022271937902322777
+  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.01s, handshake: 0.54s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-06-10T00:30:16.835613Z"
+[Licensing::Module] Licensing Background thread has ended after 0.55s
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56925
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56655
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000777 seconds.
+Registered in 0.001856 seconds.
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -122,45 +131,28 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.294 seconds
-Domain Reload Profiling: 608ms
-	BeginReloadAssembly (75ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (160ms)
-		LoadAssemblies (75ms)
-		AnalyzeDomain (153ms)
-			TypeCache.Refresh (152ms)
-				TypeCache.ScanAssembly (140ms)
-	FinalizeReload (295ms)
+- Finished resetting the current domain, in  0.312 seconds
+Domain Reload Profiling: 679ms
+	BeginReloadAssembly (101ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (172ms)
+		LoadAssemblies (100ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (162ms)
+				TypeCache.ScanAssembly (151ms)
+	FinalizeReload (313ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
-			BeforeProcessingInitializeOnLoad (68ms)
-			ProcessInitializeOnLoadAttributes (76ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (78ms)
+			ProcessInitializeOnLoadMethodAttributes (67ms)
 [CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-jamesaspden"
-[Licensing::IpcConnector] LicenseClient-jamesaspden channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4" at "2026-06-01T21:53:20.321286Z"
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              01143713b5124516b812a4a0ed822ff2
-  Correlation Id:          106d3c64c448fbdf1fd19051c5f06dbf
-  External correlation Id: 6753405361767670769
-  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 0.17s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4-notifications" at "2026-06-01T21:53:20.494435Z"
-[Licensing::Module] Licensing Background thread has ended after 1.36s
-[Licensing::Module] Licensing is initialized (took 0.11s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 17867501090831-UnityPersXXXX
@@ -169,6 +161,8 @@ Begin MonoManager ReloadAssembly
   Expiration: Unlimited
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Cinemachine.Editor.Tests.dll at Library/ScriptAssemblies/Cinemachine.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Cinemachine.Runtime.Tests.dll at Library/ScriptAssemblies/Cinemachine.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
 Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
 Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
@@ -183,6 +177,8 @@ Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Mu
 Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
 Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
@@ -205,26 +201,26 @@ Native extension for OSXStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.425 seconds
-Domain Reload Profiling: 1005ms
-	BeginReloadAssembly (196ms)
-		DisableScriptedObjects (3ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (302ms)
-		LoadAssemblies (171ms)
-		AnalyzeDomain (161ms)
-			TypeCache.Refresh (122ms)
-				TypeCache.ScanAssembly (111ms)
-			BuildScriptInfoCaches (31ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (425ms)
+- Finished resetting the current domain, in  0.471 seconds
+Domain Reload Profiling: 1100ms
+	BeginReloadAssembly (133ms)
+		DisableScriptedObjects (4ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (398ms)
+		LoadAssemblies (224ms)
+		AnalyzeDomain (208ms)
+			TypeCache.Refresh (160ms)
+				TypeCache.ScanAssembly (144ms)
+			BuildScriptInfoCaches (38ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (471ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (172ms)
-			ProcessInitializeOnLoadMethodAttributes (40ms)
+			BeforeProcessingInitializeOnLoad (94ms)
+			ProcessInitializeOnLoadAttributes (198ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -232,606 +228,12 @@ Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support con
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Launching external process: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Helpers/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6538 unused Assets / (4.8 MB). Loaded Objects now: 7354.
-Memory consumption went from 162.6 MB to 157.8 MB.
-Total: 5.483083 ms (FindLiveObjects: 0.320417 ms CreateObjectMapping: 0.196375 ms MarkObjects: 3.948791 ms  DeleteObjects: 1.017041 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 881884.895730 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Mushrooms/PT_Caesars_Mushroom_01.fbx
-  importAddress: Guid(2ec966d90911a454c9760fa28789a4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Mushrooms/PT_Caesars_Mushroom_01.fbx using Guid(2ec966d90911a454c9760fa28789a4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)MaterialLocation.External is obsolete. External Material Location is no longer supported. (Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Mushrooms/PT_Caesars_Mushroom_01.fbx)
- -> (Import Result ID: '7d6bd6318d5cd715b366c40928cf20c4') in 0.332701791 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=87fa72c566d620a103424cc981256dcc DependenciesID=e4e2bb637f2ce73cfc9befdb20f2923e StaticDependenciesID=b83da2cf3382dac9d003daf7a879fc6b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 60.934457 seconds.
-  path: Assets/New Terrain.asset
-  importAddress: Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/New Terrain.asset using Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7a15e975c2e1ba9faa07fb17b7250293') in 0.043780833 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d9f4006f8859230bd0863a43e58f052e DependenciesID=2e77adafaa5a89c887c32ffcda98f9dd StaticDependenciesID=d8893af7f90f2795b5dad7d3ab3228eb 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset
-  importAddress: Guid(9932f38fdb78c4933b6184b35200000b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset using Guid(9932f38fdb78c4933b6184b35200000b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dc7c1ac233df9534f79997901069fe7f') in 0.00655225 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aa5778f6cf0571ae0a912909053fbb3f DependenciesID=2aec0fb569c2e42c61b6452c650000c4 StaticDependenciesID=f8f742e81aa33bb56f7cd73429039606 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x3351d7000 may have been prematurely finalized
-Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
-Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
-Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
-Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
-Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
-Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
-Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
-Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
-Native extension for OSXStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.439 seconds
-Domain Reload Profiling: 906ms
-	BeginReloadAssembly (137ms)
-		DisableScriptedObjects (12ms)
-		CreateAndSetChildDomain (54ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (267ms)
-		LoadAssemblies (181ms)
-		AnalyzeDomain (117ms)
-			TypeCache.Refresh (9ms)
-			BuildScriptInfoCaches (101ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (439ms)
-		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (161ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6539 unused Assets / (3.3 MB). Loaded Objects now: 7407.
-Memory consumption went from 184.5 MB to 181.3 MB.
-Total: 7.549791 ms (FindLiveObjects: 0.933125 ms CreateObjectMapping: 0.226166 ms MarkObjects: 4.947583 ms  DeleteObjects: 1.442125 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 31.019793 seconds.
-  path: Assets/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset
-  importAddress: Guid(ebfb4988eb16add4784122504f75fe2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset using Guid(ebfb4988eb16add4784122504f75fe2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '60ef5fd49c36798b98f61113b12a8dc7') in 0.055116125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=25854011a933d86f23a13732b7406698 DependenciesID=3327130430d5701193baee6e4b50a432 StaticDependenciesID=2a8ca9c7aa9d25102cce7e8864ff9853 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.947323 seconds.
-  path: Assets/LowPolyWater_Pack/Plane Meshes
-  importAddress: Guid(3cf44bedfd04535428eb215dfe3cbe2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyWater_Pack/Plane Meshes using Guid(3cf44bedfd04535428eb215dfe3cbe2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a764bfa535621c153ad6a9081b0a15b7') in 0.000295834 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d69c2d6e310902dd7dcd832aacdbbbf2 DependenciesID=6f1a78215c9ae402245bba3177bd4195 StaticDependenciesID=50acb559d08960eacf65bff0b93735ba 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.667528 seconds.
-  path: Assets/LowPolyWater_Pack/Scripts
-  importAddress: Guid(addf2c7968b9c9942857f9779317ffef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyWater_Pack/Scripts using Guid(addf2c7968b9c9942857f9779317ffef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '52ece0ccdb21b9e20031e70c2ea15843') in 0.000365625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0a0faa9e85dbb31ca39de175b8998d31 DependenciesID=0959595f8af8c9306f267f79cfaba105 StaticDependenciesID=c570aac3b46a0a35622fe293867bac1d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 62.644427 seconds.
-  path: Assets/LowPolyWater_Pack/_Demo
-  importAddress: Guid(b5f8a0e7878d0e3478bda48d5ffc421c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyWater_Pack/_Demo using Guid(b5f8a0e7878d0e3478bda48d5ffc421c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cc0fa4cd5065f0fd835c172e6734c458') in 0.00121975 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a4503380e491c76957d11e09f8a71425 DependenciesID=428df7c0cca4690105e336ecaf40a39d StaticDependenciesID=bf0611d8c4cb9604494a9416f9746e05 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.172852 seconds.
-  path: Assets/LowPolyWater_Pack/_Demo/DemoScene.unity
-  importAddress: Guid(5af012a8b7991a84fb99a854db8dfc21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyWater_Pack/_Demo/DemoScene.unity using Guid(5af012a8b7991a84fb99a854db8dfc21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a056704f66bb5cf21d3eb447e820c834') in 0.000646625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=090d8ac13d3b43f3c3b38bac2c7624e9 DependenciesID=648a310bffef0df19fd4fc5284915e41 StaticDependenciesID=cdb1fbd7699b7dcca9a093f258a7ff58 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.116342 seconds.
-  path: Assets/New Terrain.asset
-  importAddress: Guid(583973b4ee3f5407bbac586ebb58db95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(583973b4ee3f5407bbac586ebb58db95) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '356fc3364a2b7f0a32e255d7f1ac33a5') in 0.044103667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5ff12c2f07db0b564a7aed50f4261685 DependenciesID=935413de7a7e601873b32a6e842438ab StaticDependenciesID=9c4630ac18f98d0976e01ffca1dd7ba7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset
-  importAddress: Guid(8954343439202416595048955cb937e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset using Guid(8954343439202416595048955cb937e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1860dfe7bb1937e7a71ae7c1a5c7fa1e') in 0.010487292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=498bc826df810d680af99dbf41978a52 DependenciesID=dfb70488456f1e1b840b6991c72484e3 StaticDependenciesID=d1968746472e169fdc74f7222d7fb6ed 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 172.650108 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Decal.mat
-  importAddress: Guid(31d0dcc6f2dd4e4408d18036a2c93862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Decal.mat using Guid(31d0dcc6f2dd4e4408d18036a2c93862) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '259a44b01e2468f26a1a58ab8affbb3f') in 0.346034458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b72324f4abc24d9a4602b376dbafab29 DependenciesID=f25e8aa196f5e01099c8c5dc937760cb StaticDependenciesID=f5ea11a0ce32b2e3d76705f9767737c1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000115 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingOcclusion.mat
-  importAddress: Guid(b51db210fe78df745a372851b3db949e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingOcclusion.mat using Guid(b51db210fe78df745a372851b3db949e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd9feca96dd5f6030faa9578f988f55db') in 0.025958959 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=04bb8b73002f24a946cd7bc9bfeb5f07 DependenciesID=3c723a63135d0cf7d99f3e6fa8fbfad6 StaticDependenciesID=d1f7e4e158b3d8075c659803abd3d34f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
-  importAddress: Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ddc83fa00a122d08303ecb56e2f30eca') in 0.172518209 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1e253690ea93d1e723eaa5722a5faf4c DependenciesID=f3379f9c81f979e61e61d2dc77b0a407 StaticDependenciesID=b95e24a66bfae25bc7e458a85efa17b1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpriteMask-Default.mat
-  importAddress: Guid(15d0c3709176029428a0da2f8cecf0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpriteMask-Default.mat using Guid(15d0c3709176029428a0da2f8cecf0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8d083438c013df916b7ab6ad11bf67fb') in 0.01901 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=108035e92aa92438b8762cbecc9a6b8d DependenciesID=7278caa437c45860086d6e6005b39309 StaticDependenciesID=ccdcea236cb2f0f60fe52ce4850b3039 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingWireframe.mat
-  importAddress: Guid(9875a245ac49007498213638a307faa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/SpatialMappingWireframe.mat using Guid(9875a245ac49007498213638a307faa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ce007a7bcdf34eb512184932a1697400') in 0.008840417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=09cb49bdf35c1cc1e29dc017833451c2 DependenciesID=66d7d5cc26417553db0d051f8e662678 StaticDependenciesID=90a5c617b36ca5b6aa3e9c8e86690af1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat
-  importAddress: Guid(a97c105638bdf8b4a8650670310a4cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat using Guid(a97c105638bdf8b4a8650670310a4cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0eba1a9c80a8733cf0cf3adaacc69f0a') in 0.014141125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b9ef91cc394e336b56fa96c11c48d904 DependenciesID=52042efbba89abef7735e66d9920dba6 StaticDependenciesID=b5d50dd01e70dcc64c50db3aad8639e7 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
-  importAddress: Guid(31321ba15b8f8eb4c954353edc038b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat using Guid(31321ba15b8f8eb4c954353edc038b1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '40bfa348a2d6a6c5bc486b669f76f13f') in 0.050860917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=298ee21e9d41edb2f2891ffbf8224bd4 DependenciesID=580611aefb9613ad90600dc1d8f515f8 StaticDependenciesID=7a881f93b1aca677def58fd10eb555d6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/RenderAs2D-Flattening.mat
-  importAddress: Guid(b697f6a938056384e968ccf6527dac83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/RenderAs2D-Flattening.mat using Guid(b697f6a938056384e968ccf6527dac83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '99ea791393cd5177a7f73e0b4a12c76d') in 0.015335542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b3164e36058a171af2204685c201d967 DependenciesID=ffbdcdee0de0b771a4ac593981621380 StaticDependenciesID=fce2a862b2dffa702ff14ecf04dd92fe 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.212777 seconds.
-  path: Assets/LowPolyWater_Pack/Textures/Foam.tga
-  importAddress: Guid(5fbcffe9c2077f04186883cb39275fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyWater_Pack/Textures/Foam.tga using Guid(5fbcffe9c2077f04186883cb39275fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1f51e8e2f90d0dbb689ad1e40bc65ae1') in 0.014197125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6bcc9599dffee1d86aca3dcbd853ae5d DependenciesID=e92e992b2786a2dbaa5ed109e4d958ca StaticDependenciesID=583332e660b714c6c6dd4ff6f7ade63b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.986513 seconds.
-  path: Assets/LowPolyWater_Pack/Materials/LowPolyWaterMaterial.mat
-  importAddress: Guid(8538bd626cb3e80478f62e319f75e337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyWater_Pack/Materials/LowPolyWaterMaterial.mat using Guid(8538bd626cb3e80478f62e319f75e337) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)Shader properties can't be added to this global property sheet. Trying to add _RefractionTex_ST (type 2 count 1)
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
-UnityEngine.Rendering.ScriptableRenderContext:Submit () (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/ScriptableRenderContext.cs:146)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:875)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:704)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:679)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:496)
-UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/RenderPipeline.cs:58)
-UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle) (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/RenderPipelineManager.cs:159)
-UnityEngine.Camera:Render ()
-UnityEditor.PreviewRenderUtility:Render (bool,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/PreviewRenderUtility.cs:554)
-UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/MaterialEditor.cs:2756)
-UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/MaterialEditor.cs:2618)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:36)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:12)
-
-[/Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 35]
-
-Shader properties can't be added to this global property sheet. Trying to add _RefractionTex_TexelSize (type 2 count 1)
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
-UnityEngine.Rendering.ScriptableRenderContext:Submit () (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/ScriptableRenderContext.cs:146)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:875)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:704)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:679)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:496)
-UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/RenderPipeline.cs:58)
-UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle) (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/RenderPipelineManager.cs:159)
-UnityEngine.Camera:Render ()
-UnityEditor.PreviewRenderUtility:Render (bool,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/PreviewRenderUtility.cs:554)
-UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/MaterialEditor.cs:2756)
-UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/MaterialEditor.cs:2618)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:36)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:12)
-
-[/Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 35]
-
-Shader properties can't be added to this global property sheet. Trying to add _RefractionTex_HDR (type 2 count 1)
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
-UnityEngine.Rendering.ScriptableRenderContext:Submit () (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/ScriptableRenderContext.cs:146)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:875)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:704)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:679)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:496)
-UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/RenderPipeline.cs:58)
-UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle) (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/RenderPipelineManager.cs:159)
-UnityEngine.Camera:Render ()
-UnityEditor.PreviewRenderUtility:Render (bool,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/PreviewRenderUtility.cs:554)
-UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/MaterialEditor.cs:2756)
-UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/MaterialEditor.cs:2618)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:36)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:12)
-
-[/Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 35]
-
-Shader properties can't be added to this global property sheet. Trying to add _RefractionTex (type 4 count 1)
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
-UnityEngine.Rendering.ScriptableRenderContext:Submit () (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/ScriptableRenderContext.cs:146)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCamera (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.Universal.UniversalCameraData) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:875)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,UnityEngine.Rendering.Universal.UniversalAdditionalCameraData&,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:704)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:RenderSingleCameraInternal (UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera,bool) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:679)
-UnityEngine.Rendering.Universal.UniversalRenderPipeline:Render (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at ./Library/PackageCache/com.unity.render-pipelines.universal@18d0e59f18f1/Runtime/UniversalRenderPipeline.cs:496)
-UnityEngine.Rendering.RenderPipeline:InternalRender (UnityEngine.Rendering.ScriptableRenderContext,System.Collections.Generic.List`1<UnityEngine.Camera>) (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/RenderPipeline.cs:58)
-UnityEngine.Rendering.RenderPipelineManager:DoRenderLoop_Internal (UnityEngine.Rendering.RenderPipelineAsset,intptr,object,Unity.Collections.LowLevel.Unsafe.AtomicSafetyHandle) (at /Users/bokken/build/output/unity/unity/Runtime/Export/RenderPipeline/RenderPipelineManager.cs:159)
-UnityEngine.Camera:Render ()
-UnityEditor.PreviewRenderUtility:Render (bool,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/PreviewRenderUtility.cs:554)
-UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/MaterialEditor.cs:2756)
-UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/Inspector/MaterialEditor.cs:2618)
-UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:36)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string) (at /Users/bokken/build/output/unity/unity/Editor/Mono/AssetPreviewUpdater.cs:12)
-
-[/Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs line 35]
-
- -> (Import Result ID: 'd8110569f764bbccecdac008222e1748') in 0.025287833 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=28d5397165839674937ea0ee8e73cb06 DependenciesID=e2900db6dfaeb7ce461cbd2d8f617e22 StaticDependenciesID=8b060447c5827a1694b1045072015cb6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.575171 seconds.
-  path: Assets/LowPolyWater_Pack/Scripts/LowPolyWater.cs
-  importAddress: Guid(5c6a6df342b52d24092cf6bbb590c535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyWater_Pack/Scripts/LowPolyWater.cs using Guid(5c6a6df342b52d24092cf6bbb590c535) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cf56d93c48341a27bb3fccd36fcd3380') in 0.000334041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=23268183ae3b947fbd744e6b87f665c3 DependenciesID=961563d60f022fdec95b409d7f0555ab StaticDependenciesID=2a857fd58e3aa108144a10d876910f5b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.425496 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Fruit_Tree_Foliage_Mat.mat
-  importAddress: Guid(0a1f44318dd467a45bfef81ad0e8855a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Fruit_Tree_Foliage_Mat.mat using Guid(0a1f44318dd467a45bfef81ad0e8855a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '85907d6adb3ebc115496fdc6798a67a5') in 0.034255459 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=27bc4df8375824867f6b8463caaf032b DependenciesID=5b6b85ee0db0e9dba85121962f12f998 StaticDependenciesID=7a0288315ec13e98c6626f4f366679c4 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Grass_Mat.mat
-  importAddress: Guid(09473d06882d1414b84b1fdb7a095516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Grass_Mat.mat using Guid(09473d06882d1414b84b1fdb7a095516) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c4518808d0ce046123c969914d7bdb36') in 0.011705041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d903023df74ef053b8f16d2feb6dc8b3 DependenciesID=cb6380f76ee83199cbe0df21529489f1 StaticDependenciesID=900c1d4aa3f67465cc9224c281b0d2f6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000100 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Generic_Leaf_mat.mat
-  importAddress: Guid(aac20e0005fef5248bc0774a19a05e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Generic_Leaf_mat.mat using Guid(aac20e0005fef5248bc0774a19a05e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'aaf7037fa1145ae0bb645d6e4de81044') in 0.008295666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=83c77c945680af480cd69dc62a166a9c DependenciesID=0760a31b0299fe365b6e897a0bc77cff StaticDependenciesID=e05ee713af918e782ef94791bcb8d5ee 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Generic_Tree_Trunk_mat.mat
-  importAddress: Guid(e6ce4253a748b0849a04b87f33cc539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Generic_Tree_Trunk_mat.mat using Guid(e6ce4253a748b0849a04b87f33cc539d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '976cc13623667d8a9581da45c105d30f') in 0.006177958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7b9cf11c66e38cf6055bf5ba79bce33a DependenciesID=5cecf3a96e09b690f0fd3b41abfd1115 StaticDependenciesID=cbd11c05c6fd0fa006d07155c3ddb090 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.015013 seconds.
-  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Mushrooms_mat.mat
-  importAddress: Guid(c522ec7c62be0c145bc320ad11705a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Materials/PT_Mushrooms_mat.mat using Guid(c522ec7c62be0c145bc320ad11705a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a0cfae18c95b78e8d0d3aa0071ea4d68') in 0.012110917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=55818ee2ae1b1691d5a49b85cc231a2a DependenciesID=a5519978c2de2b038196017d070ddae3 StaticDependenciesID=1c288df9ee9215d9b61e3b0fe0135355 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 461.267069 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/All materials (snow)/ReflectionProbe-0.exr
-  importAddress: Guid(4f88786e652f03041b5f25b0f80b1f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/All materials (snow)/ReflectionProbe-0.exr using Guid(4f88786e652f03041b5f25b0f80b1f33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0b5035dcd17f0e9949b848b86659b529') in 0.092251708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=33fb410e48a767e5c6c5ba16c9f29735 DependenciesID=75aad505d85d5a25cfc864f04efa7560 StaticDependenciesID=19c1ca3968423bfb532ec6dd409b5259 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.434740 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/snow_2_png_min.png
-  importAddress: Guid(01961e530f536804488ba972aa5eda68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/snow_2_png_min.png using Guid(01961e530f536804488ba972aa5eda68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '96d7d499a69f86c3d5ee64d967f9bfc4') in 0.005284875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=347482556179b520ad8e5da45973a167 DependenciesID=3ed57d211f15fab623fca05b9bddddc2 StaticDependenciesID=578165d9b9e0c3a7dc3ba5b7f9ec0e90 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.026679 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Textures/snow_2_tga.tga
-  importAddress: Guid(9eccbb07d6b64db459a718c90fcb504e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/Textures/snow_2_tga.tga using Guid(9eccbb07d6b64db459a718c90fcb504e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a7f59bd359f2f0319c5be5be48cbce61') in 0.005907166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1d80f1342115288d13c3bf0583a74dec DependenciesID=1671abb62869e4e771ad786d77a6c181 StaticDependenciesID=a6e03063f26bb8ae723f74fb4f056df8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_3_he.tga
-  importAddress: Guid(431c045110d1b9b49a449564ebaae4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_3_he.tga using Guid(431c045110d1b9b49a449564ebaae4a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '915ac1db3e9cc14ab267316b46fe9775') in 0.006421709 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d2e6a702fea2c1cbd694a8a9dbf44c04 DependenciesID=8d3f4b07696fc6ee469601bb108f589d StaticDependenciesID=2c6b55c0cda8ff6be3e959893aa03754 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/snow_3_png_min.png
-  importAddress: Guid(f3978d18eb139b84cb1650aa3256163f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/Textures/Optimized (x1024, PNG -45%)/snow_3_png_min.png using Guid(f3978d18eb139b84cb1650aa3256163f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '20e937ef2392718ba671836e6ae342d4') in 0.00593875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ab6f3d4f7cabd73a9702ba5ac5253dbd DependenciesID=b839800dbf07831ab438429c0d303cce StaticDependenciesID=fda3ed01c923701df27819d2a75ed7aa 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_4_ao.tga
-  importAddress: Guid(aca0e40c1888e2c488118d2ed82b8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_4_ao.tga using Guid(aca0e40c1888e2c488118d2ed82b8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f96cd48bd89186f95e8237d9b28d3ada') in 0.005342042 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bd5d6df9f481333586885d7bac9b843f DependenciesID=d5a6d8063a383872e8f2cd2e525f985b StaticDependenciesID=5af96a23e9ec4235c9409cdb289399af 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_4_he.tga
-  importAddress: Guid(d6072d06a68dea94782a93f402bc11ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_4_he.tga using Guid(d6072d06a68dea94782a93f402bc11ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3d0b2ae3640f2c535e41ddd1ed20d2bc') in 0.005513542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=47cfb755587846cde6cb1b69aede0293 DependenciesID=7ff25aba906f3325c0f66f79cb558a53 StaticDependenciesID=f7d8f14bfcd9e9ef82e1493fa107c30f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Materials Collection/4 Snow Materials/Maps/snow_4_nmp.tga
-  importAddress: Guid(b94c589c22e0b454a8d9d1265e4aa333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials Collection/4 Snow Materials/Maps/snow_4_nmp.tga using Guid(b94c589c22e0b454a8d9d1265e4aa333) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0e44482a8de20461bcc1903758bacd85') in 0.009776667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eab19d8350c07a4b7d6c28672c1e3d4a DependenciesID=6c73ae7d4cbc92c7d906f846af39fb48 StaticDependenciesID=84ec0e234c65ff8b507d2b6a75cc3353 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.759054 seconds.
-  path: Assets/LowPolyWater_Pack/LowPoly Island/textures/textureAmbient_Occlusion.jpg
-  importAddress: Guid(b9b487cdf5f0a1446986165bc650935d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyWater_Pack/LowPoly Island/textures/textureAmbient_Occlusion.jpg using Guid(b9b487cdf5f0a1446986165bc650935d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cee529aa0877431181cd5839fdd0b7f0') in 0.0063205 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=31e5162172d391afa75e398dd52ddbc9 DependenciesID=16ae10c8426647dfe097007092282651 StaticDependenciesID=0387e9567fac2add60ec33da7f84fae0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.014210 seconds.
-  path: Assets/LowPolyWater_Pack/LowPoly Island/textures/textureSurface_Color_2.jpg
-  importAddress: Guid(c4b4ad6529883dc43874119c9045638a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyWater_Pack/LowPoly Island/textures/textureSurface_Color_2.jpg using Guid(c4b4ad6529883dc43874119c9045638a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd93812d44487107b8af96103364cbcb9') in 0.00610925 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6cbb823dec21d8e528bbc0cad99b9808 DependenciesID=b9127e6d41a84208cd079860a1ac4093 StaticDependenciesID=36810616b8bfbdcf804ea1437d09e6b6 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 309.467108 seconds.
-  path: Assets/LowPolyWater_Pack/Scripts
-  importAddress: Guid(addf2c7968b9c9942857f9779317ffef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Scripts using Guid(addf2c7968b9c9942857f9779317ffef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ec1a6185bbae922f08bd860fec9fc96a') in 0.054833208 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bcd7d5fa155526f243869838179bbd72 DependenciesID=847921c6592a60b1f63dd5add150bc7d StaticDependenciesID=4cf09ade2ef2d40d740d0ae4af411dda 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/LowPolyWater_Pack/LowPoly Island/island1_design2_c4d.obj
-  importAddress: Guid(6e654008c0c551d41b2f83f329e79d6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/LowPoly Island/island1_design2_c4d.obj using Guid(6e654008c0c551d41b2f83f329e79d6f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9a499738c827700f06f719d215145fe0') in 0.054313959 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=680460e0491bd465afdb1d3ee3914591 DependenciesID=cbdc65923d8f8a30244ae6ff0b289b0b StaticDependenciesID=48db7ebd650b901948a38c600862b588 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/LowPolyWater_Pack/_Demo/DemoScene
-  importAddress: Guid(30f47a1d6046944838756ce8a708f330) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/_Demo/DemoScene using Guid(30f47a1d6046944838756ce8a708f330) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4bf260ef8a1cd97d5dddb3c1216a41cc') in 0.002325042 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c9c1229611eae0da29ffbf26b1142bc0 DependenciesID=021a4bfe8409a1118a06d4ef0b947035 StaticDependenciesID=78f6d75777f6b492fadbddc58d8bb7ba 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/LowPolyWater_Pack
-  importAddress: Guid(cfd179461b5874d188dd8a7c7f82140b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack using Guid(cfd179461b5874d188dd8a7c7f82140b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b5920b508298ef7cfffa667436b5340c') in 0.0016195 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0136478558d945ce29e85b1843403186 DependenciesID=8a087909e701c0bd63ae3e6392dd396b StaticDependenciesID=d677d1290b89f3dd924603b3fb9c0b91 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000099 seconds.
-  path: Assets/LowPolyWater_Pack/Materials
-  importAddress: Guid(40dbe5c72eec6b4419c2e68e132cde42) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Materials using Guid(40dbe5c72eec6b4419c2e68e132cde42) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '27c2128d2aa82c561b4af947f435c95d') in 0.002069958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e8b00613a1f57e0c743248153b1febd4 DependenciesID=7b609223b085b55c91d760c627b4e934 StaticDependenciesID=76e7762e33fea9bd674be43bb6824686 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Low Poly Water
-  importAddress: Guid(b542a6ef2dc5c4cc891f52bc3206b89f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Low Poly Water using Guid(b542a6ef2dc5c4cc891f52bc3206b89f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6fd53833e1b8e28508ac907cce1143f3') in 0.002608542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=205d708460267894828a1423f3f9e4c0 DependenciesID=d62e7784cd20430578ee8bf16517c5bf StaticDependenciesID=3854f691b57095fad17bdc10cd782e3c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000079 seconds.
-  path: Assets/LowPolyWater_Pack/Materials/LowPolyWaterMaterial.mat
-  importAddress: Guid(8538bd626cb3e80478f62e319f75e337) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Materials/LowPolyWaterMaterial.mat using Guid(8538bd626cb3e80478f62e319f75e337) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fc0d6c141a063794fe4c7772861f1e17') in 0.006946334 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=02b7c754df76d5261f33f0070e98740d DependenciesID=ee4b87a981a1cd7b68c66cbb58dca68b StaticDependenciesID=4b2e0bd026f953cb21fee7676ae610f3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/LowPolyWater_Pack/Scripts/LowPolyWater.cs
-  importAddress: Guid(5c6a6df342b52d24092cf6bbb590c535) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Scripts/LowPolyWater.cs using Guid(5c6a6df342b52d24092cf6bbb590c535) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9e3333b4a70fd4a233ca490ace6739ee') in 0.00317225 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6fcc5cace8306200f530480f75f5e877 DependenciesID=e35b48898565ac18f1030650d5a1fe9e StaticDependenciesID=56c1efef0c82c9d88002ef164d693d00 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/LowPolyWater_Pack/LowPoly Island/textures/textureAmbient_Occlusion.jpg
-  importAddress: Guid(b9b487cdf5f0a1446986165bc650935d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/LowPoly Island/textures/textureAmbient_Occlusion.jpg using Guid(b9b487cdf5f0a1446986165bc650935d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a1d26dbb02dd0820dbeb4e02bafa7879') in 0.027005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2ee04a7b1f44dbb9ee048557383f06bf DependenciesID=09ac4324c45fd067862835d2be6aeea7 StaticDependenciesID=1c982b6ad956ad58785de5d5966184be 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Low Poly Water/Plane Meshes/Plane1x1W50H1.asset
-  importAddress: Guid(926aedfe289b54dd4bb0a806ad37fc87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Low Poly Water/Plane Meshes/Plane1x1W50H1.asset using Guid(926aedfe289b54dd4bb0a806ad37fc87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f299f73af07fc20fff662ad3fb0d8e43') in 0.001981916 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1afb8a79d7178b11d06a540a1da6c69f DependenciesID=f7c92b8a1e6e9a056d10b5b6f778ed65 StaticDependenciesID=1b5587669858bb528c8b602b5ce8a840 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/LowPolyWater_Pack/Documentation
-  importAddress: Guid(a085c41d7ae268a488eb40c08ef2bb9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Documentation using Guid(a085c41d7ae268a488eb40c08ef2bb9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '94882abfb304d3cb5c764b74bbcb1cb8') in 0.001606083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1108b507ed974ec4c59caeae4bafbd9f DependenciesID=b385893f38f7fab6cabbff3a2259f926 StaticDependenciesID=478229f874239c12a350d28c75d30c7f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/Low Poly Water/Plane Meshes
-  importAddress: Guid(e5b8a6725bd6f4f129a85c202bc51256) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Low Poly Water/Plane Meshes using Guid(e5b8a6725bd6f4f129a85c202bc51256) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f98faadc13e1668e84f9690fd2d187b9') in 0.002551917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=71194f014cdea9ddf4a01e0a5bdb017d DependenciesID=7f1850a40f549e8f813178ea8bed3f6a StaticDependenciesID=846c6f80448ad57c9965f5251f24703d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/LowPolyWater_Pack/Animation/CameraAnim.anim
-  importAddress: Guid(efc7c00a7c726f34a802b8efdc73c6d3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Animation/CameraAnim.anim using Guid(efc7c00a7c726f34a802b8efdc73c6d3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '546b073612898eaf3ff29dd38caf5d21') in 0.013906458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d8f05008bd0d17ea8c4fdb2f3d29d667 DependenciesID=a8c751fbb2d152e49e05b91a8dad950c StaticDependenciesID=f7ff7d968f7031610991e0bf08052bc8 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/LowPolyWater_Pack/Textures/Foam.tga
-  importAddress: Guid(5fbcffe9c2077f04186883cb39275fcc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Textures/Foam.tga using Guid(5fbcffe9c2077f04186883cb39275fcc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '74aed376c234a153113298fb65281300') in 0.009373375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=05db7971b89864633c16febcb02272d9 DependenciesID=4111b861bbc1864c24abc6d360329a1b StaticDependenciesID=fc2666ad85d6d36e70160e2bc380485f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/LowPolyWater_Pack/_Demo/DemoScene.unity
-  importAddress: Guid(5af012a8b7991a84fb99a854db8dfc21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/_Demo/DemoScene.unity using Guid(5af012a8b7991a84fb99a854db8dfc21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '95de02530cae9eb597110545b14faacb') in 0.0024625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7219ad0d45abc64675b8177b19fda335 DependenciesID=a31bcccf1d5dc59d3c2fe351912dfe79 StaticDependenciesID=103ae44057256fa1cdee24d723da85ed 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/LowPolyWater_Pack/Animation
-  importAddress: Guid(b5ceb4c51f4752241b2e08f466421a7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Animation using Guid(b5ceb4c51f4752241b2e08f466421a7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c459b8d0e1af786606469ed34ccdca63') in 0.001383458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=05493a8a58ea53e518b79cf6d0a41c25 DependenciesID=489db07088ea462621edd4f75788e5fc StaticDependenciesID=279e9e98c7c20fb961cac07521baa1d1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/LowPolyWater_Pack/_Demo/DemoScene/LightingData.asset
-  importAddress: Guid(df2f8840774cf4dee9cee2eb4d91129e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/_Demo/DemoScene/LightingData.asset using Guid(df2f8840774cf4dee9cee2eb4d91129e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '23c53e7f71c9b443ef50dd1dfcb62227') in 0.002866417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f9ee1c265f4ce17290f9f3976a1a48a9 DependenciesID=66a2e62494d758a1eed774985ec00a47 StaticDependenciesID=21ca283cd6b7f6586330221fe0674c17 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/LowPolyWater_Pack/Animation/CameraAnimator.controller
-  importAddress: Guid(02aa2f95834d8a246a100692c8156bfe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/LowPolyWater_Pack/Animation/CameraAnimator.controller using Guid(02aa2f95834d8a246a100692c8156bfe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bca3968f34fa0e779bd4d9b616ba4495') in 0.003565875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7aa63975bd633a423dfbd5c2ed30d81e DependenciesID=a36fe81a5bf7346d5182d859000a48e4 StaticDependenciesID=41680ec4d8d18a33294a5e8bcafffb1f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 697.812402 seconds.
-  path: Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset
-  importAddress: Guid(9932f38fdb78c4933b6184b35200000b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset using Guid(9932f38fdb78c4933b6184b35200000b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9efe7865b9b487b92fd08262f11ca3ef') in 0.023672625 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3d25d660d3a513f76ff93ddc18e62729 DependenciesID=df21f39a04213279adbf5ebc255e1137 StaticDependenciesID=367aaea572de652529d8baad8ef7e277 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.813665 seconds.
-  path: Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset
-  importAddress: Guid(9932f38fdb78c4933b6184b35200000b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset using Guid(9932f38fdb78c4933b6184b35200000b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5130f8355b8c501288ae608c80b1733e') in 0.008043875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9aff9484a0fb9f9782f28b179bc8897c DependenciesID=c8a8d584a2c40b40ebb8015f195a5a13 StaticDependenciesID=2193822249fb35a98704c8b132a57b84 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
+Unloading 39 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6815 unused Assets / (7.0 MB). Loaded Objects now: 7649.
+Memory consumption went from 175.5 MB to 168.5 MB.
+Total: 5.468459 ms (FindLiveObjects: 0.275042 ms CreateObjectMapping: 0.183958 ms MarkObjects: 3.898667 ms  DeleteObjects: 1.110417 ms)
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting

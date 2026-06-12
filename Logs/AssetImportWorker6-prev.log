@@ -7,9 +7,9 @@ Darwin version:          24.6.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        16384 MB
-Date:                    2026-06-01T22:01:09Z
+Date:                    2026-06-10T00:41:13Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-01T22:01:09.943259Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-06-10T00:41:13.157091Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,7 @@ AssetImportWorker6
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-61209
+57475
 -licensingIpc
 LicenseClient-jamesaspden
 -force-metal
@@ -73,7 +73,7 @@ Successfully changed project path to: /Users/jamesaspden/Documents/GitHub/CarTes
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
 Player connection [8496259264]  Target information:
 
-Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 2003464203 [EditorId] 2003464203 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8496259264]  * "[IP] 10.10.0.164 [Port] 0 [Flags] 2 [Guid] 940490125 [EditorId] 940490125 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8496259264] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8496259264] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -88,7 +88,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 5.50 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 7.82 ms, found 2 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jamesaspden/Documents/GitHub/CarTesting/Assets
@@ -105,22 +105,25 @@ MSL Version: 3.0
 Has Float MSAA: 1
 Has Float Filtering: 1
 ReadWrite Texture Tier: 2
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              5bbd82e404244b4c8570cb99c67deeff
+  Correlation Id:          e20f4ab19905bc7565f1d8dac9c2d2a8
+  External correlation Id: 6879120492476932406
+  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.00s, handshake: 0.54s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-06-10T00:41:13.696879Z"
+[Licensing::Module] Licensing Background thread has ended after 0.54s
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56111
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56795
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000943 seconds.
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-jamesaspden"
-[Licensing::IpcConnector] LicenseClient-jamesaspden channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4" at "2026-06-01T22:01:10.703213Z"
+Registered in 0.000942 seconds.
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -128,32 +131,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.232 seconds
-Domain Reload Profiling: 504ms
-	BeginReloadAssembly (62ms)
-	RebuildCommonClasses (26ms)
+- Finished resetting the current domain, in  0.244 seconds
+Domain Reload Profiling: 512ms
+	BeginReloadAssembly (64ms)
+	RebuildCommonClasses (25ms)
 	RebuildNativeTypeToScriptingClass (10ms)
 	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (140ms)
-		LoadAssemblies (62ms)
-		AnalyzeDomain (133ms)
-			TypeCache.Refresh (132ms)
-				TypeCache.ScanAssembly (122ms)
-	FinalizeReload (233ms)
+	LoadAllAssembliesAndSetupDomain (134ms)
+		LoadAssemblies (64ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (126ms)
+				TypeCache.ScanAssembly (116ms)
+	FinalizeReload (244ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (61ms)
-			ProcessInitializeOnLoadMethodAttributes (54ms)
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              76e90817947d45b4a6516be5c084e35f
-  Correlation Id:          106d3c64c448fbdf1fd19051c5f06dbf
-  External correlation Id: 2697553966412257201
-  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 0.19s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-6000.4.4-notifications" at "2026-06-01T22:01:10.898461Z"
-[Licensing::Module] Licensing Background thread has ended after 0.96s
+			InitializePlatformSupportModulesInManaged (24ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (62ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
 [CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
@@ -167,6 +161,8 @@ Begin MonoManager ReloadAssembly
   Expiration: Unlimited
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Cinemachine.Editor.Tests.dll at Library/ScriptAssemblies/Cinemachine.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Cinemachine.Runtime.Tests.dll at Library/ScriptAssemblies/Cinemachine.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
 Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
 Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
@@ -181,6 +177,8 @@ Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Mu
 Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
 Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
 Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
@@ -203,26 +201,26 @@ Native extension for OSXStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.400 seconds
-Domain Reload Profiling: 876ms
-	BeginReloadAssembly (95ms)
+- Finished resetting the current domain, in  0.439 seconds
+Domain Reload Profiling: 943ms
+	BeginReloadAssembly (82ms)
 		DisableScriptedObjects (3ms)
-		CreateAndSetChildDomain (29ms)
+		CreateAndSetChildDomain (21ms)
 	RebuildCommonClasses (26ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (296ms)
-		LoadAssemblies (171ms)
-		AnalyzeDomain (157ms)
-			TypeCache.Refresh (120ms)
-				TypeCache.ScanAssembly (109ms)
-			BuildScriptInfoCaches (30ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (400ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (334ms)
+		LoadAssemblies (199ms)
+		AnalyzeDomain (164ms)
+			TypeCache.Refresh (124ms)
+				TypeCache.ScanAssembly (113ms)
+			BuildScriptInfoCaches (32ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (439ms)
 		SetupLoadedEditorAssemblies (0ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (166ms)
-			ProcessInitializeOnLoadMethodAttributes (36ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (184ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -230,12 +228,376 @@ Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support con
 Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
 Launching external process: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Helpers/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
-Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6540 unused Assets / (5.1 MB). Loaded Objects now: 7359.
-Memory consumption went from 162.6 MB to 157.4 MB.
-Total: 5.192459 ms (FindLiveObjects: 0.284500 ms CreateObjectMapping: 0.163583 ms MarkObjects: 3.804208 ms  DeleteObjects: 0.939875 ms)
+Unloading 39 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6815 unused Assets / (7.0 MB). Loaded Objects now: 7662.
+Memory consumption went from 186.8 MB to 179.8 MB.
+Total: 5.349209 ms (FindLiveObjects: 0.296459 ms CreateObjectMapping: 0.179291 ms MarkObjects: 3.800709 ms  DeleteObjects: 1.072417 ms)
 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
-AssetImportWorker is now disconnected from the server
-Process exiting
+========================================================================
+Received Import Request.
+  Time since last request: 1081805.894752 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/Ground_Layer_02.terrainlayer
+  importAddress: Guid(f7ce30ec9b280b34cacb1a1005349890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/Ground_Layer_02.terrainlayer using Guid(f7ce30ec9b280b34cacb1a1005349890) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e97340d7790234e943bbe28435913b04') in 0.039188083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b92efdddc482808087fa823c884288d0 DependenciesID=0905fc8894128b83393181416b86b156 StaticDependenciesID=ff1950e4cab5a9d40b1d271871de4dbe 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 462.121964 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Branch_01.prefab
+  importAddress: Guid(b9de24523a11d714db3851b5f0f9d527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Branch_01.prefab using Guid(b9de24523a11d714db3851b5f0f9d527) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0817876063357f226ae9faf31b3bf10e') in 0.417305959 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5c076df8e27ce832eb32c3794e70b289 DependenciesID=22d4d05ce63e628887f83d5d86196376 StaticDependenciesID=db01471c8877629bb17e3cbeb3e7619f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.015.prefab
+  importAddress: Guid(a4a271f5f47c441d6b53627cbadf813a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.015.prefab using Guid(a4a271f5f47c441d6b53627cbadf813a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0e530a4ab9d780bb15323111b872bce4') in 5.260099666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8fe7d50a0ce4761922957be34648eb88 DependenciesID=7f4784f0993846083fe042a9edc03e01 StaticDependenciesID=1066ce0d3c4e489d3f21c3a9489e28e5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.015.prefab
+  importAddress: Guid(2de36a289ff744a2080aff5ee45b53c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.015.prefab using Guid(2de36a289ff744a2080aff5ee45b53c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cdc18b69655271bfa80f887c10a1feda') in 0.0196095 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e8e91f73420aa7ee737a9e77d91d7fd7 DependenciesID=d8347d470f3c6fff1c761d7b1e644564 StaticDependenciesID=454eadca208496f4898ebee5c46bfad1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.012.prefab
+  importAddress: Guid(1fd014517ac05428b92044ff4c11d2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.012.prefab using Guid(1fd014517ac05428b92044ff4c11d2a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '89b80a4b7c37e475e591e7fb1555bab6') in 0.015776917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=526b61bdff2ca1a23008da8fda0f298a DependenciesID=3fb709846aad3b7e9c192b58658fde17 StaticDependenciesID=31121a99b45ed6cc496137e25a00608b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.020.prefab
+  importAddress: Guid(c614dc49a271b45e7a667c10145887ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.020.prefab using Guid(c614dc49a271b45e7a667c10145887ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a8c7a8061083083cd843b7565393d25c') in 0.01659025 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=023a7a08f76d2cd79086e088d816023e DependenciesID=6f285e444685718882159db761c989e0 StaticDependenciesID=da5bd79d870df49823258ac748729d07 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.022.prefab
+  importAddress: Guid(1d4087ac2e584490fae30938d90816f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.022.prefab using Guid(1d4087ac2e584490fae30938d90816f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '10a34e5f7059bc654ab67f211b327d21') in 0.013912083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=52b73bcfbf71fd575a11dfc680bfb026 DependenciesID=f45429bb6cb073087c53e957acb168a9 StaticDependenciesID=0a0fb2bb6854056680b5d97a0c3ae60c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_05.prefab
+  importAddress: Guid(a33e88199201a48a79ff57093d223a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_05.prefab using Guid(a33e88199201a48a79ff57093d223a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '462b2746948a0105220b62d767d062a0') in 0.021077666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1b09b4c84cb0a7e1a0fdce0b013ad5b7 DependenciesID=3c35a5a2b8e1a892686c244a19fd3d1a StaticDependenciesID=8da56538a68bb641d76751258a813d18 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.013.prefab
+  importAddress: Guid(782ab0cbfddb2453daab15766ee9bd7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.013.prefab using Guid(782ab0cbfddb2453daab15766ee9bd7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '7dcdcf8ba208bf7ac957b32e886de5d2') in 0.015202333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=223b54ac5bd7ebde871cb826913051ec DependenciesID=0fec79a9b888f4b1fbda127fe772474f StaticDependenciesID=f639131ec48ace4c61f3807b83255334 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Mushroom_02.prefab
+  importAddress: Guid(494f6d43e170e9145bc7865d243ee00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Mushroom_02.prefab using Guid(494f6d43e170e9145bc7865d243ee00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f6f0b5fa2828011b5a9deb9e7ab0982f') in 0.012196125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=adc496fbf50c7b27bb75a5191ee6fa32 DependenciesID=aa3005c476eb5e53ff05546bf2b65247 StaticDependenciesID=2a310d43b4ad11fc46165dc649e49fc4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.001.prefab
+  importAddress: Guid(03fbe6db4827a41959091cf3f407fbc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.001.prefab using Guid(03fbe6db4827a41959091cf3f407fbc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5c482aaae3082e8ba3260e9dfbfe4c5b') in 0.015551375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1b310c55e32d0c17dbbcb3cb548c673d DependenciesID=4db2fd39e5fac444f5d5ebab04c1a900 StaticDependenciesID=87e058a4ca38d8cfd5a720f4944406c0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Tree_03.prefab
+  importAddress: Guid(c60edd51c065ceb46b345849a03bc106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Tree_03.prefab using Guid(c60edd51c065ceb46b345849a03bc106) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '839ef49c9127e89d9fb1ee0f18273b74') in 0.020645416 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=21ffb0173897ee33ce8aeb4b70f9f90a DependenciesID=a8811e52cb0b5e4b7684d6890530975b StaticDependenciesID=690c5887465dab2fe6521760b48c6742 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.002.prefab
+  importAddress: Guid(46f88d35e6888487288d3dc4eefd638e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.002.prefab using Guid(46f88d35e6888487288d3dc4eefd638e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e25342038340527f0da82354adeb6b22') in 0.015233375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e3735431de327f5305d6e5ecdf9f42f6 DependenciesID=8c8aec7d5f0e7f81fd5c32d4460d88b5 StaticDependenciesID=3ec65356850069cc6a227b62f65ef64f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.008.prefab
+  importAddress: Guid(6e221dc1977044089ac6a11548f47e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.008.prefab using Guid(6e221dc1977044089ac6a11548f47e7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c198ce57d47800e3d0599c423c0b0be5') in 0.013095375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a1555a90ce56137cdeb3e888993f5b84 DependenciesID=31d3ee2c1ea32e554c65332e78929a2e StaticDependenciesID=80f333122a45c9dba661930ce8ff6d77 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_01.prefab
+  importAddress: Guid(28533705543b1461c8d0cdf119c1bd13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Mountain_01.prefab using Guid(28533705543b1461c8d0cdf119c1bd13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f9aa9daca23db9284381cc0f1e93a9f8') in 0.017059083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=31ca0833a538fdf72a02f0cfd6ce2901 DependenciesID=7ae941c45601369d739964c317dec2cd StaticDependenciesID=57b82c2f5bb00f6d1ebf3f703e385b37 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.017.prefab
+  importAddress: Guid(db2e8cdf6de8b4befb2eee1f18fd4660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.017.prefab using Guid(db2e8cdf6de8b4befb2eee1f18fd4660) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '49f3deb595fd7414f3cabc106e37f36f') in 0.016855083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1fb834b2843f5663665de283b3a8909a DependenciesID=0362fe6e82a33b13ab72eb4f3458da72 StaticDependenciesID=4e199dceef9c070bff855dff072ba78c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.011.prefab
+  importAddress: Guid(7b1aa803e261c42ad8d0c4972a9a5d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.011.prefab using Guid(7b1aa803e261c42ad8d0c4972a9a5d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a5b8e7ee47a5a544dc21b9e7f87a039e') in 0.012056209 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=25586f361dc91726c051458b03485eea DependenciesID=b10f48f1176ee40ba3f2e09d8b05df19 StaticDependenciesID=e6810ad38d634e7c47dd2ab1e20e1e8b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.016.prefab
+  importAddress: Guid(6ab45b2e423c24fc1b59491911bd81de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.016.prefab using Guid(6ab45b2e423c24fc1b59491911bd81de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '109c4902d2e2b674c555b2154c94b0f1') in 0.012205333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=124e1fb7cd75edbdd7888af186cb7f89 DependenciesID=f2153b62488f000ea8beebb01d6692ca StaticDependenciesID=f570274c79be5d89f3a343047c5df4d8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Flowers_01.prefab
+  importAddress: Guid(ac8efb728f1fb9b4092c4df591c827ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Flowers_01.prefab using Guid(ac8efb728f1fb9b4092c4df591c827ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '28e28a7c8c5c433f806f91bb2ded14dc') in 0.007305417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=328d84ac706f7c9e9142ddf8535020a5 DependenciesID=5b7312d2d01bf12a5c3562ff1cb43b93 StaticDependenciesID=5a56e591b4c696b7d1b0a3c9d36eda98 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.008.prefab
+  importAddress: Guid(678b7777626ef41e39824d812aecd3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.008.prefab using Guid(678b7777626ef41e39824d812aecd3dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a2ed2b12a9bacf22ffd7f23b5ddcfb2d') in 0.011909042 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1d32d747c3a915a90f812c35b9063c33 DependenciesID=10f748115fe3610e0af131c7ae66849e StaticDependenciesID=225d0a76f312ffe9ad515750e3d387b3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.014.prefab
+  importAddress: Guid(f29416938530f46a6a1211c75ae9870b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.014.prefab using Guid(f29416938530f46a6a1211c75ae9870b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f837381901ae26007e6020230aecaab3') in 0.012307125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1a561613486a70bb2f77fc6fee04d20c DependenciesID=a7ff1adced191ac8b198436cd5ba68f4 StaticDependenciesID=648df1a2d15355e78224d0702275b7e5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.002.prefab
+  importAddress: Guid(00b7e221af5c94d6da482fb49275fad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.002.prefab using Guid(00b7e221af5c94d6da482fb49275fad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c43c9f40ec85e9c6dcd062f6be0f65ad') in 0.011360042 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=78f4004c89c31af98fb9e956eb6417ca DependenciesID=5a19a1fff03c3687d12e3508acee802c StaticDependenciesID=a23d0660621f1ac21ae664af1cc62fb5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.003.prefab
+  importAddress: Guid(8bc482edde80e4d33b508ce27937cdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.003.prefab using Guid(8bc482edde80e4d33b508ce27937cdbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9c8ba8706f41ded51dbac9f949d4b330') in 0.012158208 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3e998a3a3dd242fb47ce8294ffb7b17a DependenciesID=071e5a5fce57b238c0f47dfd6e982a25 StaticDependenciesID=1ed13d6177aabb3095efb4d61cd06075 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Stump_01.prefab
+  importAddress: Guid(eebb56c82efbd8d4bb0eb6bd925a0e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Stump_01.prefab using Guid(eebb56c82efbd8d4bb0eb6bd925a0e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4ce25b1cd9ffe4c046d44e622cdd6453') in 0.007483958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2704b16301804e32e6629cedf146bcf9 DependenciesID=1900d01b4816a66f043ef7c79cff5623 StaticDependenciesID=726a291025dfba3b1fd4e5a3b3ed1ea4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Tree_02.prefab
+  importAddress: Guid(e289bf5debb17f6459818c207d781953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Tree_02.prefab using Guid(e289bf5debb17f6459818c207d781953) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fc620a554236eaa07094c9522a0b219d') in 0.007821792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5b8805a91126f6554a1bf6df073d73f1 DependenciesID=9c8b3d761fc68e1215f2bbca1af6c8cc StaticDependenciesID=d827c083fa54615a4f5cfafb0c6ea712 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.014.prefab
+  importAddress: Guid(ddcd83dc3d319493a95f42f1a6f73bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.014.prefab using Guid(ddcd83dc3d319493a95f42f1a6f73bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '056c126fecf32194b0dc1654151ba1d8') in 0.011880458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=57526f20bfcda50ce7e39c0b89f17427 DependenciesID=831aef25dc9d75935aae78c24e1ee196 StaticDependenciesID=8becc4909975c226e585fb6bdbb62d3d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.029.prefab
+  importAddress: Guid(48412bd1cbe5a4f7f83a9ddd04b2e323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.029.prefab using Guid(48412bd1cbe5a4f7f83a9ddd04b2e323) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '170c10ff968db19c1f54f3177815ab1b') in 0.011004041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=15762e66027d0868e1f252b682ce17d5 DependenciesID=738c8e1e015fa46714e5d1018f675fcc StaticDependenciesID=928795d9f91ffd53551baae5c9e0108d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Bush_02.prefab
+  importAddress: Guid(b71b0f8d2f881c743a85228f3030d1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Bush_02.prefab using Guid(b71b0f8d2f881c743a85228f3030d1cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6c4f4bcc8eea4ddf866f623e2f06d679') in 0.009929 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2eea18d992fb6a6e567d09a6679efe4d DependenciesID=4ad7671b656a2fbafac4d7ae938e1258 StaticDependenciesID=830f816352bf2bdfbbd98cdc0217412c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.007.prefab
+  importAddress: Guid(2a9dd48eb7be04127949551bcc3cd696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.007.prefab using Guid(2a9dd48eb7be04127949551bcc3cd696) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6f6e065ab8dc9a641959b53b1d09f683') in 0.01182475 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3b0f68442564bd9a5648deb0a8444247 DependenciesID=5f072b366d7727f38a9663d9cfcf09a7 StaticDependenciesID=243ae3d484ea0e5382f09dadff891201 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.011.prefab
+  importAddress: Guid(89bf66bf0763a4a139ea1a43958d207c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.011.prefab using Guid(89bf66bf0763a4a139ea1a43958d207c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '75f10b3a8499975e3fbc240c447801b9') in 0.011741166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eca14c1cab0fed8ac1fe54263f5924c4 DependenciesID=64f1278d84689518b8972bfa6eb25f2b StaticDependenciesID=cf445fe3cb7771483a9a2e6b6068dae6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.004.prefab
+  importAddress: Guid(d11e5432b77db44b08a862109200acac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.004.prefab using Guid(d11e5432b77db44b08a862109200acac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2f5fc65916147eccf5fe9577d23157a6') in 0.011174333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=542d7db55bf36e2aca8313b9c3824c37 DependenciesID=d728fb03644681e3c87e227360b8d614 StaticDependenciesID=abab25576f5534471693697426762160 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.013.prefab
+  importAddress: Guid(cc320c720e3404b64a3373ad0fe2ccc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.013.prefab using Guid(cc320c720e3404b64a3373ad0fe2ccc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '30e0a1590e977ac73ef08630d55ea1d8') in 0.013090542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=333fb1e462775dda7b5cdc693bd72ac4 DependenciesID=36b69f824aa58780fef9927852906728 StaticDependenciesID=6e69a96628a51d9d7ea3cc0516987d2a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.006.prefab
+  importAddress: Guid(5cab19fdb480c4e94b567019c5375991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.006.prefab using Guid(5cab19fdb480c4e94b567019c5375991) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1a708f95c0a10da5c896a4449234f7eb') in 0.013552125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a398dac18df51668d64aac46c298f52a DependenciesID=df9a0d0dbe0f22ba820785b29cf36bdd StaticDependenciesID=91990e697e4b192d2db6d45ff6326ef0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.022.prefab
+  importAddress: Guid(1199ccc3f1ef446828407c4434b0b845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.022.prefab using Guid(1199ccc3f1ef446828407c4434b0b845) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ec8675b02072d737b791afc7a0a872e4') in 0.012013333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fd3447cbda88078e67feb6486737f1f2 DependenciesID=54dad353cbcaa01935f4f1a72b403347 StaticDependenciesID=e273aa5106b7cfeb028104debb030aaf 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.003.prefab
+  importAddress: Guid(29490a7be9bd644d1928720041b6b9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.003.prefab using Guid(29490a7be9bd644d1928720041b6b9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '86506f6341efcc04ad93b8e889e79fd8') in 0.012175708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=782caa095bc9d046b590dd4de6716d60 DependenciesID=d5b15e6547dae7c1b26879c396e64df7 StaticDependenciesID=0c91153aece0a6a5de6c47fd42c24d29 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN.prefab
+  importAddress: Guid(e78267bd84d5143d7bad376bb9664fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN.prefab using Guid(e78267bd84d5143d7bad376bb9664fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'dafdbb1f09537d4e730dc166322c5c67') in 0.031109166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=308e97414703f496a9e8afb9f634c751 DependenciesID=d7d2b1a81df3c009af64b2e09af47e6e StaticDependenciesID=e3887b28409dab1c8de7673d919e0d95 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 336
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.018.prefab
+  importAddress: Guid(8eb71e495ef8c4c1faab07597ab6b62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.018.prefab using Guid(8eb71e495ef8c4c1faab07597ab6b62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '68b4e67d28f4e2a5c68985fb73d9920d') in 0.014289167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0f11fd75691e0fb4b12cb2a910683276 DependenciesID=aab86ce882f25981f7593cf498392f37 StaticDependenciesID=af6f772fc9c4e4ea78a40b591ee84e26 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.026.prefab
+  importAddress: Guid(243412fc5086d49ac969ec51fbbab6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.026.prefab using Guid(243412fc5086d49ac969ec51fbbab6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '5e7f6f8618be9ddddcd79fd749a1375a') in 0.01159925 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9777ad47f6a31bdc72917b1adb99d155 DependenciesID=4ab953e1f4caa383e429d459b14ccf88 StaticDependenciesID=889752e95fdb8bb0e835596f42cdddef 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.006.prefab
+  importAddress: Guid(bd694b955a6b94460a2fcb9b5ef9d6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Rocks.006.prefab using Guid(bd694b955a6b94460a2fcb9b5ef9d6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4cc8629ebce5a632250e90e3a037b8f1') in 0.012619416 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=14bc0579a1b3454d0a6a8c01d8bebdfc DependenciesID=e247b7b86efdb3db8c80f709fdca1fb0 StaticDependenciesID=12e9be8a5d62ec77298057c23792165d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Grass_02.prefab
+  importAddress: Guid(ffbddc4ef9676cc419e81e06aaa836d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Grass_02.prefab using Guid(ffbddc4ef9676cc419e81e06aaa836d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'af87511cb30481d63998ca97fcfed828') in 0.007502333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d0c7988d008aed1ad0b521a8dacecaa5 DependenciesID=7e25a9afd825bd380f99c271e2c8c4e3 StaticDependenciesID=0d7b22f377b8c47729204429cefe1591 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Grass_01.prefab
+  importAddress: Guid(f1fc5bb90ac285e4486771552d63bcb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Grass_01.prefab using Guid(f1fc5bb90ac285e4486771552d63bcb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f30878664ae1ad5cae661884d9186363') in 0.007707 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0372229d45b9ef9942dd21c89434a942 DependenciesID=752f4755f14e6849ce2aeb57a2c64259 StaticDependenciesID=27f554795bb27fe1cd05f59aded9f8db 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.001.prefab
+  importAddress: Guid(8107e862f4f944cccb65b34f7573a791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.001.prefab using Guid(8107e862f4f944cccb65b34f7573a791) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '019b6af057aebb027f21b2784706ffb8') in 0.011461292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8e88c445381e93a7559e7b5cd7053b96 DependenciesID=7ab93bdea7d4ac85a94c52406e905edc StaticDependenciesID=27b3342b214e807b7977bd8f0fcc7039 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.002.prefab
+  importAddress: Guid(17416fed8252a446da140748f5823aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Large_Rocks.002.prefab using Guid(17416fed8252a446da140748f5823aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6a6ae1fe7988433e0d67e85fec4c6f3b') in 0.012017959 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=69aca96782ee921dfa8a6933430fe5de DependenciesID=4873c75a90408ac76fdc4c5c2a0b25d3 StaticDependenciesID=c04686698091535d003853ce35ce1313 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Ground_01.prefab
+  importAddress: Guid(ebee340de387f334f9ac44e044abd8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Ground_01.prefab using Guid(ebee340de387f334f9ac44e044abd8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9e727a60751198eb34f3999ed8a252d3') in 0.009309958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3241344adca500d56c1cb9de696c0e77 DependenciesID=8f62374f134aaca45851850d2c399c14 StaticDependenciesID=0e9c4b28c112253558a5643280eac96a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Details.020.prefab
+  importAddress: Guid(e609da664e15d4f579495ebc3dc51477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Details.020.prefab using Guid(e609da664e15d4f579495ebc3dc51477) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '06c9f2073428e0811b30ef19cfbcc00c') in 0.011550167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=df58536e1435ffcb6944deb1776a0910 DependenciesID=47bab25ac6955188a18077f1cced1d6e StaticDependenciesID=99dc63d9641d61d3eeffa86c7319dc62 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Assets/Low Poly Cars (Free)/Prefabs/car_2.prefab
+  importAddress: Guid(48e086f9b0acfbd4e9fa16b9eeeca71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low Poly Cars (Free)/Prefabs/car_2.prefab using Guid(48e086f9b0acfbd4e9fa16b9eeeca71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cffcd908cf41257de7a192854937460d') in 4.0709105 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=40126c5fef5ade02dd9588a6e010ba77 DependenciesID=97ab8cf5b7c397782ff0e40dfb7496fb StaticDependenciesID=29c8b715d05c43d0df5b4cc443125edd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
