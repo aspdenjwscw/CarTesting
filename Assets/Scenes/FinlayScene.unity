@@ -258,7 +258,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.4
   m_ForceAppPointDistance: 0
-  m_Mass: 30
+  m_Mass: 80
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -450,7 +450,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.4
   m_ForceAppPointDistance: 0
-  m_Mass: 30
+  m_Mass: 80
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -625,11 +625,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineFollow
   TrackerSettings:
     BindingMode: 2
-    PositionDamping: {x: 0, y: 4, z: 10}
+    PositionDamping: {x: 0, y: 0.2, z: 0.4}
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 0, y: 2, z: 7}
+  FollowOffset: {x: 0, y: 2, z: 5}
 --- !u!114 &521907438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,8 +681,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521907435}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.99033433, z: -0.13870122, w: 0}
-  m_LocalPosition: {x: 16.73, y: 12.68, z: 7.90077}
+  m_LocalRotation: {x: 0, y: 0.9819564, z: -0.18910754, w: 0}
+  m_LocalPosition: {x: 16.73, y: 12.68, z: 5.90077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1098,8 +1098,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011161313}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.99033433, z: -0.13870122, w: 0}
-  m_LocalPosition: {x: 16.73, y: 12.68, z: 7.90077}
+  m_LocalRotation: {x: 0, y: 0.9819564, z: -0.18910754, w: 0}
+  m_LocalPosition: {x: 16.73, y: 12.68, z: 5.90077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1281,6 +1281,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098615780}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1131289297
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.569162
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.165863
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.6580524
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
+      propertyPath: m_Name
+      value: earl_jeepwrangler
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: effe4bc82877ed749b2852d1b5c191f1, type: 3}
 --- !u!1 &1154792357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,7 +1418,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.4
   m_ForceAppPointDistance: 0
-  m_Mass: 30
+  m_Mass: 80
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -1503,7 +1560,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.4
   m_ForceAppPointDistance: 0
-  m_Mass: 30
+  m_Mass: 80
   m_WheelDampingRate: 0.25
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
@@ -1874,7 +1931,7 @@ MonoBehaviour:
   wheel2: {fileID: 1567327984}
   wheel3: {fileID: 336155402}
   wheel4: {fileID: 72071716}
-  drivespeed: 600
+  drivespeed: 13000
   steerspeed: 40
   currentGear: 0
 --- !u!54 &2051570771
@@ -1888,7 +1945,7 @@ Rigidbody:
   m_Mass: 5000
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_CenterOfMass: {x: 0, y: -5, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -1933,3 +1990,4 @@ SceneRoots:
   - {fileID: 1728882693}
   - {fileID: 2051570772}
   - {fileID: 521907439}
+  - {fileID: 1131289297}
