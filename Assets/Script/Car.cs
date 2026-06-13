@@ -25,10 +25,10 @@ public class Car : MonoBehaviour{
     public Rigidbody rigid;
     public WheelCollider wheel1, wheel2, wheel3, wheel4;
     public float drivespeed, steerspeed, shiftTime;
-    float horizontalInput, verticalInput, verticalForward, verticalBackwards, brakingForce, brakesActive, currentYRot, engineRPM, engineActive, shiftingCooldown, redlineRPM;
+    float horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, brakingForce, brakesActive, currentYRot, engineRPM, engineActive, shiftingCooldown, redlineRPM;
     private KeyCode forwardKey, backwardsKey, brakingKey;
     int currentGear;
-    public bool automatic, uphill, velocityForward, upShift, downShift, allowShift, shiftValueReset;
+    public bool automatic, uphill, velocityForward, upShift, downShift, allowShift, shiftValueReset, braking;
     public Gear[] gears;
     private float rpmVelocity, downShiftEngineRPM, upShiftEngineRPM;
 
@@ -38,13 +38,18 @@ public class Car : MonoBehaviour{
         backwardsKey = KeyCode.S;
         brakingKey = KeyCode.Space;
         brakingForce = 10000f;
-        shiftTime = 0.3f;
-        shiftingCooldown = 0.8f;
+        shiftTime = 1.3f;
+        shiftingCooldown = 1.8f;
         downShiftEngineRPM = 3000f;
         upShiftEngineRPM = 2000f;
         redlineRPM = 6000f;
         automatic = true;
         allowShift = true;
+        accelerationSpeed = 3f;
+        braking = false;
+
+        Vector3 autoCoM = rigid.centerOfMass;
+        rigid.centerOfMass = new Vector3(0f, autoCoM.y, autoCoM.z);
 
         gears = new Gear[]
         {
@@ -63,10 +68,8 @@ public class Car : MonoBehaviour{
 
 
     void Update(){
-        Vector3 horizontalVelocity = new Vector3(rigid.linearVelocity.x, 0f, rigid.linearVelocity.z);
-        float groundSpeed = horizontalVelocity.magnitude; //Calculates the speed of the car but not the direction
-        Vector3 forwardDirection = transform.forward; //Calculates if it's going forward since you can reverse if the car has a forward velocity
-        float dotProduct = Vector3.Dot(forwardDirection, horizontalVelocity);
+        
+        
 
         if (upShift)
         {
@@ -78,15 +81,14 @@ public class Car : MonoBehaviour{
             {
                 upShift = false;
                 shiftValueReset = true;
-                engineActive = 1f;
             }
         }
         if (!upShift && shiftingCooldown > 0f && shiftValueReset) shiftingCooldown -= Time.deltaTime;
-        if(shiftingCooldown == 0f)
+        if(shiftingCooldown <= 0f)
         {
             allowShift = true;
         }
-        if(shiftValueReset && shiftingCooldown == 0f)
+        if(shiftValueReset && shiftingCooldown <= 0f)
         {
             shiftValueReset = false;
             shiftingCooldown = 0.8f;
@@ -102,15 +104,14 @@ public class Car : MonoBehaviour{
             {
                 downShift = false;
                 shiftValueReset = true;
-                engineActive = 1f;
             }
         }
         if (!downShift && shiftingCooldown > 0f && shiftValueReset) shiftingCooldown -= Time.deltaTime;
-        if (shiftingCooldown == 0f)
+        if (shiftingCooldown <= 0f)
         {
             allowShift = true;
         }
-        if (shiftValueReset && shiftingCooldown == 0f)
+        if (shiftValueReset && shiftingCooldown <= 0f)
         {
             shiftValueReset = false;
             shiftingCooldown = 0.8f;
@@ -121,12 +122,9 @@ public class Car : MonoBehaviour{
 
 
 
-        if (dotProduct > 0f)
-        {
-            velocityForward = true;
-        }
+        
 
-        if (Input.GetKey(forwardKey) && !Input.GetKey(brakingKey))
+        if (Input.GetKey(forwardKey) && !braking)
         {
             verticalForward = -1f;
         }
@@ -134,7 +132,7 @@ public class Car : MonoBehaviour{
         {
             verticalForward = 0f;
         }
-        if (Input.GetKey(backwardsKey) && !Input.GetKey(brakingKey))
+        if (Input.GetKey(backwardsKey) && !braking)
         {
             verticalBackwards = 1f;
             gears[0].reverse = true;
@@ -146,18 +144,17 @@ public class Car : MonoBehaviour{
         }
         if(Input.GetKey(brakingKey))
         {
-            brakesActive = brakingForce;
+            braking = true;
         }
-        else if(!Input.GetKey(brakingKey) && !gears[0].reverse)
+        else
+        {
+            braking = false;
+        }
+        if(!braking && !gears[0].reverse)
         {
             brakesActive= 0f;
         }
 
-        if(groundSpeed > 0f && gears[0].reverse) 
-        {
-            brakesActive = brakingForce;
-            engineActive = 0f;
-        }
 
         if (Input.GetKey(KeyCode.R))
         {
@@ -168,57 +165,89 @@ public class Car : MonoBehaviour{
             rigid.transform.position = carPos;
             brakesActive = 1000000f;
         }
-        else
+        else if (!Input.GetKey(KeyCode.R) && !braking);
         {
             brakesActive = 0f;
         }
 
 
         Debug.Log(gears[currentGear].ratio);
-        Debug.Log(currentGear);
+        Debug.Log(allowShift);
         //There are ways to change what the Input.GetAxis("Vertical"); need to be pressed to give change them
-        verticalInput = verticalBackwards + verticalForward;
-        if (gears[0].reverse && groundSpeed > 1 && velocityForward)
+
+
+    }
+
+    void FixedUpdate()
+    {
+        Vector3 horizontalVelocity = new Vector3(rigid.linearVelocity.x, 0f, rigid.linearVelocity.z);
+        float groundSpeed = horizontalVelocity.magnitude; //Calculates the speed of the car but not the direction
+        Vector3 forwardDirection = transform.forward; //Calculates if it's going forward since you can reverse if the car has a forward velocity
+        float dotProduct = Vector3.Dot(forwardDirection, horizontalVelocity);
+        if (dotProduct < 0f)
+        {
+            velocityForward = true;
+        }
+        else
+        {
+            velocityForward = false;
+        }
+
+        if (gears[0].reverse && groundSpeed > 1f && velocityForward)
         {
             brakesActive = brakingForce;
+            engineActive = 0f;
         }
+        if (gears[0].reverse && !velocityForward && !braking);
+        {
+            brakesActive = 0;
+
+        }
+
         horizontalInput = Input.GetAxis("Horizontal"); //Can also do the same for Horizontal at some point with the same as vertical
                                                        //also could try to put it in a loop to reduce code length
+
         float pitchAngle = transform.eulerAngles.x;
         if (pitchAngle > 180f) pitchAngle -= 360f; //This makes it so that if it goes over 180 then it goes to -180 to show its declining and makes it easier
         if (pitchAngle > 20f) uphill = true;
-        if (!allowShift) engineRPM = wheel3.rpm * 4.56f * gears[currentGear].ratio;
-        if(engineRPM > 3000f && !uphill && automatic && currentGear >= 1 && currentGear <7 && allowShift)
+        else uphill = false;
+        if (allowShift) engineRPM = ((wheel3.rpm * 4.56f * gears[currentGear].ratio * -1) + (wheel4.rpm * 4.56f * gears[currentGear].ratio * -1))/2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
+        if (engineRPM > 3000f && !uphill && automatic && currentGear >= 1 && currentGear < 7 && allowShift)
         {
             currentGear++;
             upShift = true;
+            allowShift = false;
         }
-        else if(engineRPM > redlineRPM)
+        else if (engineRPM > redlineRPM)
         {
             engineActive = 0f;
         }
-        else if(engineRPM < redlineRPM) engineActive = 1;
-        else if(engineRPM < 1500f && automatic && allowShift && currentGear > 1)
+        else if (engineRPM < redlineRPM && !downShift && !upShift) engineActive = 1f;
+        else if (engineRPM < 1500f && automatic && allowShift && currentGear > 1)
         {
+            Debug.Log("Attempting");
             currentGear--;
             downShift = true;
+            allowShift = false;
         }// Problem: How do I make it not autoshift back down when the RPM drops, How do I even make the RPM drop realistically, If I use time to make the RPM drop how do I make it work.
-        else if(engineRPM == 0f && gears[currentGear].gear == 1 && automatic && !gears[0].reverse)
+        else if (engineRPM == 0f && gears[currentGear].gear == 1 && automatic && !gears[0].reverse)
         {
             currentGear = 1;
         }
         if (currentGear == 1 && verticalInput < 0) currentGear++;
         if (currentGear == 1 && verticalInput > 0) currentGear--;
-    }
 
-    void FixedUpdate()
-    {
-        float motor = verticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
+
+        verticalInput = verticalBackwards + verticalForward;
+        smoothVerticalInput = Mathf.MoveTowards(smoothVerticalInput, verticalInput, accelerationSpeed * Time.fixedDeltaTime);
+        float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
         // The 4.56 is to replicate the FinalDriveRatio and the engineMax is to model going to high on the RPM and to stop them getting infinite Torque
         wheel3.motorTorque = motor;
         wheel4.motorTorque = motor;
+        if(braking) brakesActive = brakingForce;
         wheel3.brakeTorque = brakesActive;
         wheel4.brakeTorque = brakesActive;
+        
 
         wheel1.steerAngle = steerspeed * horizontalInput;
         wheel2.steerAngle = steerspeed * horizontalInput;
@@ -233,5 +262,7 @@ public class Car : MonoBehaviour{
             wheel1.steerAngle = -20f;
             wheel2.steerAngle = -20f;
         }
+
+
     }
 }
