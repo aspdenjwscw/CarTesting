@@ -271,7 +271,7 @@ WheelCollider:
     m_ExtremumValue: 1.5
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 1
-    m_Stiffness: 2
+    m_Stiffness: 1
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -463,7 +463,7 @@ WheelCollider:
     m_ExtremumValue: 1.5
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 1
-    m_Stiffness: 2
+    m_Stiffness: 1
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1937,10 +1937,12 @@ MonoBehaviour:
   automatic: 0
   uphill: 0
   velocityForward: 0
+  velocityBackwards: 0
   upShift: 0
   downShift: 0
   allowShift: 0
   shiftValueReset: 0
+  braking: 0
 --- !u!54 &2051570771
 Rigidbody:
   m_ObjectHideFlags: 0
