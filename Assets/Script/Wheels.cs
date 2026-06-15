@@ -14,6 +14,6 @@ public class Wheels : MonoBehaviour
         wheelCollider.GetWorldPose(out position, out rotation);
         wheelMesh.position = position;
         wheelMesh.rotation = rotation;
-        wheelMesh.rotation = rotation * Quaternion.Euler(0, 0, 90f);
+        wheelMesh.rotation = rotation * Quaternion.Euler(0, 90f, 0f);
     }
 }

@@ -1,9 +1,49 @@
 fileFormatVersion: 2
-guid: effe4bc82877ed749b2852d1b5c191f1
+guid: 607729f24facca544a0ee67d9d474f82
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base
+    second: {fileID: 2100000, guid: adf794639b7ffbd498cb75d26572cde7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Matte Cover
+    second: {fileID: 2100000, guid: bc4ae32c7babee54a9c85234d9da215d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 5a9f62ab4b991f047b44ddb6d7291eac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lower Head Lights
+    second: {fileID: 2100000, guid: 905eb22dc7205e44a9edb1366e190a2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main Headlights
+    second: {fileID: 2100000, guid: a57910735ddb0f64a935cf3228a153c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rear Lights
+    second: {fileID: 2100000, guid: e679c02d327ba1447ac740b3ef6ac0d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spokes
+    second: {fileID: 2100000, guid: d44961b5e187af74f8f999ef5dd10dfc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tyre
+    second: {fileID: 2100000, guid: a0d639d255d525843a1a619e6998e8d0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

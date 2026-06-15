@@ -38,8 +38,8 @@ public class Car : MonoBehaviour{
         backwardsKey = KeyCode.S;
         brakingKey = KeyCode.Space;
         brakingForce = 10000f;
-        shiftTime = 1.3f;
-        shiftingCooldown = 1.8f;
+        shiftTime = 0.3f;
+        shiftingCooldown = 0.8f;
         downShiftEngineRPM = 3000f;
         upShiftEngineRPM = 2000f;
         redlineRPM = 6000f;
@@ -51,7 +51,7 @@ public class Car : MonoBehaviour{
         reverseRedlineRPM = -3000f;
 
         Vector3 autoCoM = rigid.centerOfMass;
-        rigid.centerOfMass = new Vector3(0f, autoCoM.y, autoCoM.z);
+        rigid.centerOfMass = new Vector3(0f, autoCoM.y - 1f, autoCoM.z);
 
         gears = new Gear[]
         {
@@ -128,7 +128,7 @@ public class Car : MonoBehaviour{
 
         if (Input.GetKey(forwardKey) && !braking)
         {
-            verticalForward = -1f;
+            verticalForward = 1f;
         }
         else
         {
@@ -136,7 +136,7 @@ public class Car : MonoBehaviour{
         }
         if (Input.GetKey(backwardsKey) && !braking)
         {
-            verticalBackwards = 1f;
+            verticalBackwards = -1f;
             gears[0].reverse = true;
         }
         else
@@ -174,7 +174,7 @@ public class Car : MonoBehaviour{
 
 
         Debug.Log(gears[currentGear].ratio);
-        Debug.Log(currentGear);
+        Debug.Log(engineRPM);
         //Debug.Log(reverseInverse);
         //There are ways to change what the Input.GetAxis("Vertical"); need to be pressed to give change them
 
@@ -214,12 +214,12 @@ public class Car : MonoBehaviour{
             brakesActive = 0f;
 
         }
-        if (verticalInput < 0f && groundSpeed > 0f && velocityBackwards && gears[currentGear].gear == -1f)
+        if (verticalInput > 0f && groundSpeed > 0f && velocityBackwards && gears[currentGear].gear == -1f)
         {
             brakesActive = brakingForce;
             engineActive = 0f;
         }
-        if (verticalInput < 0f && !velocityBackwards && !braking) brakesActive = 0f;
+        if (verticalInput > 0f && !velocityBackwards && !braking) brakesActive = 0f;
 
         horizontalInput = Input.GetAxis("Horizontal"); //Can also do the same for Horizontal at some point with the same as vertical
                                                        //also could try to put it in a loop to reduce code length
@@ -228,7 +228,7 @@ public class Car : MonoBehaviour{
         if (pitchAngle > 180f) pitchAngle -= 360f; //This makes it so that if it goes over 180 then it goes to -180 to show its declining and makes it easier
         if (pitchAngle > 20f) uphill = true;
         else uphill = false;
-        if (allowShift) engineRPM = ((wheel3.rpm * 4.56f * gears[currentGear].ratio * -1) + (wheel4.rpm * 4.56f * gears[currentGear].ratio * -1))/2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
+        if (allowShift) engineRPM = ((wheel3.rpm * 4.56f * gears[currentGear].ratio) + (wheel4.rpm * 4.56f * gears[currentGear].ratio))/2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
         if (engineRPM > 3000f && !uphill && automatic && currentGear >= 1 && currentGear <= 7 && allowShift)
         {
             currentGear++;
@@ -252,17 +252,17 @@ public class Car : MonoBehaviour{
         {
             currentGear = 1;
         }
-        if (currentGear == 1 && verticalInput < 0 && (groundSpeed <= 0.1f || velocityForward)) currentGear++;
-        if (currentGear == 1 && verticalInput > 0 && (groundSpeed <= 0.1f || velocityBackwards)) currentGear--;
+        if (currentGear == 1 && verticalInput > 0 && (groundSpeed <= 0.1f || velocityForward)) currentGear++;
+        if (currentGear == 1 && verticalInput < 0 && (groundSpeed <= 0.1f || velocityBackwards)) currentGear--;
 
         //Debug.Log(groundSpeed);
-        if (currentGear == 0 && !gears[0].reverse && verticalInput < 0f && groundSpeed <= 0.1f)
+        if (currentGear == 0 && !gears[0].reverse && verticalInput > 0f && groundSpeed <= 0.1f)
         {
             currentGear++;
         }
 
+        //Make it so you can switch from reverse to forwards gears if velocity is forwards, and the same vice versa.
 
-        // Write something that will allow you to shift to neutral when the car velocity is 0 (From reverse)   
 
 
         if(gears[0].reverse && !velocityForward) reverseInverse = -1f;
