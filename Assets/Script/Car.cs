@@ -187,7 +187,7 @@ public class Car : MonoBehaviour{
         float groundSpeed = horizontalVelocity.magnitude; //Calculates the speed of the car but not the direction
         Vector3 forwardDirection = transform.forward; //Calculates if it's going forward since you can reverse if the car has a forward velocity
         float dotProduct = Vector3.Dot(forwardDirection, horizontalVelocity);
-        if (dotProduct < 0f)
+        if (dotProduct > 0f)
         {
             velocityForward = true;
         }
@@ -196,7 +196,7 @@ public class Car : MonoBehaviour{
             velocityForward = false;
         }
 
-        if (dotProduct > 0f)
+        if (dotProduct < 0f)
         {
             velocityBackwards = true;
         }
@@ -206,6 +206,7 @@ public class Car : MonoBehaviour{
         }
         if (gears[0].reverse && groundSpeed > 0f && velocityForward)
         {
+            Debug.Log("Attempting");
             brakesActive = brakingForce;
             engineActive = 0f;
         }
@@ -216,6 +217,7 @@ public class Car : MonoBehaviour{
         }
         if (verticalInput > 0f && groundSpeed > 0f && velocityBackwards && gears[currentGear].gear == -1f)
         {
+            Debug.Log("Attempting");
             brakesActive = brakingForce;
             engineActive = 0f;
         }
@@ -268,6 +270,7 @@ public class Car : MonoBehaviour{
         if(gears[0].reverse && !velocityForward) reverseInverse = -1f;
         else reverseInverse = 1f;
 
+        Debug.Log(brakesActive);
 
         verticalInput = verticalBackwards + verticalForward;
         smoothVerticalInput = Mathf.MoveTowards(smoothVerticalInput, verticalInput, accelerationSpeed * Time.fixedDeltaTime);
