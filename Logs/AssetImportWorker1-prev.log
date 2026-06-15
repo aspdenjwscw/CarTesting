@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-06-15T10:52:29.7569417Z"
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15681 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-06-15T11:03:17.16842Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-06-15T10:52:29Z
+Date: 2026-06-15T11:03:17Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.4f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/GitHub/CarTesting
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62705
+49355
 -licensingIpc
 LicenseClient-finla
 -force-d3d12
@@ -68,12 +68,12 @@ C:/GitHub/CarTesting
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [32700]  Target information:
+Player connection [27964]  Target information:
 
-Player connection [32700]  * "[IP] 192.168.50.47 [Port] 0 [Flags] 2 [Guid] 3367933972 [EditorId] 3367933972 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [27964]  * "[IP] 192.168.50.47 [Port] 0 [Flags] 2 [Guid] 1112352530 [EditorId] 1112352530 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [32700] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [32700] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27964] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [27964] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,7 +85,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 9.02 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 114.26 ms, found 4 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/GitHub/CarTesting/Assets
@@ -104,13 +104,28 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56524
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
 CodeReloadManager initialized
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
+[Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-06-15T11:03:24.2755729Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              b0a753f5d6a14660b50b44f9498aeb58
+  Correlation Id:          60ddf2b872a3b037c83be4f5cc2be4c3
+  External correlation Id: 8743445476466391387
+  Machine Id:              kS2MSEUP+PhHajfq4lupfhYLziU=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 5.82s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-06-15T11:03:30.0979564Z"
+[Licensing::Module] Licensing Background thread has ended after 12.93s
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007838 seconds.
+Registered in 1.362238 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -119,29 +134,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.329 seconds
-Domain Reload Profiling: 2494ms
-	BeginReloadAssembly (257ms)
-	RebuildCommonClasses (106ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (157ms)
-	LoadAllAssembliesAndSetupDomain (616ms)
-		LoadAssemblies (256ms)
-		AnalyzeDomain (586ms)
-			TypeCache.Refresh (583ms)
-				TypeCache.ScanAssembly (542ms)
-	FinalizeReload (1333ms)
+- Finished resetting the current domain, in  0.688 seconds
+Domain Reload Profiling: 9606ms
+	BeginReloadAssembly (1116ms)
+	RebuildCommonClasses (1510ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (1556ms)
+	LoadAllAssembliesAndSetupDomain (4699ms)
+		LoadAssemblies (1122ms)
+		AnalyzeDomain (4667ms)
+			TypeCache.Refresh (4665ms)
+				TypeCache.ScanAssembly (3656ms)
+	FinalizeReload (690ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (162ms)
-			BeforeProcessingInitializeOnLoad (306ms)
-			ProcessInitializeOnLoadAttributes (351ms)
-			ProcessInitializeOnLoadMethodAttributes (224ms)
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
-[Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-06-15T10:52:34.1305961Z"
+			InitializePlatformSupportModulesInManaged (76ms)
+			BeforeProcessingInitializeOnLoad (142ms)
+			ProcessInitializeOnLoadAttributes (191ms)
+			ProcessInitializeOnLoadMethodAttributes (164ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 ========================================================================
 Worker process is ready to serve import requests
@@ -149,17 +158,6 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              72276978f2bf4c2288f17c85794603b5
-  Correlation Id:          938f2a511a8eddbdfd326ad383a36672
-  External correlation Id: 7334923663494112413
-  Machine Id:              kS2MSEUP+PhHajfq4lupfhYLziU=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 3.58s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-06-15T10:52:37.717324Z"
-[Licensing::Module] Licensing Background thread has ended after 7.96s
-[Licensing::Module] Licensing is initialized (took 3.19s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 17867501111429-UnityPersXXXX
@@ -201,7 +199,7 @@ Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tes
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 2.68 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.67 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
@@ -214,36 +212,96 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 4.21 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.65 ms, found 4 plugins.
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.662 seconds
-Domain Reload Profiling: 6234ms
-	BeginReloadAssembly (3472ms)
-		DisableScriptedObjects (13ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (67ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (156ms)
-	LoadAllAssembliesAndSetupDomain (855ms)
-		LoadAssemblies (590ms)
-		AnalyzeDomain (415ms)
-			TypeCache.Refresh (302ms)
-				TypeCache.ScanAssembly (279ms)
-			BuildScriptInfoCaches (95ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1663ms)
+- Finished resetting the current domain, in  3.426 seconds
+Domain Reload Profiling: 38350ms
+	BeginReloadAssembly (363ms)
+		DisableScriptedObjects (14ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (62ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (27247ms)
+	LoadAllAssembliesAndSetupDomain (7225ms)
+		LoadAssemblies (5919ms)
+		AnalyzeDomain (1488ms)
+			TypeCache.Refresh (1338ms)
+				TypeCache.ScanAssembly (1306ms)
+			BuildScriptInfoCaches (126ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (3427ms)
 		SetupLoadedEditorAssemblies (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (222ms)
-			ProcessInitializeOnLoadAttributes (898ms)
-			ProcessInitializeOnLoadMethodAttributes (147ms)
-			AfterProcessingInitializeOnLoad (13ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.01 ms, found 4 plugins.
+			BeforeProcessingInitializeOnLoad (264ms)
+			ProcessInitializeOnLoadAttributes (1111ms)
+			ProcessInitializeOnLoadMethodAttributes (160ms)
+			AfterProcessingInitializeOnLoad (15ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 5.08 ms, found 4 plugins.
 Unloading 37 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 7044 unused Assets / (8.5 MB). Loaded Objects now: 7881.
-Memory consumption went from 179.4 MB to 171.0 MB.
-Total: 17.227400 ms (FindLiveObjects: 1.056300 ms CreateObjectMapping: 0.723600 ms MarkObjects: 8.206000 ms  DeleteObjects: 7.235900 ms)
+Memory consumption went from 179.4 MB to 170.9 MB.
+Total: 29.028000 ms (FindLiveObjects: 1.929600 ms CreateObjectMapping: 2.017100 ms MarkObjects: 15.894300 ms  DeleteObjects: 9.179800 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 708773.200770 seconds.
+  path: Assets/Assets/EarlCars/Materials/Black Matte Cover.mat
+  importAddress: Guid(bc4ae32c7babee54a9c85234d9da215d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/EarlCars/Materials/Black Matte Cover.mat using Guid(bc4ae32c7babee54a9c85234d9da215d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e0a55da103b9a8a7ab2a9382632bf7ae') in 0.2659675 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ad6badf4463c2bc06a055c5a3470ad37 DependenciesID=a6e165bb5fcaf4e9d4f3474c8688832b StaticDependenciesID=75e0879cb30d28aa11754b37b29091d4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Assets/EarlCars/Materials/Glass.mat
+  importAddress: Guid(5a9f62ab4b991f047b44ddb6d7291eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/EarlCars/Materials/Glass.mat using Guid(5a9f62ab4b991f047b44ddb6d7291eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b245f4ec9978d7cfaa1fdb28044f5f8c') in 1.3931914 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b14125ab000b7abd99e15e302799b862 DependenciesID=00722ca78ec14692f166bfbd7c4a2842 StaticDependenciesID=0024139736f96d5208c89b015d80b5e2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Assets/EarlCars/Materials/Lower Head Lights.mat
+  importAddress: Guid(905eb22dc7205e44a9edb1366e190a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/EarlCars/Materials/Lower Head Lights.mat using Guid(905eb22dc7205e44a9edb1366e190a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '33c43f6793cebe75a2ccea8ed5f1ab40') in 0.0432941 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bfab9633583a8345ea6fbf7b27329143 DependenciesID=1e9cfb8c6a4bf4706dfad413632a791f StaticDependenciesID=af4bbd91004c2020dc9aa0429a0d4602 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Assets/EarlCars/Materials/Black Matte Cover.mat
+  importAddress: Guid(bc4ae32c7babee54a9c85234d9da215d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/EarlCars/Materials/Black Matte Cover.mat using Guid(bc4ae32c7babee54a9c85234d9da215d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8cc5f7c6452a272ef401564111cf8d8a') in 0.0403909 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c20d6934cf5efb2288b1557a3eb7df72 DependenciesID=4ff9a0281e5f3d4c5bb09afa3fc2fd2d StaticDependenciesID=41a2434083c7686f0e9c45a6f962b21c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Assets/EarlCars/Materials/Base.mat
+  importAddress: Guid(adf794639b7ffbd498cb75d26572cde7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/EarlCars/Materials/Base.mat using Guid(adf794639b7ffbd498cb75d26572cde7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e6a9c99948dd3b4059636de6051cf5bd') in 0.0299826 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d2715f353935cc164b4f8b6a50eaca83 DependenciesID=bb3331468de4aa4feab50404e945be0c StaticDependenciesID=37f4a47381d7c0f57baf10c3024a2200 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Assets/EarlCars/Materials/Spokes.mat
+  importAddress: Guid(d44961b5e187af74f8f999ef5dd10dfc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/EarlCars/Materials/Spokes.mat using Guid(d44961b5e187af74f8f999ef5dd10dfc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ac6526f1aff2062b21e7dc9e236518f7') in 0.029945 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3a7f52b11c382e95db3e496433f1a64d DependenciesID=f9a0add143de452a11b2ddbd9ada9ab2 StaticDependenciesID=01e2ecf043f9abcf6f1c21b9d99fb904 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.702073 seconds.
+  path: Assets/Scenes/FinlayScene.unity
+  importAddress: Guid(d7bb5899e8c9f514b9e6519895125d88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/FinlayScene.unity using Guid(d7bb5899e8c9f514b9e6519895125d88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '11397fe2c4ba8ec27c4bc24ce131bbfc') in 0.0268645 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=872f7573affa23af711e981d05f8e48d DependenciesID=0aa31ee355e30bb96b1a18855bc9082a StaticDependenciesID=54c6e96abef7dcad84ac6ff47ea55871 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
