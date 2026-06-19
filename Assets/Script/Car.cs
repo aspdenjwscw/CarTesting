@@ -31,6 +31,7 @@ public class Car : MonoBehaviour{
     public bool automatic, uphill, velocityForward, velocityBackwards, upShift, downShift, allowShift, shiftValueReset, braking;
     public Gear[] gears;
     private float rpmVelocity, downShiftEngineRPM, upShiftEngineRPM;
+    public AnimationCurve gearPowerScailingCurve;
 
     void Start(){
         forwardKey = KeyCode.W; //change forward to equal a different variable that we import from the settings menu later on.
@@ -52,7 +53,7 @@ public class Car : MonoBehaviour{
 
         Vector3 autoCoM = rigid.centerOfMass;
         rigid.centerOfMass = new Vector3(0f, autoCoM.y - 1f, autoCoM.z);
-
+        //Setting the gears values.
         gears = new Gear[]
         {
             new Gear(-3.5f, -1f, false, "Reverse"),
@@ -72,7 +73,7 @@ public class Car : MonoBehaviour{
     void Update(){
         
         
-
+        //Gears upshifting, and downshift.
         if (upShift)
         {
             engineRPM = Mathf.SmoothDamp(engineRPM, upShiftEngineRPM, ref rpmVelocity, shiftTime);
@@ -125,7 +126,7 @@ public class Car : MonoBehaviour{
 
 
         
-
+        //Checks for key presses, and assigns the values for them to work.
         if (Input.GetKey(forwardKey) && !braking)
         {
             verticalForward = 1f;
@@ -183,6 +184,7 @@ public class Car : MonoBehaviour{
 
     void FixedUpdate()
     {
+        //Detects if the velocity is forward or backwards as a bool.
         Vector3 horizontalVelocity = new Vector3(rigid.linearVelocity.x, 0f, rigid.linearVelocity.z);
         float groundSpeed = horizontalVelocity.magnitude; //Calculates the speed of the car but not the direction
         Vector3 forwardDirection = transform.forward; //Calculates if it's going forward since you can reverse if the car has a forward velocity
@@ -228,7 +230,7 @@ public class Car : MonoBehaviour{
 
         float pitchAngle = transform.eulerAngles.x;
         if (pitchAngle > 180f) pitchAngle -= 360f; //This makes it so that if it goes over 180 then it goes to -180 to show its declining and makes it easier
-        if (pitchAngle > 20f) uphill = true;
+        if (pitchAngle < -20f) uphill = true;
         else uphill = false;
         if (allowShift) engineRPM = ((wheel3.rpm * 4.56f * gears[currentGear].ratio) + (wheel4.rpm * 4.56f * gears[currentGear].ratio))/2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
         if (engineRPM > 3000f && !uphill && automatic && currentGear >= 1 && currentGear <= 7 && allowShift)
@@ -254,11 +256,11 @@ public class Car : MonoBehaviour{
         {
             currentGear = 1;
         }
-        if (currentGear == 1 && verticalInput > 0 && (groundSpeed <= 0.1f || velocityForward)) currentGear++;
-        if (currentGear == 1 && verticalInput < 0 && (groundSpeed <= 0.1f || velocityBackwards)) currentGear--;
+        if (currentGear == 1 && verticalInput > 0 && (groundSpeed <= 0.1f || velocityForward) && automatic) currentGear++;
+        if (currentGear == 1 && verticalInput < 0 && (groundSpeed <= 0.1f || velocityBackwards) && automatic) currentGear--;
 
         //Debug.Log(groundSpeed);
-        if (currentGear == 0 && !gears[0].reverse && verticalInput > 0f && groundSpeed <= 0.1f)
+        if (currentGear == 0 && !gears[0].reverse && verticalInput > 0f && groundSpeed <= 0.1f && automatic)
         {
             currentGear++;
         }
@@ -266,15 +268,27 @@ public class Car : MonoBehaviour{
         //Make it so you can switch from reverse to forwards gears if velocity is forwards, and the same vice versa.
 
 
+        //Checks if you're in reverse or forward, and allows you to shift into first or into reverse if your velocity, and input is in the right direction.
+        if(velocityForward && currentGear == 0 && verticalInput > 0f && automatic)
+        {
+            currentGear = 1;
+        }
 
-        if(gears[0].reverse && !velocityForward) reverseInverse = -1f;
-        else reverseInverse = 1f;
+        if(velocityBackwards && currentGear > 1f && verticalInput < 0f && automatic)
+        {
+            currentGear = 0;
+        }
 
         Debug.Log(brakesActive);
 
         verticalInput = verticalBackwards + verticalForward;
         smoothVerticalInput = Mathf.MoveTowards(smoothVerticalInput, verticalInput, accelerationSpeed * Time.fixedDeltaTime);
-        float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * reverseInverse; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
+
+        //Impliment this later, and change how the other RPM limiters work.
+        float motorMultiplyer = gearPowerScailingCurve.Evaluate(currentGear);
+        if (pitchAngle < -30f && currentGear == 2) motorMultiplyer = 1;
+        float naturalRPMLimiter = Mathf.Clamp01(1f - (engineRPM / 6000f));
+        float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * motorMultiplyer; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
         // The 4.56 is to replicate the FinalDriveRatio and the engineMax is to model going to high on the RPM and to stop them getting infinite Torque
         wheel3.motorTorque = motor;
         wheel4.motorTorque = motor;
