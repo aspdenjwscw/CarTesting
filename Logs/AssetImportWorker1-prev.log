@@ -250,3 +250,15 @@ Received Import Request.
 Start importing Assets/Assets/Grass.terrainlayer using Guid(cf30b7c36640d482c9de7f1499b3638a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd2c9338558fe5bea68358ecbb80fab84') in 0.034388417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4686d4f8d1d01bdc69eea75b0e887a96 DependenciesID=b75fe67db4201082d33d23afb32f34ea StaticDependenciesID=8e620f95a415ec6becd647154b2eaf4c 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 39 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (4.2 MB). Loaded Objects now: 8021.
+Memory consumption went from 183.3 MB to 179.1 MB.
+Total: 46.008708 ms (FindLiveObjects: 0.960125 ms CreateObjectMapping: 0.089917 ms MarkObjects: 43.744375 ms  DeleteObjects: 1.212875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
