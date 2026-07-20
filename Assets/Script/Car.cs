@@ -39,6 +39,7 @@ public class Car : MonoBehaviour{
         backwardsKey = KeyCode.S;
         brakingKey = KeyCode.Space;
         brakingForce = 10000f;
+        brakesActive = brakingForce;
         shiftTime = 0.3f;
         shiftingCooldown = 0.8f;
         downShiftEngineRPM = 3000f;
@@ -52,7 +53,7 @@ public class Car : MonoBehaviour{
         reverseRedlineRPM = -3000f;
 
         Vector3 autoCoM = rigid.centerOfMass;
-        rigid.centerOfMass = new Vector3(0f, autoCoM.y - 1f, autoCoM.z);
+        rigid.centerOfMass = new Vector3(0f, autoCoM.y - 0.5f, autoCoM.z);
         //Setting the gears values.
         gears = new Gear[]
         {
@@ -175,7 +176,7 @@ public class Car : MonoBehaviour{
 
 
         Debug.Log(gears[currentGear].ratio);
-        Debug.Log(engineRPM);
+        Debug.Log(wheel3.motorTorque);
         //Debug.Log(reverseInverse);
         //There are ways to change what the Input.GetAxis("Vertical"); need to be pressed to give change them
 
@@ -233,7 +234,7 @@ public class Car : MonoBehaviour{
         if (pitchAngle < -20f) uphill = true;
         else uphill = false;
         if (allowShift) engineRPM = ((wheel3.rpm * 4.56f * gears[currentGear].ratio) + (wheel4.rpm * 4.56f * gears[currentGear].ratio))/2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
-        if (engineRPM > 3000f && !uphill && automatic && currentGear >= 1 && currentGear <= 7 && allowShift)
+        if (engineRPM > 3000f && !uphill && automatic && currentGear >= 1 && currentGear <= 7 && allowShift && groundSpeed >= 5f)
         {
             currentGear++;
             upShift = true;
@@ -246,12 +247,20 @@ public class Car : MonoBehaviour{
         else if (engineRPM < reverseRedlineRPM) engineActive = 0f;
         else if (engineRPM < redlineRPM && !downShift && !upShift) engineActive = 1f;
         else if (engineRPM > reverseRedlineRPM && !upShift && !downShift) engineActive = 1f;
-        if (engineRPM < 1500f && automatic && allowShift && currentGear > 1)
+        if (engineRPM < 1500f && automatic && allowShift && currentGear > 2)
         {
+            Debug.Log("triggering 1");
             currentGear--;
             downShift = true;
             allowShift = false;
         }// Problem: How do I make it not autoshift back down when the RPM drops, How do I even make the RPM drop realistically, If I use time to make the RPM drop how do I make it work.
+        if (groundSpeed <= 0.1f && automatic && allowShift && currentGear == 2 && verticalInput != 1)
+        {
+            Debug.Log("triggering 2");
+            currentGear--;
+            downShift = true;
+            allowShift = false;
+        }
         else if (engineRPM == 0f && gears[currentGear].gear == 1 && automatic && !gears[0].reverse)
         {
             currentGear = 1;
@@ -280,6 +289,7 @@ public class Car : MonoBehaviour{
         }
 
         Debug.Log(brakesActive);
+        Debug.Log(groundSpeed);
 
         verticalInput = verticalBackwards + verticalForward;
         smoothVerticalInput = Mathf.MoveTowards(smoothVerticalInput, verticalInput, accelerationSpeed * Time.fixedDeltaTime);
@@ -287,9 +297,11 @@ public class Car : MonoBehaviour{
         //Impliment this later, and change how the other RPM limiters work.
         float motorMultiplyer = gearPowerScailingCurve.Evaluate(currentGear);
         if (pitchAngle < -30f && currentGear == 2) motorMultiplyer = 1;
+        if (groundSpeed < 1f && currentGear == 2) motorMultiplyer = 1;
         float naturalRPMLimiter = Mathf.Clamp01(1f - (engineRPM / 6000f));
         float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * motorMultiplyer; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
         // The 4.56 is to replicate the FinalDriveRatio and the engineMax is to model going to high on the RPM and to stop them getting infinite Torque
+        Debug.Log(motorMultiplyer);
         wheel3.motorTorque = motor;
         wheel4.motorTorque = motor;
         if(braking) brakesActive = brakingForce;
