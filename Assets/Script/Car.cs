@@ -53,7 +53,7 @@ public class Car : MonoBehaviour{
         reverseRedlineRPM = -3000f;
 
         Vector3 autoCoM = rigid.centerOfMass;
-        rigid.centerOfMass = new Vector3(0f, autoCoM.y - 0.5f, autoCoM.z);
+        rigid.centerOfMass = new Vector3(0f, autoCoM.y - 0.75f, autoCoM.z);
         //Setting the gears values.
         gears = new Gear[]
         {
@@ -302,6 +302,8 @@ public class Car : MonoBehaviour{
         float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * motorMultiplyer; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
         // The 4.56 is to replicate the FinalDriveRatio and the engineMax is to model going to high on the RPM and to stop them getting infinite Torque
         Debug.Log(motorMultiplyer);
+        wheel1.motorTorque = motor;
+        wheel2.motorTorque = motor;
         wheel3.motorTorque = motor;
         wheel4.motorTorque = motor;
         if(braking) brakesActive = brakingForce;

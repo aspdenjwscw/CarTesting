@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-07-21T08:55:16.8283886Z"
 Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15681 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-07-20T22:16:13.9983116Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-07-20T22:16:13Z
+Date: 2026-07-21T08:55:16Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.4f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/GitHub/CarTesting
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-58665
+59658
 -licensingIpc
 LicenseClient-finla
 -force-d3d12
@@ -68,12 +68,12 @@ C:/GitHub/CarTesting
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [24432]  Target information:
+Player connection [9804]  Target information:
 
-Player connection [24432]  * "[IP] 10.10.1.152 [Port] 0 [Flags] 2 [Guid] 3636411682 [EditorId] 3636411682 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [9804]  * "[IP] 192.168.50.47 [Port] 0 [Flags] 2 [Guid] 3704065917 [EditorId] 3704065917 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24432] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [24432] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [9804] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [9804] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,7 +85,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 26.78 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 6.68 ms, found 4 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/GitHub/CarTesting/Assets
@@ -104,13 +104,13 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56336
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006950 seconds.
+Registered in 0.005181 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -118,48 +118,48 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
+[Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-07-21T08:55:21.3638643Z"
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.871 seconds
-Domain Reload Profiling: 1862ms
-	BeginReloadAssembly (297ms)
-	RebuildCommonClasses (79ms)
-	RebuildNativeTypeToScriptingClass (35ms)
-	initialDomainReloadingComplete (145ms)
-	LoadAllAssembliesAndSetupDomain (432ms)
-		LoadAssemblies (291ms)
-		AnalyzeDomain (414ms)
-			TypeCache.Refresh (412ms)
-				TypeCache.ScanAssembly (385ms)
-	FinalizeReload (874ms)
+- Finished resetting the current domain, in  1.098 seconds
+Domain Reload Profiling: 2133ms
+	BeginReloadAssembly (383ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (164ms)
+	LoadAllAssembliesAndSetupDomain (394ms)
+		LoadAssemblies (376ms)
+		AnalyzeDomain (377ms)
+			TypeCache.Refresh (376ms)
+				TypeCache.ScanAssembly (350ms)
+	FinalizeReload (1102ms)
 		SetupLoadedEditorAssemblies (0ms)
 			InitializePlatformSupportModulesInManaged (103ms)
-			BeforeProcessingInitializeOnLoad (180ms)
-			ProcessInitializeOnLoadAttributes (229ms)
-			ProcessInitializeOnLoadMethodAttributes (208ms)
+			BeforeProcessingInitializeOnLoad (172ms)
+			ProcessInitializeOnLoadAttributes (408ms)
+			ProcessInitializeOnLoadMethodAttributes (268ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
-[Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-07-20T22:16:18.7834825Z"
 Begin MonoManager ReloadAssembly
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              a3ffd1c73b34435b85f649847618aa30
-  Correlation Id:          bf14b2a34e3354b1a6f7ebbd2bb30887
-  External correlation Id: 1160075530415803055
+  Session Id:              8f54e5e95df848e9832b4a6261b0ca29
+  Correlation Id:          6f1d5c8a092d889d71dae37f5cdf999e
+  External correlation Id: 6009735550099864025
   Machine Id:              kS2MSEUP+PhHajfq4lupfhYLziU=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 4.25s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-07-20T22:16:23.0352368Z"
-[Licensing::Module] Licensing Background thread has ended after 9.04s
-[Licensing::Module] Licensing is initialized (took 4.22s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 5.54s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-07-21T08:55:26.9082893Z"
+[Licensing::Module] Licensing Background thread has ended after 10.08s
+[Licensing::Module] Licensing is initialized (took 4.20s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 17867501111429-UnityPersXXXX
@@ -201,7 +201,7 @@ Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tes
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 13.37 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.40 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
@@ -214,144 +214,179 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 3.27 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 8.22 ms, found 4 plugins.
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.087 seconds
-Domain Reload Profiling: 8430ms
-	BeginReloadAssembly (4592ms)
-		DisableScriptedObjects (11ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (68ms)
-	RebuildNativeTypeToScriptingClass (22ms)
+- Finished resetting the current domain, in  2.669 seconds
+Domain Reload Profiling: 9443ms
+	BeginReloadAssembly (4713ms)
+		DisableScriptedObjects (15ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (104ms)
+	RebuildNativeTypeToScriptingClass (33ms)
 	initialDomainReloadingComplete (209ms)
-	LoadAllAssembliesAndSetupDomain (1452ms)
-		LoadAssemblies (1033ms)
-		AnalyzeDomain (629ms)
-			TypeCache.Refresh (478ms)
-				TypeCache.ScanAssembly (444ms)
-			BuildScriptInfoCaches (118ms)
-			ResolveRequiredComponents (30ms)
-	FinalizeReload (2088ms)
+	LoadAllAssembliesAndSetupDomain (1713ms)
+		LoadAssemblies (1156ms)
+		AnalyzeDomain (840ms)
+			TypeCache.Refresh (605ms)
+				TypeCache.ScanAssembly (557ms)
+			BuildScriptInfoCaches (195ms)
+			ResolveRequiredComponents (35ms)
+	FinalizeReload (2670ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (284ms)
-			ProcessInitializeOnLoadAttributes (999ms)
-			ProcessInitializeOnLoadMethodAttributes (230ms)
-			AfterProcessingInitializeOnLoad (17ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			BeforeProcessingInitializeOnLoad (417ms)
+			ProcessInitializeOnLoadAttributes (1324ms)
+			ProcessInitializeOnLoadMethodAttributes (265ms)
+			AfterProcessingInitializeOnLoad (23ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
 WARNING: Shader Unsupported: 'RoadArchitect/TranShadow' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 4.08 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 3.81 ms, found 4 plugins.
 Unloading 38 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7114 unused Assets / (9.0 MB). Loaded Objects now: 8069.
-Memory consumption went from 186.5 MB to 177.5 MB.
-Total: 27.620400 ms (FindLiveObjects: 2.503700 ms CreateObjectMapping: 2.985500 ms MarkObjects: 15.875500 ms  DeleteObjects: 6.251100 ms)
+Unloading 7114 unused Assets / (9.7 MB). Loaded Objects now: 8069.
+Memory consumption went from 186.6 MB to 176.9 MB.
+Total: 25.047000 ms (FindLiveObjects: 1.861700 ms CreateObjectMapping: 2.154900 ms MarkObjects: 12.862200 ms  DeleteObjects: 8.162400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 84306.927732 seconds.
-  path: Assets/Customizable Skybox/Stylized Sky/Shaders
-  importAddress: Guid(a467af176e3ceba48899c668a09878d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Stylized Sky/Shaders using Guid(a467af176e3ceba48899c668a09878d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '501385e0ddcb6140efcf1d39034a09a9') in 0.024605 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b759ca03004071756efa6bebbaeb12d1 DependenciesID=33368a9f70ec69668e2ca90a41ef2917 StaticDependenciesID=41cf5605d7c9aa512baccaf3dc06466b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.896153 seconds.
-  path: Assets/Customizable Skybox/Model
-  importAddress: Guid(b3a8b5ae7212a5e469e5295bd49eb2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Model using Guid(b3a8b5ae7212a5e469e5295bd49eb2b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cf03bcad0b150496050dbe74b5ef7bca') in 0.0021892 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1bf92197e4f5f7972122f466ba5c70bb DependenciesID=e87a8977a6161c219a3b2434960e7dae StaticDependenciesID=a0de1d052f57c77e08faa4b25972f25f 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Customizable Skybox/Model/Low Poly Island.fbx
-  importAddress: Guid(9e1cb89bae143d046bb9dba32b57bed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Model/Low Poly Island.fbx using Guid(9e1cb89bae143d046bb9dba32b57bed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)MaterialLocation.External is obsolete. External Material Location is no longer supported. (Assets/Customizable Skybox/Model/Low Poly Island.fbx)
- -> (Import Result ID: 'ec6e6495e1cc481a95f202feaa222aca') in 1.7154925 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=73327effb24fee076a23ef32122d8a8b DependenciesID=0561f9a1b7b3d6fa3b418ec2b5102c5d StaticDependenciesID=941a5f2c7377f772189e145ff354bec1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 99
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
+  Time since last request: 122277.786288 seconds.
   path: Assets/Customizable Skybox/Model/Materials/pine brown.mat
-  importAddress: Guid(23884aea9e628ee45a87314c9fd2483e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Model/Materials/pine brown.mat using Guid(23884aea9e628ee45a87314c9fd2483e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0051612f6bf88db7576846c86fbadb8e') in 0.0776229 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c0e2cce72dee04676d69f3e2739abbb8 DependenciesID=cc9d3af926c9766b2764134d12f08d5c StaticDependenciesID=1719067f4e46e00541c91cdb419d80fd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Customizable Skybox/Model/Materials/earth.mat
-  importAddress: Guid(9d1ca55e2263fd54589900465f90d06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Model/Materials/earth.mat using Guid(9d1ca55e2263fd54589900465f90d06e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '53e452a5dc807409812d4626e835e8af') in 0.0207997 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=65f4e190e3ef9734238dcafde1cfaeaf DependenciesID=c4769d42edc6330e7c878a5c307c04da StaticDependenciesID=acd5677ab3c211860ccdfb288f62cfdc 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Customizable Skybox/Model/Materials/darken leafs.mat
-  importAddress: Guid(d35ea29c48c3e1944a4f03cab15e36c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Model/Materials/darken leafs.mat using Guid(d35ea29c48c3e1944a4f03cab15e36c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '95502bdbead8bd50ba1ecd5dae247c41') in 0.0235207 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4e190cda80d3bffd182709b86cfc61f2 DependenciesID=2cbfac05e2669e3361eeb1bb026d82fa StaticDependenciesID=e689e554364506daba99c0e26dd1023b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.359716 seconds.
-  path: Assets/Customizable Skybox/Scenes
-  importAddress: Guid(4c87f64bb2d3ca445ac1badce6b5c0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Scenes using Guid(4c87f64bb2d3ca445ac1badce6b5c0d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1f31f84518ed405b2013224420cf8336') in 0.0017358 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0b1a25de6a1eb452d56a61c391ab6b8f DependenciesID=f518a7772b0b4832c6d83cea821ecbab StaticDependenciesID=35a9060044c0185881f4a6601c043777 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.450737 seconds.
-  path: Assets/Customizable Skybox/Materials
-  importAddress: Guid(ea580a49e393d474a8246aed4e6421fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Materials using Guid(ea580a49e393d474a8246aed4e6421fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c9e2b7057b5412bb4859c1e060d2b8b8') in 0.0009196 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f323fb17bc3d3b4f6216a3b44d5a1632 DependenciesID=ff642625cce6fd3909d88cd1af00dc69 StaticDependenciesID=4f9cd6d7b7d91ce7b7d86ef9c65a5b6d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Customizable Skybox/Materials/Clouds.mat
-  importAddress: Guid(b2fcea6c7d9dbab4ca781825705d50be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Materials/Clouds.mat using Guid(b2fcea6c7d9dbab4ca781825705d50be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9d79839e4c324f8edf665f60fef99bfc') in 0.0229861 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ad28754cd4c93cb9aa5dcb21227d2db9 DependenciesID=56951a2b9e8bc3ed5c2d0e0a19315aae StaticDependenciesID=c47c4a5653efe2a62a24569c2137102a 
+  importAddress: Guid(23884aea9e628ee45a87314c9fd2483e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials/pine brown.mat using Guid(23884aea9e628ee45a87314c9fd2483e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9a894d5221eac28a2309f33c506b4758') in 0.3066465 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=17b696e83088a1aea14e49d563a12a87 DependenciesID=6edb61a48fbcb1f9e69620ecad94502d StaticDependenciesID=1dc634cfe07b8a2ac9fa25197e3811bc 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000063 seconds.
-  path: Assets/Customizable Skybox/Materials/earth.mat
-  importAddress: Guid(ef6223db6cd2fd94481bcb5ce352cc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Materials/earth.mat using Guid(ef6223db6cd2fd94481bcb5ce352cc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '387ae2db882726c07b5125e9ef01a6df') in 0.017451 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=081d3521ac52f4075f29af2b534d3067 DependenciesID=01b44e148b42c65f94a596a1cb963c1b StaticDependenciesID=a7ba5e66d2343546913543fd14212882 
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Sunset4.mat
+  importAddress: Guid(20f6d22d93779de4ea6f62f8ab305593) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Sunset4.mat using Guid(20f6d22d93779de4ea6f62f8ab305593) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a05849442236c6a1db54446e256ebce8') in 0.04507 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b2b3ff121f3e76e000176b47af3a57a0 DependenciesID=f0ab43267d7c23178e75b897706ed6c7 StaticDependenciesID=312f6afd4b39f3ed0cd6369ebdc889fc 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000041 seconds.
-  path: Assets/Customizable Skybox/Materials/darken leafs.mat
-  importAddress: Guid(3020cfb028abb6c4f977e1db1f72bef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Materials/darken leafs.mat using Guid(3020cfb028abb6c4f977e1db1f72bef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'eed9dce84aad1a40849e53af4c6bd119') in 0.0200935 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=10423a0d06071fbfa363797b136f4140 DependenciesID=a8c2f17b6b75f96235232d518bf36638 StaticDependenciesID=2497051805a59f464b3de8b34df50013 
+  path: Assets/Customizable Skybox/Model/Materials/green tree.mat
+  importAddress: Guid(c856162727dc18842bc191504f727456) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials/green tree.mat using Guid(c856162727dc18842bc191504f727456) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '45e253452aafff4d5b22787378988c72') in 0.0492939 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b96b4d4626f0391fba50ed552c234dd2 DependenciesID=f6c32e40426a997da7c87bef04e33015 StaticDependenciesID=00eb349f7d99ad6bdb5587af94c42231 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/FinlayScene.unity
+  importAddress: Guid(d7bb5899e8c9f514b9e6519895125d88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/FinlayScene.unity using Guid(d7bb5899e8c9f514b9e6519895125d88) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3da08377ec1fb5fba63000be29367b42') in 0.0359707 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f25b0d496ce8f69590f3d5b8276c0a0d DependenciesID=28634adf931faf8411240c1599740a02 StaticDependenciesID=634e86cde1c55508c9800dd21f58565d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials
+  importAddress: Guid(57832ac6c71e6b44ebdf2a754a4b62d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials using Guid(57832ac6c71e6b44ebdf2a754a4b62d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '52d64a0c0e72402d766a0a0aca379ff5') in 0.0282564 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fe9d211c8575989af0ee93431fcacc7e DependenciesID=93d0005122a87b790c27727faf447991 StaticDependenciesID=37e7f497378f4c99a936b6627d2d3b11 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Night1.mat
+  importAddress: Guid(bbe9494f815f3c340956427c884b72a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Night1.mat using Guid(bbe9494f815f3c340956427c884b72a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd639206611d3b0ccd96c9f2e9e5ca0a4') in 0.023324 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0326b3df703f9b6224d0352a9813b0a9 DependenciesID=5a3f916720f6c724a512aeef8825e772 StaticDependenciesID=528efea7a771a10bdd8455cc527308cd 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000042 seconds.
-  path: Assets/Customizable Skybox/Materials/green tree.mat
-  importAddress: Guid(162ad232b242eb042b91b10dc755c486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Materials/green tree.mat using Guid(162ad232b242eb042b91b10dc755c486) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd1d18b3419b15b398f0afede667b64de') in 0.0238389 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8cc0329a587b39c46045478c4504e6db DependenciesID=a12509988553f3c906208dadac2c8e9a StaticDependenciesID=ae7024abf8475d920baf0631cda279a3 
+  path: Assets/Customizable Skybox/Model/Materials/pine tree green.mat
+  importAddress: Guid(b67fe0ad79964244383e7633743fcc6b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials/pine tree green.mat using Guid(b67fe0ad79964244383e7633743fcc6b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '168dc84a16c5ae1dc56cdb805b07d44a') in 0.0434672 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c4e6eba0ecea93d9958fc866d9d7a3fc DependenciesID=92283612ff7320eaee1e667e0fa3c8fe StaticDependenciesID=0e5baf9ed1cf272f29b0ad9e222a280f 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Customizable Skybox/Materials/pine tree green.mat
-  importAddress: Guid(471bbc61de2af0a47bd80da0aacc49dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Customizable Skybox/Materials/pine tree green.mat using Guid(471bbc61de2af0a47bd80da0aacc49dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b9718087bb74dbdc98445d060d240c15') in 0.0321671 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b12ec1bb0c400862e330b4ad486b910a DependenciesID=2bb84d10a823becf893a341823c7c127 StaticDependenciesID=1dc1c449e26e5ca793ec433fba4615fb 
+  Time since last request: 0.000034 seconds.
+  path: Assets/Customizable Skybox/Materials/Clouds.mat
+  importAddress: Guid(b2fcea6c7d9dbab4ca781825705d50be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Materials/Clouds.mat using Guid(b2fcea6c7d9dbab4ca781825705d50be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c12534451daf9109b9aac29f7c661784') in 0.0469985 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=18b8ffbb80df8d2408f66090563d6192 DependenciesID=f4dcad59f56d98cfd3e2ca7774594647 StaticDependenciesID=d13b4f4e5ebc8da05975b423864a70ef 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Morning3.mat
+  importAddress: Guid(022e71752654d3f4fa0cbe71b312ad20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Morning3.mat using Guid(022e71752654d3f4fa0cbe71b312ad20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f89e4d2615ac3b09de4a722aa43f3501') in 0.0465346 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=08e70394842b078c7d3dde5fbc9300f8 DependenciesID=673e231785936aee9b4dec49c81ac591 StaticDependenciesID=de83c892d56f1657c3fec6f98883334a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Customizable Skybox/Model/Materials/dark trunk.mat
+  importAddress: Guid(b50f1c4e199dc3b47b56b0880d757857) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials/dark trunk.mat using Guid(b50f1c4e199dc3b47b56b0880d757857) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '69803fbff186811cfdfaa343490016d6') in 0.0454417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3236eced0cb04e27882cdac177ee0539 DependenciesID=a704c6fb4b05b9d0d7311420b99ebbc2 StaticDependenciesID=caed70285c57f0fc62b22bc432077591 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Morning2.mat
+  importAddress: Guid(5464c15ff9c6ca04cb5790c1773e76fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Morning2.mat using Guid(5464c15ff9c6ca04cb5790c1773e76fa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '699634ac13dbdc722473071072bddb13') in 0.0551789 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a16fdb473f31d8ab7cb21f679230601c DependenciesID=8edea83d5769a48942d10602b82b1c92 StaticDependenciesID=5c7f2f0fcf5e01e32ae04522a8e7cd9f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Customizable Skybox/Materials/pine tree green.mat
+  importAddress: Guid(471bbc61de2af0a47bd80da0aacc49dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Materials/pine tree green.mat using Guid(471bbc61de2af0a47bd80da0aacc49dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '69a064a7a38f6027d88aadf3f92088fa') in 0.0540774 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=da6117b4014fec1f95a0d3eb23a73a2e DependenciesID=363f0bcf151fa07289c6353e0ac6ff2f StaticDependenciesID=17e7ff6478adc3ec2cfdeda8f9b35d2f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Night2.mat
+  importAddress: Guid(52fcefd712182d743a781fde12426775) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Night2.mat using Guid(52fcefd712182d743a781fde12426775) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0691e7a4fc6eca5d2a3386543d265872') in 0.0541122 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f79b3650dea1f9e83920f9650db72640 DependenciesID=b666ef638a3bb06c63e8cb2f1305deb0 StaticDependenciesID=10b53f822778dc21e51d273c6a46451b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Customizable Skybox/Materials/trunk.mat
+  importAddress: Guid(08c4b67273e724941900639ca93caabc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Materials/trunk.mat using Guid(08c4b67273e724941900639ca93caabc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '776afda8be18f35e24f19de49428a06f') in 0.0484383 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=18c9da328b03b4d4076e371301e6973d DependenciesID=5f87b4764a8ed645acc92930ad2bf111 StaticDependenciesID=feabe4cc1bcff36f81e8ee9b69b74f25 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Customizable Skybox/Materials/dark trunk.mat
+  importAddress: Guid(7c7f7e923f30d8b4193dfc9a7eb33ea9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Materials/dark trunk.mat using Guid(7c7f7e923f30d8b4193dfc9a7eb33ea9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4e003a747fb6f13126334ae62da3aedb') in 0.0495576 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b278bf96939bd333a3c929f705621369 DependenciesID=433e7ce077358470931d84f4607de1b7 StaticDependenciesID=68ec7a5036e87ee7e4f9f308a3154323 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Customizable Skybox/Materials
+  importAddress: Guid(ea580a49e393d474a8246aed4e6421fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Materials using Guid(ea580a49e393d474a8246aed4e6421fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cfd25c56e1798dc57f038e3e6291d3d4') in 0.0278686 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=71b806f4f81eeb79e7287d6a88350778 DependenciesID=d774033b637a392b4865528b0ebf27a6 StaticDependenciesID=8ef25f1965988e08c626c968f9c88df2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Day7.mat
+  importAddress: Guid(ddbcbb3899687ea469ed4a5fce1532df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Day7.mat using Guid(ddbcbb3899687ea469ed4a5fce1532df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a52071ccecdb547b77a39a7c4aecbdb8') in 0.0469313 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c7666cdfd83782733b6956591283944f DependenciesID=13bfc1b41e77a09237029ea33a971de1 StaticDependenciesID=2cd6fd7f56ae747180e6fd2fc5412774 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
