@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1280
     height: 709.3334
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -1166,9 +1166,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 91.878265, y: 24.274366, z: -27.579842}
+    m_Target: {x: 7.023033, y: 55.632668, z: -14.948116}
     speed: 2
-    m_Value: {x: 91.878265, y: 24.274366, z: -27.579842}
+    m_Value: {x: 7.023033, y: 55.632668, z: -14.948116}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1215,9 +1215,9 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: -0.017798379, y: 0.8354936, z: 0.026825603, w: 0.5488897}
+    m_Target: {x: 0.019438973, y: -0.77062935, z: -0.0231055, w: -0.63687617}
     speed: 2
-    m_Value: {x: -0.017798377, y: 0.8354936, z: 0.026825601, w: 0.5488897}
+    m_Value: {x: -0.019438973, y: 0.77062935, z: 0.0231055, w: 0.63687617}
   m_Size:
     m_Target: 37.138504
     speed: 2
@@ -1407,7 +1407,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Customizable Skybox/Stylized Sky
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1415,25 +1415,27 @@ MonoBehaviour:
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
-  m_StartGridSize: 71
+  m_StartGridSize: 50
   m_LastFolders:
-  - Assets/Customizable Skybox/Stylized Sky
-  m_LastFoldersGridSize: 71
+  - Assets
+  m_LastFoldersGridSize: 50
   m_LastProjectPath: C:\GitHub\CarTesting
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 54154
+    - m_Data: 53148
     m_LastClickedID:
-      m_Data: 54154
+      m_Data: 53148
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 52438
-    - m_Data: 52440
     - m_Data: 52442
+    - m_Data: 52444
+    - m_Data: 52446
+    - m_Data: 52448
+    - m_Data: 52450
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1467,9 +1469,11 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 52438
-    - m_Data: 52440
     - m_Data: 52442
+    - m_Data: 52444
+    - m_Data: 52446
+    - m_Data: 52448
+    - m_Data: 52450
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1498,9 +1502,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 54154
+    - m_Data: 54276
     m_LastClickedEntityId:
-      m_Data: 54154
+      m_Data: 54276
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 47914
@@ -1531,7 +1535,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 71
+    m_GridSize: 50
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &18
