@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Assets\\Script\\WeatherAndParticles.cs",
               "ToolTip": "C:\\GitHub\\CarTesting\\Assets\\Script\\WeatherAndParticles.cs",
               "RelativeToolTip": "Assets\\Script\\WeatherAndParticles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-21T10:22:15.544Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Assets\\Script\\Car.cs",
               "ViewState": "AgIAAH8AAAAAAAAAAAAAADcAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T02:04:50.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-05T02:04:50.36Z"
             },
             {
               "$type": "Document",

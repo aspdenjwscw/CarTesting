@@ -94925,7 +94925,7 @@ MonoBehaviour:
   projectid: 
   updateInt: 10
   newSplatMapRestoreCode: 0
-  toolbarInt: 3
+  toolbarInt: 1
   oldToolbarInt: 0
   roadToolbarInt: 0
   markerToolbarInt: 0
@@ -95459,14 +95459,14 @@ MonoBehaviour:
   - All Terrains
   - Terrain_(1000.00, 0.00, 0.00)
   - Terrain_(0.00, 0.00, -1000.00)
-  - Terrain
   - Terrain_(1000.00, 0.00, -1000.00)
+  - Terrain
   terrainObjects:
   - {fileID: 0}
   - {fileID: 605586082}
   - {fileID: 941392582}
-  - {fileID: 1943006031}
   - {fileID: 1728882692}
+  - {fileID: 1943006031}
   terrainSplatTextures:
   - Splat 1 - Grass
   - Splat 2 - Dirt
