@@ -1,38 +1,41 @@
+Unity Editor version:    6000.4.4f1 (360f97ecca93)
+Branch:                  6000.4/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.6.1 (Build 24G90)
+Darwin version:          24.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Date:                    2026-07-27T21:13:31Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-07-27T05:32:34.4857716Z"
-OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15681 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-System  architecture: x64
-Process architecture: x64
-Date: 2026-07-27T05:32:34Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-07-27T21:13:31.579284Z"
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\6000.4.4f1\Editor\Unity.exe
+/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-C:/GitHub/CarTesting
+/Users/jamesaspden/Documents/GitHub/CarTesting
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-61015
+56178
 -licensingIpc
-LicenseClient-finla
--force-d3d12
+LicenseClient-jamesaspden
+-force-metal
 -job-worker-count
-5
+3
 -background-job-worker-count
 8
 -gc-helper-count
 1
--name
-AssetImport
-Successfully changed project path to: C:/GitHub/CarTesting
-C:/GitHub/CarTesting
+-name AssetImport
+Successfully changed project path to: /Users/jamesaspden/Documents/GitHub/CarTesting
+/Users/jamesaspden/Documents/GitHub/CarTesting
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -42,12 +45,12 @@ C:/GitHub/CarTesting
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-    "memorysetup-temp-allocator-size-gfx=262144"
-    "memorysetup-temp-allocator-size-preload-manager=33554432"
-    "memorysetup-temp-allocator-size-job-worker=262144"
-    "memorysetup-temp-allocator-size-background-worker=32768"
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gfx=262144"
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
     "memorysetup-bucket-allocator-block-size=33554432"
@@ -68,13 +71,13 @@ C:/GitHub/CarTesting
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [24728]  Target information:
+Player connection [8497488064]  Target information:
 
-Player connection [24728]  * "[IP] 192.168.50.47 [Port] 0 [Flags] 2 [Guid] 2557612755 [EditorId] 2557612755 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8497488064]  * "[IP] 10.10.0.155 [Port] 0 [Flags] 2 [Guid] 1323256508 [EditorId] 1323256508 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [24728] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [24728] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
+Player connection [8497488064] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8497488064] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -85,84 +88,77 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 7.03 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.01 ms, found 2 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/GitHub/CarTesting/Assets
-Forcing GfxDevice: Direct3D 12
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/jamesaspden/Documents/GitHub/CarTesting/Assets
+Forcing GfxDevice: Metal
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
-d3d12: failed to query info queue interface (0x80004002).
-Direct3D:
-    Version:         Direct3D 12 [level 12.1]
-    Renderer:        AMD Radeon(TM) Graphics (ID=0x1681)
-    Vendor:          ATI
-    VRAM:            7840 MB
-    App VRAM Budget: 7651 MB
-    Driver:          32.0.21032.4002
-    Unified Memory Architecture
+ preferred device: Apple M3 (high power)
+Metal devices available: 1
+0: Apple M3 (high power)
+Using device Apple M3 (high power)
+Initializing Metal device caps: Apple M3
+Mac GPU Family: 2
+Apple GPU Family: 9
+MSL Version: 3.0
+Has Float MSAA: 1
+Has Float Filtering: 1
+ReadWrite Texture Tier: 2
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              c7d6ffbecbde4775a49e93c809d5c684
+  Correlation Id:          b824f71c508d8542ce266051fe75a449
+  External correlation Id: 3121860463152236079
+  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.00s, handshake: 0.42s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-07-27T21:13:32.00326Z"
+[Licensing::Module] Licensing Background thread has ended after 0.42s
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56714
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003898 seconds.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
+Register platform support module: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000300 seconds.
+Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.067 seconds
-Domain Reload Profiling: 2132ms
-	BeginReloadAssembly (305ms)
-	RebuildCommonClasses (98ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (136ms)
-	LoadAllAssembliesAndSetupDomain (501ms)
-		LoadAssemblies (299ms)
-		AnalyzeDomain (480ms)
-			TypeCache.Refresh (478ms)
-				TypeCache.ScanAssembly (452ms)
-	FinalizeReload (1071ms)
+- Finished resetting the current domain, in  0.216 seconds
+Domain Reload Profiling: 460ms
+	BeginReloadAssembly (57ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (123ms)
+		LoadAssemblies (57ms)
+		AnalyzeDomain (115ms)
+			TypeCache.Refresh (115ms)
+				TypeCache.ScanAssembly (105ms)
+	FinalizeReload (217ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (115ms)
-			BeforeProcessingInitializeOnLoad (251ms)
-			ProcessInitializeOnLoadAttributes (323ms)
-			ProcessInitializeOnLoadMethodAttributes (235ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (58ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
-[Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-07-27T05:32:39.3912082Z"
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              c266c98b20734ae190bcc93ee6e2ad1f
-  Correlation Id:          b7bc7ab3898d5e63db39464a00e47ca3
-  External correlation Id: 4116359019059877332
-  Machine Id:              kS2MSEUP+PhHajfq4lupfhYLziU=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 5.74s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-07-27T05:32:45.1365247Z"
-[Licensing::Module] Licensing Background thread has ended after 10.65s
-[Licensing::Module] Licensing is initialized (took 6.07s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: 17867501111429-UnityPersXXXX
+  Id: 17867501090831-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
@@ -201,9 +197,7 @@ Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tes
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 5.21 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
+Native extension for OSXStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -214,158 +208,386 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 3.95 ms, found 4 plugins.
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.384 seconds
-Domain Reload Profiling: 11093ms
-	BeginReloadAssembly (6565ms)
-		DisableScriptedObjects (25ms)
-		CreateAndSetChildDomain (71ms)
-	RebuildCommonClasses (131ms)
-	RebuildNativeTypeToScriptingClass (30ms)
-	initialDomainReloadingComplete (220ms)
-	LoadAllAssembliesAndSetupDomain (1762ms)
-		LoadAssemblies (1153ms)
-		AnalyzeDomain (881ms)
-			TypeCache.Refresh (637ms)
-				TypeCache.ScanAssembly (595ms)
-			BuildScriptInfoCaches (186ms)
-			ResolveRequiredComponents (52ms)
-	FinalizeReload (2385ms)
+- Finished resetting the current domain, in  0.444 seconds
+Domain Reload Profiling: 891ms
+	BeginReloadAssembly (78ms)
+		DisableScriptedObjects (3ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (307ms)
+		LoadAssemblies (174ms)
+		AnalyzeDomain (161ms)
+			TypeCache.Refresh (121ms)
+				TypeCache.ScanAssembly (109ms)
+			BuildScriptInfoCaches (31ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (444ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (345ms)
-			ProcessInitializeOnLoadAttributes (1145ms)
-			ProcessInitializeOnLoadMethodAttributes (264ms)
-			AfterProcessingInitializeOnLoad (14ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-WARNING: Shader Unsupported: 'RoadArchitect/TranShadow' - All subshaders removed
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (175ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.77 ms, found 4 plugins.
-Unloading 38 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7115 unused Assets / (7.0 MB). Loaded Objects now: 8070.
-Memory consumption went from 186.5 MB to 179.5 MB.
-Total: 32.828600 ms (FindLiveObjects: 2.665300 ms CreateObjectMapping: 1.291000 ms MarkObjects: 13.907200 ms  DeleteObjects: 14.960100 ms)
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Launching external process: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Unloading 39 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7117 unused Assets / (6.8 MB). Loaded Objects now: 8084.
+Memory consumption went from 192.9 MB to 186.1 MB.
+Total: 6.133333 ms (FindLiveObjects: 0.402000 ms CreateObjectMapping: 0.148166 ms MarkObjects: 4.038334 ms  DeleteObjects: 1.544291 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 628564.133541 seconds.
-  path: Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset
-  importAddress: Guid(9932f38fdb78c4933b6184b35200000b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TerrainData_768f5f4d-fae8-4e6a-b67d-ddeee316b05e.asset using Guid(9932f38fdb78c4933b6184b35200000b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The tree LPN_Trees.001 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
- -> (Import Result ID: 'ee3dd6643390cb45e681e2be50d28447') in 0.2338811 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a416a18d808d28f82d8f9809583fecab DependenciesID=93839d22450fa99854329c617599c94a StaticDependenciesID=b50143b28869eebc7434ebcec3935765 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.343416 seconds.
-  path: Assets/Script/WeatherAndParticles.cs
-  importAddress: Guid(c863446d31845c4469d16488e4df2489) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Script/WeatherAndParticles.cs using Guid(c863446d31845c4469d16488e4df2489) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5641379c0495e33c154c5e03f67974e2') in 0.1563733 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4831cf3978eee223d2d4bd8623a1bbb4 DependenciesID=5647f75bc50131bba995cf162cf91996 StaticDependenciesID=18f8bbdf4c8593d380b3a8c6c7027d41 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/RoadArchitect/Materials/Signs/TrafficLightMainLY.mat
-  importAddress: Guid(2b77191dfd5a39842adb44a6b868ff43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RoadArchitect/Materials/Signs/TrafficLightMainLY.mat using Guid(2b77191dfd5a39842adb44a6b868ff43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '59fee74b8d6a2910ec730f67ef0607a2') in 0.1043278 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=913d654300ce70e105deb9398fb874e3 DependenciesID=55d045be9b4b0310234b5b70eaaad4f3 StaticDependenciesID=a7b7c3a3de78c8a4455d33e2067c36f3 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Materials/Car Material 2.mat
-  importAddress: Guid(089910b14991488489cf4be65a35ddec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assets/Low Poly Cars (Free)/Materials/Car Material 2.mat using Guid(089910b14991488489cf4be65a35ddec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2bbf344e34faef09a5ea4ce09ca3f2fc') in 0.064292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6552f86b08e163a53cd48e3e48cf792b DependenciesID=b4465a54c9f94ca1a0ad8d11f3f4ab38 StaticDependenciesID=1e21cdb9223c5aa3c45e7d0f9c1540ce 
+  Time since last request: 403714.802899 seconds.
+  path: Assets/DirtPath.png
+  importAddress: Guid(240254457adcc8140ad0d2475ad0c5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DirtPath.png using Guid(240254457adcc8140ad0d2475ad0c5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1b335ab1f1feb20bb60ad45396b2b01d') in 0.031971458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0497abae0d72b5fc923ef45bb88cf552 DependenciesID=83b90f54f6bb06a52adf8a2705a4dee8 StaticDependenciesID=809361eae0c49ae0c62f51b7adbd3e67 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 39 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (4.2 MB). Loaded Objects now: 8089.
+Memory consumption went from 186.9 MB to 182.8 MB.
+Total: 5.443000 ms (FindLiveObjects: 0.224250 ms CreateObjectMapping: 0.071750 ms MarkObjects: 4.805417 ms  DeleteObjects: 0.340791 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/SimpleNaturePack/Materials/SimpleNaturePack_BG.mat
-  importAddress: Guid(886ecf0ee44718246aa083d8aad49b79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/SimpleNaturePack/Materials/SimpleNaturePack_BG.mat using Guid(886ecf0ee44718246aa083d8aad49b79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fd74009cbbe8de0f39162365401b79d0') in 0.0500681 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7d50bbca9a670479e5063bd2883ff0ea DependenciesID=c3b2501e282bedcf213172d7a1e4c780 StaticDependenciesID=25001d9ad86a448bd3e10306e563b050 
+  Time since last request: 573.361662 seconds.
+  path: Assets/Customizable Skybox/Model/Materials
+  importAddress: Guid(083961627088d3049935b73b4e8fc135) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials using Guid(083961627088d3049935b73b4e8fc135) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ab3987712945a9d7ca65a9d2cecd7b04') in 0.028995209 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fdbc2a12ee520b175e4a8270e8a196b4 DependenciesID=fda218444742335c10cf4ed62b2c6f31 StaticDependenciesID=6d1fdcfbb66086d5fc27e35ae7057c9e 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Assets/Low Poly Cars (Free)/Materials/Car Material 1.mat
-  importAddress: Guid(169a223c9591cdf43b16775e4ff1b888) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assets/Low Poly Cars (Free)/Materials/Car Material 1.mat using Guid(169a223c9591cdf43b16775e4ff1b888) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '78373cf412781c4350481e6a4c1e8612') in 0.0543302 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aaf979f26b58738a2563633e93780d00 DependenciesID=d7a486c90fac48137872eb54d6617c84 StaticDependenciesID=7e9a06abdf16364e44715f047bf36162 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/RoadArchitect/Materials/Signs/TrafficCone.mat
-  importAddress: Guid(625ff9b38c18bdc428ddcfd8a749c310) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/RoadArchitect/Materials/Signs/TrafficCone.mat using Guid(625ff9b38c18bdc428ddcfd8a749c310) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ea86915bd541c4423b7b9a2599f835d2') in 0.097562 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0baf173214963fcadc376c7dc30adee2 DependenciesID=66ea9899d5ae32c904c9eda351cac54b StaticDependenciesID=e8b9cf480a889877429bdd888428e941 
+  Time since last request: 0.000058 seconds.
+  path: Assets/RoadArchitect/Materials/Signs/TrafficLightMainLY.mat
+  importAddress: Guid(2b77191dfd5a39842adb44a6b868ff43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RoadArchitect/Materials/Signs/TrafficLightMainLY.mat using Guid(2b77191dfd5a39842adb44a6b868ff43) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6ebff14f49f199597f941593184d1eef') in 0.028753875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bcbeb59a7397183266b421613f3bb91c DependenciesID=3846f8013d15b5ac090bfbcc23e32440 StaticDependenciesID=ab11230804e6f9eefa0731d12b3c5ad4 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/TerrainData_e4c177ec-dd29-4e4e-9062-ecd802a3df62.asset
-  importAddress: Guid(5f53bd78ba7c14e7ab93fb5628b4aafe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/TerrainData_e4c177ec-dd29-4e4e-9062-ecd802a3df62.asset using Guid(5f53bd78ba7c14e7ab93fb5628b4aafe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)The tree LPN_Trees.001 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.AssetDatabase:LoadMainAssetAtPath (string)
-UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
-UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
-UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
-UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+  Time since last request: 0.000070 seconds.
+  path: Assets/Customizable Skybox/Model/Materials/Material.003.mat
+  importAddress: Guid(0b82edc333f454f4fab3b93e8ececd1a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials/Material.003.mat using Guid(0b82edc333f454f4fab3b93e8ececd1a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fb813d97e20e4313320b5b9b931a0157') in 0.007920666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=19224793489be5fc912bfe671d25d744 DependenciesID=344c25849e9b5453f5369374579b14db StaticDependenciesID=ab817cdd2be6559ae54ea2de100f6b47 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-[C:\build\output\unity\unity\Modules\Terrain\Public\TreeDatabase.cpp line 355]
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Customizable Skybox/Model/Materials/No Name.mat
+  importAddress: Guid(9fe81213c48f6e944a8a30f76f30a9c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials/No Name.mat using Guid(9fe81213c48f6e944a8a30f76f30a9c7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '17c0c4b81478c43b47ba3fa0cb0defe2') in 0.004289417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d5b4c2d6d97fe2d22b1cece41f04f665 DependenciesID=c8acd01bf82f70f0c61f7fae2a9beaa1 StaticDependenciesID=a0d6c42a236ffe8eb018619c07a82b5a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
- -> (Import Result ID: '019914e7d40fe47c5d9275c7ab589ea0') in 0.1586619 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=89f9a2efca5029a3cc0dee6b574e6a84 DependenciesID=85bbf01809d8c7db4b8ec0d240516347 StaticDependenciesID=8f23185a1ac3b5d0f5bcc39e8111f1d1 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/SimpleNaturePack/Materials/SimpleNaturePack_BG.mat
+  importAddress: Guid(886ecf0ee44718246aa083d8aad49b79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/SimpleNaturePack/Materials/SimpleNaturePack_BG.mat using Guid(886ecf0ee44718246aa083d8aad49b79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8cfded9da1eb7ff6cc2eb16a0784b0de') in 0.005348375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6030867cdfac08dc821485a4b681b04d DependenciesID=f290095b93503be8161e46d142b5b5c2 StaticDependenciesID=14f738163091f991d7bdf233efe74315 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Customizable Skybox/Model/Materials/green tree.mat
+  importAddress: Guid(c856162727dc18842bc191504f727456) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials/green tree.mat using Guid(c856162727dc18842bc191504f727456) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '11f4be709d1f6ee72499278b2673b8f0') in 0.003084833 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f2c7a2de3d922cfefe227600876ca141 DependenciesID=f6c32e40426a997da7c87bef04e33015 StaticDependenciesID=00eb349f7d99ad6bdb5587af94c42231 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Customizable Skybox/Customizable Skybox Documentaion.pdf
+  importAddress: Guid(631feaddbe683ed4383934ae4201e481) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Customizable Skybox Documentaion.pdf using Guid(631feaddbe683ed4383934ae4201e481) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '954fbf75aa04ae645cc85d2a1ecb8d91') in 0.002863458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a91abae22f5676198c040cba3110fcad DependenciesID=05d2c82a185f59166ca229550d6c1452 StaticDependenciesID=0e1f46f082d45081b463a64d07be0be2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Customizable Skybox
+  importAddress: Guid(4a98edb4176c36d4cbc42dde71603a50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox using Guid(4a98edb4176c36d4cbc42dde71603a50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7da7ec9d12110120dbdedb0f358425d9') in 0.001900375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8fc9557d5bd6d08183d2f5aaa5b9f1b4 DependenciesID=c9591a56684f2d4417c17a1d7beb900f StaticDependenciesID=7746f96b4419c6c766e086b5d1497be9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Resources/mainDay.mat
+  importAddress: Guid(56113b3b655ab7349bab4d7d405c258a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Resources/mainDay.mat using Guid(56113b3b655ab7349bab4d7d405c258a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b08ecc947ceebcb484dfdeaf06cd646d') in 0.00520675 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=517ef2c7e66915d565115c77421cbcac DependenciesID=8cc05eb56fa43b3866c6c67722631939 StaticDependenciesID=8e8f3438a94a94e4164e84a53e602bb2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Low-Poly Style Nature/Resources/Materials/LPN_Details.mat
+  importAddress: Guid(6280f5df374e24b85b6ee8193cc4937f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Low-Poly Style Nature/Resources/Materials/LPN_Details.mat using Guid(6280f5df374e24b85b6ee8193cc4937f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a1de3aa5a2552784c015c5c369d08660') in 0.021978959 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=126d71fdb698ffb5891206543a3e3762 DependenciesID=1247cc49fba2fca746c1e843ce85be31 StaticDependenciesID=3aa87c44db4fee3bcb7be641fd24a4b8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/RoadArchitect/Materials/Signs/TrafficCone.mat
+  importAddress: Guid(625ff9b38c18bdc428ddcfd8a749c310) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RoadArchitect/Materials/Signs/TrafficCone.mat using Guid(625ff9b38c18bdc428ddcfd8a749c310) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '52d392e969170635dba76ae34599bc1d') in 0.006789334 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2b08ad15e0aa8d8ea5f8f80cc5d04a3b DependenciesID=ee13143b417b3c461b9c369d7877e7d0 StaticDependenciesID=74911d8e5235fbe72cd1a34b13e471f7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/EasyRoads3D/Resources/Materials/roads/road material.mat
+  importAddress: Guid(f182e2714eb8a714a99ed091081ce16c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/EasyRoads3D/Resources/Materials/roads/road material.mat using Guid(f182e2714eb8a714a99ed091081ce16c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '28d14dadf6a87fa428c0b18d99a890ab') in 0.012374458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4ba13815c3ef941ff0a3b585852efebd DependenciesID=6708b5514fb42592ba37e86a93a2625c StaticDependenciesID=05053472d3f182d4232a52e232ced3e5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Resources/mainNight.mat
+  importAddress: Guid(bbe9494f815f3c340956427c884b72a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Resources/mainNight.mat using Guid(bbe9494f815f3c340956427c884b72a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7fc30c305b8b047808fa93c7e46cc979') in 0.003039667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=105457f1d59cc6e9fc983e05ae1e3d91 DependenciesID=283fc3a2b5ffb85ea49edf8271bd6201 StaticDependenciesID=73b3fec30d384a9ae3d79c88a8875434 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Customizable Skybox/Scenes
+  importAddress: Guid(4c87f64bb2d3ca445ac1badce6b5c0d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Scenes using Guid(4c87f64bb2d3ca445ac1badce6b5c0d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bca6366bb94bf6c045a62c1d812d61ec') in 0.001940916 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=598808035c50a658e151d79cd456f604 DependenciesID=eae784cd9884950e61de9b8f823e3575 StaticDependenciesID=a39dc3259354cd4ed3eb475094cfa7cf 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/RoadArchitect/Materials/Signs/TrafficLightMainB.mat
+  importAddress: Guid(1952ac38e05401a44868ff1ae610883f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RoadArchitect/Materials/Signs/TrafficLightMainB.mat using Guid(1952ac38e05401a44868ff1ae610883f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4efb273f69aa51cf16c01f940e0c75e7') in 0.005654334 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=baad6965b12f23e8931cb0f1bc842502 DependenciesID=ebe40b7cba946d22e1dd5f5ab61e8728 StaticDependenciesID=f415338784e2c3f95d50fcebb92dfe7a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Day1.mat
+  importAddress: Guid(9aa8ed67591432941bb76f12eb23ff91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Day1.mat using Guid(9aa8ed67591432941bb76f12eb23ff91) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1f06aa82261a789d5b54dee734f9cb3b') in 0.002647208 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5c260a3946fa810872e9244394817e12 DependenciesID=71d60fac30540276e7c7577648048cf5 StaticDependenciesID=265ee99f9b93cbff2deaa08b3999893b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009709 seconds.
+  path: Assets/NewBrush.brush
+  importAddress: Guid(e03834fa23f9d48eb804f3b9983a1fa6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/NewBrush.brush using Guid(e03834fa23f9d48eb804f3b9983a1fa6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4bfd413e97ffdd289c3cc9b7cdd77e87') in 0.020100958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4de20a81e38b0bee462b6903fbfb6837 DependenciesID=a3d2465b166479829c56753f5540110d StaticDependenciesID=3b96a461fb86af572b406ba87f51e44c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Customizable Skybox/Materials/Clouds.mat
+  importAddress: Guid(b2fcea6c7d9dbab4ca781825705d50be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Materials/Clouds.mat using Guid(b2fcea6c7d9dbab4ca781825705d50be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '104802e2a6baa99ca57b7f097c5de32e') in 0.006506583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cc35f13d3829667f7b8b87f7122a4a91 DependenciesID=f4dcad59f56d98cfd3e2ca7774594647 StaticDependenciesID=d13b4f4e5ebc8da05975b423864a70ef 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Script/GameplayStats.cs
+  importAddress: Guid(ff210ebb13c4f5047a5e87425b0c6b0c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Script/GameplayStats.cs using Guid(ff210ebb13c4f5047a5e87425b0c6b0c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '07b8e25948b086d12fe1bd3362b6f49d') in 0.009926709 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=26ff9d8d3415e09afbe1f9ccce7dd290 DependenciesID=1021b3028ba689e8badaf2f7f2fb3c20 StaticDependenciesID=7a5a751bcbf0946c20135d3e88b29ea8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Morning3.mat
+  importAddress: Guid(022e71752654d3f4fa0cbe71b312ad20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Morning3.mat using Guid(022e71752654d3f4fa0cbe71b312ad20) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '20b1d0f5e8528f6b79346c0d8fc8b638') in 0.003064083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=78a2dc0ea463e41cbd192dc685349586 DependenciesID=673e231785936aee9b4dec49c81ac591 StaticDependenciesID=de83c892d56f1657c3fec6f98883334a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Customizable Skybox/Materials/earth.mat
+  importAddress: Guid(ef6223db6cd2fd94481bcb5ce352cc30) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Materials/earth.mat using Guid(ef6223db6cd2fd94481bcb5ce352cc30) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c8f54c0aa0f7d3a5e5c054117813f268') in 0.00326525 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7566fa069408b2dadeaf49a10c59c492 DependenciesID=809b0f19acd104e1387a4a8d5d373d9c StaticDependenciesID=ca1fd88c0f4d8d2ccde765d987022c8d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Customizable Skybox/Model/Materials/dark trunk.mat
+  importAddress: Guid(b50f1c4e199dc3b47b56b0880d757857) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials/dark trunk.mat using Guid(b50f1c4e199dc3b47b56b0880d757857) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f81bae3338047ae3e3d97af0174e9029') in 0.002669166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=258289aceed504b5321a1c62bec2a51c DependenciesID=a704c6fb4b05b9d0d7311420b99ebbc2 StaticDependenciesID=caed70285c57f0fc62b22bc432077591 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Customizable Skybox/Model/Materials/trunk.mat
+  importAddress: Guid(2b1bb1efbeb980540aa4164a74c61686) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials/trunk.mat using Guid(2b1bb1efbeb980540aa4164a74c61686) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4cde78eb81fc5519f64152da93082db1') in 0.003215958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fa2c815b0e1f9d178e324eba4d6d015b DependenciesID=61f973fe46546a531d0ff2f06fac705a StaticDependenciesID=d649630569379d3ab7533e26ac5c9c6f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Sunset5.mat
+  importAddress: Guid(baef7505b9e48404cb74585601f49ff9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Sunset5.mat using Guid(baef7505b9e48404cb74585601f49ff9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4d01ad3c893e545d33004298c7cca33c') in 0.00211425 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=11569ba93b6bcab3d2918719b73dee7d DependenciesID=2f40dfaf6da2bccdad27ac43b8798d25 StaticDependenciesID=1b2d72753a3fa53909edf5c49f781dfc 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Shaders/Stylized Sky.shader
+  importAddress: Guid(eb3c6fb598ded4c71b8968e1c40a3b4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Shaders/Stylized Sky.shader using Guid(eb3c6fb598ded4c71b8968e1c40a3b4d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ccbeb55ca68f10f96bd6c88f576fc00e') in 0.006224542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=075a5f428501f833e4a664de4f2e53c8 DependenciesID=1857845bd8f2ba98e000570290a6064d StaticDependenciesID=c5a242fb726c4987ed2d86994d4e3cda 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Assets/Low Poly Cars (Free)/Materials/Car Material 2.mat
+  importAddress: Guid(089910b14991488489cf4be65a35ddec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Assets/Low Poly Cars (Free)/Materials/Car Material 2.mat using Guid(089910b14991488489cf4be65a35ddec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a277870e8017b8ff6a5b6ac3e51661ff') in 0.003975334 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ed79e08fdeaf18a4e6387b31eebf28e6 DependenciesID=ba57cc23453328505f788a2199ae5399 StaticDependenciesID=5411cac40c0177a548ba0945f2d2a8f3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/RoadArchitect/Materials/Signs/TrafficLightMain.mat
+  importAddress: Guid(c2a1c2b880102ab44af4e3896eeae958) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RoadArchitect/Materials/Signs/TrafficLightMain.mat using Guid(c2a1c2b880102ab44af4e3896eeae958) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '22659155aab39bfb9e5b20eb81dba7a9') in 0.006246958 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1a344863f463be20e719e3f567c7980f DependenciesID=a0c000cf7f42026dafdc8ada407c00b5 StaticDependenciesID=f9388fa5f0e231f8357e1ebf822aab0b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Customizable Skybox/Scenes/DemoScene.unity
+  importAddress: Guid(1811a0c822d2a6c45b5d1435bf7d07d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Scenes/DemoScene.unity using Guid(1811a0c822d2a6c45b5d1435bf7d07d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3176e7800a08f727d5400aedd0e95a3f') in 0.002590417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=516bd2d4b22208b86ec25bb9a22f320b DependenciesID=f36c5f8f6405b8dd5fbfdbb1d393018d StaticDependenciesID=38b7b64d102e52c4f071b9095b56ca8b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/DirtPath.mat
+  importAddress: Guid(2fe0158aa7da3354eb6206c71b949538) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/DirtPath.mat using Guid(2fe0158aa7da3354eb6206c71b949538) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '70fe2d8244e6448b57235646cbdb194f') in 0.002868083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=929b7586ada83ed569af94b8b8240507 DependenciesID=2121d20e4be67d4a3a1ddd109aa7d36f StaticDependenciesID=43f43a030c23d528e693516dabe7ca1e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000040 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Night4.mat
+  importAddress: Guid(ed1387202b1349540a5d6464f0f27488) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Night4.mat using Guid(ed1387202b1349540a5d6464f0f27488) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b3e9d98b4495a482018c85f442a0834b') in 0.002906 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=26a9759348482526b801169ef830fa72 DependenciesID=e28b02b8fda65e25b93006b6b0de10d7 StaticDependenciesID=00890ef6e230927b9ba312dfd9cfceaf 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Customizable Skybox/Materials/trunk.mat
+  importAddress: Guid(08c4b67273e724941900639ca93caabc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Materials/trunk.mat using Guid(08c4b67273e724941900639ca93caabc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3e9e238f942633c1aa137c0dbfd78340') in 0.0023485 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=209f2885d9f947cf58825d7ee58d33eb DependenciesID=5f87b4764a8ed645acc92930ad2bf111 StaticDependenciesID=feabe4cc1bcff36f81e8ee9b69b74f25 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Customizable Skybox/Materials/Material.003.mat
+  importAddress: Guid(a4b1c9205184ab7479ebcb6d01e9bdaa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Materials/Material.003.mat using Guid(a4b1c9205184ab7479ebcb6d01e9bdaa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0ad4a4a145ef68f15e7e068a8cbb8c80') in 0.003039709 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d8b37d8d136e592daaf2aaef3912cb2c DependenciesID=7b5e2eea340b8c3a2930d60de2346eaa StaticDependenciesID=47733a8223d8bb405eb2207e3e58f460 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
   path: Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset
   importAddress: Guid(8954343439202416595048955cb937e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/TerrainData_92108ea2-a634-4b81-8138-2a8235ca7146.asset using Guid(8954343439202416595048955cb937e0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)The tree LPN_Trees.001 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
 UnityEditor.AssetDatabase:LoadMainAssetAtPath (string)
-UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
-UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
-UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
-UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&) (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/AssetIndexer.cs:292)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool) (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/AssetIndexer.cs:199)
+UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext) (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/SearchIndexArtifactImporter.cs:42)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext) (at /Users/bokken/build/output/unity/unity/Modules/AssetPipelineEditor/Public/ScriptedImporter.cs:25)
 
-[C:\build\output\unity\unity\Modules\Terrain\Public\TreeDatabase.cpp line 355]
+[/Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/AssetIndexer.cs line 292]
 
- -> (Import Result ID: 'bc493f49070de8c779b182cf3f4a528c') in 0.0966901 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3113940633fd2a7a7b080e47f0fe16db DependenciesID=c0ea95b58a9b50832451472e63302c8b StaticDependenciesID=c9cfa756b2511b371153b481b1a2e785 
+ -> (Import Result ID: 'd7995a5cc149e97b1565c9050179df78') in 0.029222833 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9954b31c0ce9f64023307769087974ca DependenciesID=807bb5a2db01c6155c3abc3999eb737e StaticDependenciesID=c5d7c73fa90a2da360dc24b642b4a4ff 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000067 seconds.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Customizable Skybox/Model/Materials/earth.mat
+  importAddress: Guid(9d1ca55e2263fd54589900465f90d06e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Model/Materials/earth.mat using Guid(9d1ca55e2263fd54589900465f90d06e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '70f23b5f7002cecf3a18758f76dfd4f7') in 0.002365541 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=821746a354a680b1f278f8dd77bbcf21 DependenciesID=041a1d7a0da9a186dce244f00ec82308 StaticDependenciesID=b29a3fcd812b9de6d31201603c8bc115 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky
+  importAddress: Guid(135450dfab8085c4ebd673f58f013df4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky using Guid(135450dfab8085c4ebd673f58f013df4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3d0c74648e47ab44d511426c94b85988') in 0.002302708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=640c2ddadae429699d0f5f0cdb3e2818 DependenciesID=6aca63cafb7232f31b13fa5c5abdf201 StaticDependenciesID=1509ea1d02d5c9c7197c2a273c6434b6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Sunset3.mat
+  importAddress: Guid(7ed994c1997814049b44c36a823bba6c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Sunset3.mat using Guid(7ed994c1997814049b44c36a823bba6c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5a1a764276cb4b802032609cad39400d') in 0.002664209 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4af4b9738f60ddf55a0d3fe51204a852 DependenciesID=3a93abcc77a19c63e7503b39195fe440 StaticDependenciesID=31bfa93a731ef4e3a41f285fe67b0781 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
   path: Assets/New Terrain.asset
   importAddress: Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/New Terrain.asset using Guid(583973b4ee3f5407bbac586ebb58db95) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)The tree LPN_Trees.001 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
 UnityEditor.AssetDatabase:LoadMainAssetAtPath (string)
-UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
-UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
-UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
-UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&) (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/AssetIndexer.cs:292)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool) (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/AssetIndexer.cs:199)
+UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext) (at /Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/SearchIndexArtifactImporter.cs:42)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext) (at /Users/bokken/build/output/unity/unity/Modules/AssetPipelineEditor/Public/ScriptedImporter.cs:25)
 
-[C:\build\output\unity\unity\Modules\Terrain\Public\TreeDatabase.cpp line 355]
+[/Users/bokken/build/output/unity/unity/Modules/QuickSearch/Editor/Indexing/AssetIndexer.cs line 292]
 
- -> (Import Result ID: '19069f07f11fca1228957f80d918457d') in 0.0856964 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d041b969e914f46e83d4e21b8dc8b1fb DependenciesID=fe6279efc37a459b1df2eae1d2ebc44d StaticDependenciesID=7f6c56d9fda7723e69e2121a58b08ecd 
+ -> (Import Result ID: '3b66a6baaf9376f15ec04e47e6676b58') in 0.015794167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2b152391ef5748b9e6d6587c40b5b9fb DependenciesID=2b952316899e45b2de7a2686764d8655 StaticDependenciesID=5f07908841923c8c3f5950dfae98f608 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Customizable Skybox/Stylized Sky/Materials/Day7.mat
+  importAddress: Guid(ddbcbb3899687ea469ed4a5fce1532df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Customizable Skybox/Stylized Sky/Materials/Day7.mat using Guid(ddbcbb3899687ea469ed4a5fce1532df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ebb2d4789d11badb99099b3e1295d5e1') in 0.002906041 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=abd6db84438abc7e5d976568f486c6ce DependenciesID=13bfc1b41e77a09237029ea33a971de1 StaticDependenciesID=2cd6fd7f56ae747180e6fd2fc5412774 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
