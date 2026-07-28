@@ -48,6 +48,21 @@ public class WeatherAndParticles : MonoBehaviour
         if (Input.GetKey(KeyCode.K))
         {
             RenderSettings.skybox = mainNightSkyBox;
+            directionalLight.intensity = 0.2f;
+            DynamicGI.UpdateEnvironment();
+        }
+        if (Input.GetKey(KeyCode.O))
+        {
+            RenderSettings.skybox = mainSunsetSkyBox;
+            //Redos all the lighting so the skybox changes will be applied properly to everything.
+            directionalLight.intensity = 1f;
+            DynamicGI.UpdateEnvironment();
+        }
+        if (Input.GetKey(KeyCode.P))
+        {
+            RenderSettings.skybox = rainDaySkyBox;
+            directionalLight.intensity = 0.7f;
+            DynamicGI.UpdateEnvironment();
         }
     }
 
