@@ -23,9 +23,6 @@ public class HealthBar : MonoBehaviour
         else if (healthPercent >= 0.50 && healthPercent < 0.7) healthColor.color = Color.yellow;
         else if (healthPercent >= 0.30) healthColor.color = new Color(1f, 0.5f, 0f);
         else if (healthPercent < 0.3) healthColor.color = Color.red;
-        Debug.Log(healthPercent);
-        Debug.Log(maxhealth);
-        Debug.Log(health);
 
     }
 }

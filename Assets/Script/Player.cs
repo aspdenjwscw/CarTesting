@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
     public int maxHealth = 150;
     public int currentHealth;
 
+    public CollisionDamage carCollisionDamage;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -13,10 +15,12 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
+        int currentDamage = carCollisionDamage.CarDamageTaken();
+        if (currentDamage > 0)
         {
-            TakeDamage(20);
+            TakeDamage(currentDamage);
         }
+
     }
 
     void TakeDamage (int damage)

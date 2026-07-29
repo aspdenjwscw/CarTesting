@@ -209,7 +209,6 @@ public class Car : MonoBehaviour{
         }
         if (gears[0].reverse && groundSpeed > 0f && velocityForward)
         {
-            Debug.Log("Attempting");
             brakesActive = brakingForce;
             engineActive = 0f;
         }
@@ -220,7 +219,6 @@ public class Car : MonoBehaviour{
         }
         if (verticalInput > 0f && groundSpeed > 0f && velocityBackwards && gears[currentGear].gear == -1f)
         {
-            Debug.Log("Attempting");
             brakesActive = brakingForce;
             engineActive = 0f;
         }
@@ -249,14 +247,12 @@ public class Car : MonoBehaviour{
         else if (engineRPM > reverseRedlineRPM && !upShift && !downShift) engineActive = 1f;
         if (engineRPM < 1500f && automatic && allowShift && currentGear > 2)
         {
-            Debug.Log("triggering 1");
             currentGear--;
             downShift = true;
             allowShift = false;
         }// Problem: How do I make it not autoshift back down when the RPM drops, How do I even make the RPM drop realistically, If I use time to make the RPM drop how do I make it work.
         if (groundSpeed <= 0.1f && automatic && allowShift && currentGear == 2 && verticalInput != 1)
         {
-            Debug.Log("triggering 2");
             currentGear--;
             downShift = true;
             allowShift = false;

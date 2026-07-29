@@ -56,6 +56,7 @@
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Polytope Studio\Lowpoly_Demos\Environment_Free\Helpers\PT_PlayerMovement.cs" />
+    <Compile Include="Assets\Script\CollisionDamage.cs" />
     <Compile Include="Assets\Script\WeatherAndParticles.cs" />
   </ItemGroup>
   <ItemGroup>
