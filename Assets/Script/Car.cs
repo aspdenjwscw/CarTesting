@@ -175,8 +175,8 @@ public class Car : MonoBehaviour{
         }
 
 
-        Debug.Log(gears[currentGear].ratio);
-        Debug.Log(wheel3.motorTorque);
+        //Debug.Log(gears[currentGear].ratio);
+        //Debug.Log(wheel3.motorTorque);
         //Debug.Log(reverseInverse);
         //There are ways to change what the Input.GetAxis("Vertical"); need to be pressed to give change them
 
@@ -288,8 +288,8 @@ public class Car : MonoBehaviour{
             currentGear = 0;
         }
 
-        Debug.Log(brakesActive);
-        Debug.Log(groundSpeed);
+        //Debug.Log(brakesActive);
+        //Debug.Log(groundSpeed);
 
         verticalInput = verticalBackwards + verticalForward;
         smoothVerticalInput = Mathf.MoveTowards(smoothVerticalInput, verticalInput, accelerationSpeed * Time.fixedDeltaTime);
@@ -301,7 +301,7 @@ public class Car : MonoBehaviour{
         float naturalRPMLimiter = Mathf.Clamp01(1f - (engineRPM / 6000f));
         float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * motorMultiplyer; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
         // The 4.56 is to replicate the FinalDriveRatio and the engineMax is to model going to high on the RPM and to stop them getting infinite Torque
-        Debug.Log(motorMultiplyer);
+        //Debug.Log(motorMultiplyer);
         wheel1.motorTorque = motor;
         wheel2.motorTorque = motor;
         wheel3.motorTorque = motor;

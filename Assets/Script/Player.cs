@@ -23,6 +23,6 @@ public class Player : MonoBehaviour
     {
         currentHealth -= damage;
 
-        healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(currentHealth, maxHealth);
     }
 }
