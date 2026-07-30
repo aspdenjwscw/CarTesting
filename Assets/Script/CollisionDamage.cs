@@ -13,7 +13,7 @@ public class CollisionDamage : MonoBehaviour
         int damage = 0;
         if (impactSpeed > damageThreshold)
         {
-            float intialDamage = (impactSpeed * damageMultiplyer) - 6f;
+            float intialDamage = (impactSpeed * damageMultiplyer) - 18f;
             damage = Mathf.RoundToInt(Mathf.Max(0f, intialDamage));
             Debug.Log(impactSpeed);
             damageTaken = Mathf.Max(damageTaken, damage);

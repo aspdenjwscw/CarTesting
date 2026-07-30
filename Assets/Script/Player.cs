@@ -5,13 +5,14 @@ public class Player : MonoBehaviour
     public HealthBar healthBar;
     public int maxHealth = 150;
     public int currentHealth;
-
+    public ParticleSystem engineSmoke;
     public CollisionDamage carCollisionDamage;
 
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        engineSmoke.Stop();
     }
     void Update()
     {
@@ -28,5 +29,14 @@ public class Player : MonoBehaviour
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth, maxHealth);
+        if (currentHealth <= 0)
+        {
+            engineSmoke.Play();
+            WheelsActive();
+        }
+        if (currentHealth > 0)
+        {
+            engineSmoke.Stop();
+        }
     }
 }
