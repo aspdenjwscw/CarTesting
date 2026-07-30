@@ -25,7 +25,7 @@ public class Car : MonoBehaviour{
     public Rigidbody rigid;
     public WheelCollider wheel1, wheel2, wheel3, wheel4;
     public float drivespeed, steerspeed, shiftTime;
-    float reverseInverse, horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, brakingForce, brakesActive, currentYRot, engineRPM, engineActive, shiftingCooldown, redlineRPM, reverseRedlineRPM;
+    float reverseInverse, horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, brakingForce, brakesActive, currentYRot, engineRPM, engineActive, shiftingCooldown, redlineRPM, reverseRedlineRPM, carCrashWheelsActive;
     private KeyCode forwardKey, backwardsKey, brakingKey;
     int currentGear;
     public bool automatic, uphill, velocityForward, velocityBackwards, upShift, downShift, allowShift, shiftValueReset, braking;
@@ -51,6 +51,7 @@ public class Car : MonoBehaviour{
         braking = false;
         reverseInverse = 1f;
         reverseRedlineRPM = -3000f;
+        carCrashWheelsActive = 1f;
 
         Vector3 autoCoM = rigid.centerOfMass;
         rigid.centerOfMass = new Vector3(0f, autoCoM.y - 0.75f, autoCoM.z);
@@ -298,10 +299,10 @@ public class Car : MonoBehaviour{
         float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * motorMultiplyer; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
         // The 4.56 is to replicate the FinalDriveRatio and the engineMax is to model going to high on the RPM and to stop them getting infinite Torque
         //Debug.Log(motorMultiplyer);
-        wheel1.motorTorque = motor;
-        wheel2.motorTorque = motor;
-        wheel3.motorTorque = motor;
-        wheel4.motorTorque = motor;
+        wheel1.motorTorque = motor * carCrashWheelsActive;
+        wheel2.motorTorque = motor * carCrashWheelsActive;
+        wheel3.motorTorque = motor * carCrashWheelsActive;
+        wheel4.motorTorque = motor * carCrashWheelsActive;
         if(braking) brakesActive = brakingForce;
         //Debug.Log(motor);
         wheel3.brakeTorque = brakesActive;
@@ -324,8 +325,15 @@ public class Car : MonoBehaviour{
 
 
     }
-    public void WheelsActive()
+    public void WheelsActive(bool wheelsActive)
     {
-
+        if (!wheelsActive)
+        {
+            carCrashWheelsActive = 0f;
+        }
+        else if (wheelsActive)
+        {
+            carCrashWheelsActive = 1f;
+        }
     }
 }

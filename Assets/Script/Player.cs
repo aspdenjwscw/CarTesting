@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public int currentHealth;
     public ParticleSystem engineSmoke;
     public CollisionDamage carCollisionDamage;
+    public Car wheelsOnStatus;
 
     void Start()
     {
@@ -32,7 +33,7 @@ public class Player : MonoBehaviour
         if (currentHealth <= 0)
         {
             engineSmoke.Play();
-            WheelsActive();
+            wheelsOnStatus.WheelsActive(false);
         }
         if (currentHealth > 0)
         {

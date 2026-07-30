@@ -1254,6 +1254,7 @@ MonoBehaviour:
   currentHealth: 0
   engineSmoke: {fileID: 723200399}
   carCollisionDamage: {fileID: 2139176077}
+  wheelsOnStatus: {fileID: 2139176075}
 --- !u!4 &996548193
 Transform:
   m_ObjectHideFlags: 0
