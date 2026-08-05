@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-08-05T00:34:13.774081Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-08-05T08:10:37.7191868Z"
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15681 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-08-05T00:34:13Z
+Date: 2026-08-05T08:10:37Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.4.4f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ C:/GitHub/CarTesting
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51392
+49229
 -licensingIpc
 LicenseClient-finla
 -force-d3d12
@@ -68,12 +68,12 @@ C:/GitHub/CarTesting
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [29716]  Target information:
+Player connection [12224]  Target information:
 
-Player connection [29716]  * "[IP] 10.10.1.152 [Port] 0 [Flags] 2 [Guid] 747564994 [EditorId] 747564994 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [12224]  * "[IP] 192.168.50.47 [Port] 0 [Flags] 2 [Guid] 608661364 [EditorId] 608661364 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [29716] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [29716] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12224] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [12224] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -85,7 +85,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 7.24 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 14.13 ms, found 4 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/GitHub/CarTesting/Assets
@@ -104,13 +104,13 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005987 seconds.
+Registered in 0.005277 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -119,24 +119,30 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.932 seconds
-Domain Reload Profiling: 2033ms
-	BeginReloadAssembly (335ms)
-	RebuildCommonClasses (89ms)
+- Finished resetting the current domain, in  1.170 seconds
+Domain Reload Profiling: 2435ms
+	BeginReloadAssembly (408ms)
+	RebuildCommonClasses (104ms)
 	RebuildNativeTypeToScriptingClass (34ms)
-	initialDomainReloadingComplete (147ms)
-	LoadAllAssembliesAndSetupDomain (493ms)
-		LoadAssemblies (325ms)
-		AnalyzeDomain (476ms)
-			TypeCache.Refresh (474ms)
-				TypeCache.ScanAssembly (443ms)
-	FinalizeReload (935ms)
+	initialDomainReloadingComplete (163ms)
+	LoadAllAssembliesAndSetupDomain (552ms)
+		LoadAssemblies (400ms)
+		AnalyzeDomain (528ms)
+			TypeCache.Refresh (525ms)
+				TypeCache.ScanAssembly (491ms)
+	FinalizeReload (1174ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (116ms)
-			BeforeProcessingInitializeOnLoad (212ms)
-			ProcessInitializeOnLoadAttributes (266ms)
-			ProcessInitializeOnLoadMethodAttributes (188ms)
+			InitializePlatformSupportModulesInManaged (128ms)
+			BeforeProcessingInitializeOnLoad (210ms)
+			ProcessInitializeOnLoadAttributes (352ms)
+			ProcessInitializeOnLoadMethodAttributes (262ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
+[Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-08-05T08:10:43.242293Z"
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -144,22 +150,16 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
 [Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
-[Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-08-05T00:34:18.4213319Z"
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              ee9f170c2e5841f59ef02634d2560e37
-  Correlation Id:          3acf46094d311aa44f7e2446d368a287
-  External correlation Id: 9139476714478158435
+  Session Id:              16b07fb09b9a46cdbe2f1d1e06a2f552
+  Correlation Id:          98b806c1249c90e69cec8159247b6272
+  External correlation Id: 6903039383497757373
   Machine Id:              kS2MSEUP+PhHajfq4lupfhYLziU=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 4.23s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-08-05T00:34:22.6512864Z"
-[Licensing::Module] Licensing Background thread has ended after 8.88s
-[Licensing::Module] Licensing is initialized (took 4.29s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 4.46s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-08-05T08:10:47.702707Z"
+[Licensing::Module] Licensing Background thread has ended after 9.98s
+[Licensing::Module] Licensing is initialized (took 4.01s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 17867501111429-UnityPersXXXX
@@ -203,7 +203,7 @@ Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tes
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 5.64 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 13.00 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
@@ -216,169 +216,228 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 3.25 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.96 ms, found 4 plugins.
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.375 seconds
-Domain Reload Profiling: 8716ms
-	BeginReloadAssembly (4684ms)
-		DisableScriptedObjects (17ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (112ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (190ms)
-	LoadAllAssembliesAndSetupDomain (1321ms)
-		LoadAssemblies (850ms)
-		AnalyzeDomain (675ms)
-			TypeCache.Refresh (496ms)
-				TypeCache.ScanAssembly (467ms)
-			BuildScriptInfoCaches (139ms)
-			ResolveRequiredComponents (36ms)
-	FinalizeReload (2376ms)
+- Finished resetting the current domain, in  2.575 seconds
+Domain Reload Profiling: 8839ms
+	BeginReloadAssembly (4425ms)
+		DisableScriptedObjects (22ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (77ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (201ms)
+	LoadAllAssembliesAndSetupDomain (1531ms)
+		LoadAssemblies (1124ms)
+		AnalyzeDomain (637ms)
+			TypeCache.Refresh (474ms)
+				TypeCache.ScanAssembly (440ms)
+			BuildScriptInfoCaches (134ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (2577ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			BeforeProcessingInitializeOnLoad (426ms)
-			ProcessInitializeOnLoadAttributes (1094ms)
-			ProcessInitializeOnLoadMethodAttributes (212ms)
-			AfterProcessingInitializeOnLoad (14ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			BeforeProcessingInitializeOnLoad (423ms)
+			ProcessInitializeOnLoadAttributes (1243ms)
+			ProcessInitializeOnLoadMethodAttributes (255ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
 WARNING: Shader Unsupported: 'RoadArchitect/TranShadow' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 4.15 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 3.76 ms, found 4 plugins.
 Unloading 44 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7744 unused Assets / (9.8 MB). Loaded Objects now: 8732.
-Memory consumption went from 198.3 MB to 188.5 MB.
-Total: 22.063300 ms (FindLiveObjects: 1.769900 ms CreateObjectMapping: 2.087000 ms MarkObjects: 11.590200 ms  DeleteObjects: 6.610200 ms)
+Unloading 7744 unused Assets / (11.4 MB). Loaded Objects now: 8732.
+Memory consumption went from 198.2 MB to 186.8 MB.
+Total: 20.440100 ms (FindLiveObjects: 1.511800 ms CreateObjectMapping: 1.185600 ms MarkObjects: 9.755300 ms  DeleteObjects: 7.982900 ms)
+
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.VisualEffectGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.VisualEffectGraph.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 4.18 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.247 seconds
+Domain Reload Profiling: 4405ms
+	BeginReloadAssembly (620ms)
+		DisableScriptedObjects (10ms)
+		CreateAndSetChildDomain (164ms)
+	RebuildCommonClasses (75ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (254ms)
+	LoadAllAssembliesAndSetupDomain (1176ms)
+		LoadAssemblies (1031ms)
+		AnalyzeDomain (467ms)
+			TypeCache.Refresh (12ms)
+			BuildScriptInfoCaches (407ms)
+			ResolveRequiredComponents (41ms)
+	FinalizeReload (2249ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (323ms)
+			ProcessInitializeOnLoadAttributes (1105ms)
+			ProcessInitializeOnLoadMethodAttributes (335ms)
+			AfterProcessingInitializeOnLoad (25ms)
+		AwakeInstancesAfterBackupRestoration (50ms)
+WARNING: Shader Unsupported: 'RoadArchitect/TranShadow' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 5.42 ms, found 4 plugins.
+Unloading 39 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7742 unused Assets / (9.6 MB). Loaded Objects now: 8748.
+Memory consumption went from 202.4 MB to 192.8 MB.
+Total: 21.794900 ms (FindLiveObjects: 1.276300 ms CreateObjectMapping: 1.388700 ms MarkObjects: 12.145900 ms  DeleteObjects: 6.981400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1415717.954355 seconds.
+  path: Assets/Scenes/MenuScenes/StartMenuScreen.unity
+  importAddress: Guid(d6c7a5a3ca36a684ab571dedee355ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MenuScenes/StartMenuScreen.unity using Guid(d6c7a5a3ca36a684ab571dedee355ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'caddba4ea48ec00f71290ac6840da4a6') in 0.0249901 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=039d65bacd259a2f0e674e7453e1f061 DependenciesID=8549f60ac7d4aff26a41d4de388f6b21 StaticDependenciesID=832ee8f160d76a76c1d71d53e2a820b9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1388278.471993 seconds.
-  path: Assets/New Terrain 2.asset
-  importAddress: Guid(626fb9926dd81c947adce5f00ae01351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain 2.asset using Guid(626fb9926dd81c947adce5f00ae01351) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)The tree Pine_Tree_2_Spring couldn't be instanced because the prefab contains no valid mesh renderer.
-The tree LPN_Trees.001 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
- -> (Import Result ID: 'b0adc213dca9c356287d06ff54950399') in 0.2377065 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dce104aaf8085289610f7848eca0c943 DependenciesID=5e5f5cf8d9b14271450d159c6d27e397 StaticDependenciesID=b9c410c9d22a00c69867fc41398a3d6b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+  Time since last request: 11.472068 seconds.
+  path: Assets/Scenes/MenuScenes/MapSelectionScene.unity
+  importAddress: Guid(cb746f8eda8a0034aa2a2b0725c4d82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MenuScenes/MapSelectionScene.unity using Guid(cb746f8eda8a0034aa2a2b0725c4d82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'def33986cf1893efb16cb4a442dc07c4') in 0.001251 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ef8befaa78cb6633c312829cac428461 DependenciesID=9ce4bb05478e6077248aade00d2eedce StaticDependenciesID=d2a1fad354b23b3ac53663bdcc50c026 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 61.925868 seconds.
-  path: Assets/RoadArchitect/Materials/FedSigns/330/WrongWayBicycle.mat
-  importAddress: Guid(0f87deb6419bb354c9764bc076f6fda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/FedSigns/330/WrongWayBicycle.mat using Guid(0f87deb6419bb354c9764bc076f6fda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '98c600783b9fc1f9bb21b472683459aa') in 1.1473146 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=da3abf9051cd3dbb115e52db5c54d707 DependenciesID=b729c04f4a1b50ded1ebc8147ff2aca4 StaticDependenciesID=f2af96bc58269bd8bdf15dba0a50e8f6 
+  Time since last request: 5603.804725 seconds.
+  path: Assets/EasyRoads3D/textures/editor/unlocked.png
+  importAddress: Guid(eb319a63188c2d44bacc8572c8a2111a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EasyRoads3D/textures/editor/unlocked.png using Guid(eb319a63188c2d44bacc8572c8a2111a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '35406ffe4ea574b539aa283252c952b3') in 0.4723049 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9d2d0ae3b06ed67d2ebb44f6f203b868 DependenciesID=562daccb13f4944b88d86e4de0ca8d47 StaticDependenciesID=708ef41e94d3033118b230bd5e6c9abd 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/RoadArchitect/Materials/Markers/WhiteYellowSingle.mat
-  importAddress: Guid(63d6ccd2648203b46b40c8ac86a52d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/Markers/WhiteYellowSingle.mat using Guid(63d6ccd2648203b46b40c8ac86a52d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0a440b9e4c443b91e45571a990d26048') in 8.9183003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5fc22b45199448cef314afbf3ad07015 DependenciesID=3ce2845059ab7b77743345280fad91f9 StaticDependenciesID=237248f0843d17b31164b135bc2d3030 
+  Time since last request: 0.000278 seconds.
+  path: Assets/EasyRoads3D/textures/editor/m_road.png
+  importAddress: Guid(46e81e5d2c8b2144582558b65e45db86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EasyRoads3D/textures/editor/m_road.png using Guid(46e81e5d2c8b2144582558b65e45db86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '325bcb690ab52d60769de8bddb5f448d') in 0.0447096 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=97d14ff44cc114c7692d8f16aa50a26b DependenciesID=564ddde240dfe0c5a0aabdfe61190054 StaticDependenciesID=668b997de3a03a0498e670b90ac86e2b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/EasyRoads3D/textures/editor/locked.png
+  importAddress: Guid(8fb7d6b5f8b40f34e8048f47afa20f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EasyRoads3D/textures/editor/locked.png using Guid(8fb7d6b5f8b40f34e8048f47afa20f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'faad825fd9f44262aa5a13b96c33d3fd') in 0.0306299 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dc14148d65e10fa764812bba231c756c DependenciesID=735a4ddef693f0b0dc81bfff06a05382 StaticDependenciesID=ee9387a69ebc1621b2189332bea0dd81 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/EasyRoads3D/textures/editor/m_roads.png
+  importAddress: Guid(32e963efb91d19147842f8bd95d6ac56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EasyRoads3D/textures/editor/m_roads.png using Guid(32e963efb91d19147842f8bd95d6ac56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd59df215436f4da7a8ee994af55d8855') in 0.0366852 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=82d2b723250bfcd499a397ba0fb51fca DependenciesID=69d1ec513655a851aa9c5a293046eefe StaticDependenciesID=b9084a0d6b0acb6e291c4efe69d50155 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/EasyRoads3D/textures/editor/m_build.png
+  importAddress: Guid(881f73f964cf5104abc91a5f657615a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EasyRoads3D/textures/editor/m_build.png using Guid(881f73f964cf5104abc91a5f657615a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a0fcee303b178548b5dbde1f53c26480') in 0.0397303 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bcf4df3d923519bfcdbd7b86cf8ab109 DependenciesID=faca3e5254403552f21aefcc5b269099 StaticDependenciesID=2c4716fdf8a36d1573e7ef996457313e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/EasyRoads3D/textures/editor/m_scene.png
+  importAddress: Guid(34aed1010b525bf4c9cfd7da35361a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EasyRoads3D/textures/editor/m_scene.png using Guid(34aed1010b525bf4c9cfd7da35361a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f571ce1ba13f55f75db51f89373479c1') in 0.0365464 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9a5e72d7bdf65f027fe789c6023e74e5 DependenciesID=b705bb513e1feac747144c6018e753d8 StaticDependenciesID=4343311be6ac2333879348a1862bded9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.378624 seconds.
+  path: Assets/Icons/dayIcon.png
+  importAddress: Guid(734a728fd57d1bd4dbe6f2658ab87ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons/dayIcon.png using Guid(734a728fd57d1bd4dbe6f2658ab87ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '16aac8a3bc08bc6bde34c27d9b0860ce') in 0.0511927 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e9fb395f55ade639fc8bb7927bf91186 DependenciesID=092d356ba28ca437279b569b15ea12a1 StaticDependenciesID=7b79b54a2d6ce6069b604c074bc944aa 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/RoadArchitect/Materials/WBeam.mat
-  importAddress: Guid(e8d9c54e2f8206d448330c028bf1d5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/WBeam.mat using Guid(e8d9c54e2f8206d448330c028bf1d5be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '65c4db4e5e8a9ca061c42bf788c20882') in 0.1074852 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3d1646bde963ef14bb3b19ebc7bb3a4b DependenciesID=7e283aafa3cd70236b583c657fa34c51 StaticDependenciesID=1562f249a1f51d42ba0f845870282d49 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/RoadArchitect/Materials/FedSigns/861/WrongWay.mat
-  importAddress: Guid(60b4f4b6c07200b49965322fadbfc7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/FedSigns/861/WrongWay.mat using Guid(60b4f4b6c07200b49965322fadbfc7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3c5fffe74881178ea78cec1bf8a71ec3') in 0.0697071 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=467c54345169dec78a58715599dc4675 DependenciesID=15271087c70521498e1a5f05f0be9bbc StaticDependenciesID=69bb17fb81d55f76412a719ba7c25ba0 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/RoadArchitect/Materials/FedSigns/861/WeightLimit.mat
-  importAddress: Guid(c74a77d9f94b43f45bc46768c3f251ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/FedSigns/861/WeightLimit.mat using Guid(c74a77d9f94b43f45bc46768c3f251ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'eed40d4870a5ac11608fe8c97293947c') in 0.0694461 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=98260070a490bfe8af56dcd10eaf814c DependenciesID=e0b0baac5d72037e322dd9ded1566229 StaticDependenciesID=9cec954a46321aa2379e393168bce63d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000048 seconds.
-  path: Assets/RoadArchitect/Materials/Markers/WhiteYellowSingle-6L.mat
-  importAddress: Guid(5f13feb25f9804746946d789793171b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/Markers/WhiteYellowSingle-6L.mat using Guid(5f13feb25f9804746946d789793171b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cdb68d73ff30be596723c04347e964bf') in 0.066908 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=10747a4d3db8305736a73ed5b566a6c4 DependenciesID=5ddfecc35c4e5b0fd82358f6afb60560 StaticDependenciesID=947d9718c30412510b56b03c30ac8594 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/RoadArchitect/Materials/WBeamMetal.mat
-  importAddress: Guid(d8c2f6eba9b4ba84198cb9acb08b1d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/WBeamMetal.mat using Guid(d8c2f6eba9b4ba84198cb9acb08b1d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ee2e6c59c4ed9abb56f597ad2255affd') in 0.0658255 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8b00cb381b5e57f003888bcc9dc438ab DependenciesID=6976d2e0c2b0e9bb2b57fd6ca3894742 StaticDependenciesID=4d3d826e123a782f10470b776bd7d6a5 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/RoadArchitect/Materials/FedSigns/Diamond/General/WaterOnRoad.mat
-  importAddress: Guid(7b648174e33e87f47b3b175d7d357ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/FedSigns/Diamond/General/WaterOnRoad.mat using Guid(7b648174e33e87f47b3b175d7d357ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0f7e88c7e2efb055fa0e15b44389f9ff') in 0.0672964 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bd9a801dc5f11e97a13e4a8c0d3b6f45 DependenciesID=884e94e6e9f7ef4d3b62b14a3f24363a StaticDependenciesID=eba5441bae98510f88f4015d0b5921ea 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/RoadArchitect/Materials/Markers/WhiteYellowSingle-4L.mat
-  importAddress: Guid(6ad3e8571f530f54cb288d4dd37c83ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/Markers/WhiteYellowSingle-4L.mat using Guid(6ad3e8571f530f54cb288d4dd37c83ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e33aa689bddd369db527f7271fac85e9') in 0.0552141 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=91f01d2fe03e1c19b408ec4af9ab74a3 DependenciesID=268f9b04632031ee453ecf642515c050 StaticDependenciesID=1411c4d6a968f94497e47bd102744344 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/RoadArchitect/Materials/Markers/WhiteYellowPassLeft.mat
-  importAddress: Guid(62f02b2952c0ba04aab042127c2e6373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/Markers/WhiteYellowPassLeft.mat using Guid(62f02b2952c0ba04aab042127c2e6373) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1a6d995164c8bc0adc1a8c5a137ea54d') in 0.065359 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=485bfc961d97df22e80ed6ae633765ff DependenciesID=a1f9c46997bfefef82b54c42fe114633 StaticDependenciesID=ea42bc30594900f97b1210c7be97c599 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/RoadArchitect/Materials/Markers/WhiteSingleDotted.mat
-  importAddress: Guid(a45ce7da9fd632149bc4c5465fd92d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/Markers/WhiteSingleDotted.mat using Guid(a45ce7da9fd632149bc4c5465fd92d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '55c53365ddae4adc50c9ab618b0d14c5') in 0.0812351 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c687808a49e25f8370dde1ad45c05517 DependenciesID=ce4746bf72478b207b0d79c965fd365a StaticDependenciesID=d6374705a4317c2362e89512326ac787 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/RoadArchitect/Materials/FedSigns/396/WeightLimit10Tons.mat
-  importAddress: Guid(98b2b3c6a91ab7941be480ae1f60fcb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/FedSigns/396/WeightLimit10Tons.mat using Guid(98b2b3c6a91ab7941be480ae1f60fcb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c632bf694c8bf89366163690b3dbad37') in 0.0708944 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aaac2f4808cdd5f4c5712ef2bec60056 DependenciesID=ddfcc18d15b0df4df8c67d0332706711 StaticDependenciesID=95cb8404d392451b69cc89abe002eb08 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000094 seconds.
-  path: Assets/RoadArchitect/Materials/FedSigns/Diamond/General/WatchForBikes.mat
-  importAddress: Guid(cf826a3c8470c834e8b82a16fc279a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RoadArchitect/Materials/FedSigns/Diamond/General/WatchForBikes.mat using Guid(cf826a3c8470c834e8b82a16fc279a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '117357612beddc410544c0ef7b09e892') in 0.1033294 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d8717fefe7c30f4d135d26a66e438057 DependenciesID=b3f756a0c77ea81bfb6a9b95efcebe42 StaticDependenciesID=46ce9c1aeae359336c9d2f5f4556a21c 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 196.706758 seconds.
-  path: Assets/Assets/EarlCars/Materials/Base.mat
-  importAddress: Guid(adf794639b7ffbd498cb75d26572cde7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Assets/EarlCars/Materials/Base.mat using Guid(adf794639b7ffbd498cb75d26572cde7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '799f0f328611cf62629a56058929ccd3') in 0.1674837 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3b33ef277cafaf80b550a657ee219553 DependenciesID=dadb8725f646d73def86eeccdc4910e7 StaticDependenciesID=9bc33091ca4c98cd0b3e3e01b53fe9f1 
+  path: Assets/Icons/nightIcon.svg
+  importAddress: Guid(9f8cfe0d0647ea64c9a1636eeb2a664a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons/nightIcon.svg using Guid(9f8cfe0d0647ea64c9a1636eeb2a664a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6186bcb41c15a13665cf3f29d1afbcb8') in 0.0062766 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c30ba0f03c1b07e3bdcc35eda3a75492 DependenciesID=b639d91d6efeb66e72924abc82e84a97 StaticDependenciesID=674da930e7ed98ff6a700d853e2e32a9 
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 56.508603 seconds.
-  path: Assets/Scenes/MenuScenes/StartMenuScreen.unity
-  importAddress: Guid(d6c7a5a3ca36a684ab571dedee355ea1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/MenuScenes/StartMenuScreen.unity using Guid(d6c7a5a3ca36a684ab571dedee355ea1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e67ad01e3cd90215e74688215035245a') in 0.0297418 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7db5802fc1dfc45efd4d712e39fefe4a DependenciesID=601a354874b90425eac75a00b3229e8c StaticDependenciesID=ffaf1b5b32bc3d0acbacd4d57427878b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000053 seconds.
+  path: Assets/Icons/sunsetIcon.png
+  importAddress: Guid(8a6007d4088fe5e459ab6c52d6d04b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons/sunsetIcon.png using Guid(8a6007d4088fe5e459ab6c52d6d04b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '11d3326db5fbfaa4a18c390575dc285e') in 0.0129917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ecc03b1e65be423a5d154ba68c94f9ed DependenciesID=e0fd7b41df50b08aaa71763f7cfce7ba StaticDependenciesID=f33574c1bca73a35a2d8fd00dffa5c69 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Icons/rainIcon.png
+  importAddress: Guid(7e71301ede5c65c4fbe8c1d998c82560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icons/rainIcon.png using Guid(7e71301ede5c65c4fbe8c1d998c82560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9228d4fa7ade89b93a8a01d01b9be5dc') in 0.0364348 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=48a831ad8f8dbb20c7fbc082536f767c DependenciesID=ac3d25a3cfdc1f3fc5facb79bfa0c399 StaticDependenciesID=c9dd008143ebda4c6a4e683c8d196a9d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
