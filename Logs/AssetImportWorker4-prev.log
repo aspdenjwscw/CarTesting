@@ -1,0 +1,730 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-08-04T09:04:44.3033677Z"
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15681 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-08-04T09:04:44Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/GitHub/CarTesting
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+60317
+-licensingIpc
+LicenseClient-finla
+-force-d3d12
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/GitHub/CarTesting
+C:/GitHub/CarTesting
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [29236]  Target information:
+
+Player connection [29236]  * "[IP] 192.168.50.47 [Port] 0 [Flags] 2 [Guid] 800953327 [EditorId] 800953327 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [29236] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [29236] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 6.44 ms, found 4 plugins.
+Initialize engine version: 6000.4.4f1 (360f97ecca93)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/GitHub/CarTesting/Assets
+Forcing GfxDevice: Direct3D 12
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.1]
+    Renderer:        AMD Radeon(TM) Graphics (ID=0x1681)
+    Vendor:          ATI
+    VRAM:            7840 MB
+    App VRAM Budget: 7651 MB
+    Driver:          32.0.21032.4002
+    Unified Memory Architecture
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56012
+CodeReloadManager initialized
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004878 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.715 seconds
+Domain Reload Profiling: 1500ms
+	BeginReloadAssembly (229ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (100ms)
+	LoadAllAssembliesAndSetupDomain (362ms)
+		LoadAssemblies (223ms)
+		AnalyzeDomain (348ms)
+			TypeCache.Refresh (345ms)
+				TypeCache.ScanAssembly (326ms)
+	FinalizeReload (718ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (84ms)
+			BeforeProcessingInitializeOnLoad (171ms)
+			ProcessInitializeOnLoadAttributes (229ms)
+			ProcessInitializeOnLoadMethodAttributes (113ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
+[Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-08-04T09:04:47.8110952Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              2afdf2bd49ed45079bb6013cf1e5c733
+  Correlation Id:          1d6c1d1df68c8444512fa543dc1109af
+  External correlation Id: 9099361734149938705
+  Machine Id:              kS2MSEUP+PhHajfq4lupfhYLziU=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 2.92s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-08-04T09:04:50.7386736Z"
+[Licensing::Module] Licensing Background thread has ended after 6.44s
+[Licensing::Module] Licensing is initialized (took 3.04s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 17867501111429-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.VisualEffectGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.VisualEffectGraph.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.67 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 3.30 ms, found 4 plugins.
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.616 seconds
+Domain Reload Profiling: 5939ms
+	BeginReloadAssembly (3364ms)
+		DisableScriptedObjects (12ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (97ms)
+	LoadAllAssembliesAndSetupDomain (803ms)
+		LoadAssemblies (591ms)
+		AnalyzeDomain (375ms)
+			TypeCache.Refresh (258ms)
+				TypeCache.ScanAssembly (240ms)
+			BuildScriptInfoCaches (92ms)
+			ResolveRequiredComponents (22ms)
+	FinalizeReload (1616ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (213ms)
+			ProcessInitializeOnLoadAttributes (808ms)
+			ProcessInitializeOnLoadMethodAttributes (208ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+WARNING: Shader Unsupported: 'RoadArchitect/TranShadow' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 4.08 ms, found 4 plugins.
+Unloading 44 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7744 unused Assets / (8.9 MB). Loaded Objects now: 8732.
+Memory consumption went from 198.4 MB to 189.4 MB.
+Total: 21.772700 ms (FindLiveObjects: 1.046200 ms CreateObjectMapping: 1.484300 ms MarkObjects: 12.269800 ms  DeleteObjects: 6.966500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1332501.114931 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Palm_Tree_Spring.fbx
+  importAddress: Guid(f0cd6bc730c32784b82189b7ed0fb162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Palm_Tree_Spring.fbx using Guid(f0cd6bc730c32784b82189b7ed0fb162) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3cc926534105ded7a324a2acb3b559e8') in 0.9691395 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dee25b761bebb277a8f988db9c57ad86 DependenciesID=76cbb721b775f1c397bd4eb5d9fdfd27 StaticDependenciesID=a6c9e9fc82ec2535ab74c6c1bc220c27 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Palm_Tree_Winter.fbx
+  importAddress: Guid(783ad3fc7a193aa489373061bc441e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Palm_Tree_Winter.fbx using Guid(783ad3fc7a193aa489373061bc441e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6a2f5f4b7607357f0593f5a85c41c693') in 0.1015541 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f37164c774da84ad72cb0657e45ff6a1 DependenciesID=e2ec3027c579a30d45f9b2d11d884cfd StaticDependenciesID=1dfe274845bb047d1f4d933d1177f03c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.524444 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_1_Dead.obj
+  importAddress: Guid(b8c3135659c72b2499349d10ec3fc845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_1_Dead.obj using Guid(b8c3135659c72b2499349d10ec3fc845) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f0a75ea79978efb8f64863af8ab434d1') in 0.1789158 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c55fd7b9cea6d3c7e157ce6fc410ec48 DependenciesID=7676f97fd190d856c93050f7c8b17621 StaticDependenciesID=7a117671ca3ff7f70611efedaa5bbe68 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_1_Summer.obj
+  importAddress: Guid(8a3343344e3cd1949bbfd64bc374de9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_1_Summer.obj using Guid(8a3343344e3cd1949bbfd64bc374de9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '75b81ed21042d4c488c7a8470977b303') in 0.0807035 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=45a1236da2882a1c0c8104f990f86917 DependenciesID=e4e8f64807137f8ecf8c9bfe3828ded5 StaticDependenciesID=f99c31276610fc39cba926de84935c3a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.346994 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_1_Winter.fbx
+  importAddress: Guid(4d921b1b5c092194e92094ac2c53274b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_1_Winter.fbx using Guid(4d921b1b5c092194e92094ac2c53274b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c35119a291050e134451d9f60edc6c27') in 0.1160595 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e54b4b1f69ea66292623406e0801e7c7 DependenciesID=2f8f10a9a011f113c10e3683cf68be2c StaticDependenciesID=45f9f965efee5875e5f36a28f4c326c2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.540037 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Autumn.fbx
+  importAddress: Guid(b9c048b938467624c80ee5aba489b083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Autumn.fbx using Guid(b9c048b938467624c80ee5aba489b083) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4c9652f4671757e214a87dfbcd2265d1') in 0.0762397 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e13adfec58baee3a941300a558d0eff1 DependenciesID=b45dbbcc4b72d0cca9ab21433d4738de StaticDependenciesID=d42a107e3621dde57c98b73229968bdb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.293042 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Dead.fbx
+  importAddress: Guid(130bae77c92d0af46abe6062877cd213) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Dead.fbx using Guid(130bae77c92d0af46abe6062877cd213) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6bfc874548358677cdbb2e03290849ab') in 0.0708035 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6a2ca9b6b76c7b7482098bb7c117c241 DependenciesID=bee22a8b992b38f39b9547170d9dfe53 StaticDependenciesID=f06c1508b585ca43f4be135bbdee2e77 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048405 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Spring.fbx
+  importAddress: Guid(9f260895c1710a147a08803173cb40e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Spring.fbx using Guid(9f260895c1710a147a08803173cb40e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '70130956c24a6f102daf2357f5837fb9') in 0.0688985 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=73a2e440304767b15d1de0a99a20ca31 DependenciesID=761b63619386919dc2a1d1466bd0f84a StaticDependenciesID=77a532c8cec96163c611949f392746d9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.341466 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_2_Summer.obj
+  importAddress: Guid(1f36e5afc76904449b0cd3e27431ccb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_2_Summer.obj using Guid(1f36e5afc76904449b0cd3e27431ccb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b510fc7a8655776eb9ef5b395c2deec1') in 0.0907223 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5e66e8580f8b2b3ea43e08f219b4bc4b DependenciesID=c70d7192f46bc077a432d5c0aa759544 StaticDependenciesID=8b9610aaca3468ecc06d031fbda6f933 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_apples.prefab
+  importAddress: Guid(e05ae677c7b3bc546bd36b488586fb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_apples.prefab using Guid(e05ae677c7b3bc546bd36b488586fb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b1bc1055bee617da2dab954fe7d63499') in 0.1163743 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2e350bcdb458ec7ae43d12623d13fab9 DependenciesID=89edcf66e645ddb282addfd0ef6e33ab StaticDependenciesID=ba543b1fb2c6c70c04257113fe701f77 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.608711 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Broken_Tree_Autumn.obj
+  importAddress: Guid(795bda8601174434a9ea6d9037ec991b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Broken_Tree_Autumn.obj using Guid(795bda8601174434a9ea6d9037ec991b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '31e024be5654ccb0c3bdeda8dddc94c5') in 0.145629 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d6052f08bd265ec65ec16b3c4888bc40 DependenciesID=ac84ec36a97c5522459ee0316fd2fc04 StaticDependenciesID=7d500d8577d3d098741738451822f018 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Broken_Tree_Dead.fbx
+  importAddress: Guid(d64a4fa41583043498d41c48acdb8758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Broken_Tree_Dead.fbx using Guid(d64a4fa41583043498d41c48acdb8758) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '73057897bad35159e411319c0c0bb5d2') in 0.0751355 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=83b07aa5ce10dd71babd8ad3da1699c5 DependenciesID=860a081dbc5d62ccc78ab12de208029b StaticDependenciesID=c45a9a2f6ee776011c6b3b9f3356322c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Broken_Tree_Spring.fbx
+  importAddress: Guid(ff6a67a098cb7db488519d0844df354a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Broken_Tree_Spring.fbx using Guid(ff6a67a098cb7db488519d0844df354a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fc7c30a973437d64fd835add15a4d9a8') in 0.082145 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=03470edf8b1684dca4821d955f6ea7f1 DependenciesID=1fce07d648cf24a57d66af0826d8a513 StaticDependenciesID=6e7feb65bb7c109ee01504435b1e0eab 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.635094 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Broken_Tree_Winter.obj
+  importAddress: Guid(7e1fc7782645e3741a069ddeaf77101d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Broken_Tree_Winter.obj using Guid(7e1fc7782645e3741a069ddeaf77101d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b583a5efde17083ced975b4d3b2fe5e4') in 0.09274 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=61943aba913a050e5b85e278e4324349 DependenciesID=dc1174fb9fc2250f93cca6337d308f1e StaticDependenciesID=2c7490d8473d487bd22efe3b26505ddd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.005.prefab
+  importAddress: Guid(615df8dcef1464938bc8f3217f838507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.005.prefab using Guid(615df8dcef1464938bc8f3217f838507) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0bae4c21d621bb96beac5458f628bc0b') in 0.0651419 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7f2f429ad9bd82b2759f4073825678f6 DependenciesID=3bda00682c7880a684132e2267eda3a0 StaticDependenciesID=ea7c39e75de6ae2289841ce9fa253fb4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.007.prefab
+  importAddress: Guid(2a9dd48eb7be04127949551bcc3cd696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.007.prefab using Guid(2a9dd48eb7be04127949551bcc3cd696) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '27b3fc277806cc6abfa18764f8b9758a') in 0.0607318 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=401de7c37c459322a0260a3b0744c72b DependenciesID=9d9b3f7b710201cd9f6b09d46b76624f StaticDependenciesID=1d05716bf65f71ccd35a2405b24dad68 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.009.prefab
+  importAddress: Guid(5b8a8a7ff136a407a954fe563ab7c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Style Nature/Prefabs/LPN_Trees.009.prefab using Guid(5b8a8a7ff136a407a954fe563ab7c65e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a448c1a622f95898f7f78cb02562342e') in 0.0590498 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=99a084a151493d9c0cd3b5e031a5f1fa DependenciesID=edb3d50d59ca198499321b64ea265d9e StaticDependenciesID=c1561d747389250355f7ecde4e1652a6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.842858 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_dead.fbx
+  importAddress: Guid(3ebf65d3a6489594ca09a35d85d43b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_dead.fbx using Guid(3ebf65d3a6489594ca09a35d85d43b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)MaterialLocation.External is obsolete. External Material Location is no longer supported. (Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_dead.fbx)
+ -> (Import Result ID: '935f407c85ffb313beef97d2330dd023') in 0.1079277 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=698d701ac13cd827f898919358b15a8e DependenciesID=83d45b486ca2bbc2eb7fb39e891f941c StaticDependenciesID=2c55d05d59a974d3eb8c8284174b87f1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_pears.fbx
+  importAddress: Guid(ab5654911e4a8494190af9551d81ea81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_pears.fbx using Guid(ab5654911e4a8494190af9551d81ea81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)MaterialLocation.External is obsolete. External Material Location is no longer supported. (Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_pears.fbx)
+ -> (Import Result ID: '62f4b4fc07b82b60d44293ef410387b3') in 0.1121117 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d77bd8bd39ee42440f9f26daeab1b468 DependenciesID=fcbcc2c726a964c49ab034de3474ef57 StaticDependenciesID=2a58491b15eb36224ebe5f703cece00c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_plums.fbx
+  importAddress: Guid(0ef9f3b550a8ffd40ab0be1ae6034fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_plums.fbx using Guid(0ef9f3b550a8ffd40ab0be1ae6034fe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)MaterialLocation.External is obsolete. External Material Location is no longer supported. (Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Fruit_Tree_01_plums.fbx)
+ -> (Import Result ID: '69f0b8c21f0a99d96a6e8a25a4bc8a01') in 0.1088487 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=24e737318a9123b0ba893a781753547b DependenciesID=72bed6563109a8bbada0c79ddb68007b StaticDependenciesID=c84001c8c01590ed237af7fdc1621c15 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_green_cut.prefab
+  importAddress: Guid(c0fdfdeafe3a1404a8766f946dd531d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_green_cut.prefab using Guid(c0fdfdeafe3a1404a8766f946dd531d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9561c9eb0ae632826e36fc8fd411e345') in 0.0475529 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b4ffb70a0231c8ae83dbcaf53589dc1c DependenciesID=00737dc3db369102a65374fe4b4abf66 StaticDependenciesID=0ee22b6c4512a2d329c0333bddfdcdcb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.247536 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_plums.prefab
+  importAddress: Guid(367ab66e2689a8345a8fb8fd14a4f90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_plums.prefab using Guid(367ab66e2689a8345a8fb8fd14a4f90c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '209efb5d46b69bcdf86654f029aa04c0') in 0.0533945 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a7c3cbb8ef8a4d819ae051ab63b7a0eb DependenciesID=0a9c07056b59602a18d73bb6a53a44ae StaticDependenciesID=5a320c3396584733fa103db92aaa7c34 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017495 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_stump.prefab
+  importAddress: Guid(fb070a2d31206d9499ecc8a77be0ebf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Fruit_Tree_01_stump.prefab using Guid(fb070a2d31206d9499ecc8a77be0ebf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6adae829827a6b7365d7337fe2ea2f4c') in 0.0503827 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b0543241b43004b6d49ae533254a4430 DependenciesID=882a30498572525701bcee5feeee7541 StaticDependenciesID=d30a8c6a1929f90f23547ed1308d7b35 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_dead_cut.fbx
+  importAddress: Guid(3b8d3c0077d69eb4db5ee5754518f067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_dead_cut.fbx using Guid(3b8d3c0077d69eb4db5ee5754518f067) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)MaterialLocation.External is obsolete. External Material Location is no longer supported. (Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_dead_cut.fbx)
+ -> (Import Result ID: '90efc18c6c77cea3c3867ce126e5e506') in 0.046747 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=783ec553a29ffc897ba5917f34977ac3 DependenciesID=e93be751ec1c7676d96ede89813ec831 StaticDependenciesID=1baac2ad8374d820b6c94a220ac0db15 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_stump.fbx
+  importAddress: Guid(13bd9962aed9bef41bc2dd73a559c317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_stump.fbx using Guid(13bd9962aed9bef41bc2dd73a559c317) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)MaterialLocation.External is obsolete. External Material Location is no longer supported. (Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_stump.fbx)
+ -> (Import Result ID: '51c2b90317f6b09b085591f422afcfa5') in 0.0512395 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a7bab209659713816180c667a207a911 DependenciesID=babc3921ab21f0dd3ab31927099cdd2f StaticDependenciesID=6151bf4c17dcdbaf0c5b392e5e609247 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_green_cut.prefab
+  importAddress: Guid(1caa73a6296593c46bb83d678ff6609b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Prefabs/Trees/PT_Pine_Tree_03_green_cut.prefab using Guid(1caa73a6296593c46bb83d678ff6609b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '752bfc506e8cd4423d77c97bf3b947da') in 0.0436104 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=27a3e0cbf13e5a05d5089bfb4d1f9599 DependenciesID=3bfbbcb61b2529d85716ff6e2fb784e7 StaticDependenciesID=12aaab8eda31c6d02e79dc9e8b1a1abe 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_1_Winter.fbx
+  importAddress: Guid(5c13cdc68dfecc44c9e731052d3c6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_1_Winter.fbx using Guid(5c13cdc68dfecc44c9e731052d3c6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '487b5e2e32acaa76c350ae9ad52ccb41') in 0.0974831 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cd88eb7645fc41537abbea5b14340608 DependenciesID=21fd5a0d75ec8bdc4ce9585bc537521c StaticDependenciesID=ae5cff8aa90cc2b5b06da7c9ad9fa99a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_green_cut.fbx
+  importAddress: Guid(2a5e649cde00dd847885c694eb77f1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_green_cut.fbx using Guid(2a5e649cde00dd847885c694eb77f1fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)MaterialLocation.External is obsolete. External Material Location is no longer supported. (Assets/Polytope Studio/Lowpoly_Environments/Sources/Meshes/Trees/PT_Pine_Tree_03_green_cut.fbx)
+ -> (Import Result ID: '43aa72d8096bbd42d7bfef0435a50353') in 0.0581135 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=aeeb8f0fbf0c4587609e212949b5affa DependenciesID=761e4ba2b37f114f3cf4123e7d548b82 StaticDependenciesID=206721d14cb7cfb7dcc5af0c607a2324 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_2.obj
+  importAddress: Guid(06e8fe4fafce94040a3f513d44da5878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_2.obj using Guid(06e8fe4fafce94040a3f513d44da5878) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9206b155259c100a38069040bc6a1b8f') in 0.0894791 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=050e27f8016c111a7f8e89c435bf7844 DependenciesID=5dcc3ca183e546ee1d757eb46038eecc StaticDependenciesID=59dba4e7c00b2a48c6c7605f5e6da526 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.218514 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_2_Winter.obj
+  importAddress: Guid(ee0ccc1a6c537694fae3a885a5c9e991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_2_Winter.obj using Guid(ee0ccc1a6c537694fae3a885a5c9e991) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1e5b748cfc40002afd604c0fb56f5eca') in 0.1060566 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9e324f48106e65ef17bd9b8d6ea2fbdf DependenciesID=6ded786914dd0cc85b7a00f3c29cb247 StaticDependenciesID=c8aeb9a985de8966c659f85ad2ba4376 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.145662 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_3.fbx
+  importAddress: Guid(d8fc4c0061134a34189a325ed618b184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_3.fbx using Guid(d8fc4c0061134a34189a325ed618b184) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '14bbc599b0c3e3c8545edb8f057cb285') in 0.079462 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b6c362f86ac1de844e67540edf0c6570 DependenciesID=e336a03997544a299b6f4f783a82e165 StaticDependenciesID=c32b59136fcbf0178607bdf54e24bc84 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_4.fbx
+  importAddress: Guid(9a0db5ea5c676674fa39794d609be38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_4.fbx using Guid(9a0db5ea5c676674fa39794d609be38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1d5663549da02767423bff41ecdbd458') in 0.0825775 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e98bad74a6e08406614f06271442583b DependenciesID=997cc95998aab9e6e5dc8e015e82e460 StaticDependenciesID=58959a74e05ba25f91bee983a330faea 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.139767 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_4_Winter.fbx
+  importAddress: Guid(6c82c3390c3537a44acc23ee3c31f460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_4_Winter.fbx using Guid(6c82c3390c3537a44acc23ee3c31f460) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '47fdf93c217a7f4c25250c293ad0b3b7') in 0.0843027 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ab8f0c532e5bb528c37ec78348bc92c7 DependenciesID=e2dfaa3a3f5c8987130c5ca5cfb71de7 StaticDependenciesID=8efa4fd102f5555fed8db080f90c25c4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_5_Winter.fbx
+  importAddress: Guid(237d26b6cb3bd8a4986e4dd0babdd8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_5_Winter.fbx using Guid(237d26b6cb3bd8a4986e4dd0babdd8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '547f29069db50806e1675ade3ae92168') in 0.0933977 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eb60d2dbb7e30cee27cc2ad8e99e338e DependenciesID=3aa337963ab2ec77229d603b428235aa StaticDependenciesID=33607b9e23ff34cdbd6e41115c993d59 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083675 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_6.fbx
+  importAddress: Guid(cb947d2fe09706444b141261a5f466d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_6.fbx using Guid(cb947d2fe09706444b141261a5f466d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '625c0c3f9867528098ab0115c9651a52') in 0.0918112 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=703dc2e8c9340e460c5b18b56e4865d5 DependenciesID=3e7dbecd3d1bfa3447cc5eda3a5b1840 StaticDependenciesID=b7520941aefdf549caa97c29a35f0be6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_7.fbx
+  importAddress: Guid(1e376fc5ed8843b46939eecde3e7fcc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_7.fbx using Guid(1e376fc5ed8843b46939eecde3e7fcc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'cd6e01b016881b6c5ba3ecc1f573d99a') in 0.0897067 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6032ed769b4454b6563d29e5560ed9b8 DependenciesID=d7486d36fe5c799b501df2ef6982b3cd StaticDependenciesID=bfda528d8f1cc85e8a00758ddd2a47d7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_8.fbx
+  importAddress: Guid(4252e41d91ed8f341beb40058ce7c1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_8.fbx using Guid(4252e41d91ed8f341beb40058ce7c1f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '597dd0b3cc13607634e406698a6c015e') in 0.0830502 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5d81155c85d70ef46856d894ec5ca623 DependenciesID=31018c11af28dabeeca4b580caf55e92 StaticDependenciesID=403b8b78ba511b011ea3eb2fc1ee8663 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.512303 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_8.obj
+  importAddress: Guid(ddf1ff6595030ce4b963f3b4cb0f4569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_8.obj using Guid(ddf1ff6595030ce4b963f3b4cb0f4569) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '53d0d1b3e96b93878e8d558e866cc23a') in 0.0873669 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a1ad643d5201bd620df093b26e7f1cb3 DependenciesID=5d31269941a8288c25ac825b864348e5 StaticDependenciesID=bc8b23a169306ffca43c6fb0bfa8c7c1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.377856 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_8_Winter.fbx
+  importAddress: Guid(bc5c78953c1ecb842a2ea10f12010058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_8_Winter.fbx using Guid(bc5c78953c1ecb842a2ea10f12010058) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '13178a1dabb93e934179cc75171473a1') in 0.0832459 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=85603f4d2da11e54e9a989493a99cc07 DependenciesID=c6ee19808d6e3ae3e43a1e2631946520 StaticDependenciesID=e93340040a1e8de93c8cdf713395d40e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/RoadArchitect/Prefabs/Signs/StreetLightSingle.prefab
+  importAddress: Guid(b058c42fc7d431541b009cba82d306a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RoadArchitect/Prefabs/Signs/StreetLightSingle.prefab using Guid(b058c42fc7d431541b009cba82d306a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '58e09e1607f47a6fc643541063af8242') in 0.0394554 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0b6cb44cdeed6473fdcf5fee6cb1c185 DependenciesID=e6fa266208c2bb65be944157d453a589 StaticDependenciesID=fc96ed277df5789ba5078edffee62ce1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.292277 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_1_Autumn.obj
+  importAddress: Guid(852c4655aa0f8b34ca152bd588f8463c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_1_Autumn.obj using Guid(852c4655aa0f8b34ca152bd588f8463c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '137331a3f056f524cf9d9ec6c480e3c4') in 0.1283533 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0452bf200e6a7c700d1fa968ac0af6e8 DependenciesID=af79ba632c0c451f083bc178fa48e680 StaticDependenciesID=b8773e805a0de426b10b97c1b314d2d8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.258593 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_1_Dead.fbx
+  importAddress: Guid(ec0f1d35882f73848a5871266def94f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_1_Dead.fbx using Guid(ec0f1d35882f73848a5871266def94f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '344b403737b5dc227df4d1e197804f69') in 0.0604946 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d057ff37e290010f0ee49b3617566358 DependenciesID=082440cb746752277af90874dfb3484d StaticDependenciesID=f6fb91acc3c4c2f33f3f179d3b33311b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_1_Summer.obj
+  importAddress: Guid(976acb20c628f734fb9119330a310ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_1_Summer.obj using Guid(976acb20c628f734fb9119330a310ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3da9edeb5a190cafc07ed7d178795fad') in 0.0819103 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ce6c9b65be1c0ee9ba0b43a2cc05b412 DependenciesID=e44bc7ac8519449f6f75d5f691896ba8 StaticDependenciesID=f17c4606773668038e5857c0698365b1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.259999 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_1_Winter.obj
+  importAddress: Guid(6035264a5f688b84b9fc719e4977a7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_1_Winter.obj using Guid(6035264a5f688b84b9fc719e4977a7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'b4b738328ba8adfc21bdd6bfdc918eed') in 0.1017139 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=37e08dfe6c91a8c9436e979afdb36d81 DependenciesID=e4f456b5d8890d582c13a306082c4e30 StaticDependenciesID=7bcdfb93b330e7c80f5ca005c9f01a5f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Dead.obj
+  importAddress: Guid(81170b9b78b1a1940bc404acc5eea9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Dead.obj using Guid(81170b9b78b1a1940bc404acc5eea9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6a322712c7d36fb8b9472c0e3e1ca4cb') in 0.0718768 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=52f8e87eb526a21b06c575f668bf1040 DependenciesID=28cb97dd6be17adea66380e29a2b56d0 StaticDependenciesID=ae775ad3c27db4c11fa852e12d9379a4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_2_Spring.fbx
+  importAddress: Guid(a9217f40ac1f95b47a948069119c7b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_2_Spring.fbx using Guid(a9217f40ac1f95b47a948069119c7b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c06ab3a6fbc66aee1f44b9fb962f0d94') in 0.0646858 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f9319ec81f42dd9f5c0565e1b0858d86 DependenciesID=0be8bf26983c07987be4d13209b9cf3f StaticDependenciesID=5d6596dced9b92ce50ef683e7c70a857 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.775598 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Spring.obj
+  importAddress: Guid(7ad83ddd951254549b4afd514fcbb9ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Spring.obj using Guid(7ad83ddd951254549b4afd514fcbb9ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '843d59642ab3c8d8911b01951cd6d9ec') in 0.0949621 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d6257b7814f2f34f3920876505768e1a DependenciesID=8023f505a4c931ba012ef8930ccf66a7 StaticDependenciesID=bb06383a57eed587b82117767e437efb 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_2_Winter.fbx
+  importAddress: Guid(ec5a42573dcdbe449a69e853cbdf06b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_2_Winter.fbx using Guid(ec5a42573dcdbe449a69e853cbdf06b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f016b74b68a8d7150cc0e1c0501399a1') in 0.0828841 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=63370298b4c36fa39a6dff02aa91b0b3 DependenciesID=e2ec1a19cf1b516062b5e75b9acc2010 StaticDependenciesID=8c4d8d678d28997e2885aba30ca1faf7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.105085 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Winter.obj
+  importAddress: Guid(8bd79b91a1c94054e8ecb81202c540d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Winter.obj using Guid(8bd79b91a1c94054e8ecb81202c540d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '669aa85382e2b50f0503a67ffd7125d2') in 0.1003236 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=be036b2ef0ad6526ab33ce5da9f304c5 DependenciesID=364431d602b8ea0e973408afd5fe30ac StaticDependenciesID=4dc22348a39e0570a4bd49f7e48fcf3a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.329373 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Tree_04.prefab
+  importAddress: Guid(f0c16f0ea935ea64297ca1d4d55d9746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Tree_04.prefab using Guid(f0c16f0ea935ea64297ca1d4d55d9746) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '45e74b89b46c74846fce30ba92fa11ce') in 0.0395858 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6077db9ee1a44d64321b9413300d4ee8 DependenciesID=97f2c67a7f44be539f683b613c284c14 StaticDependenciesID=6704a612c50b801adabaa300589be3ff 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/SimpleNaturePack/Prefabs/Tree_05.prefab
+  importAddress: Guid(60f79905accf3b24fa0114b941f1aac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleNaturePack/Prefabs/Tree_05.prefab using Guid(60f79905accf3b24fa0114b941f1aac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '55d174a74e43a13274edb40ac56c68eb') in 0.0366016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0717aa61c32dced8694b7682650a8dfb DependenciesID=8638e3096edbad42830eddbe57323e25 StaticDependenciesID=f2e063ca7360c1a23ccce438898d132a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.702393 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Willow_Tree_Autumn.fbx
+  importAddress: Guid(5392a451d9b9068469f3debaf4dd5b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Willow_Tree_Autumn.fbx using Guid(5392a451d9b9068469f3debaf4dd5b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a6ec980b3ea94d9baf8900b03ff29109') in 0.0985715 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=13c70c94a11f091629ca1a7b43acdb92 DependenciesID=be47a3a306ea45dcd5bc3ec6dbf31918 StaticDependenciesID=0b7453a67c264b8b675b1b7b7a47d66b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Spring.obj
+  importAddress: Guid(c82ba385cbc3cc14cab2dc84135c0538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Spring.obj using Guid(c82ba385cbc3cc14cab2dc84135c0538) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '795111f3ada806bc9e7526b203efef60') in 0.0861766 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e85ea80f33ecd23c93c99a4cf0724b36 DependenciesID=b8abb94da475a156ae13545c2fbb1ffc StaticDependenciesID=85396ed0fbd497a3d1b912cc82d909f0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Willow_Tree_Summer.fbx
+  importAddress: Guid(7a90f749b9e8f6643870fb905ca87207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Willow_Tree_Summer.fbx using Guid(7a90f749b9e8f6643870fb905ca87207) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e7c78d89dfc4bd63fc1e2e0145c73e3b') in 0.0731055 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=48003d16729fc10be47a210417e728a0 DependenciesID=8de29256f75afbb32ea30158c46203e3 StaticDependenciesID=ac0132cb1a64f33598ab72931754a89a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.219250 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Willow_Tree_Winter.fbx
+  importAddress: Guid(e29aca6bb7e347646bd3d81e18642d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Willow_Tree_Winter.fbx using Guid(e29aca6bb7e347646bd3d81e18642d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'ae2ef282254719b9b6faa1cd5636eded') in 0.081202 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9f9c859448ae66f16b6f1bc00c7f903b DependenciesID=c9e660384d4d428bba1e5060d3255be3 StaticDependenciesID=7103cb1d50cf60f6d4df0f1afffc8ccd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 603.940303 seconds.
+  path: Assets/New Terrain 2.asset
+  importAddress: Guid(626fb9926dd81c947adce5f00ae01351) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/New Terrain 2.asset using Guid(626fb9926dd81c947adce5f00ae01351) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)The tree Pine_Tree_2_Spring couldn't be instanced because the prefab contains no valid mesh renderer.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:LoadMainAssetAtPath (string)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Modules\Terrain\Public\TreeDatabase.cpp line 355]
+
+The tree LPN_Trees.001 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:LoadMainAssetAtPath (string)
+UnityEditor.Search.AssetIndexer:IndexProperties (int&,string&,bool&)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexArtifactImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Modules\Terrain\Public\TreeDatabase.cpp line 355]
+
+ -> (Import Result ID: 'd753cbb05a2bd9b6cc7b59523626dd2b') in 0.2094395 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c6410aee483d5b66090c912c34f054b2 DependenciesID=a55fb99837d4860f42f0f78af1700745 StaticDependenciesID=1dfaaa23e75da960b739086cbf341740 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+

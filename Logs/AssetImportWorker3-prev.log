@@ -1,0 +1,1074 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15681 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-08-04T08:51:24.9393313Z"
+Date: 2026-08-04T08:51:24Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.4.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/GitHub/CarTesting
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+60317
+-licensingIpc
+LicenseClient-finla
+-force-d3d12
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/GitHub/CarTesting
+C:/GitHub/CarTesting
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [12280]  Target information:
+
+Player connection [12280]  * "[IP] 192.168.50.47 [Port] 0 [Flags] 2 [Guid] 3759060483 [EditorId] 3759060483 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [12280] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [12280] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 9.80 ms, found 4 plugins.
+Initialize engine version: 6000.4.4f1 (360f97ecca93)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/GitHub/CarTesting/Assets
+Forcing GfxDevice: Direct3D 12
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.1]
+    Renderer:        AMD Radeon(TM) Graphics (ID=0x1681)
+    Vendor:          ATI
+    VRAM:            7840 MB
+    App VRAM Budget: 7651 MB
+    Driver:          32.0.21032.4002
+    Unified Memory Architecture
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
+CodeReloadManager initialized
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003611 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.882 seconds
+Domain Reload Profiling: 1833ms
+	BeginReloadAssembly (245ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (150ms)
+	LoadAllAssembliesAndSetupDomain (471ms)
+		LoadAssemblies (240ms)
+		AnalyzeDomain (451ms)
+			TypeCache.Refresh (448ms)
+				TypeCache.ScanAssembly (419ms)
+	FinalizeReload (886ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (110ms)
+			BeforeProcessingInitializeOnLoad (188ms)
+			ProcessInitializeOnLoadAttributes (247ms)
+			ProcessInitializeOnLoadMethodAttributes (187ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
+[Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-08-04T08:51:29.2048841Z"
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              af390f70c17647f5a08efe1e5a502971
+  Correlation Id:          1d6c1d1df68c8444512fa543dc1109af
+  External correlation Id: 1671916114028999616
+  Machine Id:              kS2MSEUP+PhHajfq4lupfhYLziU=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 3.24s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-08-04T08:51:32.4470374Z"
+[Licensing::Module] Licensing Background thread has ended after 7.51s
+[Licensing::Module] Licensing is initialized (took 3.16s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 17867501111429-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.VisualEffectGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.VisualEffectGraph.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 2.79 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 3.10 ms, found 4 plugins.
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.841 seconds
+Domain Reload Profiling: 6785ms
+	BeginReloadAssembly (3467ms)
+		DisableScriptedObjects (13ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (71ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (131ms)
+	LoadAllAssembliesAndSetupDomain (1258ms)
+		LoadAssemblies (866ms)
+		AnalyzeDomain (553ms)
+			TypeCache.Refresh (400ms)
+				TypeCache.ScanAssembly (376ms)
+			BuildScriptInfoCaches (125ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1841ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (290ms)
+			ProcessInitializeOnLoadAttributes (901ms)
+			ProcessInitializeOnLoadMethodAttributes (192ms)
+			AfterProcessingInitializeOnLoad (9ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+WARNING: Shader Unsupported: 'RoadArchitect/TranShadow' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 4.29 ms, found 4 plugins.
+Unloading 44 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7744 unused Assets / (11.4 MB). Loaded Objects now: 8732.
+Memory consumption went from 198.4 MB to 187.0 MB.
+Total: 20.388200 ms (FindLiveObjects: 1.507900 ms CreateObjectMapping: 1.352500 ms MarkObjects: 9.470400 ms  DeleteObjects: 8.053200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1331703.869499 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Flower_5_Snow.obj
+  importAddress: Guid(8369b9613883f2b4b9d55f2e413b531f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Flower_5_Snow.obj using Guid(8369b9613883f2b4b9d55f2e413b531f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '125331bc59e29ee50c5990f5e4867493') in 0.2379564 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=65436c1be953bd737e863978220942d9 DependenciesID=7b83ce2831289752c5b1cfabc394f9af StaticDependenciesID=2f0f02c0ccd8d0e7bc1b4e29af22a50c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Spring.obj
+  importAddress: Guid(7ad83ddd951254549b4afd514fcbb9ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Spring.obj using Guid(7ad83ddd951254549b4afd514fcbb9ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'f7e07e2310b6b2921af02d6a66c4ff24') in 0.040282 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f303e64557b487ce7bb95965c4d3cc0c DependenciesID=2c53ca4222994d577f6af187e4ffb366 StaticDependenciesID=38776f820b8706bd9cb040d3181ccc0b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_1_Dead.fbx
+  importAddress: Guid(ec0f1d35882f73848a5871266def94f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_1_Dead.fbx using Guid(ec0f1d35882f73848a5871266def94f7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '957c650349fc9a62a473196937a42654') in 0.0635187 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a5930930148c11f80a74a9a99d45b95b DependenciesID=835c538f4d8649a25b670913715b4748 StaticDependenciesID=f428207d5e4dca2b2d11f23b6d8b1d4b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Spring.fbx
+  importAddress: Guid(9f260895c1710a147a08803173cb40e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Spring.fbx using Guid(9f260895c1710a147a08803173cb40e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b2758b436f3b4e412cc2980ae1f6ed86') in 0.0399822 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a84e32deb9e35e7091a823431d4a620f DependenciesID=023b57e8a6c52f7651a1b014d980c15b StaticDependenciesID=465e992d1f369fd1b8f8881e3bd23684 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Bushes/Grass_2_Snow.obj
+  importAddress: Guid(4835913abf2d5f84982c8335f9bfe3f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Bushes/Grass_2_Snow.obj using Guid(4835913abf2d5f84982c8335f9bfe3f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '91338d3b3226d0d0911e1d57f10e904d') in 0.0376181 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1430aa3e87a69d1a5cce6d0e66a13002 DependenciesID=7d38f72257f29bd8490c8535f45da30e StaticDependenciesID=c4e4be4a88679f5dd23708ce322cd1b6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Mushroom_3_Snow.obj
+  importAddress: Guid(455f9454c61db1e41b76d59caac177ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Mushroom_3_Snow.obj using Guid(455f9454c61db1e41b76d59caac177ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6bf17a20c5792ecfeadd5853e46a6365') in 0.0345874 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=243cf5bf82cb9d84998013ae3bc9c6dd DependenciesID=1e5c4b325d5bdba795a6de23ab14f59b StaticDependenciesID=68d0fc9fba7c68cbfb2088b850bbb6b5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_2_Summer.mtl
+  importAddress: Guid(174c0f1dd54ff8d4aad1b300be018a07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_2_Summer.mtl using Guid(174c0f1dd54ff8d4aad1b300be018a07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e465f4bd154460f7c4d5bdde7e41b3a6') in 0.019888 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=646bf23a384bd46d813d73e098798bfc DependenciesID=0cb7508cb7535b1305e36ac32638c7e3 StaticDependenciesID=49ddba01ccbcc3e3221b73b86fccef3a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Rocks/Rock_2_Snow.fbx
+  importAddress: Guid(82a83144ca8ad164ba9ff4184c9fc44e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Rocks/Rock_2_Snow.fbx using Guid(82a83144ca8ad164ba9ff4184c9fc44e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7345b07b099dcf3491951f63051fabdf') in 0.0361975 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9a80592a59c70c072256f1ca930af2bf DependenciesID=46eedea18058572017138646fe72a0ad StaticDependenciesID=df507e7b6001a46093486b64c03c25a2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Broken_Tree_Spring.fbx
+  importAddress: Guid(ff6a67a098cb7db488519d0844df354a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Broken_Tree_Spring.fbx using Guid(ff6a67a098cb7db488519d0844df354a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c2711d0b25a04b897147a536bd116ac8') in 0.036788 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8bb0483875b759cfb91931d13f9ea294 DependenciesID=5b5a5f2163295191f8245d3cefaef760 StaticDependenciesID=e56ecccaac5376822ef89ab484097fec 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_3.fbx
+  importAddress: Guid(b7ab62b07b039434dab63d717b583527) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_3.fbx using Guid(b7ab62b07b039434dab63d717b583527) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2af20f0dd1fa63b7b4e48af2d5a6080a') in 0.0380145 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=16d59c0b82373f0570d332c18afa9a77 DependenciesID=f9789a10a51a707df2f274b097957fb5 StaticDependenciesID=545736d90a42f701619076fe19738eab 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Mountain_2_LOD_Medium.obj
+  importAddress: Guid(8ec52147ba2881245862533bd546b24d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Mountain_2_LOD_Medium.obj using Guid(8ec52147ba2881245862533bd546b24d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8cafecd5efa47e0f3185c375e671bb1b') in 0.0344037 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4c3a675f4bcd698e81e1ed681148e9c7 DependenciesID=b4adfd4b71058750f6b4f1fd4bef34ea StaticDependenciesID=4ee56a18c078bec41903e3639bd067f9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Oak_Tree_Summer.obj
+  importAddress: Guid(e9f813b0ec718e043a6bd06c6a3b004b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Oak_Tree_Summer.obj using Guid(e9f813b0ec718e043a6bd06c6a3b004b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b5337690c79ad1e5de18c2dedf6db1db') in 0.035984 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5ec7606406b93720b79e05751a8cb525 DependenciesID=e50383a1447d8332b5a0e691ae4cbee2 StaticDependenciesID=2f31f3563a858e9d580c0043d83ba191 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Bushes/Grass_2.mtl
+  importAddress: Guid(4ebc57eb9f8a629469216f71fb6db29d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Bushes/Grass_2.mtl using Guid(4ebc57eb9f8a629469216f71fb6db29d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bb5e4e0b78b579e403dae01fedfbf0fc') in 0.0235863 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b38d812d30a3f60ff75c80eb1c803af3 DependenciesID=d2dfa263d7d31ff143c564d439883ab4 StaticDependenciesID=79fd16f53c2b7b2ac1f2531ac8b34340 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Cliff_2.obj
+  importAddress: Guid(1f1e5f165df010a41a158b715c5af3a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Cliff_2.obj using Guid(1f1e5f165df010a41a158b715c5af3a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6b62d75dfc00de59d16e7a5cc7da6c83') in 0.0329588 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=66017d733264ec0a822f3a42d3aeccf2 DependenciesID=35b889de2c254e6ddd969491975941f0 StaticDependenciesID=29b4d71d2203dff646b218c51c77027d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Spring.mtl
+  importAddress: Guid(87299c58cbb98434c85cea0d545e96c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Spring.mtl using Guid(87299c58cbb98434c85cea0d545e96c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '43b45c55cd92f366f6eead15c8b7a64d') in 0.029377 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=512f8082ff327e753a7cc3ee596293ef DependenciesID=17d0492c664f66e14a8ef4ce463d2c0c StaticDependenciesID=bbc5ed49019ed25f1c30674aa34dd98a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Rocks
+  importAddress: Guid(e4b82a9c223a4d94aad8df5fe239adff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Rocks using Guid(e4b82a9c223a4d94aad8df5fe239adff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'cdaa9fe4c2c935485dc9125e5808bbf2') in 0.021956 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f54b6dfe0094a0a38ea74d6e40b6b3ca DependenciesID=7a3df26ce6316ddb6fd409c380aca6ba StaticDependenciesID=2c473cfd97d86e845b43381f53086fc7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Winter.mtl
+  importAddress: Guid(0e14e648f06cd3942b2c371de10d0ec2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Winter.mtl using Guid(0e14e648f06cd3942b2c371de10d0ec2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9ff0ad7750906ed254c257a64f68c249') in 0.0220951 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8d4665838dbc0fa3ba44680e7977b6ea DependenciesID=00e033878e8b800d1b1a0a609f07f670 StaticDependenciesID=5e004766ac21d7655a4fe0558d362bcd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_1_Dead.fbx
+  importAddress: Guid(776ec41949ebab24c83528f5bd357cab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_1_Dead.fbx using Guid(776ec41949ebab24c83528f5bd357cab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '59ba2970a69d90cb56dd5b43c4c7427b') in 0.0361206 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=14756c8cc6388948acbcb551f62b55fe DependenciesID=9ffcbabe4cedf49b3e761eac47da28a1 StaticDependenciesID=63b8a1fd30c19e0cd5ed0aec68faac92 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/BLEND
+  importAddress: Guid(6a336cb8e7603da42806e4d294a474f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/BLEND using Guid(6a336cb8e7603da42806e4d294a474f3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2ab7c12b066bd632901fa4d260f5dac0') in 0.0237422 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a9409370dd0f4138e743c57085455833 DependenciesID=b3094bd7b8f26a554164f9693572dc75 StaticDependenciesID=bf5567cfce5a3fe7c0bc4fb9f2bae125 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Clouds/Clouds_1.fbx
+  importAddress: Guid(b0435fb98dd384e47800b8521b27f3fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Clouds/Clouds_1.fbx using Guid(b0435fb98dd384e47800b8521b27f3fe) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '71a3bb8f79797349ff0c719eddde2a87') in 0.0352032 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1667cd4ce6d3b25d73368d2fcd2c6340 DependenciesID=ed62e824c82a6521af69713d09b7e24c StaticDependenciesID=200fe47604b6e04a0f7fcda8b75dd755 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Bushes/Bush_2_Snow.fbx
+  importAddress: Guid(0acb146904ca7e4428df5629ed1a668a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Bushes/Bush_2_Snow.fbx using Guid(0acb146904ca7e4428df5629ed1a668a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fc9b6ad89bd63280bb9a577b6407ff2e') in 0.0369903 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=019f0ca7858fdee38e58c32ca3238706 DependenciesID=90c6ff597f09fe5c07085da3c920f947 StaticDependenciesID=fbd01a0348d22e6c7dbb2a3cc5b6bc82 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_5.obj
+  importAddress: Guid(e5e7b0ca1facee8448e3e79e089f00a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_5.obj using Guid(e5e7b0ca1facee8448e3e79e089f00a3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2170efc273da458a1c5d480f0c588e4a') in 0.0357341 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fdcede3c9be91df689815b9ba40414ca DependenciesID=ea684375193df1115716f347db137cf9 StaticDependenciesID=987450317deffb59ba9028f02149aff4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_1_Summer.obj
+  importAddress: Guid(8a3343344e3cd1949bbfd64bc374de9b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_1_Summer.obj using Guid(8a3343344e3cd1949bbfd64bc374de9b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b0e092efb8a341d4f4503f38ccf36594') in 0.029623 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4cd693f011c30c963102e6519518b7aa DependenciesID=effe00845357260ac1971d747577be80 StaticDependenciesID=95b808b38848be1d1906f93bef6a900b 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_2_Autumn.fbx
+  importAddress: Guid(6b25ae4efb1f4d245a95faf5c4044065) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_2_Autumn.fbx using Guid(6b25ae4efb1f4d245a95faf5c4044065) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b03b04e3cb65f4ebe8dcadbe4f9221de') in 0.0326613 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3401d837251a06f465efde014731c5ae DependenciesID=5a85e1f1f836833b803cb6522d08cd83 StaticDependenciesID=2e442941ce99febbf1a0ce74cd59a884 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_5_Winter.obj
+  importAddress: Guid(ac827991595c64541ae94701d5d45e79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_5_Winter.obj using Guid(ac827991595c64541ae94701d5d45e79) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3f29b19caae1c41f28ae2664347bdeca') in 0.0339954 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=209ed2762547b6b2b50aa6b77d4e5552 DependenciesID=441ab92451cc0ab8e89a8ae57a4ac957 StaticDependenciesID=fe9c8aab8914248df157ecb7232d9503 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_2_Summer.fbx
+  importAddress: Guid(598cfc7393d899a41bf5d7abcd2bef3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_2_Summer.fbx using Guid(598cfc7393d899a41bf5d7abcd2bef3e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6091d3945969a0eadcb1e250586113a8') in 0.0382819 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b3ce8197069c0de64c98ea1d09366f87 DependenciesID=d85f8508c6cfc7fa7d1c3574313335b2 StaticDependenciesID=04b86ea9f2b11fed15df9a01e41a2db7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_14.mtl
+  importAddress: Guid(efb71a433271d034790346a923d2dd38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_14.mtl using Guid(efb71a433271d034790346a923d2dd38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5bd7c65f2be68253b64747aeff732d68') in 0.0185393 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=07aab9d8fe9992424b81620f317b3cdb DependenciesID=1fc9003541ad1476fc34898190f89a32 StaticDependenciesID=7d8381691e5e705d5073caa5b404e159 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_1_Summer.fbx
+  importAddress: Guid(88584ae0a4d6c314982402e6700518c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_1_Summer.fbx using Guid(88584ae0a4d6c314982402e6700518c9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b6777208612a2a01950795d1c7603263') in 0.0382953 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c5326ec9e0be8c27606b90bec5726c45 DependenciesID=82e23d912074cf10ec23609fff610214 StaticDependenciesID=5a8386ef7da2ad56efe1a845f462a421 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Palm_Tree_Dead.fbx
+  importAddress: Guid(aeffe322586cd8d4cb20c5630545d647) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Palm_Tree_Dead.fbx using Guid(aeffe322586cd8d4cb20c5630545d647) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e2fe80c768627acdc0afe1cab00ae9f7') in 0.0340479 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=61068c5e43985587ccad7203ad954234 DependenciesID=d98c09a1bdffe4154c022bc2da911455 StaticDependenciesID=90e570564ec6173ad5e8bd8cb885418a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Summer.mtl
+  importAddress: Guid(fefab21d2c115254db70e53d7fcae1fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Summer.mtl using Guid(fefab21d2c115254db70e53d7fcae1fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '50de1ff966e95e8c7ab780674ff58bf8') in 0.0207249 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cce9ebc74c671a800f1a87d87dbfce89 DependenciesID=cabacc540101b768598045c1fe06e3b2 StaticDependenciesID=efc4e6c0a0b22609b5a362317debf300 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Autumn.obj
+  importAddress: Guid(41cc3fe52334cda48af3002112cef076) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Autumn.obj using Guid(41cc3fe52334cda48af3002112cef076) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e11dbcf98005af07db744d4d491184c7') in 0.032933 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ce6b35f75b5d3b3b9126c0a6d8e3b0c9 DependenciesID=58066b7b4aaf77645270e281705728b3 StaticDependenciesID=e91ac02ea7d573a755a038fd047986b9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Bushes/Bush_2.mtl
+  importAddress: Guid(445d6501bb3ecf44f92e2b1121dcffe1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Bushes/Bush_2.mtl using Guid(445d6501bb3ecf44f92e2b1121dcffe1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fe9e2f941dcdc0fbfdaaaa63e385887d') in 0.0184401 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b2468d3d4fd46538026baed0759f50bc DependenciesID=2111117ae5935d979a90d422d836dbd2 StaticDependenciesID=cb22bc0ed5a905b2f076caee2ff1d05f 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Plants and flowers/Flower_5_Snow.fbx
+  importAddress: Guid(bc3be28b6b037664db5ee82494a73dfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Plants and flowers/Flower_5_Snow.fbx using Guid(bc3be28b6b037664db5ee82494a73dfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '94541654e99b45718299c9ca9258b203') in 0.0368124 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bacb86d01fbad1bd7da7e60f55bebc95 DependenciesID=ff771dcd9928a9b72f23ad4983b426cb StaticDependenciesID=d06ab3c8ee0310f45a8bc87f34ec6531 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_16.obj
+  importAddress: Guid(f05410f0f9fc2074e82301830e3d90a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_16.obj using Guid(f05410f0f9fc2074e82301830e3d90a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b59b74230423baaf166c5440751a3ca6') in 0.0318662 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1bd224081050a041885ea887e3c21299 DependenciesID=93dbe66d789bec9c9facc4413019c159 StaticDependenciesID=fa0ce37003fcf12547cee01517804771 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_3.fbx
+  importAddress: Guid(d8fc4c0061134a34189a325ed618b184) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Simple_Tree_3.fbx using Guid(d8fc4c0061134a34189a325ed618b184) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '188037e7b305349f90c0e6fa8aeddbc5') in 0.0355351 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6f937789aa987dd0945aee4f56179966 DependenciesID=839d2f891e6d6cf6440f04adfbe3b19c StaticDependenciesID=13361297133a275d1993e322af6e3a34 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Autumn.mtl
+  importAddress: Guid(d4da3277eecbfa44893f87bee54447a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Autumn.mtl using Guid(d4da3277eecbfa44893f87bee54447a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '351b06f08f623ebefc707e3db0ac6fb8') in 0.0242226 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a1b92f0998bffca065a84799f89ce46c DependenciesID=d9889329dafa352890f1caa772fa7786 StaticDependenciesID=99bd95efc77e40159d083c133c4a3b39 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/free-winter-mountain-3d-low-poly-models/Fbx/Mountain_winter_002.fbx
+  importAddress: Guid(eb2fdf1ce9db6ba4487486159d3a6e68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/free-winter-mountain-3d-low-poly-models/Fbx/Mountain_winter_002.fbx using Guid(eb2fdf1ce9db6ba4487486159d3a6e68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8bc22a532ab22ec64d471ece7c494c3b') in 0.0350843 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6bfb24429cedcc44dbc57bc5261dd58c DependenciesID=c5269373c17424c622fab04f6ee87f01 StaticDependenciesID=708f456be1c19c660bb7816bad5400ca 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Flower_3_Snow.obj
+  importAddress: Guid(047c36e8f5bfd1d4eac4d5ddd1559e3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Flower_3_Snow.obj using Guid(047c36e8f5bfd1d4eac4d5ddd1559e3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'db2107aac5cc199b68990feb5135e7be') in 0.0339113 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6c5fa26a88472138d98f2b13b2198f58 DependenciesID=4b9ee75db44105c19814811cdf5c7d43 StaticDependenciesID=2cd7a9e53a68167f89ff93fd18ce9f72 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Mushroom_2.mtl
+  importAddress: Guid(03c0c6b9a8359374bad13d461a204cad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Mushroom_2.mtl using Guid(03c0c6b9a8359374bad13d461a204cad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a288a4f83c51b43b3cd3349be8195d6f') in 0.0222748 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b09b596a16a5ddf9b5516bf2a1f770f6 DependenciesID=fe86206cdadabd422a4ffa6d9074e590 StaticDependenciesID=cf99cace4a524da72631cacc5f42e87e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Plants and flowers/Flower_4.fbx
+  importAddress: Guid(b5e7321b667a0514b94e481e4a6e93df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Plants and flowers/Flower_4.fbx using Guid(b5e7321b667a0514b94e481e4a6e93df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3da55264210543afe68dc73e8d0f1162') in 0.0336119 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e9d45072b980f3c6221880886f9b9119 DependenciesID=5f1fb8e16ae38fc6b7d1f9079eba3ad6 StaticDependenciesID=dd9683784e298c7c8920d69cda5e6e04 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Spring.obj
+  importAddress: Guid(c82ba385cbc3cc14cab2dc84135c0538) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Spring.obj using Guid(c82ba385cbc3cc14cab2dc84135c0538) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '7d4673a7224f246080b442d1cf98aeec') in 0.033038 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eee875954785dddd99a5538a700190c8 DependenciesID=2e9966449dd83b2040b470d147252b32 StaticDependenciesID=bce1dd4703ab1b37c959ed1eb9b6a560 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_8.obj
+  importAddress: Guid(ddf1ff6595030ce4b963f3b4cb0f4569) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_8.obj using Guid(ddf1ff6595030ce4b963f3b4cb0f4569) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '098ade199b94e100399f265be7b6199e') in 0.0269695 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c273d3326b965b6364dac084e1db8e6a DependenciesID=c681b9090fa94347f47c603c61dd0a60 StaticDependenciesID=c322529cec7f88b96abf41b80c8a1249 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Rocks/Rock_1.obj
+  importAddress: Guid(327d851f95f77d043af6388e04818851) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Rocks/Rock_1.obj using Guid(327d851f95f77d043af6388e04818851) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd87b902842c7da5f6ea8f1d1353e4c32') in 0.0260432 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=55cc705356d1fd93c0ec5b65b779ea61 DependenciesID=6059f171c164d7cdc5f64933ee24dd08 StaticDependenciesID=eeea4e214a1fb26037e5a2e2b3718244 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Dead.mtl
+  importAddress: Guid(b49805b39aea91b458eebffee7e26009) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Dead.mtl using Guid(b49805b39aea91b458eebffee7e26009) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e0b1dec4da96e5c4f03a092d99220219') in 0.0182125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=42983b770f85f1812cd5a94c30609337 DependenciesID=9d3a2ae879f736cb58a751866b3e579b StaticDependenciesID=ba8637420af08e07aab69ab1d122173a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Oak_Tree_Winter.fbx
+  importAddress: Guid(68e85e77152917e4d88fb1bd9dee4d4f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Oak_Tree_Winter.fbx using Guid(68e85e77152917e4d88fb1bd9dee4d4f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5b469c2f64f2241644ee520633dfc6de') in 0.0400371 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cd9cb19427e9f4ef4bc8ad1b3adc8f7c DependenciesID=5e90429b6b517eb751be98540e6f96e6 StaticDependenciesID=04d422c48b47d656a175fdfd8c3d4cf1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Dead.obj
+  importAddress: Guid(1cbff80996dbcad4188c14871173abe1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Dead.obj using Guid(1cbff80996dbcad4188c14871173abe1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '55976f755a41a5c15c48112295b81279') in 0.0316811 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d835cdcc44b7a149c664b50eb3cc07bd DependenciesID=d35b9ab3f49e37cd8e734350d374465e StaticDependenciesID=d407ab9584d0204cbc7954efe02f6e3c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Broken_Tree_Autumn.fbx
+  importAddress: Guid(09ecf1fef8198f94da57ac1344f3b369) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Broken_Tree_Autumn.fbx using Guid(09ecf1fef8198f94da57ac1344f3b369) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '0d7e6c48c1043bbee006c4184368ca4e') in 0.0366076 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4518e5f7eb9087e6308d77468912b02c DependenciesID=38c470c155ab4b88d3ae0bef07a06e18 StaticDependenciesID=602208b05e536ba346a547e4ac31f26d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Flower_1.obj
+  importAddress: Guid(0f7349ef8494cc548bc09efdc0d8bc6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Flower_1.obj using Guid(0f7349ef8494cc548bc09efdc0d8bc6d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'df00ce14a2fc573022ab243198695fb7') in 0.0364348 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9fea441b42d02667083c7511a8515950 DependenciesID=4658a10d5d17222a43345b7aa005ae60 StaticDependenciesID=4035547fba6faaa0da10655933741fab 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_6.mtl
+  importAddress: Guid(fea9acdc824ae9742b250adaaec7c882) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_6.mtl using Guid(fea9acdc824ae9742b250adaaec7c882) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '23ac3c80db454830f64c1005d40c64dd') in 0.0232151 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2e3b2f1eff722cd75cde4375dfdc5fad DependenciesID=5a0fcfbc1eafcc33202ede9f444a2460 StaticDependenciesID=b7bad3a89c5c860357ef1f5309a9e771 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Mountain_1_Snow_LOD_Low.mtl
+  importAddress: Guid(d47bc17bc155a864d9cdb327daea0b47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Mountain_1_Snow_LOD_Low.mtl using Guid(d47bc17bc155a864d9cdb327daea0b47) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'c797a757835cdc2683145ddd4c2187ce') in 0.0216763 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7c817a8b450058a3f21bfd50d16753fa DependenciesID=7ddf79a7f33ed12062aa2e0b99384161 StaticDependenciesID=bb7c86ab84a3e9f2bf7fef7b7c0b1584 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Plants and flowers/Cactus_Summer.fbx
+  importAddress: Guid(42e5ca97c325ad54a963aa5a7bc25fd0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Plants and flowers/Cactus_Summer.fbx using Guid(42e5ca97c325ad54a963aa5a7bc25fd0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1f44a56d12efa90ce1f9a0735beba9c3') in 0.0280112 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0d85fb5e68379b0e89f911e43a284e92 DependenciesID=9129faa70be886d6111ef8743ac35d24 StaticDependenciesID=5d4455028e8bb3b5b15b5bfefa648d52 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Clouds/Clouds_2.obj
+  importAddress: Guid(ad1829e34eabcab459d65319a77339f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Clouds/Clouds_2.obj using Guid(ad1829e34eabcab459d65319a77339f2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '36dde165fca8b95114d00377033c9830') in 0.0315466 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=eb948f4252540b720bc0d26647296d8a DependenciesID=1739ef6617d1508a33bd9fb6333a36af StaticDependenciesID=1861d9b657d607aa8b69affb06e19c8c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_1_Winter.mtl
+  importAddress: Guid(ab521140df1937c4abdc16d7a7ec6712) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_1_Winter.mtl using Guid(ab521140df1937c4abdc16d7a7ec6712) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '739d31c69f5d56ee642f0ee8e0b7bcfa') in 0.0186399 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2f317dbd8a7321b9d8653e7282d412bb DependenciesID=d2d184ab7fa9cd0118ee479d41dbf7ff StaticDependenciesID=4060011c1518e341e4791bbc02d1c5d8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_6.fbx
+  importAddress: Guid(cf26d45005d04974b93522f745db0222) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_6.fbx using Guid(cf26d45005d04974b93522f745db0222) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'bb77de98aaa7f03380410e747baba87a') in 0.0404046 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2f42ba4d26faf292eab1997182fdc9a2 DependenciesID=10319476fa3c791dad2f54e0d97267ec StaticDependenciesID=8a8bce6947e843e236bf7ea4ff9928b4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Broken_Tree_Dead.fbx
+  importAddress: Guid(d64a4fa41583043498d41c48acdb8758) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Broken_Tree_Dead.fbx using Guid(d64a4fa41583043498d41c48acdb8758) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '87a741e38a6335f5c7ccd35635dcd46e') in 0.0377186 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4066e0ae7a16f5f7471f9637f63fa777 DependenciesID=298a4130bb16651188bbb1667c390923 StaticDependenciesID=8cd62b39917ccc3fec8763b3946855d4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_1_Spring.fbx
+  importAddress: Guid(baed6a71176dc014ea025f59ad640832) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Tree_1_Spring.fbx using Guid(baed6a71176dc014ea025f59ad640832) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4cbb93c5e9f2537992eef1eaf2f4225a') in 0.040323 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f94155c4c29bef9a34e4924d14f2b983 DependenciesID=1fce88b07a638f38952c081074b530ba StaticDependenciesID=a317c7ab6151a76a31f7e8d724c52bf4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Spring.obj
+  importAddress: Guid(07f02017b47911b4bbeaaaae3c7cf7f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Spring.obj using Guid(07f02017b47911b4bbeaaaae3c7cf7f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8847a7ea39ab75e1b2da09f1a13a63f0') in 0.0423411 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=04803c1163ee9182787a4f9a9038fbea DependenciesID=4d5d172baa95be0c61869a845c44e197 StaticDependenciesID=a154014de09580682b8629c7a5e4a237 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_1_Winter.mtl
+  importAddress: Guid(74b7be7294f718a479051259424509ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_1_Winter.mtl using Guid(74b7be7294f718a479051259424509ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'eef8b8c1e6881b5c288da24566dced10') in 0.0258305 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=be3ae130d5d34022b35c5d997c4a3da7 DependenciesID=719eabbf09ef7f0b9b005e2bc42caeaf StaticDependenciesID=38803825f123799fcfae40e2b8c1d875 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees
+  importAddress: Guid(96e3d18f01d2b024783c8b836889c78c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees using Guid(96e3d18f01d2b024783c8b836889c78c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '40314e265c729c998af3e53d258bf319') in 0.022052 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e25e08a407bc32f00ca7e6aff3a4f4eb DependenciesID=5f8f243019c0b04c143c8dfb09392c77 StaticDependenciesID=eb686f9d8b6bfa74a7692dd0decb30b3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Flower_4.obj
+  importAddress: Guid(182ced4d9434afb47b99daca2d6253dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Flower_4.obj using Guid(182ced4d9434afb47b99daca2d6253dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a84e0b338f4b835fcd549ece91c42d42') in 0.044155 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=606fe559ed0638f7a54907a60fe5d532 DependenciesID=890f8f64ea890ed986189cb37642bf03 StaticDependenciesID=4a8ccf59bba2a12132707198bf641876 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_3_Winter.mtl
+  importAddress: Guid(80bade4b36728ca498f46e80b1ff76b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_3_Winter.mtl using Guid(80bade4b36728ca498f46e80b1ff76b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4618a20870d88287ec6e2dda076d7f83') in 0.0232847 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=04ccfcadd96c24b861ce6d3c2352d292 DependenciesID=5b2afafe4149751ec846a12038945552 StaticDependenciesID=92bb7dcb0058fe634b42143b48465180 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Cliff_3.fbx
+  importAddress: Guid(6a464026be0359140bc862a426df264e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Cliff_3.fbx using Guid(6a464026be0359140bc862a426df264e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '9e791d71466094186209db821e7867ec') in 0.0407418 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=08ce282e9e161d442995ee94ddb5317e DependenciesID=9f003834121b6de2217c3742ea04268b StaticDependenciesID=86fd39d27d0b6724740a8ca0206f4372 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_11.fbx
+  importAddress: Guid(c828a0ed91743544ea1185acfd93dcd7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_11.fbx using Guid(c828a0ed91743544ea1185acfd93dcd7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'eaa6d404301fbd95c5b72be6591c8b42') in 0.0400847 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b5426bcf3d730e1ee16d70469639bf1e DependenciesID=cfbb033b05b3a610ddaaa53fa9e0d2d3 StaticDependenciesID=05ef48425d63b4e76a8062b910de1f13 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Spring.mtl
+  importAddress: Guid(fb2f99622f8842942be98cca92b8261d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Spring.mtl using Guid(fb2f99622f8842942be98cca92b8261d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '4a99a8141400d6504cd8519870f125b2') in 0.0233352 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=12fcdfc10bc2b8fdfe65bd2c26f053e0 DependenciesID=b627639429652dd99254cce9d0eae1ae StaticDependenciesID=15813d33c24fff8927fc52bbb9259327 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/free-winter-mountain-3d-low-poly-models/Fbx/Mountain_winter_001.fbx
+  importAddress: Guid(2d9a0eda245d90c488628c62608c7279) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/free-winter-mountain-3d-low-poly-models/Fbx/Mountain_winter_001.fbx using Guid(2d9a0eda245d90c488628c62608c7279) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b4f6ef3f2d8245937a5f9ec0df75391d') in 0.0327913 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3e735ced5d4c799aa984fbc338bba81a DependenciesID=fd970e5090650f4f82c5690b2b3e5fe7 StaticDependenciesID=440663e751b76cd20ae1ef9bd3b8ad0c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Oak_Tree_Dead.mtl
+  importAddress: Guid(9dfdc3973e5b37c419baede88aec9be3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Oak_Tree_Dead.mtl using Guid(9dfdc3973e5b37c419baede88aec9be3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6ef073acc546d222492a2d07d5fe0be8') in 0.0199375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e8a2f35db0b0c18734912c76d693fc65 DependenciesID=0bf5e6d8c6f0985889974eece2204daa StaticDependenciesID=8cb88ffd2868583f4e4f5aaf67585174 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/free-winter-mountain-3d-low-poly-models/Fbx/Mountain_winter_007.fbx
+  importAddress: Guid(2a9cfadb7dbcf4b4cb9e75770664ed9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-winter-mountain-3d-low-poly-models/Fbx/Mountain_winter_007.fbx using Guid(2a9cfadb7dbcf4b4cb9e75770664ed9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1b2e0108d2cbae9d1cf39bfbd5d7ecea') in 0.8843212 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c2e5cf3cc49543e2cd9d3e55d9744172 DependenciesID=9ca094fb58033def37577a8b3ddf469c StaticDependenciesID=883b22972b5feaf1889ee9738ba94315 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/free-winter-mountain-3d-low-poly-models/Fbx/Plateau_winter_005.fbx
+  importAddress: Guid(83f5e7261bd04dd4ea1a7f21b7e05e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-winter-mountain-3d-low-poly-models/Fbx/Plateau_winter_005.fbx using Guid(83f5e7261bd04dd4ea1a7f21b7e05e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'af0a3bbd8a1725b9ad5411d17290c69c') in 0.0600488 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=639cf70d6b790a5b8797fb6f62e45a09 DependenciesID=bec576c6238e0104bd540ad03d386a66 StaticDependenciesID=07e7076a01e05c48c61f3f8109bf8218 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/free-winter-mountain-3d-low-poly-models/Fbx/Mountain_winter_001.fbx
+  importAddress: Guid(2d9a0eda245d90c488628c62608c7279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-winter-mountain-3d-low-poly-models/Fbx/Mountain_winter_001.fbx using Guid(2d9a0eda245d90c488628c62608c7279) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6d2a2dd3b01a735d592b08ecfa77225e') in 0.0548943 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=be09646b831aec458984e2c12f6b875f DependenciesID=db977ca70add8c9a785226aac3cc5557 StaticDependenciesID=69d1cb7ec2660bf0dd6a15881a3051e6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/free-winter-mountain-3d-low-poly-models/Textures
+  importAddress: Guid(5768a1416295fb7418e366447b8f3079) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/free-winter-mountain-3d-low-poly-models/Textures using Guid(5768a1416295fb7418e366447b8f3079) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd28f5bada471ffaad1c06c507e7e4539') in 0.0260944 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ae56317724c10dbb4c7bf24188dc61ec DependenciesID=34eb5226e7149faead3f6ae6d47a3f9f StaticDependenciesID=b01d7dc871b7897ce1cee55ad82818e0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Rocks/Rock_4.fbx
+  importAddress: Guid(ea4e347b474d70042b668e2390d59131) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Rocks/Rock_4.fbx using Guid(ea4e347b474d70042b668e2390d59131) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '619c1f6dcfa485930553f0153930b90d') in 0.0334158 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0152ef369e4c280e212740b623c73527 DependenciesID=18d754510890da8ac28b2003e3b09141 StaticDependenciesID=900e3ebbd9ff924f0f53d4eb209bcd86 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_2_Spring.obj
+  importAddress: Guid(71da130399003724d871afde7da1d1c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_2_Spring.obj using Guid(71da130399003724d871afde7da1d1c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '1188cca385cee543998b8dfcc47ed6ce') in 0.0302081 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9b886d8ebde975b5ec98b0b9d5b18987 DependenciesID=17233077a384c83a4dbee87d0d9126ff StaticDependenciesID=3cf46634bef2699d4ba92b35d79d002e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Bushes/Bush_6.obj
+  importAddress: Guid(7b1785f24744c924f91e4b858adde3d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Bushes/Bush_6.obj using Guid(7b1785f24744c924f91e4b858adde3d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5718b74f1dcb49338989b233dfd4d9e0') in 0.0281774 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3ff0d9a156fa87afc4b558cdb0dcd37c DependenciesID=77ed0b2105cb83d03d06bc45e30c7727 StaticDependenciesID=871f0420e66b37992be66a6f0cdf455a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_2_Snow_LOD_High.fbx
+  importAddress: Guid(eaab645f83a3e5a42a9d60cf413d0616) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_2_Snow_LOD_High.fbx using Guid(eaab645f83a3e5a42a9d60cf413d0616) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b27f3647ec39d3e2fd44d7ba2173b803') in 0.0318224 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=3baa20472d6c8e4ad208815cf218402b DependenciesID=eb0c635d06585ce718044576b3f68b0a StaticDependenciesID=cc04f25729a0586456de97e1057ccdfe 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_6.obj
+  importAddress: Guid(ead2cb0a6aeee534196ebe562a6cf921) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_6.obj using Guid(ead2cb0a6aeee534196ebe562a6cf921) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6a395df69823a348f8f10ba90630f1f6') in 0.030577 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ec4f6e8800ee1ee1e7ee310ffc756805 DependenciesID=6fdd79ab1f5e3facb0a6ecda8637c8f3 StaticDependenciesID=959a15d4706221f231e5835365f669ef 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev
+  importAddress: Guid(2380c280169516f4d9ac9efcd690c747) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev using Guid(2380c280169516f4d9ac9efcd690c747) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd664dc5f3d8320a6a4fb62f4b4fca182') in 0.0216913 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=28fc7d25aa79b3c1635bbffa49d6bd3e DependenciesID=448103f97c4d33a2bcf1bed458752fa1 StaticDependenciesID=83bb48f1b6590277446d6b178706ff77 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_1.mtl
+  importAddress: Guid(5ec3b2f3be891a545bb372a45544508d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_1.mtl using Guid(5ec3b2f3be891a545bb372a45544508d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'dc0fa86b323e9d5597389b78e84db789') in 0.0233231 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e018549969b62fd6693afa8f5b90964c DependenciesID=3d769824cb4ea05f8bde6c063e439539 StaticDependenciesID=a70e9513aca5f7b03cc6353d94462e06 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Mushroom_4.obj
+  importAddress: Guid(33f4b46dd26010447a146744259c7e33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Mushroom_4.obj using Guid(33f4b46dd26010447a146744259c7e33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '195c0e262fcf6c3e724f513184ca28a9') in 0.0327725 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d217beb13d67f55b9b122295f57abd56 DependenciesID=b19780a64f46a09480da86426e6b210b StaticDependenciesID=47f075685c2b44e3564e8ffbdd165760 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/free-winter-mountain-3d-low-poly-models
+  importAddress: Guid(73e3c2bb6983c6b429f0a873cf085334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/free-winter-mountain-3d-low-poly-models using Guid(73e3c2bb6983c6b429f0a873cf085334) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '301ff26477bc2a525700cde3d321dbba') in 0.0010248 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a060e1daf1202c37d29ecaf6a42e8b70 DependenciesID=3edc7b2313cf1ffa4c40f7ce9f9f8ea3 StaticDependenciesID=f9e651fa5f3a2d203510622ddd5dcf74 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_LOD_Medium.fbx
+  importAddress: Guid(0fed29ce18df0d642b0cf7787fd0ab2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_LOD_Medium.fbx using Guid(0fed29ce18df0d642b0cf7787fd0ab2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'de00225ed248a2c8fbd5df2db59432d2') in 0.0400773 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=40cd4ad32f914818cf2d5eea30a60611 DependenciesID=66e7eac545d64a1d984d3f02868ef83a StaticDependenciesID=33d666e6d692aee2b8cbf3a88e758bc2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_18.obj
+  importAddress: Guid(8e876de308b913a42bd2e788a496e996) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_18.obj using Guid(8e876de308b913a42bd2e788a496e996) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '2d9c139b50ffedeecadd011eefb5c977') in 0.0357048 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=83601c8ade98608e1172448aedb9b9c5 DependenciesID=acaa05dd7ecf2c38e9888e281e0a98be StaticDependenciesID=9be86832d1c01f6478cba0e95f624988 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Plants and flowers/Flower_5.fbx
+  importAddress: Guid(4869573af2680f34187b07f113038325) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Plants and flowers/Flower_5.fbx using Guid(4869573af2680f34187b07f113038325) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '36f9da1e62d223a8b5dabcd359cd4a56') in 0.0304637 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=24f3fc20d4517c7317caf21f974d5fe8 DependenciesID=35bf1f05b5b8d27a0e26cff5d9c153a7 StaticDependenciesID=6b862d133b38e5d3d9c73ebb26b2fcad 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Clouds/Clouds_3.mtl
+  importAddress: Guid(d2c6a8958b816f344824c17378982a86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Clouds/Clouds_3.mtl using Guid(d2c6a8958b816f344824c17378982a86) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'fb247979d05384b1072b3f20b1f253e9') in 0.0224412 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=01d562b62e6a841faeffe57b15533fcf DependenciesID=85e857e2d7e5184e33f4e6eddd80f3c2 StaticDependenciesID=4240f8ca312c7caf6c48624aeb50f2fa 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Bushes/Grass_2_Snow.fbx
+  importAddress: Guid(8b1d840df430217468d47f524d698fa5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Bushes/Grass_2_Snow.fbx using Guid(8b1d840df430217468d47f524d698fa5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '87ba3c88b58cdb5059e5a1979f9b8824') in 0.0367499 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e6ec12a86a135fb4908b80cce575a696 DependenciesID=c78a4ec40befb6bbd0065c69cd35f242 StaticDependenciesID=4a0ac8c5c8820209694e28425aedafe3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Willow_Tree_Winter.fbx
+  importAddress: Guid(e29aca6bb7e347646bd3d81e18642d82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Willow_Tree_Winter.fbx using Guid(e29aca6bb7e347646bd3d81e18642d82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ec0d644b26e7d6c510e4bfc4f64fc6cd') in 0.0371763 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d2c96628c61b83a6897d59d6a91ab4c9 DependenciesID=5a5a0979dc52640d3e3b861397493358 StaticDependenciesID=0c510c1b2eba309a22e6883008190557 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Dead.fbx
+  importAddress: Guid(130bae77c92d0af46abe6062877cd213) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Trees/Pine_Tree_2_Dead.fbx using Guid(130bae77c92d0af46abe6062877cd213) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '201a658dcf7980448ec3280819d09413') in 0.0354489 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b16d510c6eca9c918048ed977fdffb1e DependenciesID=e1a5f8ae6f677aa0d0cd2f8fa5211141 StaticDependenciesID=338a01e19a456ff2a166a67271dc6cd4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Bushes/Bush_5.fbx
+  importAddress: Guid(9ca21a89bc2fc6f419086ceda01d37a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Bushes/Bush_5.fbx using Guid(9ca21a89bc2fc6f419086ceda01d37a4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ab9f5f7270e89f31a2939c793dc28716') in 0.0359661 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e04ae9d82678e327d8b9a8ffae357a79 DependenciesID=ecdca836089dd2dae31ba5f6de06ea92 StaticDependenciesID=d5f11033b00598de79a050c16452d559 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_2_Winter.mtl
+  importAddress: Guid(619447c9d1861f640b53ab219394b691) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Trees/Simple_Tree_2_Winter.mtl using Guid(619447c9d1861f640b53ab219394b691) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8afe670f5c837b22baa7e968acc4ecd2') in 0.0225031 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=83545d2fb8479ef420ec7d9ce625503d DependenciesID=1f3832eab23cf0d8c211f44ae7704436 StaticDependenciesID=8387c16605c51df8d41a174035606660 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Bushes/Bush_3_Snow.mtl
+  importAddress: Guid(06e965c19a78fa640a4d5e5a1840ab99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Bushes/Bush_3_Snow.mtl using Guid(06e965c19a78fa640a4d5e5a1840ab99) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a0415404e44a1024849845e4d91ab070') in 0.0236126 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b917a20e22f7311f1c1424ea39aa6b44 DependenciesID=7e52efaaae1fc2e5f8571d6bbcca0455 StaticDependenciesID=9d24f53b5fab3461e9de9f1bcad3a6ad 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_19.obj
+  importAddress: Guid(2380cdd8c09d7c34394c388331c75503) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/OBJ/Terrain/Terrain_Part_Plane_19.obj using Guid(2380cdd8c09d7c34394c388331c75503) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '284484d3660a9c841491bd2ea217050c') in 0.0292474 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e2d992ecdd58ad0628508301cd2c4f3a DependenciesID=dd395ee71f5caa86359a55ac7bccc702 StaticDependenciesID=9a323b5db1e741ed735bd33000e94ca7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.299733 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Cliff_3.fbx
+  importAddress: Guid(6a464026be0359140bc862a426df264e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Cliff_3.fbx using Guid(6a464026be0359140bc862a426df264e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '750c6b1bb76cb1e129fa277e063a23e5') in 0.0919084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=31730daa765346102614b2e24e9530aa DependenciesID=1bc008211ac97c50cf2ff17e4abf20fc StaticDependenciesID=0f67f73d66fc17f4e1dc104df06c6a14 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_Snow_LOD_High.fbx
+  importAddress: Guid(3420447ad693f1b44ae639b8d088ce6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_Snow_LOD_High.fbx using Guid(3420447ad693f1b44ae639b8d088ce6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '95cc8befbb01bcb485d491cc92983c2a') in 0.0796471 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7cc8001a637023213861c57d7e3dc666 DependenciesID=7a463e08226c6f162107fcabbde70782 StaticDependenciesID=d273130aa5edd28881c1ef890aa0fac1 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Edge_Out.fbx
+  importAddress: Guid(eccd00d939faa83459a25dbe00a7dae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Edge_Out.fbx using Guid(eccd00d939faa83459a25dbe00a7dae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '417be43f2532b047e88b7d800c121929') in 0.0552405 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=01c5af61997595baf9337b46b4d1ef72 DependenciesID=5469209d975d698cc9224a76ed3fa12d StaticDependenciesID=41a7e21fc682dd1a7e0d40cc2e6019af 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_2_LOD_Low.fbx
+  importAddress: Guid(7413c407b5467834fa9f4a6809ce10e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_2_LOD_Low.fbx using Guid(7413c407b5467834fa9f4a6809ce10e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2204feca430a5fd56deba9ad84d9c3ed') in 0.0593624 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a2091fdb6e3dadaccc8121bf35f84287 DependenciesID=d560444226ad01393c976370922e595e StaticDependenciesID=01aeae09e462eb1a7b5b32fbe4c3197c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_LOD_High.fbx
+  importAddress: Guid(b0b99166ffb8a1642866c2ab79783ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_LOD_High.fbx using Guid(b0b99166ffb8a1642866c2ab79783ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '906c1a2c5ff1146e1b1b873fbceea707') in 0.0585955 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d1b0f4446f4b624a96ef77249a04d313 DependenciesID=15e06ae4f6a8fba089b1fa353773a11f StaticDependenciesID=5f2e724387c6a74bd4df423cd140ff9e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_LOD_Low.fbx
+  importAddress: Guid(508e1a109f8aee145a974eb826984292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_LOD_Low.fbx using Guid(508e1a109f8aee145a974eb826984292) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f789fd0e3f3a37c8410279e248be6e8b') in 0.0582014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d088d891b58fd176fda770c8840578c4 DependenciesID=fc1c17379f64945340375ae5bdff452a StaticDependenciesID=23d0714c0acc7250807cf2b8ccb911aa 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_2_Snow_LOD_Low.fbx
+  importAddress: Guid(90c2ef2c1c115b045a0e290c1333ba31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_2_Snow_LOD_Low.fbx using Guid(90c2ef2c1c115b045a0e290c1333ba31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2f655435f731fda8ba660c7f259a6e38') in 0.0707035 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=04681d6c055aaa97945fb0b81c89d932 DependenciesID=24997a16c47a1b97b24b4956c86c9779 StaticDependenciesID=1ef6c73bd3fe1feecab83e8841e9c8e4 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_Snow_LOD_Low.fbx
+  importAddress: Guid(a698bb565506e5c4888d8b31b90249f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Mountain_1_Snow_LOD_Low.fbx using Guid(a698bb565506e5c4888d8b31b90249f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3438f0fc70d9cf1ec0bed22e3f3ae8ad') in 0.0790579 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=254ae6be23e3388077b608e108ae92b7 DependenciesID=42d27efcca2f98164cd0f9d921aaf748 StaticDependenciesID=0f47df8e470fe701f045ba62c9dac7e9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.243370 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_11.fbx
+  importAddress: Guid(c828a0ed91743544ea1185acfd93dcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_11.fbx using Guid(c828a0ed91743544ea1185acfd93dcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0a5ee0e1d9ef5070db58e98deeb0b3a6') in 0.0793727 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1dcc65ed1ee7df5140f1889bc2a602ed DependenciesID=766df884bb43550d1eff3bbc611c33bb StaticDependenciesID=a8667d9f4fafeafdb5426afed0e336c2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_14.fbx
+  importAddress: Guid(a54031d4f4dfce24c9bd2daa96df72d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_14.fbx using Guid(a54031d4f4dfce24c9bd2daa96df72d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '26a8cabda1ea04b836872613b711b98b') in 0.076975 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8303904bf6de70294b4176367dc28b83 DependenciesID=2a99652b825a1bb7ce89a61204e681d2 StaticDependenciesID=019329320fa96cf111aa80070968786e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_16.fbx
+  importAddress: Guid(861b252b88773ec4088f11bedef370bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_16.fbx using Guid(861b252b88773ec4088f11bedef370bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '01a2f2243d91c5f384511cb71b022bf9') in 0.070561 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0c0ea815b560811a4787e74685d84fa0 DependenciesID=dc5a6143f6fcc134e0c8dd502f9de6cc StaticDependenciesID=08374659eaa3cd90e22046924ac7952a 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_19.fbx
+  importAddress: Guid(574f4d40a397bb24d8ad4fb404bff3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature Pack Low Poly By RgsDev/Nature Pack Low Poly By RgsDev/FBX/Terrain/Terrain_Part_Plane_19.fbx using Guid(574f4d40a397bb24d8ad4fb404bff3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fb4c7fdc49fc1e7fa3b2ebb4e09a526f') in 0.0654645 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e9c9fb623a60be96dbc4ad2db90090e2 DependenciesID=fce1bb5905512dd499fd7b3062949966 StaticDependenciesID=86d21f063959774af2aefce839d4d97d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
