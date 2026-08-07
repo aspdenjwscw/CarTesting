@@ -1,12 +1,27 @@
 using UnityEngine;
 
+public class WeatherAndStats
+{
+    public float lightIntensity;
+    public string skybox;
+
+    public WeatherStats(string skybox, float lightIntensity)
+    {
+        weather = skybox;
+        light = lightIntensity;
+    }
+
+
+}
+
 public class WeatherAndParticles : MonoBehaviour
 {
     private static Material mainDaySkyBox;
     private static Material rainDaySkyBox;
     private static Material mainNightSkyBox;
     private static Material mainSunsetSkyBox;
-
+    
+    weatherStats = new WeatherStats[]
     private static Light directionalLight;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -21,7 +36,7 @@ public class WeatherAndParticles : MonoBehaviour
         directionalLight = lightObject.AddComponent<Light>();
         directionalLight.type = LightType.Directional;
         directionalLight.transform.rotation = Quaternion.Euler(90f, 0f, 0f);
-        directionalLight.intensity = 1f;
+        directionalLight.intensity = 0.7f;
 
 
         //The Update class won't work without an object so this makes one that won't be deleted between scenes to make sure it all works.
@@ -32,7 +47,18 @@ public class WeatherAndParticles : MonoBehaviour
         DontDestroyOnLoad(lightObject);
     }
 
-
+    public void ChangeWeather(int weatherID)
+    {
+        if (weatherID <= 4) {
+            RenderSettings.skybox = list[weatherID]
+            directionalLight.intensity = list2[weatherID];
+            DynamicGI.UpdateEnvironment();
+        }
+        else if (weatherID > 4)
+        {
+            //Turn on and off the rain.
+        }
+    }
 
 
     void Update()
