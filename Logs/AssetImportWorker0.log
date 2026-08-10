@@ -1,38 +1,41 @@
+Unity Editor version:    6000.4.4f1 (360f97ecca93)
+Branch:                  6000.4/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.6.1 (Build 24G90)
+Darwin version:          24.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Date:                    2026-08-10T22:17:14Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-Built from '6000.4/staging' branch; Version is '6000.4.4f1 (360f97ecca93) revision 3542935'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla" at "2026-08-05T08:10:37.7191868Z"
-OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15681 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-System  architecture: x64
-Process architecture: x64
-Date: 2026-08-05T08:10:37Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden" at "2026-08-10T22:17:14.227055Z"
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\6000.4.4f1\Editor\Unity.exe
+/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/GitHub/CarTesting
+/Users/jamesaspden/Documents/GitHub/CarTesting
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49229
+56381
 -licensingIpc
-LicenseClient-finla
--force-d3d12
+LicenseClient-jamesaspden
+-force-metal
 -job-worker-count
-5
+3
 -background-job-worker-count
 8
 -gc-helper-count
 1
--name
-AssetImport
-Successfully changed project path to: C:/GitHub/CarTesting
-C:/GitHub/CarTesting
+-name AssetImport
+Successfully changed project path to: /Users/jamesaspden/Documents/GitHub/CarTesting
+/Users/jamesaspden/Documents/GitHub/CarTesting
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -42,12 +45,12 @@ C:/GitHub/CarTesting
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-    "memorysetup-temp-allocator-size-gfx=262144"
-    "memorysetup-temp-allocator-size-preload-manager=33554432"
-    "memorysetup-temp-allocator-size-job-worker=262144"
-    "memorysetup-temp-allocator-size-background-worker=32768"
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gfx=262144"
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
     "memorysetup-bucket-allocator-block-size=33554432"
@@ -68,13 +71,13 @@ C:/GitHub/CarTesting
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [12224]  Target information:
+Player connection [8497488064]  Target information:
 
-Player connection [12224]  * "[IP] 192.168.50.47 [Port] 0 [Flags] 2 [Guid] 608661364 [EditorId] 608661364 [Version] 1048832 [Id] WindowsEditor(7,Elephant) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8497488064]  * "[IP] 10.10.0.155 [Port] 0 [Flags] 2 [Guid] 1485390432 [EditorId] 1485390432 [Version] 1048832 [Id] OSXEditor(0,Jamess-MacBook-Air.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [12224] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [12224] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
+Player connection [8497488064] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8497488064] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -85,84 +88,77 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 14.13 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.55 ms, found 2 plugins.
 Initialize engine version: 6000.4.4f1 (360f97ecca93)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/GitHub/CarTesting/Assets
-Forcing GfxDevice: Direct3D 12
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/jamesaspden/Documents/GitHub/CarTesting/Assets
+Forcing GfxDevice: Metal
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
-d3d12: failed to query info queue interface (0x80004002).
-Direct3D:
-    Version:         Direct3D 12 [level 12.1]
-    Renderer:        AMD Radeon(TM) Graphics (ID=0x1681)
-    Vendor:          ATI
-    VRAM:            7840 MB
-    App VRAM Budget: 7651 MB
-    Driver:          32.0.21032.4002
-    Unified Memory Architecture
+ preferred device: Apple M3 (high power)
+Metal devices available: 1
+0: Apple M3 (high power)
+Using device Apple M3 (high power)
+Initializing Metal device caps: Apple M3
+Mac GPU Family: 2
+Apple GPU Family: 9
+MSL Version: 3.0
+Has Float MSAA: 1
+Has Float Filtering: 1
+ReadWrite Texture Tier: 2
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              7a43a8daa0eb4de29b86457eddbeda92
+  Correlation Id:          b0d3d62622a1319a9d705ec21fab5175
+  External correlation Id: 8032387666553163990
+  Machine Id:              qlxbw7QE7buQNCWVDCvW4f+ONxQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jamesaspden" (connect: 0.00s, validation: 0.00s, handshake: 0.37s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jamesaspden-notifications" at "2026-08-10T22:17:14.599283Z"
+[Licensing::Module] Licensing Background thread has ended after 0.37s
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.4.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005277 seconds.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
+Register platform support module: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000472 seconds.
+Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.170 seconds
-Domain Reload Profiling: 2435ms
-	BeginReloadAssembly (408ms)
-	RebuildCommonClasses (104ms)
-	RebuildNativeTypeToScriptingClass (34ms)
-	initialDomainReloadingComplete (163ms)
-	LoadAllAssembliesAndSetupDomain (552ms)
-		LoadAssemblies (400ms)
-		AnalyzeDomain (528ms)
-			TypeCache.Refresh (525ms)
-				TypeCache.ScanAssembly (491ms)
-	FinalizeReload (1174ms)
+- Finished resetting the current domain, in  0.234 seconds
+Domain Reload Profiling: 532ms
+	BeginReloadAssembly (55ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (166ms)
+		LoadAssemblies (55ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (157ms)
+				TypeCache.ScanAssembly (146ms)
+	FinalizeReload (235ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (128ms)
-			BeforeProcessingInitializeOnLoad (210ms)
-			ProcessInitializeOnLoadAttributes (352ms)
-			ProcessInitializeOnLoadMethodAttributes (262ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (60ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-finla"
-[Licensing::IpcConnector] LicenseClient-finla channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4" at "2026-08-05T08:10:43.242293Z"
+[CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.18.1+9fbee8e
-  Session Id:              16b07fb09b9a46cdbe2f1d1e06a2f552
-  Correlation Id:          98b806c1249c90e69cec8159247b6272
-  External correlation Id: 6903039383497757373
-  Machine Id:              kS2MSEUP+PhHajfq4lupfhYLziU=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-finla-6000.4.4" (connect: 0.00s, validation: 0.00s, handshake: 4.46s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-finla-6000.4.4-notifications" at "2026-08-05T08:10:47.702707Z"
-[Licensing::Module] Licensing Background thread has ended after 9.98s
-[Licensing::Module] Licensing is initialized (took 4.01s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
-  Id: 17867501111429-UnityPersXXXX
+  Id: 17867501090831-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
@@ -203,9 +199,7 @@ Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tes
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 13.00 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
+Native extension for OSXStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -216,47 +210,483 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 5.96 ms, found 4 plugins.
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.575 seconds
-Domain Reload Profiling: 8839ms
-	BeginReloadAssembly (4425ms)
-		DisableScriptedObjects (22ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (201ms)
-	LoadAllAssembliesAndSetupDomain (1531ms)
-		LoadAssemblies (1124ms)
-		AnalyzeDomain (637ms)
-			TypeCache.Refresh (474ms)
-				TypeCache.ScanAssembly (440ms)
-			BuildScriptInfoCaches (134ms)
-			ResolveRequiredComponents (25ms)
-	FinalizeReload (2577ms)
+- Finished resetting the current domain, in  0.588 seconds
+Domain Reload Profiling: 1158ms
+	BeginReloadAssembly (85ms)
+		DisableScriptedObjects (3ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (420ms)
+		LoadAssemblies (222ms)
+		AnalyzeDomain (228ms)
+			TypeCache.Refresh (171ms)
+				TypeCache.ScanAssembly (155ms)
+			BuildScriptInfoCaches (44ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (588ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			BeforeProcessingInitializeOnLoad (423ms)
-			ProcessInitializeOnLoadAttributes (1243ms)
-			ProcessInitializeOnLoadMethodAttributes (255ms)
-			AfterProcessingInitializeOnLoad (12ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-WARNING: Shader Unsupported: 'RoadArchitect/TranShadow' - All subshaders removed
+			BeforeProcessingInitializeOnLoad (115ms)
+			ProcessInitializeOnLoadAttributes (228ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 3.76 ms, found 4 plugins.
-Unloading 44 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7744 unused Assets / (11.4 MB). Loaded Objects now: 8732.
-Memory consumption went from 198.2 MB to 186.8 MB.
-Total: 20.440100 ms (FindLiveObjects: 1.511800 ms CreateObjectMapping: 1.185600 ms MarkObjects: 9.755300 ms  DeleteObjects: 7.982900 ms)
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Launching external process: /Applications/Unity/Hub/Editor/6000.4.4f1/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Unloading 45 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7747 unused Assets / (6.7 MB). Loaded Objects now: 8739.
+Memory consumption went from 207.9 MB to 201.2 MB.
+Total: 9.086125 ms (FindLiveObjects: 0.583416 ms CreateObjectMapping: 0.299500 ms MarkObjects: 6.164209 ms  DeleteObjects: 2.038541 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 806489.425511 seconds.
+  path: Assets/DeerScripts/DeerBehavior.cs
+  importAddress: Guid(621bb30248b184e3fb9dd0758c0ca1a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/DeerScripts/DeerBehavior.cs using Guid(621bb30248b184e3fb9dd0758c0ca1a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8b936b88f423435be7b62af1523cb273') in 0.040189666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1db5f1e45eafc5d983437d170e543e8a DependenciesID=d97455740f28561e8e76e92866f09542 StaticDependenciesID=973ef5d44846f9b9ad849c56e83094cd 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (4.8 MB). Loaded Objects now: 8741.
+Memory consumption went from 200.9 MB to 196.1 MB.
+Total: 4.788000 ms (FindLiveObjects: 0.234375 ms CreateObjectMapping: 0.079291 ms MarkObjects: 4.068917 ms  DeleteObjects: 0.404917 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 41.237096 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '763750d386a94fd374b13def63906117') in 0.285899583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=751894a4c6994ab8e3b44ee061d2eba3 StaticDependenciesID=927c52ceaa902b8516cbc8d83e523aae 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 201
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.170137 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '951ca5e6ea6e00b489024b2cf1e950fd') in 0.001963708 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b1fb1173eb55c7d6135a9a82a3e1f9f2 DependenciesID=6b98eb4351f36f90675b8024020f491d StaticDependenciesID=20b121032d963baee0504021244f5efc 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018748 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fc50aeaa9d95ed2008256e1159a0dcc0') in 0.010587292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=a7441df88e06141615f89e71be592fd7 StaticDependenciesID=e7adfe06fbf3c10a4447f175d3c436c5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 200
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.338609 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '722bbf7271ff9befa7cefb5a500991fe') in 0.011887333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=d97c585f8327c414197ff7e6c3c2a7c0 StaticDependenciesID=06337abf1d68202a799d98b8d33ac3d3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 199
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.133603 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ea8a6f02fb726b487be13e123668bf65') in 0.001964416 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e169e8b5fdd185dec9b251f5a8c98fbc DependenciesID=43d90e1c96dbc575d59744e56b3c873b StaticDependenciesID=264399aca1fddc32c4f84d9fbc3c00a3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016492 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'fd8128900a7a634952b08a752ee3453d') in 0.011858042 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=d8ba564bdc67dca51df2434d2cf43226 StaticDependenciesID=def63fa05dedf9443f1f7311a39f2bbe 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 198
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.050072 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f934d78042fcb454686f4412069a3d33') in 0.011718875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=eced425683bbbcc74fc4e2df4827529d StaticDependenciesID=3653ffae5878ed77eefbe5cf3e19f663 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 197
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.964092 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '6cbd8d4d5911be40e1f072bb0766ae3d') in 0.018257 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a40c339b9929892c0ee02e4acdaaed8d DependenciesID=fa2a0ad380998fab5ba5f6be9749aed0 StaticDependenciesID=358dcc69cf3d6a383febc70ecb69055e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 193
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.468956 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e8f5f4bb55966e4f17b505610924947c') in 0.010822291 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=a0f94aacfcaded59772d9abfbd340e9e StaticDependenciesID=fcbf9e08a9e33f5424773c18f3267534 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 196
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.482481 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '276123effaa85d43ca9fa1b3e09af44f') in 0.0017395 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2e06bcb2b2c8849e75ebca3d2740b6a1 DependenciesID=638fcf8179e474a25a7893db6c27fab5 StaticDependenciesID=6d00ce129f3d6a0ec026b3febd181c94 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015428 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '00389cc6da93ebb20cd2c6947c3f68ab') in 0.010630416 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=e19444330e3a5389ebafb239017a6a8d StaticDependenciesID=0ac8ce00781893aff608c47cea738ced 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 195
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.790988 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '21db7a340c31f9ba1e44932d78d282d9') in 0.011127417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=d136666a84e88caf990ddde21a650c30 StaticDependenciesID=5649f7f93c7c1f6cdba4f18e94d1b31c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 194
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.964738 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '3c151e1fdeb40d12d11c64c7c81a2d49') in 0.003283667 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e756e4c47cdb8d1bf5db754d550f96ec DependenciesID=b78a9aaa285aa48f8a21e39b9e66f8b0 StaticDependenciesID=1aa4ce5cabd56793e45176fafbc4c32d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 190
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.228463 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f33dfb23ee4a59f7a6b7d892536fd98e') in 0.010573292 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=e02f44886d8483f3c49b1899719e9ce4 StaticDependenciesID=43ac39de1a0c61c5baa01df12a6eaab2 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 193
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.966640 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '37f95b25d24bd719bfa342a5e0972f1a') in 0.00329375 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=36fb5249c51e6848067105673fac010a DependenciesID=bebad5f90b6f879779b0a0da68ff74b8 StaticDependenciesID=1d3998a3828d9c77f1d9c4d8cca50386 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 189
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.095430 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '745b230a4042d460a358968cef02660d') in 0.012615916 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=d4ad62a355ea9a0456782b3b65c3e9c5 StaticDependenciesID=7093c65973d8640a606ad60060d41a59 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 192
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.969820 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '896c4181c359e95df2309fd529741c20') in 0.001776792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=639e71c7339f346ad30058534f4c2499 DependenciesID=6d3401360e49c07cc96a4e0b55463b43 StaticDependenciesID=e7a8a9d27a32fa189a748ee204a3fce3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015061 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f4d220bfdd188533eb6a3c22efc2927a') in 0.01008675 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=6536ff13584996bd7c47a82f39f28542 StaticDependenciesID=a49288c39bf2f7062f3f40eb3eda0f22 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 191
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.761791 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c29f1269aaff255a4bea44605b9a8b86') in 0.012222125 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=0496a0778c9ac9d3026e711fa8a9dd0b StaticDependenciesID=7730dba81b542ad7c9ade59a9ef0c0c8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 190
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.963618 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'e490d9ca5e0af69bc4a74289017f2c25') in 0.003204333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=cdc302d474cf5996564c4f3750874853 DependenciesID=b18e5fd45e78b23b7ec9e7d546643a68 StaticDependenciesID=e6ceaf13fde7df666b865ee614530b2d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 186
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.394069 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '3dc5d1bf06c2ca55f8b94fb374bf56f5') in 0.011760458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=421eef64cc75def2d05059d8a31a58ba StaticDependenciesID=e1f24175c9316028b9d42e5b32492fe8 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 189
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.465179 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a086e44ca09425a2670f176e8f054197') in 0.001706917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7697fbd75c95881cb90f31473f161f5e DependenciesID=638a1ca7ac2b6f5a1458ae811ab07a6c StaticDependenciesID=ae3b1e614316db21074829967c63864d 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014791 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '1b81649a68e82140bb5a72c093f21ebf') in 0.011328458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=5be1f46bcc153bb24fd26224e552efee StaticDependenciesID=9182a555dbc9e4bbdb8044911c7aeff3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 188
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.755153 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '040642d7e4cdcd0c8a3040f2fc8f8f31') in 0.009609792 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=010ab3e8902dc0207c3ec7ea44b6bf41 StaticDependenciesID=1059d184db7f14dc87cfb260ea5ac07e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 187
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.467677 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e3de89c6eca8b4a722cb3ecbb3b8c613') in 0.011636875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=3f1112f249c7e3881a4c39a5e3da6d9a StaticDependenciesID=ed05f7b9c405fe9d90c9612d0cf65c6e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 186
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.997302 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ed23204204c30fd21e875c37b9ce51d7') in 0.001684083 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7484d5bcc3fc10ba31abbc1ccc8587ee DependenciesID=65d0a2da02729922e98286659b5e4211 StaticDependenciesID=3a37651a2c1da7641ba96d191b40bc28 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014729 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c256b7f6c25c73c117f473ebcca7f315') in 0.009553583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=ac7a1845d01f5464f990b73353ed7757 StaticDependenciesID=67469d87d26115ad3092d7b830e28f17 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 185
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.769120 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'dbb279a180814974511d100728882a69') in 0.010440084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=cec32e2a96763aded9083b5470167b22 StaticDependenciesID=42c8496780af98d4c1a424395dce21ec 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 184
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.967461 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '8ef23fb554227f7192705c1751396f21') in 0.00330875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d606ec474c6a8c10c0a2a7ed07e40030 DependenciesID=fc41f32ea7ffcf8f1218d83345e7b58a StaticDependenciesID=e46eb7761125ed319dfa246826b6ce67 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 180
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.275629 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '703d1249e675af914cc8ab83b51decf8') in 0.011457458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=fb70f84f555c945da898aadbae70d0f1 StaticDependenciesID=2249e6db54ff55ee2545a850022a62d3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 183
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.407944 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'a5937b785e43643f9252ed1c5ac12127') in 0.001733458 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a88cde2444cd4a15fc5336a93ed87393 DependenciesID=c0e501ef461f502af512d50751547a2a StaticDependenciesID=a5ee3b21cc77ebfebfd88cc155005d24 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016318 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '8aaf8b0f9ddf592cfc4478f48d1aa431') in 0.010965042 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=4a957fdf682846f3643b1c38c99613b9 StaticDependenciesID=f43a79ff596f71a353ed602194ce3404 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 182
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.706763 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '79ee5c8ab0f01f00f4c19bd606ebe46f') in 0.009858209 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=30b12f10571216509874396c82822c67 StaticDependenciesID=bae39c35dd11dc5fa76684d86df0232c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 181
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.966629 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'b711df87e96a29851ac3f3d62e8b0965') in 0.003184666 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=724f608affa058558b8194b682a38718 DependenciesID=2ac1ffa97fb805387b2e6c33af57d248 StaticDependenciesID=ba1a72e6e13af4c6bc0a2f0029091b4e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 177
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.991777 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '709d2e4c4e2a80b5d4eedac51fd86182') in 0.011176417 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=7d53dc3e0326b135f7309cf6cd7ab1e6 StaticDependenciesID=e81212c017028467433c966d308534f7 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 180
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.345198 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'ffac96c4d9604473c72cf96e9135ee07') in 0.001820542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6d149276b4bda91fd3792898c3bed7d9 DependenciesID=d7d2b8a1a50d506c39d8473e80fff2db StaticDependenciesID=64bf3f56c1511389e66f1ea7b0abd718 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016162 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4da637fa7d3be3b36c0b502e41abff63') in 0.011118542 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=63824f2f6ac9ca2b6792534b0d6eafb4 StaticDependenciesID=e4836db8bd8d4637d9d786fd0a311d59 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 179
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.539652 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '0cb62ce9afb0ae5a02b54bfde56a988e') in 0.009471583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=a8bd5379bc256cfdbf2d908d73cdc42c StaticDependenciesID=56491c2b6391df673fc617898fdce83e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 178
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.202033 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '2ee2655e11f9f0fff35cfb5455e80870') in 0.01060775 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=955c8a6a7263a1798c6615d2096359d7 StaticDependenciesID=aee6515003fbad776c8f6f142924f1d5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 178
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.964390 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd63f9ba27d24298a45366590db1fb925') in 0.003225209 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=14e5b93a9dbdd4f04a716f4707fe1b88 DependenciesID=d37f12e8aa131b199f2eedf2642f42ec StaticDependenciesID=051cbe821bc8835eb936fbca1af7ef31 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.569267 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'c9d70bca058188f5b24fd2d88566cd42') in 0.010763917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=70d8968386b5f9f7b14dc92cd8d931cc StaticDependenciesID=1589431e4b8c0a8c783ac38dca3c3fb5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 177
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.034210 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '5080419a058fa3c4c4fad980d34a5dd7') in 0.001643875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ea7bcc1bf722f34c9e4e213943da29f1 DependenciesID=4ff362859db7787b10bb372cc11f1f38 StaticDependenciesID=d23b52ce1ae32413068e1f2f33ad42c3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014499 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '355ca8e7be06fab4867c70a3097f514d') in 0.009592167 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=2d0ad18ca701b3dcd6ab2fb417a311b7 StaticDependenciesID=1402717d9246675cd526cf4756a2e3a0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 176
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.433997 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '56be4b94a3cf2326bbf4410ac5de79d2') in 0.009701875 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=b51ea4bde568ab176e58b181fc3bf43e StaticDependenciesID=2c1a57d32734a0b2b2c90c134d47967e 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 175
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.157741 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd3405d79b3641598c01e1146dc5cd7b8') in 0.011115333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=d29fffdc229625b1819f02d8f529e90a StaticDependenciesID=71eaf4dd8656ad80644ba48da62ff4d6 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 174
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.648053 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: 'd1edc5687b10b16523116c7a389da56e') in 0.001685333 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8fe6a8adef8cc35af9cb9d53d19e82f2 DependenciesID=f36b5f327fee1811448586fe39b7d59b StaticDependenciesID=3a905cb7eeba013f3803b1cadab4f478 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015218 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '4590add437b573ef2380e832d15ac629') in 0.00973025 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=9d21b95401ffae838035cad3c6025d45 StaticDependenciesID=3575276b9ccf38e8358e057ae7d661f5 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 173
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.651414 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'e6ec9a90f6b548561ba1cbe1bb839b23') in 0.009384042 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=8349fb22f1e45f9dbf603649c7095888 StaticDependenciesID=8ec051b20a1be2ac3e656bf8b1054566 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 172
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.769542 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'df5103fccb8f3076cf711dc45e94e867') in 0.011282583 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=0de1297417decf5de3cb21e14650bff6 StaticDependenciesID=c576fd4a5f0b06f0eee67e7ce44d385c 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 171
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.701910 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (Import Result ID: '299990ba00a5a448d3fc99ee702d4efb') in 0.001760209 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0d960dd3ea60434dc13fb872b1e08e94 DependenciesID=3fb039ed887a78e0178e2f524b0e73a2 StaticDependenciesID=8f362342ab120a9d78dcc078ca2fe7a0 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014000 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6af6016c86bd77949442ff35e22d1de8') in 0.01252675 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=f76986035f735d2660d7e98517483481 StaticDependenciesID=fa7200c6b65f0dee1e7adc4158eaabe9 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 170
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.368110 seconds.
+  path: Assets/earl_deer.prefab
+  importAddress: Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/earl_deer.prefab using Guid(945cd0eeaf5b14e79b80d2cf398deee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'aa4c7efa2b2aad6802a19a8bdd384af1') in 0.009177166 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6ad03ea6e17ecbab7b66865ef9230b95 DependenciesID=38c62bd1a914456860f35dc4d19590d3 StaticDependenciesID=d461b9a353d4c9c155a459c3e67389b3 
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 169
 
 ========================================================================
 Received Prepare
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Thread 0x33fa87000 may have been prematurely finalized
 Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
 Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
 Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
@@ -294,9 +724,7 @@ Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tes
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.18 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
+Native extension for OSXStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -309,135 +737,119 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.247 seconds
-Domain Reload Profiling: 4405ms
-	BeginReloadAssembly (620ms)
+- Finished resetting the current domain, in  0.468 seconds
+Domain Reload Profiling: 976ms
+	BeginReloadAssembly (138ms)
 		DisableScriptedObjects (10ms)
-		CreateAndSetChildDomain (164ms)
-	RebuildCommonClasses (75ms)
-	RebuildNativeTypeToScriptingClass (32ms)
-	initialDomainReloadingComplete (254ms)
-	LoadAllAssembliesAndSetupDomain (1176ms)
-		LoadAssemblies (1031ms)
-		AnalyzeDomain (467ms)
-			TypeCache.Refresh (12ms)
-			BuildScriptInfoCaches (407ms)
-			ResolveRequiredComponents (41ms)
-	FinalizeReload (2249ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (311ms)
+		LoadAssemblies (195ms)
+		AnalyzeDomain (138ms)
+			TypeCache.Refresh (8ms)
+			BuildScriptInfoCaches (121ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (468ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			BeforeProcessingInitializeOnLoad (323ms)
-			ProcessInitializeOnLoadAttributes (1105ms)
-			ProcessInitializeOnLoadMethodAttributes (335ms)
-			AfterProcessingInitializeOnLoad (25ms)
-		AwakeInstancesAfterBackupRestoration (50ms)
-WARNING: Shader Unsupported: 'RoadArchitect/TranShadow' - All subshaders removed
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (177ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 5.42 ms, found 4 plugins.
-Unloading 39 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7742 unused Assets / (9.6 MB). Loaded Objects now: 8748.
-Memory consumption went from 202.4 MB to 192.8 MB.
-Total: 21.794900 ms (FindLiveObjects: 1.276300 ms CreateObjectMapping: 1.388700 ms MarkObjects: 12.145900 ms  DeleteObjects: 6.981400 ms)
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7746 unused Assets / (7.2 MB). Loaded Objects now: 8788.
+Memory consumption went from 233.6 MB to 226.4 MB.
+Total: 8.081000 ms (FindLiveObjects: 0.797208 ms CreateObjectMapping: 0.310000 ms MarkObjects: 4.578667 ms  DeleteObjects: 2.394500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 1415717.954355 seconds.
-  path: Assets/Scenes/MenuScenes/StartMenuScreen.unity
-  importAddress: Guid(d6c7a5a3ca36a684ab571dedee355ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MenuScenes/StartMenuScreen.unity using Guid(d6c7a5a3ca36a684ab571dedee355ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'caddba4ea48ec00f71290ac6840da4a6') in 0.0249901 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=039d65bacd259a2f0e674e7453e1f061 DependenciesID=8549f60ac7d4aff26a41d4de388f6b21 StaticDependenciesID=832ee8f160d76a76c1d71d53e2a820b9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Thread 0x16f4a3000 may have been prematurely finalized
+Assembly Assembly-CSharp-Editor-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll not valid. Loading of assembly skipped.
+Assembly Assembly-CSharp-firstpass.dll at Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll not valid. Loading of assembly skipped.
+Assembly DocCodeExamples.dll at Library/ScriptAssemblies/DocCodeExamples.dll not valid. Loading of assembly skipped.
+Assembly TestNewCustomAssembly.dll at Library/ScriptAssemblies/TestNewCustomAssembly.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.BurstCompatibilityGen.dll at Library/ScriptAssemblies/Unity.Collections.BurstCompatibilityGen.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.DocCodeSamples.dll at Library/ScriptAssemblies/Unity.Collections.DocCodeSamples.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.PerformanceTests.dll at Library/ScriptAssemblies/Unity.Collections.PerformanceTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.dll at Library/ScriptAssemblies/Unity.Collections.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Collections.Tests.Playmode.dll at Library/ScriptAssemblies/Unity.Collections.Tests.Playmode.dll not valid. Loading of assembly skipped.
+Assembly Unity.InputSystem.IntegrationTests.dll at Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Mathematics.Tests.dll at Library/ScriptAssemblies/Unity.Mathematics.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Multiplayer.Center.Tests.dll at Library/ScriptAssemblies/Unity.Multiplayer.Center.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Nuget.Mono-Cecil.dll at Library/ScriptAssemblies/Unity.Nuget.Mono-Cecil.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.PathTracing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.PathTracing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Postprocessing.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.Postprocessing.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Core.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Config.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Editor.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.RenderPipelines.Universal.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Searcher.EditorTests.dll at Library/ScriptAssemblies/Unity.Searcher.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly Unity.Settings.Tests.dll at Library/ScriptAssemblies/Unity.Settings.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.ShaderGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.ShaderGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Editor.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.TextMeshPro.Tests.dll at Library/ScriptAssemblies/Unity.TextMeshPro.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.UnifiedRayTracing.Editor.Tests.dll at Library/ScriptAssemblies/Unity.UnifiedRayTracing.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.VisualEffectGraph.Editor.Tests.dll at Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.Tests.dll not valid. Loading of assembly skipped.
+Assembly Unity.VisualEffectGraph.Runtime.Tests.dll at Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.Common.Tests.dll at Library/ScriptAssemblies/UnityEditor.UI.Common.Tests.dll not valid. Loading of assembly skipped.
+Assembly UnityEditor.UI.EditorTests.dll at Library/ScriptAssemblies/UnityEditor.UI.EditorTests.dll not valid. Loading of assembly skipped.
+Assembly UnityEngine.UI.Tests.dll at Library/ScriptAssemblies/UnityEngine.UI.Tests.dll not valid. Loading of assembly skipped.
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Native extension for OSXStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.466 seconds
+Domain Reload Profiling: 977ms
+	BeginReloadAssembly (125ms)
+		DisableScriptedObjects (3ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (326ms)
+		LoadAssemblies (212ms)
+		AnalyzeDomain (138ms)
+			TypeCache.Refresh (6ms)
+			BuildScriptInfoCaches (122ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (467ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (182ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7745 unused Assets / (6.7 MB). Loaded Objects now: 8791.
+Memory consumption went from 228.8 MB to 222.2 MB.
+Total: 7.238583 ms (FindLiveObjects: 0.541500 ms CreateObjectMapping: 0.229292 ms MarkObjects: 4.593250 ms  DeleteObjects: 1.874125 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 11.472068 seconds.
-  path: Assets/Scenes/MenuScenes/MapSelectionScene.unity
-  importAddress: Guid(cb746f8eda8a0034aa2a2b0725c4d82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MenuScenes/MapSelectionScene.unity using Guid(cb746f8eda8a0034aa2a2b0725c4d82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'def33986cf1893efb16cb4a442dc07c4') in 0.001251 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ef8befaa78cb6633c312829cac428461 DependenciesID=9ce4bb05478e6077248aade00d2eedce StaticDependenciesID=d2a1fad354b23b3ac53663bdcc50c026 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 5603.804725 seconds.
-  path: Assets/EasyRoads3D/textures/editor/unlocked.png
-  importAddress: Guid(eb319a63188c2d44bacc8572c8a2111a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EasyRoads3D/textures/editor/unlocked.png using Guid(eb319a63188c2d44bacc8572c8a2111a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '35406ffe4ea574b539aa283252c952b3') in 0.4723049 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9d2d0ae3b06ed67d2ebb44f6f203b868 DependenciesID=562daccb13f4944b88d86e4de0ca8d47 StaticDependenciesID=708ef41e94d3033118b230bd5e6c9abd 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/EasyRoads3D/textures/editor/m_road.png
-  importAddress: Guid(46e81e5d2c8b2144582558b65e45db86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EasyRoads3D/textures/editor/m_road.png using Guid(46e81e5d2c8b2144582558b65e45db86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '325bcb690ab52d60769de8bddb5f448d') in 0.0447096 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=97d14ff44cc114c7692d8f16aa50a26b DependenciesID=564ddde240dfe0c5a0aabdfe61190054 StaticDependenciesID=668b997de3a03a0498e670b90ac86e2b 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/EasyRoads3D/textures/editor/locked.png
-  importAddress: Guid(8fb7d6b5f8b40f34e8048f47afa20f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EasyRoads3D/textures/editor/locked.png using Guid(8fb7d6b5f8b40f34e8048f47afa20f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'faad825fd9f44262aa5a13b96c33d3fd') in 0.0306299 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dc14148d65e10fa764812bba231c756c DependenciesID=735a4ddef693f0b0dc81bfff06a05382 StaticDependenciesID=ee9387a69ebc1621b2189332bea0dd81 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/EasyRoads3D/textures/editor/m_roads.png
-  importAddress: Guid(32e963efb91d19147842f8bd95d6ac56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EasyRoads3D/textures/editor/m_roads.png using Guid(32e963efb91d19147842f8bd95d6ac56) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'd59df215436f4da7a8ee994af55d8855') in 0.0366852 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=82d2b723250bfcd499a397ba0fb51fca DependenciesID=69d1ec513655a851aa9c5a293046eefe StaticDependenciesID=b9084a0d6b0acb6e291c4efe69d50155 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/EasyRoads3D/textures/editor/m_build.png
-  importAddress: Guid(881f73f964cf5104abc91a5f657615a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EasyRoads3D/textures/editor/m_build.png using Guid(881f73f964cf5104abc91a5f657615a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'a0fcee303b178548b5dbde1f53c26480') in 0.0397303 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=bcf4df3d923519bfcdbd7b86cf8ab109 DependenciesID=faca3e5254403552f21aefcc5b269099 StaticDependenciesID=2c4716fdf8a36d1573e7ef996457313e 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/EasyRoads3D/textures/editor/m_scene.png
-  importAddress: Guid(34aed1010b525bf4c9cfd7da35361a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EasyRoads3D/textures/editor/m_scene.png using Guid(34aed1010b525bf4c9cfd7da35361a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: 'f571ce1ba13f55f75db51f89373479c1') in 0.0365464 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9a5e72d7bdf65f027fe789c6023e74e5 DependenciesID=b705bb513e1feac747144c6018e753d8 StaticDependenciesID=4343311be6ac2333879348a1862bded9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 105.378624 seconds.
-  path: Assets/Icons/dayIcon.png
-  importAddress: Guid(734a728fd57d1bd4dbe6f2658ab87ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/dayIcon.png using Guid(734a728fd57d1bd4dbe6f2658ab87ea5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '16aac8a3bc08bc6bde34c27d9b0860ce') in 0.0511927 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e9fb395f55ade639fc8bb7927bf91186 DependenciesID=092d356ba28ca437279b569b15ea12a1 StaticDependenciesID=7b79b54a2d6ce6069b604c074bc944aa 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Icons/nightIcon.svg
-  importAddress: Guid(9f8cfe0d0647ea64c9a1636eeb2a664a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/nightIcon.svg using Guid(9f8cfe0d0647ea64c9a1636eeb2a664a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '6186bcb41c15a13665cf3f29d1afbcb8') in 0.0062766 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c30ba0f03c1b07e3bdcc35eda3a75492 DependenciesID=b639d91d6efeb66e72924abc82e84a97 StaticDependenciesID=674da930e7ed98ff6a700d853e2e32a9 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Icons/sunsetIcon.png
-  importAddress: Guid(8a6007d4088fe5e459ab6c52d6d04b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/sunsetIcon.png using Guid(8a6007d4088fe5e459ab6c52d6d04b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '11d3326db5fbfaa4a18c390575dc285e') in 0.0129917 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ecc03b1e65be423a5d154ba68c94f9ed DependenciesID=e0fd7b41df50b08aaa71763f7cfce7ba StaticDependenciesID=f33574c1bca73a35a2d8fd00dffa5c69 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Icons/rainIcon.png
-  importAddress: Guid(7e71301ede5c65c4fbe8c1d998c82560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Icons/rainIcon.png using Guid(7e71301ede5c65c4fbe8c1d998c82560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (Import Result ID: '9228d4fa7ade89b93a8a01d01b9be5dc') in 0.0364348 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=48a831ad8f8dbb20c7fbc082536f767c DependenciesID=ac3d25a3cfdc1f3fc5facb79bfa0c399 StaticDependenciesID=c9dd008143ebda4c6a4e683c8d196a9d 
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Prepare: number of updated asset objects reloaded= 0
