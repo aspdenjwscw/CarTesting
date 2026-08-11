@@ -1,18 +1,17 @@
 using UnityEngine;
 
-public class WeatherAndStats
+public class WeatherStats
 {
     public float lightIntensity;
-    public string skybox;
+    public Material skybox;
 
-    public WeatherStats(string skybox, float lightIntensity)
+    public WeatherStats(Material skybox, float lightIntensity)
     {
-        weather = skybox;
-        light = lightIntensity;
+        this.weather = skybox;
+        this.light = lightIntensity;
     }
-
-
 }
+
 
 public class WeatherAndParticles : MonoBehaviour
 {
@@ -20,8 +19,29 @@ public class WeatherAndParticles : MonoBehaviour
     private static Material rainDaySkyBox;
     private static Material mainNightSkyBox;
     private static Material mainSunsetSkyBox;
-    
-    weatherStats = new WeatherStats[]
+
+    public WeatherStats[] weatherStatus = new WeatherStats[]{
+        //0 = Day, 1 = Nights, 2 = Sunset, 3 = Cloudy
+        new WeatherStats(mainDaySkyBox, 1f),
+        new WeatherStats(mainNightSkyBox, 0.2f),
+        new WeatherStats(mainSunsetSkyBox, 0.7f),
+        new WeatherStats(rainDaySkyBox, 1f)
+    };
+
+
+    public void ChangeWeather(int weatherID)
+    {
+        if (weatherID <= 4)
+        {
+            RenderSettings.skybox = weatherStatus[weatherID].weather;
+            directionalLight.intensity = weatherStatus[weatherID].light;
+            DynamicGI.UpdateEnvironment();
+        }
+        else if (weatherID > 4)
+        {
+            //Turn on and off the rain.
+        }
+    }
     private static Light directionalLight;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -46,20 +66,6 @@ public class WeatherAndParticles : MonoBehaviour
 
         DontDestroyOnLoad(lightObject);
     }
-
-    public void ChangeWeather(int weatherID)
-    {
-        if (weatherID <= 4) {
-            RenderSettings.skybox = list[weatherID]
-            directionalLight.intensity = list2[weatherID];
-            DynamicGI.UpdateEnvironment();
-        }
-        else if (weatherID > 4)
-        {
-            //Turn on and off the rain.
-        }
-    }
-
 
     void Update()
     {
