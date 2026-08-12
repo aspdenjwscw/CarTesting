@@ -3,8 +3,21 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour
 {
-    public WeatherAndParticles weather;
-    
+
+    WeatherAndParticles weather;
+    private void Awake()
+    {
+
+    }
+    void Start()
+    {
+        weather = GameObject.Find("WeatherSystem_Runtime").GetComponent<WeatherAndParticles>();
+    }
+    public void LoadWeather(int weatherId)
+    {
+        weather.ChangeWeather(weatherId);
+    }
+
     public void LoadSceneByName(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
@@ -14,5 +27,6 @@ public class MenuButtons : MonoBehaviour
     {
         weather.ChangeWeather(weatherID);
     }
+
 
 }

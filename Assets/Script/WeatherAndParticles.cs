@@ -1,24 +1,28 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WeatherStats
 {
-    public float lightIntensity;
-    public Material skybox;
+    public float light;
+    public Material weather;
 
     public WeatherStats(Material skybox, float lightIntensity)
     {
-        this.weather = skybox;
-        this.light = lightIntensity;
+        weather = skybox;
+        light = lightIntensity;
     }
 }
 
 
 public class WeatherAndParticles : MonoBehaviour
 {
+    private static  ParticleSystem rain;
     private static Material mainDaySkyBox;
     private static Material rainDaySkyBox;
     private static Material mainNightSkyBox;
     private static Material mainSunsetSkyBox;
+    int currentWeather = 0;
+    bool currentRain = false;
 
     public WeatherStats[] weatherStatus = new WeatherStats[]{
         //0 = Day, 1 = Nights, 2 = Sunset, 3 = Cloudy
@@ -37,11 +41,29 @@ public class WeatherAndParticles : MonoBehaviour
             directionalLight.intensity = weatherStatus[weatherID].light;
             DynamicGI.UpdateEnvironment();
         }
-        else if (weatherID > 4)
+        currentWeather = weatherID;
+        if (weatherID == 5)
         {
-            //Turn on and off the rain.
+            currentRain = true;
+            rain.Play();
+        }
+        else if (weatherID == 6)
+        {
+            currentRain = false;
+            rain.Stop();
         }
     }
+
+    public int CheckWeather()
+    {
+        return currentWeather;
+    }
+
+    public bool CheckRain()
+    {
+        return currentRain;
+    }
+
     private static Light directionalLight;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -51,6 +73,8 @@ public class WeatherAndParticles : MonoBehaviour
         rainDaySkyBox = Resources.Load<Material>("rainDay");
         mainNightSkyBox = Resources.Load<Material>("mainNight");
         mainSunsetSkyBox = Resources.Load<Material>("mainSunset");
+        FindRain();
+        //rain = GameObject rainObject = GameObject.Find("/rain");
 
         GameObject lightObject = new GameObject("DownDirectionalLight");
         directionalLight = lightObject.AddComponent<Light>();
@@ -63,40 +87,60 @@ public class WeatherAndParticles : MonoBehaviour
         GameObject bootstrapper = new GameObject("WeatherSystem_Runtime");
         bootstrapper.AddComponent<WeatherAndParticles>();
         DontDestroyOnLoad(bootstrapper);
-
         DontDestroyOnLoad(lightObject);
     }
 
     void Update()
     {
         //Checking if its working, and the null is so it only works if the mainDaySkybox has acutally been defined
-        if (Input.GetKey(KeyCode.L) && mainDaySkyBox != null)
-        {
-            RenderSettings.skybox = mainDaySkyBox;
-            //Redos all the lighting so the skybox changes will be applied properly to everything.
-            directionalLight.intensity = 1f;
-            DynamicGI.UpdateEnvironment();
-        }
-        if (Input.GetKey(KeyCode.K))
-        {
-            RenderSettings.skybox = mainNightSkyBox;
-            directionalLight.intensity = 0.2f;
-            DynamicGI.UpdateEnvironment();
-        }
-        if (Input.GetKey(KeyCode.O))
-        {
-            RenderSettings.skybox = mainSunsetSkyBox;
-            //Redos all the lighting so the skybox changes will be applied properly to everything.
-            directionalLight.intensity = 1f;
-            DynamicGI.UpdateEnvironment();
-        }
-        if (Input.GetKey(KeyCode.P))
-        {
-            RenderSettings.skybox = rainDaySkyBox;
-            directionalLight.intensity = 0.7f;
-            DynamicGI.UpdateEnvironment();
-        }
+        if (Input.GetKey(KeyCode.L) && mainDaySkyBox != null) ChangeWeather(0);
+        if (Input.GetKey(KeyCode.K)) ChangeWeather(1);
+        if (Input.GetKey(KeyCode.O)) ChangeWeather(2);
+        if (Input.GetKey(KeyCode.P)) ChangeWeather(3);
     }
 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneChangeTriggered;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneChangeTriggered;
+    }
+
+
+    public void OnSceneChangeTriggered(Scene scene, LoadSceneMode mode)
+    {
+        FindRain();        
+    }
+    void Start()
+    {
+        FindRain();
+    }
+
+    private static void FindRain()
+    {
+        rain = null;
+        GameObject rainObject = GameObject.Find("CarFollowingCamera/Rain");
+
+        if (rainObject != null)
+        {
+            rain = rainObject.GetComponent<ParticleSystem>();
+        }
+        else
+        {
+            rainObject = GameObject.Find("Rain");
+            if (rainObject != null)
+            {
+                rain = rainObject.GetComponent<ParticleSystem>();
+            }
+        }
+        if (rain != null)
+        {
+            rain.Stop();
+        }
+
+    }
 
 }
