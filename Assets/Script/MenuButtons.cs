@@ -3,15 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour
 {
-
-    WeatherAndParticles weather;
-    private void Awake()
+    public static MenuButtons Instance { get; private set; }
+    public WeatherAndParticles weather;
+    void Awake()
     {
-
+        Instance = this;
     }
-    void Start()
+    public void WeatherCreated(GameObject weatherBase)
     {
-        weather = GameObject.Find("WeatherSystem_Runtime").GetComponent<WeatherAndParticles>();
+        weather = weatherBase.GetComponent<WeatherAndParticles>();
     }
     public void LoadWeather(int weatherId)
     {

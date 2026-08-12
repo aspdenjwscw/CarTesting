@@ -10606,6 +10606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2073375629}
   - component: {fileID: 2073375630}
+  - component: {fileID: 2073375631}
   m_Layer: 0
   m_Name: SceneChanger
   m_TagString: Untagged
@@ -10640,6 +10641,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1258cef64e94a2c40bdf79c353f36933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
+  weather: {fileID: 0}
+--- !u!114 &2073375631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073375627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c49da15a02eaf84989d4605ecbed246, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneLoaded
+  weatherGrabber: {fileID: 2073375630}
 --- !u!1 &2079770996
 GameObject:
   m_ObjectHideFlags: 0

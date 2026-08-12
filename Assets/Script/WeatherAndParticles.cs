@@ -88,6 +88,7 @@ public class WeatherAndParticles : MonoBehaviour
         bootstrapper.AddComponent<WeatherAndParticles>();
         DontDestroyOnLoad(bootstrapper);
         DontDestroyOnLoad(lightObject);
+        MenuButtons.Instance.WeatherCreated(bootstrapper);
     }
 
     void Update()
