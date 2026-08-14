@@ -10,12 +10,8 @@ public class MenuButtons : MonoBehaviour
 
     void Awake()
     {
+        weather = WeatherAndParticles.Instance;
         Instance = this;
-        DontDestroyOnLoad(gameObject);
-    }
-    public void WeatherCreated(GameObject weatherBase)
-    {
-        weather = weatherBase.GetComponent<WeatherAndParticles>();
     }
     public void LoadWeather(int weatherId)
     {

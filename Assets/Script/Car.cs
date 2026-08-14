@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Gear
 {
-    public float ratio;
-    public float gear;
+    public float ratio { get; private set; }
+    public float gear { get; private set; }
     public bool reverse;
-    public string gearTitle;
+    public string gearTitle { get; private set; }
 
     public Gear(float gearRatio, float currentGear, bool isReverse, string gearName)
     {
@@ -38,7 +38,7 @@ public class Car : MonoBehaviour{
                                 //This is just temporary until we make a settings menu, but will make it easier to change to when we do.
         backwardsKey = KeyCode.S;
         brakingKey = KeyCode.Space;
-        brakingForce = 10000f;
+        brakingForce = 1000f;
         brakesActive = brakingForce;
         shiftTime = 0.3f;
         shiftingCooldown = 0.8f;

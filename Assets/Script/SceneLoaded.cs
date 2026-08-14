@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoaded : MonoBehaviour
 {
-    private MenuButtons weatherGrabber;
     private WeatherAndParticles weather;
 
 
@@ -25,6 +24,15 @@ public class SceneLoaded : MonoBehaviour
         else if (currentScene.name == "MapSelectionScene")
         {
             weather.SetCurrentWeather();
+        }
+        else if (currentScene.name == "FinalScene")
+        {
+            Debug.Log("SceneFound");
+            Debug.Log(weather);
+            if (weather != null)
+            {
+                weather.SetCurrentWeather();
+            }
         }
         //This will fire every time a scene loads, if I attach it to scene loader with the Menu buttons script
     }

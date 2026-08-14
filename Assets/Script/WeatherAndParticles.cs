@@ -16,6 +16,7 @@ public class WeatherStats
 
 public class WeatherAndParticles : MonoBehaviour
 {
+    public static WeatherAndParticles Instance { get; private set; }
     private static  ParticleSystem rain;
     private static Material mainDaySkyBox;
     private static Material rainDaySkyBox;
@@ -24,11 +25,16 @@ public class WeatherAndParticles : MonoBehaviour
     int currentWeather = 0;
     bool currentRain = false;
 
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     public WeatherStats[] weatherStatus = new WeatherStats[]{
         //0 = Day, 1 = Nights, 2 = Sunset, 3 = Cloudy
         new WeatherStats(mainDaySkyBox, 1f),
         new WeatherStats(mainNightSkyBox, 0.2f),
-        new WeatherStats(mainSunsetSkyBox, 0.7f),
+        new WeatherStats(mainSunsetSkyBox, 0.5f),
         new WeatherStats(rainDaySkyBox, 1f)
     };
 
@@ -86,7 +92,7 @@ public class WeatherAndParticles : MonoBehaviour
         directionalLight = lightObject.AddComponent<Light>();
         directionalLight.type = LightType.Directional;
         directionalLight.transform.rotation = Quaternion.Euler(90f, 0f, 0f);
-        directionalLight.intensity = 0.7f;
+        directionalLight.intensity = 0.5f;
 
 
         //The Update class won't work without an object so this makes one that won't be deleted between scenes to make sure it all works.
@@ -94,7 +100,6 @@ public class WeatherAndParticles : MonoBehaviour
         bootstrapper.AddComponent<WeatherAndParticles>();
         DontDestroyOnLoad(bootstrapper);
         DontDestroyOnLoad(lightObject);
-        MenuButtons.Instance.WeatherCreated(bootstrapper);
     }
 
     void Update()

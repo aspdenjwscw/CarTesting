@@ -207,6 +207,7 @@ public class DeerBehavior : MonoBehaviour
     {
         if (isHit) return; // already hit once, ignore re-triggers mid-knockback
 
+        CollisionDamage.Instance.DeerCollision();
         Rigidbody hitRb = other.attachedRigidbody;
         if (hitRb != null && hitRb == carRigidbody)
         {
