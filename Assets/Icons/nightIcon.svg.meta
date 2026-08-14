@@ -8,9 +8,9 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 12408, guid: 0000000000000000e000000000000000, type: 0}
-  svgType: 3
+  svgType: 0
   texturedSpriteMeshType: 0
-  svgPixelsPerUnit: 100
+  svgPixelsPerUnit: 10
   gradientResolution: 64
   alignment: 0
   customPivot: {x: 0, y: 0}
@@ -39,15 +39,15 @@ ScriptedImporter:
   useSVGPixelsPerUnit: 0
   spriteData:
     TessellationDetail: 0
-    SpriteName: 
-    SpritePivot: {x: 0, y: 0}
+    SpriteName: nightIconSprite
+    SpritePivot: {x: 0.5, y: 0.5}
     SpriteAlignment: 0
     SpriteBorder: {x: 0, y: 0, z: 0, w: 0}
     SpriteRect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 0
-      height: 0
-    SpriteID: 
+      width: 35.984238
+      height: 35.882866
+    SpriteID: d07ae84d603bb72498d80fcbfb2bb0f0
     PhysicsOutlines: []

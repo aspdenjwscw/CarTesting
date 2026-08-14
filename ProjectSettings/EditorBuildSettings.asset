@@ -8,5 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/StartMenuScreen.unity
+    guid: d6c7a5a3ca36a684ab571dedee355ea1
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/MapSelectionScene.unity
+    guid: cb746f8eda8a0034aa2a2b0725c4d82d
+  - enabled: 1
+    path: Assets/Scenes/NewSceneFinlay.unity
+    guid: f9dd2c1ffb115b54fa5f13a5958716e4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
