@@ -13,7 +13,7 @@ public class DeerBehavior : MonoBehaviour
     private Vector3 moveDirection;
     private float moveSpeed;
     private bool isCharging;
-    private bool isFlung; // true once hit - stops normal movement/despawn logic
+    private bool isHit; // true once hit - stops normal movement/despawn logic
 
     // Ground follow, so charging deer don't walk off a slope/dip and end up
     // visibly floating - only the spawn point was snapped before, not every
@@ -26,23 +26,24 @@ public class DeerBehavior : MonoBehaviour
     // the ground surface makes it sink in (pivot mid-body = half the model
     // underground). Positive value lifts the whole deer up to compensate.
     // Negative value pushes it down if it's floating instead. Just nudge
-    // this until the feet sit on the surface - there's no way to compute it
-    // automatically without knowing the model's exact pivot offset.
+    // this until the feet sit on the surface.
     public float groundOffset = 0f;
 
     [Header("Car Impact")]
     public float carBumpForce = 400f;        // small forward/outward push - a bump, not a launch
     [Range(0f, 1f)]
-    public float carSlowdownFactor = 0.7f;   // car's velocity multiplied by this on hit (0.7 = lose 30% speed)
+    public float carSlowdownFactor = 0.5f;   // car's velocity multiplied by this on hit (0.5 = lose half its speed)
+    public float carBrakeDuration = 1f;      // how long to keep suppressing the car's speed after impact - counters the car's own engine re-accelerating it back up instantly
 
-    [Header("Deer Ragdoll")]
-    public float deerFlingForce = 6f;        // gentle knockback, not a launch - deer is light
-    public float deerFlingUpwardBias = 0.3f;
-    public float deerDestroyDelay = 4f;      // seconds before the ragdolled deer is cleaned up
+    [Header("Deer Knockback")]
+    public float deerKnockbackForce = 6f;    // gentle knockback, not a launch - deer is light
+    public float deerKnockbackUpwardBias = 0.3f;
+    public float deerSpinTorque = 3f;        // light tumble on impact
+    public float deerDestroyDelay = 3f;      // seconds before the knocked-back deer is cleaned up
     public Animator deerAnimator;            // optional - auto-found if not assigned, disabled on impact so it stops fighting physics
 
-    [Header("Procedural Gait (stopgap until a real running animation exists)")]
-    public bool useProceduralBob = true;
+    [Header("Procedural Gait (stopgap - turn off now that real animations exist)")]
+    public bool useProceduralBob = false;
     public float bobHeight = 0.08f;   // how much the body bounces up/down while running
     public float bobSpeed = 10f;      // how fast the bob cycles - tune to look leg-speed-ish
     public float swayAmount = 4f;     // degrees of side-to-side lean while running
@@ -51,13 +52,21 @@ public class DeerBehavior : MonoBehaviour
     private Quaternion modelBaseLocalRot;
     private Transform modelTransform; // the visual mesh child - bobbed independently so it doesn't affect the root's collider/position used for ground snapping and despawn checks
 
-    // The Ragdoll Wizard's bone colliders are solid (non-trigger) by default.
-    // Even with their Rigidbody set to kinematic, a solid collider still
-    // physically blocks anything that touches it - so every deer was
-    // sitting there as a cluster of invisible walls before ever being hit.
-    // Fix: force them all to triggers at startup, then switch them solid
-    // only once the deer is actually hit and ragdolling.
-    private Collider[] ragdollColliders;
+    [Header("Real Animation State Names")]
+    // Must match the exact state names inside your DeerAnimator controller.
+    public string idleStateName = "Deer_EatIdle";
+    public string walkStateName = "Deer_Walk";
+    public string runStateName = "Deer_Run";
+    public float runSpeedThreshold = 4.5f; // unused now, kept for backwards compatibility - see walkMoveSpeed/runMoveSpeed below
+
+    [Header("Movement Speed (tune these to match your animation's actual foot pace - too fast looks like sliding/skating)")]
+    public float walkMoveSpeedMin = 1.2f;
+    public float walkMoveSpeedMax = 2f;
+    public float runMoveSpeedMin = 4f;
+    public float runMoveSpeedMax = 6f;
+    private bool isRunning;
+    public string headbuttStateName = "Deer_Headbutt";
+    public bool playHeadbuttOnHit = true;
 
     void Awake()
     {
@@ -71,19 +80,6 @@ public class DeerBehavior : MonoBehaviour
             modelBaseLocalPos = modelTransform.localPosition;
             modelBaseLocalRot = modelTransform.localRotation;
         }
-
-        // Grab every collider under this object except the root hit-detection
-        // trigger, and force them to be triggers too until impact.
-        Collider rootCollider = GetComponent<Collider>();
-        Collider[] allColliders = GetComponentsInChildren<Collider>();
-        System.Collections.Generic.List<Collider> boneColliders = new System.Collections.Generic.List<Collider>();
-        foreach (Collider col in allColliders)
-        {
-            if (col == rootCollider) continue;
-            col.isTrigger = true;
-            boneColliders.Add(col);
-        }
-        ragdollColliders = boneColliders.ToArray();
     }
 
     public void Init(Transform carTransform, Rigidbody carRb, float despawnDistance,
@@ -111,19 +107,43 @@ public class DeerBehavior : MonoBehaviour
             // spawner) rather than picking independently - otherwise it
             // could visually run backward.
             moveDirection = facingRight ? car.right : -car.right;
-            moveSpeed = Random.Range(3f, 6f);
+
+            // Decide Walk vs Run FIRST, then pick a speed within that
+            // specific animation's natural pace - picking one random speed
+            // and guessing which clip fits it afterward caused foot sliding
+            // whenever the number didn't actually match either clip's speed.
+            isRunning = Random.value > 0.5f;
+            moveSpeed = isRunning
+                ? Random.Range(runMoveSpeedMin, runMoveSpeedMax)
+                : Random.Range(walkMoveSpeedMin, walkMoveSpeedMax);
         }
 
         // Place correctly on the very first frame too, not just after the
         // first Update() runs.
         transform.position = SnapToGround(transform.position);
+
+        PlayStateAnimation();
+    }
+
+    void PlayStateAnimation()
+    {
+        if (deerAnimator == null) return;
+
+        if (!isCharging)
+        {
+            deerAnimator.Play(idleStateName);
+        }
+        else
+        {
+            deerAnimator.Play(isRunning ? runStateName : walkStateName);
+        }
     }
 
     void Update()
     {
-        // Once flung, ragdoll physics is fully in control - don't fight
-        // it with manual transform movement, bobbing, or despawn checks.
-        if (isFlung) return;
+        // Once hit, physics is fully in control - don't fight it with
+        // manual transform movement, bobbing, or despawn checks.
+        if (isHit) return;
 
         if (isCharging)
         {
@@ -166,6 +186,13 @@ public class DeerBehavior : MonoBehaviour
         Vector3 rayStart = guessPos + Vector3.up * raycastHeight;
         if (Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, raycastHeight * 2f, groundLayer))
         {
+            // Also lean the deer to match the slope, not just its height.
+            // Keep facing the same direction it was already facing, just
+            // tilt "up" to match the ground normal instead of staying
+            // perfectly vertical on an incline.
+            Quaternion targetRot = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * 8f);
+
             return hit.point + Vector3.up * groundOffset;
         }
         // Nothing hit (e.g. ran off the edge of the terrain entirely) - hold
@@ -173,24 +200,22 @@ public class DeerBehavior : MonoBehaviour
         return new Vector3(guessPos.x, transform.position.y, guessPos.z);
     }
 
-    // Deer's root collider is a trigger (sphere collider, Is Trigger checked),
+    // Deer's collider is a trigger (sphere collider, Is Trigger checked),
     // so the car passes through it physically by default - this is what
-    // actually detects the hit and reacts to it. The ragdoll bone colliders
-    // (added by the Ragdoll Wizard) are separate, non-trigger colliders that
-    // handle real physical collision with the terrain once activated below.
+    // actually detects the hit and reacts to it.
     void OnTriggerEnter(Collider other)
     {
-        if (isFlung) return; // already hit once, ignore re-triggers mid-launch
+        if (isHit) return; // already hit once, ignore re-triggers mid-knockback
 
         Rigidbody hitRb = other.attachedRigidbody;
         if (hitRb != null && hitRb == carRigidbody)
         {
-            FlingCar(hitRb);
-            ActivateRagdoll();
+            BumpCar(hitRb);
+            KnockbackDeer();
         }
     }
 
-    void FlingCar(Rigidbody rb)
+    void BumpCar(Rigidbody rb)
     {
         // Small horizontal nudge away from the deer, no upward launch and
         // no spin - just a normal "you hit something" bump.
@@ -200,14 +225,34 @@ public class DeerBehavior : MonoBehaviour
 
         rb.AddForce(outward * carBumpForce, ForceMode.Impulse);
 
-        // Bleed off some of the car's speed too - a car that just hit a
-        // deer shouldn't keep cruising at full speed unaffected.
-        rb.linearVelocity *= carSlowdownFactor;
+        // A single instant velocity cut can get immediately overridden if
+        // the car's own drive script keeps pushing it back up to speed on
+        // the very next physics step. Holding the cap for a short duration
+        // makes the slowdown actually noticeable instead of disappearing
+        // within a single frame.
+        StartCoroutine(BrakeCar(rb));
     }
 
-    void ActivateRagdoll()
+    System.Collections.IEnumerator BrakeCar(Rigidbody rb)
     {
-        isFlung = true;
+        rb.linearVelocity *= carSlowdownFactor;
+        float capSpeed = rb.linearVelocity.magnitude;
+
+        float elapsed = 0f;
+        while (elapsed < carBrakeDuration)
+        {
+            if (rb.linearVelocity.magnitude > capSpeed)
+            {
+                rb.linearVelocity = rb.linearVelocity.normalized * capSpeed;
+            }
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    void KnockbackDeer()
+    {
+        isHit = true;
 
         // Reset the procedural bob offset so the model isn't stuck mid-bob
         // when physics takes over.
@@ -217,67 +262,51 @@ public class DeerBehavior : MonoBehaviour
             modelTransform.localRotation = modelBaseLocalRot;
         }
 
-        // Stop the Animator from overriding bone transforms - otherwise it
-        // fights the ragdoll physics and the deer snaps back to its
-        // animation pose instead of actually going limp.
-        if (deerAnimator != null)
+        // Play the headbutt reaction instead of just freezing the animator.
+        // As long as "Apply Root Motion" is off on the Animator (should be),
+        // this only affects the visual pose, not the actual transform - so
+        // it's safe to let it keep playing while physics handles the real
+        // knockback movement below.
+        if (deerAnimator != null && playHeadbuttOnHit)
+        {
+            deerAnimator.Play(headbuttStateName);
+        }
+        else if (deerAnimator != null)
         {
             deerAnimator.enabled = false;
         }
 
-        // Now that the deer is actually flying, switch its bone colliders
-        // from trigger back to solid so they physically collide with the
-        // terrain (bounce/tumble/land) instead of passing through it.
-        if (ragdollColliders != null)
+        // The collider used for hit detection is a trigger, and triggers
+        // never physically collide with anything - including the ground.
+        // Without this, the deer falls through the terrain forever once
+        // gravity kicks in below. Switch it (and any other colliders on
+        // this object or its children) solid now that it's been hit.
+        Collider[] cols = GetComponentsInChildren<Collider>();
+        foreach (Collider col in cols)
         {
-            foreach (Collider col in ragdollColliders)
-            {
-                if (col != null) col.isTrigger = false;
-            }
+            col.isTrigger = false;
         }
 
-        // The Ragdoll Wizard adds a Rigidbody to every assigned bone. They
-        // should have been left as Is Kinematic = true so the deer stays
-        // rigid/controlled by this script until now - flip them all to
-        // non-kinematic so real physics takes over on every limb.
-        Rigidbody[] ragdollBodies = GetComponentsInChildren<Rigidbody>();
-        foreach (Rigidbody rb in ragdollBodies)
+        // Give the deer a real Rigidbody so physics (gravity + the impulse
+        // below) can take over and it visibly reacts instead of just
+        // vanishing. It was moved manually via transform up to now.
+        Rigidbody deerRb = GetComponent<Rigidbody>();
+        if (deerRb == null)
         {
-            if (rb == null || rb.gameObject == this.gameObject) continue; // skip a root rb if one exists
-            rb.isKinematic = false;
-            rb.useGravity = true;
+            deerRb = gameObject.AddComponent<Rigidbody>();
         }
+        deerRb.isKinematic = false;
+        deerRb.useGravity = true;
 
-        // Apply the launch force to whichever bone is closest to the root
-        // (usually the spine/pelvis) so the whole ragdoll flies together
-        // rather than just one random limb yanking off.
-        Rigidbody mainBody = GetClosestRigidbody(ragdollBodies, transform.position);
-        if (mainBody != null)
-        {
-            Vector3 outward = (transform.position - car.position);
-            outward.y = 0f;
-            outward.Normalize();
+        Vector3 outward = (transform.position - car.position);
+        outward.y = 0f;
+        outward.Normalize();
 
-            Vector3 flingDirection = (outward + Vector3.up * deerFlingUpwardBias).normalized;
-            mainBody.AddForce(flingDirection * deerFlingForce, ForceMode.Impulse);
-        }
+        Vector3 knockbackDirection = (outward + Vector3.up * deerKnockbackUpwardBias).normalized;
+
+        deerRb.AddForce(knockbackDirection * deerKnockbackForce, ForceMode.Impulse);
+        deerRb.AddTorque(Random.insideUnitSphere * deerSpinTorque, ForceMode.Impulse);
 
         Destroy(gameObject, deerDestroyDelay);
-    }
-
-    Rigidbody GetClosestRigidbody(Rigidbody[] bodies, Vector3 point)
-    {
-        Rigidbody closest = null;
-        float closestDist = float.MaxValue;
-        foreach (Rigidbody rb in bodies)
-        {
-            float dist = Vector3.Distance(rb.position, point);
-            if (dist < closestDist)
-            {
-                closestDist = dist;
-                closest = rb;
-            }
-        }
-        return closest;
     }
 }
