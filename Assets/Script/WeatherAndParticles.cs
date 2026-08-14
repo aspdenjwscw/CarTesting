@@ -35,33 +35,39 @@ public class WeatherAndParticles : MonoBehaviour
 
     public void ChangeWeather(int weatherID)
     {
-        if (weatherID <= 4)
+        if (weatherID <= 3)
         {
             RenderSettings.skybox = weatherStatus[weatherID].weather;
             directionalLight.intensity = weatherStatus[weatherID].light;
             DynamicGI.UpdateEnvironment();
+            currentWeather = weatherID;
         }
-        currentWeather = weatherID;
-        if (weatherID == 5)
+        if (weatherID == 4)
         {
             currentRain = true;
             rain.Play();
         }
-        else if (weatherID == 6)
+        else if (weatherID == 5)
         {
             currentRain = false;
             rain.Stop();
         }
     }
 
-    public int CheckWeather()
+    public void SetCurrentWeather()
     {
-        return currentWeather;
-    }
+        Debug.Log(currentWeather);
+        ChangeWeather(currentWeather);
 
-    public bool CheckRain()
-    {
-        return currentRain;
+        if(currentRain)
+        {
+            ChangeWeather(4);
+        }
+        else
+        {
+            ChangeWeather(5);
+        }
+
     }
 
     private static Light directionalLight;

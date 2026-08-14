@@ -4,10 +4,14 @@ using UnityEngine.SceneManagement;
 public class MenuButtons : MonoBehaviour
 {
     public static MenuButtons Instance { get; private set; }
+
     public WeatherAndParticles weather;
+    private string setScene;
+
     void Awake()
     {
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
     public void WeatherCreated(GameObject weatherBase)
     {
@@ -16,6 +20,23 @@ public class MenuButtons : MonoBehaviour
     public void LoadWeather(int weatherId)
     {
         weather.ChangeWeather(weatherId);
+    }
+
+    public void SetScene(string sceneName)
+    {
+        setScene = sceneName;
+    }
+
+    public void LoadSetScene()
+    {
+        if (setScene != null)
+        {
+            SceneManager.LoadScene(setScene);
+        }
+        else
+        {
+            Debug.Log("Scene Not Set");
+        }
     }
 
     public void LoadSceneByName(string sceneName)
