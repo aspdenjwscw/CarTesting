@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ABSnamespace;
+
+
 
 public class Gear
 {
@@ -23,23 +26,29 @@ public class Gear
 
 public class Car : MonoBehaviour{
     public Rigidbody rigid;
-    public WheelCollider wheel1, wheel2, wheel3, wheel4;
-    public float drivespeed, steerspeed, shiftTime;
-    float reverseInverse, horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, brakingForce, brakesActive, currentYRot, engineRPM, engineActive, shiftingCooldown, redlineRPM, reverseRedlineRPM, carCrashWheelsActive;
+    public WheelCollider[] frontWheels;
+    public WheelCollider[] backWheels;
+    public float drivespeed, steerspeed;
+    [System.NonSerialized] public float shiftTime, brakesActive;
+    float reverseInverse, horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, currentYRot, engineRPM, engineActive, shiftingCooldown, redlineRPM, reverseRedlineRPM, carCrashWheelsActive;
     private KeyCode forwardKey, backwardsKey, brakingKey;
     int currentGear;
     public bool automatic, uphill, velocityForward, velocityBackwards, upShift, downShift, allowShift, shiftValueReset, braking;
     public Gear[] gears;
     private float rpmVelocity, downShiftEngineRPM, upShiftEngineRPM;
     public AnimationCurve gearPowerScailingCurve;
+    public static Car Instance { get; private set; }
+    private ABS abs;
 
     void Start(){
+        Instance = this;
+        abs = new ABS();
+        abs.CombineLists();
         forwardKey = KeyCode.W; //change forward to equal a different variable that we import from the settings menu later on.
                                 //This is just temporary until we make a settings menu, but will make it easier to change to when we do.
         backwardsKey = KeyCode.S;
         brakingKey = KeyCode.Space;
-        brakingForce = 1000f;
-        brakesActive = brakingForce;
+        brakesActive = 0f;
         shiftTime = 0.3f;
         shiftingCooldown = 0.8f;
         downShiftEngineRPM = 3000f;
@@ -168,7 +177,6 @@ public class Car : MonoBehaviour{
             Vector3 carPos = rigid.transform.position;
             carPos.y += 0.3f;
             rigid.transform.position = carPos;
-            brakesActive = 1000000f;
         }
         else if (!Input.GetKey(KeyCode.R) && !braking);
         {
@@ -210,7 +218,7 @@ public class Car : MonoBehaviour{
         }
         if (gears[0].reverse && groundSpeed > 0f && velocityForward)
         {
-            brakesActive = brakingForce;
+            braking = true;
             engineActive = 0f;
         }
         if (gears[0].reverse && !velocityForward && !braking)
@@ -220,7 +228,7 @@ public class Car : MonoBehaviour{
         }
         if (verticalInput > 0f && groundSpeed > 0f && velocityBackwards && gears[currentGear].gear == -1f)
         {
-            brakesActive = brakingForce;
+            braking = true;
             engineActive = 0f;
         }
         if (verticalInput > 0f && !velocityBackwards && !braking) brakesActive = 0f;
@@ -232,7 +240,7 @@ public class Car : MonoBehaviour{
         if (pitchAngle > 180f) pitchAngle -= 360f; //This makes it so that if it goes over 180 then it goes to -180 to show its declining and makes it easier
         if (pitchAngle < -20f) uphill = true;
         else uphill = false;
-        if (allowShift) engineRPM = ((wheel3.rpm * 4.56f * gears[currentGear].ratio) + (wheel4.rpm * 4.56f * gears[currentGear].ratio))/2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
+        if (allowShift) engineRPM = ((backWheels[0].rpm * 4.56f * gears[currentGear].ratio) + (backWheels[1].rpm * 4.56f * gears[currentGear].ratio)) / 2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
         if (engineRPM > 3000f && !uphill && automatic && currentGear >= 1 && currentGear <= 7 && allowShift && groundSpeed >= 5f)
         {
             currentGear++;
@@ -275,12 +283,12 @@ public class Car : MonoBehaviour{
 
 
         //Checks if you're in reverse or forward, and allows you to shift into first or into reverse if your velocity, and input is in the right direction.
-        if(velocityForward && currentGear == 0 && verticalInput > 0f && automatic)
+        if (velocityForward && currentGear == 0 && verticalInput > 0f && automatic)
         {
             currentGear = 1;
         }
 
-        if(velocityBackwards && currentGear > 1f && verticalInput < 0f && automatic)
+        if (velocityBackwards && currentGear > 1f && verticalInput < 0f && automatic)
         {
             currentGear = 0;
         }
@@ -299,32 +307,25 @@ public class Car : MonoBehaviour{
         float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * motorMultiplyer; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
         // The 4.56 is to replicate the FinalDriveRatio and the engineMax is to model going to high on the RPM and to stop them getting infinite Torque
         //Debug.Log(motorMultiplyer);
-        wheel1.motorTorque = motor * carCrashWheelsActive;
-        wheel2.motorTorque = motor * carCrashWheelsActive;
-        wheel3.motorTorque = motor * carCrashWheelsActive;
-        wheel4.motorTorque = motor * carCrashWheelsActive;
-        if(braking) brakesActive = brakingForce;
-        //Debug.Log(motor);
-        wheel3.brakeTorque = brakesActive;
-        wheel4.brakeTorque = brakesActive;
-        
-
-        wheel1.steerAngle = steerspeed * horizontalInput;
-        wheel2.steerAngle = steerspeed * horizontalInput;
-
-        if(wheel1.steerAngle > 20f)
+        if (braking) abs.ApplyABS();
+        foreach (WheelCollider wheel in frontWheels)
         {
-            wheel1.steerAngle = 20f;
-            wheel2.steerAngle = 20f;
+            if (!braking) wheel.motorTorque = motor * carCrashWheelsActive;
+            else wheel.motorTorque = 0f;
+            if (wheel.motorTorque > 0f && braking) Debug.Log("NoShouldDO");
+            wheel.brakeTorque = brakesActive * 0.7f;
+            wheel.steerAngle = steerspeed * horizontalInput;
+            if (wheel.steerAngle > 20f) wheel.steerAngle = 20f;
+            if (wheel.steerAngle < -20f) wheel.steerAngle = -20f;
         }
-        if(wheel1.steerAngle < -20f)
+        foreach (WheelCollider wheel in backWheels)
         {
-            wheel1.steerAngle = -20f;
-            wheel2.steerAngle = -20f;
+            if (!braking) wheel.motorTorque = motor * carCrashWheelsActive;
+            else wheel.motorTorque = 0f;
+            wheel.brakeTorque = brakesActive * 0.3f;
         }
-
-
     }
+
     public void WheelsActive(bool wheelsActive)
     {
         if (!wheelsActive)
