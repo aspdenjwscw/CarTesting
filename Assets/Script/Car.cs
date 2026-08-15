@@ -43,7 +43,6 @@ public class Car : MonoBehaviour{
     void Start(){
         Instance = this;
         abs = new ABS();
-        abs.CombineLists();
         forwardKey = KeyCode.W; //change forward to equal a different variable that we import from the settings menu later on.
                                 //This is just temporary until we make a settings menu, but will make it easier to change to when we do.
         backwardsKey = KeyCode.S;
@@ -307,22 +306,27 @@ public class Car : MonoBehaviour{
         float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * motorMultiplyer; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
         // The 4.56 is to replicate the FinalDriveRatio and the engineMax is to model going to high on the RPM and to stop them getting infinite Torque
         //Debug.Log(motorMultiplyer);
-        if (braking) abs.ApplyABS();
+       
         foreach (WheelCollider wheel in frontWheels)
         {
+            float currentBrake;
+            if (braking) currentBrake = abs.ApplyABS(wheel);
+            else currentBrake = 0f;
             if (!braking) wheel.motorTorque = motor * carCrashWheelsActive;
             else wheel.motorTorque = 0f;
-            if (wheel.motorTorque > 0f && braking) Debug.Log("NoShouldDO");
-            wheel.brakeTorque = brakesActive * 0.7f;
+            wheel.brakeTorque = currentBrake * 0.7f;
             wheel.steerAngle = steerspeed * horizontalInput;
             if (wheel.steerAngle > 20f) wheel.steerAngle = 20f;
             if (wheel.steerAngle < -20f) wheel.steerAngle = -20f;
         }
         foreach (WheelCollider wheel in backWheels)
         {
+            float currentBrake;
+            if (braking) currentBrake = abs.ApplyABS(wheel);
+            else currentBrake = 0f;
             if (!braking) wheel.motorTorque = motor * carCrashWheelsActive;
             else wheel.motorTorque = 0f;
-            wheel.brakeTorque = brakesActive * 0.3f;
+            wheel.brakeTorque = currentBrake * 0.3f;
         }
     }
 
