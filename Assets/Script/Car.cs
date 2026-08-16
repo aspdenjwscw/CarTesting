@@ -30,10 +30,10 @@ public class Car : MonoBehaviour{
     public WheelCollider[] backWheels;
     public float drivespeed, steerspeed;
     [System.NonSerialized] public float shiftTime, brakesActive;
-    float reverseInverse, horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, currentYRot, engineRPM, engineActive, shiftingCooldown, redlineRPM, reverseRedlineRPM, carCrashWheelsActive;
+    float horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, currentYRot, engineRPM, engineActive, shiftingCooldown, redlineRPM, reverseRedlineRPM, carCrashWheelsActive;
     private KeyCode forwardKey, backwardsKey, brakingKey;
     int currentGear;
-    public bool automatic, uphill, velocityForward, velocityBackwards, upShift, downShift, allowShift, shiftValueReset, braking;
+    public bool automatic, uphill, velocityForward, velocityBackwards, shiftValueReset, braking;
     public Gear[] gears;
     private float rpmVelocity, downShiftEngineRPM, upShiftEngineRPM;
     public AnimationCurve gearPowerScailingCurve;
@@ -47,19 +47,14 @@ public class Car : MonoBehaviour{
                                 //This is just temporary until we make a settings menu, but will make it easier to change to when we do.
         backwardsKey = KeyCode.S;
         brakingKey = KeyCode.Space;
-        brakesActive = 0f;
-        shiftTime = 0.3f;
-        shiftingCooldown = 0.8f;
         downShiftEngineRPM = 3000f;
         upShiftEngineRPM = 2000f;
         redlineRPM = 6000f;
-        automatic = true;
-        allowShift = true;
         accelerationSpeed = 3f;
         braking = false;
-        reverseInverse = 1f;
         reverseRedlineRPM = -3000f;
         carCrashWheelsActive = 1f;
+        engineActive = 1f;
 
         Vector3 autoCoM = rigid.centerOfMass;
         rigid.centerOfMass = new Vector3(0f, autoCoM.y - 0.75f, autoCoM.z);
@@ -82,61 +77,7 @@ public class Car : MonoBehaviour{
 
     void Update(){
         
-        
-        //Gears upshifting, and downshift.
-        if (upShift)
-        {
-            engineRPM = Mathf.SmoothDamp(engineRPM, upShiftEngineRPM, ref rpmVelocity, shiftTime);
-            shiftTime -= Time.deltaTime;
-            shiftingCooldown -= Time.deltaTime;
-            engineActive = 0f;
-            if(shiftTime <= 0)
-            {
-                upShift = false;
-                shiftValueReset = true;
-            }
-        }
-        if (!upShift && shiftingCooldown > 0f && shiftValueReset) shiftingCooldown -= Time.deltaTime;
-        if(shiftingCooldown <= 0f)
-        {
-            allowShift = true;
-        }
-        if(shiftValueReset && shiftingCooldown <= 0f)
-        {
-            shiftValueReset = false;
-            shiftingCooldown = 0.8f;
-            shiftTime = 0.3f;
-        }
-        if (downShift)
-        {
-            engineRPM = Mathf.SmoothDamp(engineRPM, downShiftEngineRPM, ref rpmVelocity, shiftTime);
-            shiftTime -= Time.deltaTime;
-            shiftingCooldown -= Time.deltaTime;
-            engineActive = 0f;
-            if (shiftTime <= 0f)
-            {
-                downShift = false;
-                shiftValueReset = true;
-            }
-        }
-        if (!downShift && shiftingCooldown > 0f && shiftValueReset) shiftingCooldown -= Time.deltaTime;
-        if (shiftingCooldown <= 0f)
-        {
-            allowShift = true;
-        }
-        if (shiftValueReset && shiftingCooldown <= 0f)
-        {
-            shiftValueReset = false;
-            shiftingCooldown = 0.8f;
-            shiftTime = 0.3f;
-        }
 
-
-
-
-
-        
-        //Checks for key presses, and assigns the values for them to work.
         if (Input.GetKey(forwardKey) && !braking)
         {
             verticalForward = 1f;
@@ -163,10 +104,6 @@ public class Car : MonoBehaviour{
         {
             braking = false;
         }
-        if(!braking && !gears[0].reverse)
-        {
-            brakesActive= 0f;
-        }
 
 
         if (Input.GetKey(KeyCode.R))
@@ -177,18 +114,6 @@ public class Car : MonoBehaviour{
             carPos.y += 0.3f;
             rigid.transform.position = carPos;
         }
-        else if (!Input.GetKey(KeyCode.R) && !braking);
-        {
-            brakesActive = 0f;
-        }
-
-
-        //Debug.Log(gears[currentGear].ratio);
-        //Debug.Log(wheel3.motorTorque);
-        //Debug.Log(reverseInverse);
-        //There are ways to change what the Input.GetAxis("Vertical"); need to be pressed to give change them
-
-
     }
 
     void FixedUpdate()
@@ -201,18 +126,16 @@ public class Car : MonoBehaviour{
         if (dotProduct > 0f)
         {
             velocityForward = true;
+            velocityBackwards = false;
         }
-        else
+        else if (dotProduct < 0f)
         {
             velocityForward = false;
-        }
-
-        if (dotProduct < 0f)
-        {
             velocityBackwards = true;
         }
         else
         {
+            velocityForward = false;
             velocityBackwards = false;
         }
         if (gears[0].reverse && groundSpeed > 0f && velocityForward)
@@ -220,17 +143,11 @@ public class Car : MonoBehaviour{
             braking = true;
             engineActive = 0f;
         }
-        if (gears[0].reverse && !velocityForward && !braking)
-        {
-            brakesActive = 0f;
-
-        }
         if (verticalInput > 0f && groundSpeed > 0f && velocityBackwards && gears[currentGear].gear == -1f)
         {
             braking = true;
             engineActive = 0f;
         }
-        if (verticalInput > 0f && !velocityBackwards && !braking) brakesActive = 0f;
 
         horizontalInput = Input.GetAxis("Horizontal"); //Can also do the same for Horizontal at some point with the same as vertical
                                                        //also could try to put it in a loop to reduce code length
@@ -287,26 +204,18 @@ public class Car : MonoBehaviour{
             currentGear = 1;
         }
 
-        if (velocityBackwards && currentGear > 1f && verticalInput < 0f && automatic)
+        if (velocityBackwards && currentGear == 2 && verticalInput < 0f && automatic)
         {
             currentGear = 0;
         }
 
-        //Debug.Log(brakesActive);
-        //Debug.Log(groundSpeed);
 
         verticalInput = verticalBackwards + verticalForward;
         smoothVerticalInput = Mathf.MoveTowards(smoothVerticalInput, verticalInput, accelerationSpeed * Time.fixedDeltaTime);
-
-        //Impliment this later, and change how the other RPM limiters work.
         float motorMultiplyer = gearPowerScailingCurve.Evaluate(currentGear);
-        if (pitchAngle < -30f && currentGear == 2) motorMultiplyer = 1;
-        if (groundSpeed < 1f && currentGear == 2) motorMultiplyer = 1;
         float naturalRPMLimiter = Mathf.Clamp01(1f - (engineRPM / 6000f));
-        float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * motorMultiplyer; //You could make it if moving foward, and also your pressing backwards it will break before automatically switching to reversing.
-        // The 4.56 is to replicate the FinalDriveRatio and the engineMax is to model going to high on the RPM and to stop them getting infinite Torque
-        //Debug.Log(motorMultiplyer);
-       
+        float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * motorMultiplyer; 
+        
         foreach (WheelCollider wheel in frontWheels)
         {
             float currentBrake;

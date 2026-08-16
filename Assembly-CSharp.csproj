@@ -53,6 +53,7 @@
     <Compile Include="Assets\Script\ABS.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\Wheels.cs" />
+    <Compile Include="Assets\Script\Shifting.cs" />
     <Compile Include="Assets\Script\SceneLoaded.cs" />
     <Compile Include="Assets\Script\Car.cs" />
     <Compile Include="Assets\Script\MenuButtons.cs" />
