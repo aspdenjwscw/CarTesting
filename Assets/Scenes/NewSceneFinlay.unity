@@ -501,15 +501,24 @@ MonoBehaviour:
   - {fileID: 1683021897}
   drivespeed: 75
   steerspeed: 20
-  automatic: 0
-  uphill: 0
+  horizontalInput: 0
+  verticalInput: 0
+  smoothVerticalInput: 0
+  accelerationSpeed: 0
+  verticalForward: 0
+  verticalBackwards: 0
+  currentYRot: 0
+  engineRPM: 0
+  redlineRPM: 0
+  reverseRedlineRPM: 0
+  carCrashWheelsActive: 0
+  engineActive: 0
+  currentGear: 0
   velocityForward: 0
   velocityBackwards: 0
-  upShift: 0
-  downShift: 0
-  allowShift: 0
-  shiftValueReset: 0
   braking: 0
+  shifting: 0
+  reverse: 0
   gearPowerScailingCurve:
     serializedVersion: 2
     m_Curve:
@@ -579,7 +588,7 @@ Rigidbody:
   m_GameObject: {fileID: 390809851}
   serializedVersion: 5
   m_Mass: 1500
-  m_LinearDamping: 0
+  m_LinearDamping: 0.05
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: -2, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
