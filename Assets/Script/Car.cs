@@ -3,49 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using ABSnamespace;
 
-
-
-public class Gear
-{
-    public float ratio { get; private set; }
-    public float gear { get; private set; }
-    public bool reverse;
-    public string gearTitle { get; private set; }
-
-    public Gear(float gearRatio, float currentGear, bool isReverse, string gearName)
-    {
-
-        ratio = gearRatio;
-        gear = currentGear;
-        reverse = isReverse;
-        gearTitle = gearName;
-    }
-}
-
 public class Car : MonoBehaviour{
     public Rigidbody rigid;
     public WheelCollider[] frontWheels;
     public WheelCollider[] backWheels;
     public float drivespeed, steerspeed;
-    [HideInInspector] public float horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, currentYRot, engineRPM, redlineRPM, reverseRedlineRPM, carCrashWheelsActive;
+    [HideInInspector] public float horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, currentYRot, engineRPM, redlineRPM, reverseRedlineRPM, carCrashWheelsActive, finalGearRatio, autoComShift;
     public float engineActive;
     private KeyCode forwardKey, backwardsKey, brakingKey;
     public int currentGear;
-    public bool velocityForward, velocityBackwards, braking, shifting, reverse;
-    public Gear[] gears; //Do a double Array, and then a dictionary to chose based on the car.
+    public bool braking, shifting, reverse;
     public AnimationCurve gearPowerScailingCurve;
     public static Car Instance { get; private set; }
     private ABS abs;
     private Shifting shift;
+    private CarSelector carSelector;
+    public float[] gears;
+    public string menuSelectedCar;
 
     void Start(){
         Instance = this;
         abs = new ABS();
         shift = new Shifting();
+        carSelector = new CarSelector();
+        carSelector.SelectCar(menuSelectedCar);
         forwardKey = KeyCode.W;
         backwardsKey = KeyCode.S;
         brakingKey = KeyCode.Space; 
-        redlineRPM = 6000f;
+        redlineRPM = 6000;
         accelerationSpeed = 3f;
         braking = false;
         reverseRedlineRPM = -3000f;
@@ -55,20 +40,8 @@ public class Car : MonoBehaviour{
         reverse = false;
 
         Vector3 autoCoM = rigid.centerOfMass;
-        rigid.centerOfMass = new Vector3(0f, autoCoM.y - 0.75f, autoCoM.z);
+        rigid.centerOfMass = new Vector3(0f, autoCoM.y + autoComShift, autoCoM.z);
         //Setting the gears values.
-        gears = new Gear[]
-        {
-            new Gear(-3.5f, -1f, false, "Reverse"),
-            new Gear(0f, 0f, false, "Neutral"),
-            new Gear(5f, 1f, false, "First Gear"),
-            new Gear(3.3f, 2f, false, "Second Gear"),
-            new Gear(2.1f, 3f, false, "Third Gear"),
-            new Gear(1.6f, 4f, false, "Fourth Gear"),
-            new Gear(1.2f, 5f, false, "Fifth Gear"),
-            new Gear(1f, 6f, false, "Sixth Gear"),
-            new Gear(0.75f, 7f, false, "Seventh Gear")
-        };
         currentGear = 1;
     }
 
@@ -112,15 +85,16 @@ public class Car : MonoBehaviour{
             carPos.y += 0.3f;
             rigid.transform.position = carPos;
         }
+
+        verticalInput = verticalBackwards + verticalForward;
     }
 
     void FixedUpdate()
     {
-        verticalInput = verticalBackwards + verticalForward;
         Debug.Log(verticalInput);
         horizontalInput = Input.GetAxis("Horizontal");
         
-        engineRPM = ((backWheels[0].rpm * 4.56f * gears[currentGear].ratio) + (backWheels[1].rpm * 4.56f * gears[currentGear].ratio)) / 2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
+        engineRPM = ((backWheels[0].rpm * finalGearRatio * gears[currentGear]) + (backWheels[1].rpm * finalGearRatio * gears[currentGear])) / 2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
         
         shift.MaybeShift();
 
@@ -140,7 +114,7 @@ public class Car : MonoBehaviour{
 
         smoothVerticalInput = Mathf.MoveTowards(smoothVerticalInput, verticalInput, accelerationSpeed * Time.fixedDeltaTime);
         float motorMultiplyer = gearPowerScailingCurve.Evaluate(currentGear);
-        float motor = smoothVerticalInput * 4.56f * gears[currentGear].ratio * drivespeed * engineActive * motorMultiplyer; 
+        float motor = smoothVerticalInput * finalGearRatio * gears[currentGear] * drivespeed * engineActive * motorMultiplyer; 
         
         foreach (WheelCollider wheel in frontWheels)
         {

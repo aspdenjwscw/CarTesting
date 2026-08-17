@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1280
     height: 709.3334
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Console
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 192.66667
     height: 434.66666
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -218,8 +218,8 @@ MonoBehaviour:
     y: 0
     width: 798
     height: 434.66666
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -273,8 +273,8 @@ MonoBehaviour:
     y: 0
     width: 289.3333
     height: 653.3333
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -665,13 +665,11 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_Data: 55436
+      - m_Data: -38972
       m_LastClickedID:
-        m_Data: 55436
+        m_Data: -38972
       m_ExpandedIDs:
       - m_Data: -1408
-      - m_Data: 55436
-      - m_Data: 55606
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -737,12 +735,12 @@ MonoBehaviour:
       displayed: 1
       id: unity-transform-toolbar
       index: 0
-      contents: '{"m_Layout":2,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":28.666667938232423,"y":59.83331298828125},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      contents: '{"m_Layout":2,"m_Collapsed":false,"m_Folded":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":28.666667938232423,"y":-348.8333435058594},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":2,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
       floating: 0
       collapsed: 0
-      snapOffset: {x: 28.666668, y: 59.833313}
+      snapOffset: {x: 28.666668, y: -348.83334}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 2
       layout: 2
       size: {x: 0, y: 0}
       sizeOverridden: 0
@@ -1525,15 +1523,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 259.33334}
     m_SelectedIDs:
-    - m_Data: 56456
+    - m_Data: 56472
     m_LastClickedID:
-      m_Data: 56456
+      m_Data: 56472
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 55726
-    - m_Data: 55728
     - m_Data: 55730
-    - m_Data: 56454
+    - m_Data: 55732
+    - m_Data: 55734
+    - m_Data: 56470
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1568,9 +1566,9 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 55726
-    - m_Data: 55728
     - m_Data: 55730
+    - m_Data: 55732
+    - m_Data: 55734
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1599,9 +1597,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 58728
+    - m_Data: -38972
     m_LastClickedEntityId:
-      m_Data: 58728
+      m_Data: -38972
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 47914

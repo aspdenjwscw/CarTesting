@@ -455,15 +455,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390809851}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 15.853902, y: 12.28, z: 1.66}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1602974049}
   - {fileID: 1934018848}
   - {fileID: 911111316}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1637766804}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &390809853
 MonoBehaviour:
@@ -512,10 +512,10 @@ MonoBehaviour:
   redlineRPM: 0
   reverseRedlineRPM: 0
   carCrashWheelsActive: 0
+  finalGearRatio: 0
+  autoComShift: 0
   engineActive: 0
   currentGear: 0
-  velocityForward: 0
-  velocityBackwards: 0
   braking: 0
   shifting: 0
   reverse: 0
@@ -579,6 +579,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  gears: []
+  menuSelectedCar: 
 --- !u!54 &390809855
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -780,12 +782,12 @@ Transform:
   m_GameObject: {fileID: 463566567}
   serializedVersion: 2
   m_LocalRotation: {x: 0.076412626, y: 0.70296603, z: -0.07641263, w: 0.7029659}
-  m_LocalPosition: {x: 10.853903, y: 15.68, z: 1.6600006}
+  m_LocalPosition: {x: -5, y: 3.4000006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1384152454}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1637766804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &646034655
 GameObject:
@@ -7033,6 +7035,39 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!1 &1637766803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637766804}
+  m_Layer: 0
+  m_Name: Car1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1637766804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637766803}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.853902, y: 12.28, z: 1.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 463566571}
+  - {fileID: 390809852}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1683021896
 GameObject:
   m_ObjectHideFlags: 0
@@ -7678,7 +7713,6 @@ SceneRoots:
   - {fileID: 1252234761}
   - {fileID: 96479762}
   - {fileID: 266257876}
-  - {fileID: 390809852}
-  - {fileID: 463566571}
+  - {fileID: 1637766804}
   - {fileID: 1371515917}
   - {fileID: 2076133930}
