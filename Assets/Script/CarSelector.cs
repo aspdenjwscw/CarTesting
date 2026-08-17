@@ -8,7 +8,7 @@ public struct CarData
 }
 
 
-public class CarSelector
+public class CarSelector : MonoBehaviour
 {
     public GameObject[] carAndCameras = new GameObject[3];
 
@@ -39,12 +39,12 @@ public class CarSelector
     public Rigidbody car3;
 
     private Dictionary<string, CarData> carSelect = new Dictionary<string, CarData>();
-    Car car = Car.Instance;
-    
+    Car car;
 
     
     private void SetValues()
     {
+        car = Car.Instance;
         carSelect.Add("Jeep", new CarData { carBody = car1, carInt = 0 });
         carSelect.Add("Pickup", new CarData { carBody = car2, carInt = 1 });
         carSelect.Add("ATV", new CarData { carBody = car3, carInt = 2 });
@@ -63,10 +63,7 @@ public class CarSelector
         car.rigid = carSelect[selectedCar].carBody;
         int currentCar = carSelect[selectedCar].carInt;
 
-        for (int i = 0; i < 3; i++)
-        {
-            if (i != currentCar) carAndCameras[i].SetActive(false);
-        }
+        carAndCameras[currentCar].SetActive(true);
 
         car.frontWheels = carFrontWheels[currentCar];
         car.backWheels = carBackWheels[currentCar];
@@ -74,6 +71,7 @@ public class CarSelector
         car.redlineRPM = carRedlineRPM[currentCar];
         car.reverseRedlineRPM = carReverseRedlineRPM[currentCar];
         car.gears = carGears[currentCar];
+        car.finalGearRatio = finalGearRatios[currentCar];
 
 
     }

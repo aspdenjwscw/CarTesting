@@ -17,23 +17,20 @@ public class Car : MonoBehaviour{
     public static Car Instance { get; private set; }
     private ABS abs;
     private Shifting shift;
-    private CarSelector carSelector;
     public float[] gears;
     public string menuSelectedCar;
+    public CarSelector carSelector;
 
     void Start(){
         Instance = this;
         abs = new ABS();
         shift = new Shifting();
-        carSelector = new CarSelector();
         carSelector.SelectCar(menuSelectedCar);
         forwardKey = KeyCode.W;
         backwardsKey = KeyCode.S;
         brakingKey = KeyCode.Space; 
-        redlineRPM = 6000;
         accelerationSpeed = 3f;
         braking = false;
-        reverseRedlineRPM = -3000f;
         carCrashWheelsActive = 1f;
         engineActive = 1f;
         shifting = false;
@@ -115,7 +112,8 @@ public class Car : MonoBehaviour{
         smoothVerticalInput = Mathf.MoveTowards(smoothVerticalInput, verticalInput, accelerationSpeed * Time.fixedDeltaTime);
         float motorMultiplyer = gearPowerScailingCurve.Evaluate(currentGear);
         float motor = smoothVerticalInput * finalGearRatio * gears[currentGear] * drivespeed * engineActive * motorMultiplyer; 
-        
+        Debug.Log(motor);
+
         foreach (WheelCollider wheel in frontWheels)
         {
             float currentBrake;

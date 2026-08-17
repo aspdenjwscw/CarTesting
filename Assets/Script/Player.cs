@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        //Get Engine Smoke
         engineSmoke.Stop();
     }
     void Update()
@@ -39,5 +40,10 @@ public class Player : MonoBehaviour
         {
             engineSmoke.Stop();
         }
+    }
+
+    void GetEngineSmoke(GameObject carSmokeParent)
+    {
+
     }
 }
