@@ -54,7 +54,7 @@ public class Shifting
             if (pitchAngle > 180f) pitchAngle -= 360f;
             if (pitchAngle < -20f) uphill = true;
             else uphill = false;
-            if (car.engineRPM > upshiftRPM && !uphill && car.currentGear >= 1 && car.currentGear <= 7 && groundSpeed >= 5f) //Change to Max Gear
+            if (car.engineRPM > upshiftRPM && !uphill && car.currentGear >= 1 && car.currentGear <= 7 && groundSpeed >= 5f) //Change to Max Gear NEED TO DO THIS
             {
                 car.StartCoroutine(UpShift());
             }

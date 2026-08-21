@@ -27,12 +27,16 @@ public class CarSelector : MonoBehaviour
     private float[] finalGearRatios = { 4.56f, 4.56f, 4.56f };
     private float[] autoComShift = { -0.75f, -0.75f, -0.75f };
 
+    public ParticleSystem[] engineSmoking = new ParticleSystem[3];
+
     private float[][] carGears = new float[][]
     {
         new float[] { -3.5f, 0f, 5f, 3.3f, 2.1f, 1.6f, 1.2f, 1f, 0.75f },
         new float[] { -3.5f, 0f, 5f, 3.3f, 2.1f, 1.6f, 1.2f, 1f, 0.75f },
         new float[] { -3.5f, 0f, 5f, 3.3f, 2.1f, 1.6f, 1.2f, 1f, 0.75f }
     };
+
+
 
     public Rigidbody car1;
     public Rigidbody car2;
@@ -72,6 +76,7 @@ public class CarSelector : MonoBehaviour
         car.reverseRedlineRPM = carReverseRedlineRPM[currentCar];
         car.gears = carGears[currentCar];
         car.finalGearRatio = finalGearRatios[currentCar];
+        car.smoke = engineSmoking[currentCar];
 
 
     }

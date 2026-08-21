@@ -10,6 +10,7 @@ public class Car : MonoBehaviour{
     public float drivespeed, steerspeed;
     [HideInInspector] public float horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, currentYRot, engineRPM, redlineRPM, reverseRedlineRPM, carCrashWheelsActive, finalGearRatio, autoComShift;
     public float engineActive;
+    public ParticleSystem smoke;
     private KeyCode forwardKey, backwardsKey, brakingKey;
     public int currentGear;
     public bool braking, shifting, reverse;
@@ -21,11 +22,16 @@ public class Car : MonoBehaviour{
     public string menuSelectedCar;
     public CarSelector carSelector;
 
-    void Start(){
+    void Awake()
+    {
         Instance = this;
         abs = new ABS();
         shift = new Shifting();
         carSelector.SelectCar(menuSelectedCar);
+    }
+
+    void Start() 
+    { 
         forwardKey = KeyCode.W;
         backwardsKey = KeyCode.S;
         brakingKey = KeyCode.Space; 

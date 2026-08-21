@@ -1755,6 +1755,7 @@ MonoBehaviour:
   finalGearRatio: 0
   autoComShift: 0
   engineActive: 0
+  smoke: {fileID: 0}
   currentGear: 0
   braking: 0
   shifting: 0
@@ -1820,6 +1821,10 @@ MonoBehaviour:
   car3BackWheels:
   - {fileID: 426675772}
   - {fileID: 525489284}
+  engineSmoking:
+  - {fileID: 911111318}
+  - {fileID: 1665983139}
+  - {fileID: 2076211206}
   car1: {fileID: 390809855}
   car2: {fileID: 969407144}
   car3: {fileID: 1093941869}
@@ -18626,6 +18631,11 @@ Transform:
   - {fileID: 390809852}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1665983139 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5958478975733516079, guid: 24fa55c4f1386e04ea2800527f88c4e1, type: 3}
+  m_PrefabInstance: {fileID: 1066779729}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1674077961
 GameObject:
   m_ObjectHideFlags: 0
@@ -20082,6 +20092,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &2076211206 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5958478975733516079, guid: 24fa55c4f1386e04ea2800527f88c4e1, type: 3}
+  m_PrefabInstance: {fileID: 2007199919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2086365884
 GameObject:
   m_ObjectHideFlags: 0
