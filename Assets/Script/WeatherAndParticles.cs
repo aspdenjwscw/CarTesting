@@ -102,15 +102,6 @@ public class WeatherAndParticles : MonoBehaviour
         DontDestroyOnLoad(lightObject);
     }
 
-    void Update()
-    {
-        //Checking if its working, and the null is so it only works if the mainDaySkybox has acutally been defined
-        if (Input.GetKey(KeyCode.L) && mainDaySkyBox != null) ChangeWeather(0);
-        if (Input.GetKey(KeyCode.K)) ChangeWeather(1);
-        if (Input.GetKey(KeyCode.O)) ChangeWeather(2);
-        if (Input.GetKey(KeyCode.P)) ChangeWeather(3);
-    }
-
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneChangeTriggered;

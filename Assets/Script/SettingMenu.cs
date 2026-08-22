@@ -3,8 +3,8 @@ using System;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.InputSystem.Utilities;
 
@@ -24,8 +24,6 @@ public class Keybinds
 
 public class SettingMenu : MonoBehaviour
 {
-    public MenuButtons menuButtons;
-    public GameObject buttonsParent;
     public bool isListening = false;
     public int currentButtonInt;
     public string currentButton;
@@ -38,9 +36,15 @@ public class SettingMenu : MonoBehaviour
 
     public Dictionary<int, String> numToKeybind = new Dictionary<int, String>();
 
-    public List<TextMeshProUGUI> buttonText = new List<TextMeshProUGUI>();
+   
 
-
+    [RuntimeInitializeOnLoadMethod]
+    private static void Initialize()
+    {
+        GameObject bootstrapper2 = new GameObject("SettingsSystem_Runtime");
+        bootstrapper2.AddComponent<SettingMenu>();
+        DontDestroyOnLoad(bootstrapper2);
+    }
 
     void Awake()
     {
@@ -48,29 +52,25 @@ public class SettingMenu : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         filePath = Path.Combine(Application.persistentDataPath, "keybinds.json");
-
         LoadKeybinds();
         RedoValues();
 
 
-        for (int i = 0; i < buttonsParent.transform.childCount; i++)
-        {
-            Transform child = buttonsParent.transform.GetChild(i);
-
-            if(child.GetChild(0).TryGetComponent<TextMeshProUGUI>(out TextMeshProUGUI component))
-            {
-                buttonText.Add(component);
-            }
-        }
-        for (int i = 0; i < buttonText.Count; i++)
-        {
-            buttonText[i].text = numToKeybind[i].ToUpper();
-
-        }
+        
+        
     }
 
     public void RedoValues()
     {
+        //Due to Initalize it won't have Keyboard.current yet so it will give an error. This should fix it by making it wait effectively.
+        if (Keyboard.current == null)
+        {
+            InputSystem.onDeviceChange += (device, change) => {
+                if (change == InputDeviceChange.Added && device is Keyboard) RedoValues();
+            };
+            return;
+        }
+
         forwardsControl = Keyboard.current[keyBinds.forwardsKey.ToLower()];
         backwardsControl = Keyboard.current[keyBinds.backwardsKey.ToLower()];
         leftControl = Keyboard.current[keyBinds.leftKey.ToLower()];
@@ -133,7 +133,7 @@ public class SettingMenu : MonoBehaviour
         Debug.Log("Here");
         currentButtonInt = button;
         currentButton = numToKeybind[button];
-        buttonText[button].text = "";
+        SettingMenuUI.Instance.buttonText[button].text = "";
         //Button textMeshPro make empty
         if (!isListening)
         {
@@ -147,7 +147,7 @@ public class SettingMenu : MonoBehaviour
         Debug.Log("here");
         if(key == Keyboard.current.escapeKey)
         {
-            buttonText[currentButtonInt].text = currentButton.ToUpper();
+            SettingMenuUI.Instance.buttonText[currentButtonInt].text = currentButton.ToUpper();
             subscription?.Dispose();
             isListening = false;
         }
@@ -164,7 +164,7 @@ public class SettingMenu : MonoBehaviour
                 case 6: keyBinds.resetKey = key.name.ToLower(); break;
             }
             numToKeybind[currentButtonInt] = key.name.ToLower();
-            buttonText[currentButtonInt].text = key.name.ToUpper();
+            SettingMenuUI.Instance.buttonText[currentButtonInt].text = key.name.ToUpper();
             subscription?.Dispose();
             isListening = false;
             RedoValues();
@@ -172,8 +172,15 @@ public class SettingMenu : MonoBehaviour
         }
     }
 
-    //Make a function to send the cs file to MenuButtons, or just manually make a public variable in MenuButtons
-    
+    void OnDisable()
+    {
+        if (isListening)
+        {
+            subscription?.Dispose();
+            isListening = false;
+        }
+    }
+
 
 
 }

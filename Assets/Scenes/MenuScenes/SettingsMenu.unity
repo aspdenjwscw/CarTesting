@@ -2889,6 +2889,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133268910}
   m_CullTransparentMesh: 1
+--- !u!1 &1198556262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1198556264}
+  - component: {fileID: 1198556263}
+  m_Layer: 0
+  m_Name: SettingsMenuUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1198556263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198556262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96628b030e5e5184d8f4407a884cfdf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  buttonText: []
+  buttonsParent: {fileID: 106914504}
+--- !u!4 &1198556264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198556262}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.51156, y: 1.81227, z: 48.39547}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1199992278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3333,7 +3379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
   weather: {fileID: 0}
-  settingMenu: {fileID: 1612543631}
 --- !u!4 &1278976498
 Transform:
   m_ObjectHideFlags: 0
@@ -3448,7 +3493,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1278976497}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
         m_MethodName: LoadSceneByName
         m_Mode: 5
@@ -4473,63 +4518,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 90c2ef2c1c115b045a0e290c1333ba31, type: 3}
   m_PrefabInstance: {fileID: 1574358384}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1612543630
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1612543632}
-  - component: {fileID: 1612543631}
-  m_Layer: 0
-  m_Name: SettingMenu
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1612543631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612543630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4016e26f42bd3947b68b5c2f393efd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  menuButtons: {fileID: 1278976497}
-  buttonsParent: {fileID: 106914504}
-  isListening: 0
-  currentButton: 0
-  buttonText: []
-  buttonState:
-  - W
-  - A
-  - S
-  - D
-  - F
-  - K
-  - I
---- !u!4 &1612543632
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612543630}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.51156, y: 1.81227, z: 48.39547}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1614192116
 GameObject:
   m_ObjectHideFlags: 0
@@ -6481,4 +6469,4 @@ SceneRoots:
   - {fileID: 1844931425}
   - {fileID: 1976369376}
   - {fileID: 1278976498}
-  - {fileID: 1612543632}
+  - {fileID: 1198556264}

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 using ABSnamespace;
 
 public class Car : MonoBehaviour{
@@ -8,19 +10,32 @@ public class Car : MonoBehaviour{
     public WheelCollider[] frontWheels;
     public WheelCollider[] backWheels;
     public float drivespeed, steerspeed;
-    [HideInInspector] public float horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, currentYRot, engineRPM, redlineRPM, reverseRedlineRPM, carCrashWheelsActive, finalGearRatio, autoComShift;
+    [HideInInspector] public float horizontalInput, verticalInput, smoothVerticalInput, accelerationSpeed, verticalForward, verticalBackwards, horizontalLeft, horizontalRight, currentYRot, engineRPM, redlineRPM, reverseRedlineRPM, carCrashWheelsActive, finalGearRatio, autoComShift;
     public float engineActive;
     public ParticleSystem smoke;
-    private KeyCode forwardKey, backwardsKey, brakingKey;
+    private InputControl forwardKey, backwardsKey, leftKey, rightKey, brakingKey, unstuckKey, resetKey;
     public int currentGear;
     public bool braking, shifting, reverse;
     public AnimationCurve gearPowerScailingCurve;
     public static Car Instance { get; private set; }
+    public Keybinds keybinds;
     private ABS abs;
     private Shifting shift;
     public float[] gears;
     public string menuSelectedCar;
     public CarSelector carSelector;
+    private SettingMenu keys;
+
+    private void SetCarKeybinds()
+    {
+        forwardKey = keys.forwardsControl;
+        backwardsKey = keys.backwardsControl;
+        leftKey = keys.leftControl;
+        rightKey = keys.rightControl;
+        brakingKey = keys.brakeControl;
+        unstuckKey = keys.unstuckControl;
+        resetKey = keys.resetControl;
+    }
 
     void Awake()
     {
@@ -31,10 +46,9 @@ public class Car : MonoBehaviour{
     }
 
     void Start() 
-    { 
-        forwardKey = KeyCode.W;
-        backwardsKey = KeyCode.S;
-        brakingKey = KeyCode.Space; 
+    {
+        keys = SettingMenu.Instance;
+        SetCarKeybinds();
         accelerationSpeed = 3f;
         braking = false;
         carCrashWheelsActive = 1f;
@@ -52,7 +66,15 @@ public class Car : MonoBehaviour{
     void Update(){
         
 
-        if (Input.GetKey(forwardKey) && !braking)
+        if(((ButtonControl)brakingKey).isPressed)
+        {
+            braking = true;
+        }
+        else
+        {
+            braking = false;
+        }
+        if (((ButtonControl)forwardKey).isPressed && !braking)
         {
             verticalForward = 1f;
         }
@@ -60,7 +82,7 @@ public class Car : MonoBehaviour{
         {
             verticalForward = 0f;
         }
-        if (Input.GetKey(backwardsKey) && !braking)
+        if (((ButtonControl)backwardsKey).isPressed && !braking)
         {
             verticalBackwards = -1f;
             reverse = true;
@@ -70,17 +92,24 @@ public class Car : MonoBehaviour{
             verticalBackwards = 0f;
             reverse = false;
         }
-        if(Input.GetKey(brakingKey))
+        if (((ButtonControl)rightKey).isPressed && !braking)
         {
-            braking = true;
+            horizontalRight = 1f;
         }
         else
         {
-            braking = false;
+            horizontalRight = 0f;
+        }
+        if (((ButtonControl)leftKey).isPressed && !braking)
+        {
+            horizontalLeft = -1f;
+        }
+        else
+        {
+            horizontalLeft = 0f;
         }
 
-
-        if (Input.GetKey(KeyCode.R))
+        if (((ButtonControl)unstuckKey).isPressed)
         {
             currentYRot = rigid.transform.eulerAngles.y;
             rigid.transform.eulerAngles = new Vector3(0f, currentYRot, 0f);
@@ -89,13 +118,18 @@ public class Car : MonoBehaviour{
             rigid.transform.position = carPos;
         }
 
+        if (((ButtonControl)resetKey).isPressed)
+        {
+            //Logic Here
+        }
+
         verticalInput = verticalBackwards + verticalForward;
+        horizontalInput = horizontalLeft + horizontalRight;
     }
 
     void FixedUpdate()
     {
         Debug.Log(verticalInput);
-        horizontalInput = Input.GetAxis("Horizontal");
         
         engineRPM = ((backWheels[0].rpm * finalGearRatio * gears[currentGear]) + (backWheels[1].rpm * finalGearRatio * gears[currentGear])) / 2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
         

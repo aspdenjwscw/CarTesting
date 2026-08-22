@@ -58,6 +58,7 @@
     <Compile Include="Assets\Script\Car.cs" />
     <Compile Include="Assets\Script\MenuButtons.cs" />
     <Compile Include="Assets\Script\CarSelector.cs" />
+    <Compile Include="Assets\Script\SettingMenuUI.cs" />
     <Compile Include="Assets\Polytope Studio\Lowpoly_Demos\Environment_Free\Helpers\PT_MouseLook.cs" />
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
