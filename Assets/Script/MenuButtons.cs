@@ -51,8 +51,11 @@ public class MenuButtons : MonoBehaviour
         //Calls Function in SettingsMenu.cs to change the keybinds
     }
 
-    public void ChangeKeybind()
+    public void ChangeKeybind(int button)
     {
+    
+        SettingMenu.Instance.DetectingKeys(button);
+
         //Maybe a while(true){ loop until break this would be for picking up a new keybind being presed.
         //Also remember to make it so that when the escape key is pressed it cancels everything
         //If(escape not pressed && another allowed key is pressed){
