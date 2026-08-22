@@ -1747,6 +1747,8 @@ MonoBehaviour:
   accelerationSpeed: 0
   verticalForward: 0
   verticalBackwards: 0
+  horizontalLeft: 0
+  horizontalRight: 0
   currentYRot: 0
   engineRPM: 0
   redlineRPM: 0
@@ -1765,25 +1767,69 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 0.375
-      outSlope: 0.375
-      tangentMode: 34
+      value: -1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.33333334
+      outWeight: 0
     - serializedVersion: 3
-      time: 8
-      value: 3
-      inSlope: 0.375
-      outSlope: 0.375
-      tangentMode: 34
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 2
+      value: 1
+      inSlope: -0.57382286
+      outSlope: -0.57382286
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.10721748
+    - serializedVersion: 3
+      time: 3.0296295
+      value: 0.4069367
+      inSlope: -0.23326664
+      outSlope: -0.23326664
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
+      outWeight: 0.15965305
+    - serializedVersion: 3
+      time: 7
+      value: 1.8
+      inSlope: 0.36806744
+      outSlope: 0.36806744
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.07545347
+      outWeight: 0
+    - serializedVersion: 3
+      time: 8
+      value: 2.3
+      inSlope: 0.06360547
+      outSlope: 0.06360547
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  keybinds:
+    forwardsKey: w
+    backwardsKey: s
+    leftKey: a
+    rightKey: d
+    brakeKey: space
+    unstuckKey: r
+    resetKey: k
   gears: []
   menuSelectedCar: Jeep
   carSelector: {fileID: 996548195}

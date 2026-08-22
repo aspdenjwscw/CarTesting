@@ -66,6 +66,7 @@
     <Compile Include="Assets\Polytope Studio\Lowpoly_Demos\Environment_Free\Helpers\PT_PlayerMovement.cs" />
     <Compile Include="Assets\Script\CollisionDamage.cs" />
     <Compile Include="Assets\Script\WeatherAndParticles.cs" />
+    <Compile Include="Assets\Script\GameTime.cs" />
     <Compile Include="Assets\Script\SettingMenu.cs" />
   </ItemGroup>
   <ItemGroup>
