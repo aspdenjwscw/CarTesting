@@ -88124,11 +88124,11 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 583973b4ee3f5407bbac586ebb58db95, type: 2}
-  m_TreeDistance: 1832
+  m_TreeDistance: 250
   m_TreeBillboardDistance: 250
   m_TreeCrossFadeLength: 0
   m_TreeMaximumFullLODCount: 2450
-  m_DetailObjectDistance: 866
+  m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
