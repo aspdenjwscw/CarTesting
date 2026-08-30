@@ -39,6 +39,7 @@ public class Car : MonoBehaviour{
 
     void Awake()
     {
+        menuSelectedCar = WeatherAndParticles.Instance.setCar;
         Instance = this;
         abs = new ABS();
         shift = new Shifting();
@@ -129,7 +130,7 @@ public class Car : MonoBehaviour{
 
     void FixedUpdate()
     {
-        Debug.Log(verticalInput);
+        //Debug.Log(verticalInput);
         
         engineRPM = ((backWheels[0].rpm * finalGearRatio * gears[currentGear]) + (backWheels[1].rpm * finalGearRatio * gears[currentGear])) / 2; // Multiplying by negative 1 since I accidentally made the wheels work backwards
         
@@ -152,7 +153,7 @@ public class Car : MonoBehaviour{
         smoothVerticalInput = Mathf.MoveTowards(smoothVerticalInput, verticalInput, accelerationSpeed * Time.fixedDeltaTime);
         float motorMultiplyer = gearPowerScailingCurve.Evaluate(currentGear);
         float motor = smoothVerticalInput * finalGearRatio * gears[currentGear] * drivespeed * engineActive * motorMultiplyer; 
-        Debug.Log(motor);
+        //Debug.Log(motor);
 
         foreach (WheelCollider wheel in frontWheels)
         {

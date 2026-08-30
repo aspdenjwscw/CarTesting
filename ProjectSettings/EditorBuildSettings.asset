@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
@@ -23,5 +23,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuScenes/SettingsMenu.unity
     guid: 84209f2e471df3845ab4f45fb68cf725
+  - enabled: 1
+    path: Assets/Scenes/FinalOtherside.unity
+    guid: d6b3791dc1d8b5d41b2b6e1ba0a673f7
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/CarSelectScene.unity
+    guid: 9124707ec3f26b845beb218494e546e8
+  - enabled: 1
+    path: Assets/Scenes/TutorialMap.unity
+    guid: e98cddff891f449ba9ad82ec9e5e775c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

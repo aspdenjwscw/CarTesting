@@ -42454,7 +42454,6 @@ GameObject:
   - component: {fileID: 866419216}
   - component: {fileID: 866419218}
   - component: {fileID: 866419217}
-  - component: {fileID: 866419219}
   m_Layer: 5
   m_Name: Time
   m_TagString: Untagged
@@ -42581,20 +42580,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866419215}
   m_CullTransparentMesh: 1
---- !u!114 &866419219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 866419215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1446389536befac49abc626a062e0a68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameTime
-  timer: {fileID: 866419217}
-  gameTime: 0
 --- !u!1 &866803310
 GameObject:
   m_ObjectHideFlags: 0
@@ -44101,7 +44086,7 @@ MonoBehaviour:
   car: {fileID: 0}
   deerPrefab: {fileID: 4831668218667654266, guid: 945cd0eeaf5b14e79b80d2cf398deee0, type: 3}
   carRigidbody: {fileID: 0}
-  baseChancePerCheck: 0
+  baseChancePerCheck: 0.56
   checkInterval: 2
   minSpawnDistance: 15
   maxSpawnDistance: 30
@@ -80355,6 +80340,48 @@ PhysicsMaterial:
   m_Bounciness: 0
   m_FrictionCombine: 0
   m_BounceCombine: 0
+--- !u!1 &1725100961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+  m_PrefabInstance: {fileID: 2125394844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1725100963
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725100961}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6, y: 5, z: 0.4}
+  m_Center: {x: 0, y: 2.5, z: 0}
+--- !u!114 &1725100964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725100961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1446389536befac49abc626a062e0a68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameTime
+  timer: {fileID: 866419217}
+  gameTime: 0
+  activeTime: 0
+  finalTime: 
 --- !u!1 &1728882690
 GameObject:
   m_ObjectHideFlags: 0
@@ -98627,6 +98654,77 @@ Transform:
   - {fileID: 1362810829787090019}
   m_Father: {fileID: 1496679222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2125394844
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.904
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8514
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 922.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 519.48
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 299.99
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.94735277
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.32019183
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -37.349
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      propertyPath: m_Name
+      value: FinishLine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1725100963}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1725100964}
+  m_SourcePrefab: {fileID: 100100000, guid: 64ea14a3cac893648b85a02a66ba548f, type: 3}
 --- !u!134 &2135563518
 PhysicsMaterial:
   m_ObjectHideFlags: 0
@@ -100158,3 +100256,4 @@ SceneRoots:
   - {fileID: 2117485250}
   - {fileID: 1451934045}
   - {fileID: 1813550705}
+  - {fileID: 2125394844}

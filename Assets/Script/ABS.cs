@@ -29,11 +29,11 @@ namespace ABSnamespace
                 float absoluteSlipValue = Mathf.Abs(forwardSlipAmount);
                 float sidewaysSlipAmout = hit.sidewaysSlip;
                 float sidewaysSlipValue = Mathf.Abs(sidewaysSlipAmout);
-                Debug.Log(absoluteSlipValue);
+                //Debug.Log(absoluteSlipValue);
                 if (wheel.rpm == 0f && velocity > 3f) absoluteSlipValue = 1f;
                 if (absoluteSlipValue > slipThreshold && velocity > 3f || sidewaysSlipAmout > slipThreshold && velocity > 1f)
                 {
-                    Debug.Log("Easing");
+                    //Debug.Log("Easing");
                     currentBraking[wheel] -= reductionRate * Time.fixedDeltaTime;
                 }
                 else

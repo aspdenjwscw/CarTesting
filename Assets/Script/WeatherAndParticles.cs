@@ -24,6 +24,8 @@ public class WeatherAndParticles : MonoBehaviour
     private static Material mainSunsetSkyBox;
     int currentWeather = 0;
     bool currentRain = false;
+    public string setScene;
+    public string setCar;
 
     private void Awake()
     {
