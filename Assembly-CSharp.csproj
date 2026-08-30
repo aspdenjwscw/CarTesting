@@ -52,6 +52,7 @@
     <Compile Include="Assets\Script\HealthBar.cs" />
     <Compile Include="Assets\Script\ABS.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\InfoPanel.cs" />
     <Compile Include="Assets\Script\Wheels.cs" />
     <Compile Include="Assets\Script\Shifting.cs" />
     <Compile Include="Assets\Script\SceneLoaded.cs" />
