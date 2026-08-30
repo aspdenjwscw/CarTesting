@@ -5,11 +5,21 @@ public class GameTime : MonoBehaviour
 {
     public TextMeshProUGUI timer;
     public float gameTime;
+    public bool activeTime;
+    public string finalTime;
 
-    void FixedUpdate()
+    void Start()
     {
-        gameTime += Time.deltaTime;
-        UpdateTimer(gameTime);
+        activeTime = true;
+    }
+
+    void Update()
+    {
+        if (activeTime)
+        {
+            gameTime += Time.deltaTime;
+            UpdateTimer(gameTime);
+        }
     }
 
     public void UpdateTimer(float time)
@@ -18,7 +28,14 @@ public class GameTime : MonoBehaviour
         float seconds = Mathf.FloorToInt(time % 60); //Gets the remander of multiples of 60. This means that every 60s gets removed to become 1 minute
         float miliseconds = (time % 1) * 100; //This gets numbers less than 1 then times by 100 to get miliseconds
         timer.text = string.Format("{0:00}:{1:00}:{2:00}", minutes, seconds, miliseconds);
+        finalTime = timer.text;
+
     }
 
+    private void OnTriggerEnter(Collider otherObj)
+    {
+        Debug.Log("Working");
+        activeTime = false;
+    }
 
 }

@@ -12,7 +12,7 @@ public class SceneLoaded : MonoBehaviour
         weather = MenuButtons.Instance.weather;
         Debug.Log("Something's working");
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.name == "NewSceneFinlay")
+        if (currentScene.name == "FinalMountainScene")
         {
             Debug.Log("SceneFound");
             Debug.Log(weather);
@@ -21,14 +21,8 @@ public class SceneLoaded : MonoBehaviour
                 weather.SetCurrentWeather();
             }
         }
-        else if (currentScene.name == "MapSelectionScene")
+        else if (currentScene.name == "MapSelectionScene" || currentScene.name == "CarSelectScene" || currentScene.name == "FinalOtherside" || currentScene.name == "TutorialMap")
         {
-            weather.SetCurrentWeather();
-        }
-        else if (currentScene.name == "FinalScene")
-        {
-            Debug.Log("SceneFound");
-            Debug.Log(weather);
             if (weather != null)
             {
                 weather.SetCurrentWeather();

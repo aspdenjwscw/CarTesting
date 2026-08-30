@@ -27,6 +27,13 @@ public class DeerSpawner : MonoBehaviour
 
     private float timer;
 
+    void Start()
+    {
+        carRigidbody = Car.Instance.rigid;
+        BoxCollider childCollider = carRigidbody.GetComponentInChildren<BoxCollider>();
+        car = childCollider.transform;
+    }
+
     void Update()
     {
         timer += Time.deltaTime;
