@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        carCollisionDamage = wheelsOnStatus.rigid.GetComponent<CollisionDamage>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         //Get Engine 

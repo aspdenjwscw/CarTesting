@@ -17,6 +17,7 @@ public class CollisionDamage : MonoBehaviour
     public void DeerCollision()
     {
         deerCollision = true;
+        Debug.Log("DeerCollision");
         float impactSpeed = rb.linearVelocity.magnitude;
         int damage = 0;
         if (impactSpeed > damageThreshold)
@@ -29,7 +30,9 @@ public class CollisionDamage : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Collision");
         float impactSpeed = collision.relativeVelocity.magnitude;
+        Debug.Log(impactSpeed);
         int damage = 0;
         if (impactSpeed > damageThreshold && !deerCollision)
         {
@@ -37,8 +40,6 @@ public class CollisionDamage : MonoBehaviour
             damage = Mathf.RoundToInt(Mathf.Max(0f, intialDamage));
             damageTaken = Mathf.Max(damageTaken, damage);
         }
-        
-
     }
 
     public int CarDamageTaken()
@@ -46,6 +47,7 @@ public class CollisionDamage : MonoBehaviour
         int tempDamage = damageTaken;
         damageTaken = 0;
         deerCollision = false;
+        Debug.Log(tempDamage);
         return tempDamage;
     }   
 }

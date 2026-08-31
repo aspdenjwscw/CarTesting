@@ -44086,7 +44086,7 @@ MonoBehaviour:
   car: {fileID: 0}
   deerPrefab: {fileID: 4831668218667654266, guid: 945cd0eeaf5b14e79b80d2cf398deee0, type: 3}
   carRigidbody: {fileID: 0}
-  baseChancePerCheck: 0.56
+  baseChancePerCheck: 0
   checkInterval: 2
   minSpawnDistance: 15
   maxSpawnDistance: 30
@@ -54353,6 +54353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1166921658}
   - component: {fileID: 1166921657}
+  - component: {fileID: 1166921659}
   m_Layer: 0
   m_Name: ToyotaCar
   m_TagString: Untagged
@@ -54406,6 +54407,21 @@ Transform:
   - {fileID: 315839792}
   m_Father: {fileID: 2117485250}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1166921659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166921656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ce8044387d389429f75e6b9f6113ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollisionDamage
+  rb: {fileID: 1166921657}
+  damageTaken: 0
+  deerCollision: 0
 --- !u!1 &1170099597
 GameObject:
   m_ObjectHideFlags: 0
