@@ -1,5 +1,7 @@
 using UnityEngine;
-
+/// <summary>
+///  Returns damage to take, doesn't take the damage within class.
+/// </summary>
 public class CollisionDamage : MonoBehaviour
 {
     public static CollisionDamage Instance { get; private set; }

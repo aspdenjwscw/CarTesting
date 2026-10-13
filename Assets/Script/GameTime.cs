@@ -1,6 +1,10 @@
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// Clock for the time to beat levels
+/// </summary>
+
 public class GameTime : MonoBehaviour
 {
     public TextMeshProUGUI timer;

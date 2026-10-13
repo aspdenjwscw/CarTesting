@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// Player controls all the systems, including health, effects, and the Car
+/// </summary>
+
 public class Player : MonoBehaviour
 {
     public HealthBar healthBar;

@@ -21,7 +21,9 @@ public class Keybinds
     public string resetKey = "k";
 }
 
-
+/// <summary>
+/// Changes the keybinds and save to persistant memory, leaves the visual changes to the UI file
+/// </summary>
 public class SettingMenu : MonoBehaviour
 {
     public bool isListening = false;
@@ -60,6 +62,9 @@ public class SettingMenu : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Sets keybinds on the backend so the car will be controlled with the new keys.
+    /// </summary>
     public void RedoValues()
     {
         //Due to Initalize it won't have Keyboard.current yet so it will give an error. This should fix it by making it wait effectively.
@@ -116,7 +121,9 @@ public class SettingMenu : MonoBehaviour
             SaveKeybinds();
         }
     }
-
+    /// <summary>
+    /// Saves Keybinds to a JSON file
+    /// </summary>
     public void SaveKeybinds()
     {
         string json = JsonUtility.ToJson(keyBinds, true);

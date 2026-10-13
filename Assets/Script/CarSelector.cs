@@ -7,7 +7,9 @@ public struct CarData
     public int carInt;
 }
 
-
+/// <summary>
+/// Values, and gameObjects for each individual car to easily change, and be taken for the selected car.
+/// </summary>
 public class CarSelector : MonoBehaviour
 {
     public GameObject[] carAndCameras = new GameObject[3];

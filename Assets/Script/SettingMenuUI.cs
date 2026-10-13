@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Changes the visual keybind on the frontend.
+/// </summary>
+
 public class SettingMenuUI : MonoBehaviour
 {
     public List<TextMeshProUGUI> buttonText = new List<TextMeshProUGUI>();

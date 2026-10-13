@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Sets weather on map being loaded
+/// </summary>
 public class SceneLoaded : MonoBehaviour
 {
     private WeatherAndParticles weather;

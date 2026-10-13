@@ -44086,7 +44086,7 @@ MonoBehaviour:
   car: {fileID: 0}
   deerPrefab: {fileID: 4831668218667654266, guid: 945cd0eeaf5b14e79b80d2cf398deee0, type: 3}
   carRigidbody: {fileID: 0}
-  baseChancePerCheck: 0.56
+  baseChancePerCheck: 1
   checkInterval: 2
   minSpawnDistance: 15
   maxSpawnDistance: 30

@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Check whether shifting is allowed, then shifting or not, and returning new gear to Car.cs
+/// </summary>
 public class Shifting
 {
     Car car = Car.Instance;

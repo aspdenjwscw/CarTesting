@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using ABSnamespace;
 
+/// <summary>
+/// Combines all the car files, uses selected car, and uses set keybinds to send values back to individual files, and applys driving forces
+/// </summary>
 public class Car : MonoBehaviour{
     public Rigidbody rigid;
     public WheelCollider[] frontWheels;

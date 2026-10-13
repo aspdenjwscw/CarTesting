@@ -4,6 +4,10 @@ using ABSnamespace;
 
 namespace ABSnamespace
 {
+    /// <summary>
+    /// Calculates the Slip and determines whether to brake to keep it near extremum slip value.
+    /// </summary>
+
     public class ABS
     {
         float slipThreshold = 0.3f;

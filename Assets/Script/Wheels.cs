@@ -1,5 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// Visuals for the wheel rotation
+/// </summary>
+
 public class Wheels : MonoBehaviour
 {
     public WheelCollider wheelCollider;
